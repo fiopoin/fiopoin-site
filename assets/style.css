@@ -168,7 +168,7 @@ footer a{color:#C9D6E8}
 }
 footer .flogo{height:28px;width:auto;display:block;margin-bottom:6px}
 footer .fgrid{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
-footer nav a{margin-right:18px;text-decoration:none}
+footer nav a{margin-right:18px;text-decoration:none;white-space:nowrap;display:inline-block;line-height:1.9}
 .signup .mark{height:30px;width:auto;margin-bottom:14px;display:block}
 .archive-list{list-style:none;display:grid;gap:10px}
 .archive-list a{font-size:18px;font-weight:600;color:var(--navy)}
