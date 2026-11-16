@@ -173,3 +173,11 @@ footer nav a{margin-right:18px;text-decoration:none}
 .archive-list{list-style:none;display:grid;gap:10px}
 .archive-list a{font-size:18px;font-weight:600;color:var(--navy)}
 @media (max-width:900px){footer .fgrid{grid-template-columns:1fr}}
+/* Intelligence wordmark: ripple line */
+.brand span,.wm{font-weight:500;color:#fff;font-size:19px;letter-spacing:.01em;padding-bottom:5px;background:linear-gradient(90deg,#E9A23B,#0091D2 55%,#8CC63F) bottom/100% 3px no-repeat;line-height:1.1}
+.signup .wm{color:var(--navy);font-size:20px}
+.lockup{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.lockup img{height:30px;width:auto}
+footer .lockup{margin-bottom:0}
+footer .lockup img{height:28px}
+footer .wm{font-size:17px}

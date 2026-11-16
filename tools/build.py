@@ -38,7 +38,7 @@ arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
 <ul class="archive-list">{items}</ul></div></section></main>
-<footer><div class="wrap"><div class="fgrid"><img class="flogo" src="../fiopo-logo.png" alt="FIOPO"><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice.</p></div></div></div></footer></body></html>"""
+<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="../"><img src="../fiopo-logo.png" alt="FIOPO"><span class="wm">Intelligence</span></a><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice.</p></div></div></div></footer></body></html>"""
 open("archive/index.html", "w").write(arch)
 
 # RSS feed (latest 30) with the daily graphic attached for social automation tools
@@ -80,7 +80,14 @@ def card(d, W, H, path):
     M = 80
     lg = logo.resize((300, int(300 * logo.height / logo.width)), Image.LANCZOS)
     im.paste(lg, (M, M), lg)
-    dr.text((M + 318, M + 12), "Intelligence", font=F("Regular", 34), fill=MUTE)
+    wf = F("SemiBold", 34)
+    dr.text((M + 322, M + 8), "Intelligence", font=wf, fill=WHITE)
+    ww = int(dr.textlength("Intelligence", font=wf)); ly = M + 56
+    for x in range(ww):
+        t = x / max(ww - 1, 1)
+        a, c = ((AMBER, BLUE), t / 0.55) if t < 0.55 else ((BLUE, GREEN), (t - 0.55) / 0.45)
+        col = tuple(int(a[0][i] + (a[1][i] - a[0][i]) * c) for i in range(3))
+        dr.line((M + 322 + x, ly, M + 322 + x, ly + 4), fill=col)
     y = M + 150
     dr.text((M, y), s["kicker"], font=F("SemiBold", 34), fill=GREEN)
     y += 70
