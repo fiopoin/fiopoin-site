@@ -23,6 +23,11 @@ Story ids "money" and "world" must exist (the nav links to them).
 ## Publishing
 Commit as user "fiopoin" and push to main. GitHub Pages deploys within about a minute.
 
+## Verify the live site after every update (mandatory)
+1. Wait about 90 seconds after pushing, then load https://fiopoin.com (use a browser if one is available, otherwise WebFetch) and confirm the new content is live: today's hero headline, the FIOPO Intelligence header, the footer with the fiopoin logo, and https://fiopoin.com/social/<date>.png loads.
+2. If a browser is available, check the top, middle and bottom of the page on desktop and mobile widths for overlap, broken images or unstyled sections. Force a fresh load (cache-busted URL) so you are not seeing a cached copy.
+3. Only report the update as done after this check passes. If it fails, fix it, republish and check again.
+
 ## Brand
 - Primary identity at the top of every page and social graphic: FIOPO Intelligence only (no tagline at the top). Header lockup = `brand/fiopo-white.svg` + "Intelligence" (Inter SemiBold, ripple underline). The tagline "Intelligence for prosperity" appears only in the page title and footer.
 - "fiopoin" means FIOPO Intelligence (FIOPO + IN). The fiopoin wordmark (`brand/fiopoin-logo-white.svg`, `brand/fiopoin-logo-navy.svg`) is the secondary mark: footer, signup section, bottom corner of social graphics, favicon (`brand/fiopoin-icon.svg`). Always keep the full name FIOPO Intelligence in titles and metadata.
