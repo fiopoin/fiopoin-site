@@ -33,8 +33,8 @@ items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
 arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Past editions | fiopoin, FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><div class="wrap"><a class="brand" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin" width="150" height="50"></a>
+<title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="top"><div class="wrap"><a class="brand fi" href="../"><span class="fi-r"><img src="../brand/fiopo-white.svg" alt="FIOPO" width="106" height="44"><span class="fi-int">Intelligence</span></span><span class="fi-tag">Intelligence for prosperity</span></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
 <ul class="archive-list">{items}</ul></div></section></main>
@@ -52,7 +52,7 @@ for d in reversed(data[-30:]):
 <pubDate>{rfc822(d['date'])}</pubDate><description>{html.escape(s.get('caption', d['hero']['dek']))}</description>
 <enclosure url="https://fiopoin.com/social/{d['date']}.png" type="image/png" length="0"/></item>""")
 feed = f"""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
-<title>fiopoin (FIOPO Intelligence)</title><link>https://fiopoin.com/</link>
+<title>FIOPO Intelligence</title><link>https://fiopoin.com/</link>
 <description>What happened, what is happening, and what could happen next, connected to your money.</description>
 {''.join(entries)}</channel></rss>"""
 open("feed.xml", "w").write(feed)
@@ -60,7 +60,8 @@ open("feed.xml", "w").write(feed)
 # Daily social graphics
 NAVY, INK, BLUE, GREEN, AMBER, WHITE, MUTE = (27,42,74), (15,26,49), (0,145,210), (140,198,63), (233,162,59), (255,255,255), (159,179,207)
 F = lambda w, s: ImageFont.truetype(f"tools/fonts/Inter-{w}.otf", s)
-logo = Image.open("brand/fiopoin-logo-white-900.png").convert("RGBA")
+logo = Image.open("brand/fiopo-intelligence-white-1000.png").convert("RGBA")
+small = Image.open("brand/fiopoin-logo-white-900.png").convert("RGBA")
 
 def wrap(draw, text, font, width):
     words, lines, cur = text.split(), [], ""
@@ -78,9 +79,9 @@ def card(d, W, H, path):
     im = Image.new("RGB", (W, H), NAVY)
     dr = ImageDraw.Draw(im)
     M = 80
-    lg = logo.resize((330, int(330 * logo.height / logo.width)), Image.LANCZOS)
+    lg = logo.resize((600, int(600 * logo.height / logo.width)), Image.LANCZOS)
     im.paste(lg, (M, M - 10), lg)
-    y = M + 170
+    y = M - 10 + lg.height + 60
     dr.text((M, y), s["kicker"], font=F("SemiBold", 34), fill=GREEN)
     y += 70
     hf = F("ExtraBold", 84 if H > W * 1.5 else 72)
@@ -120,6 +121,8 @@ def card(d, W, H, path):
     dr.line((M, H - M - 96, W - M, H - M - 96), fill=(58, 78, 117), width=2)
     dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=MUTE)
     dr.text((M, H - M - 30), "What it means for you: fiopoin.com", font=F("SemiBold", 36), fill=GREEN)
+    sm = small.resize((190, int(190 * small.height / small.width)), Image.LANCZOS)
+    im.paste(sm, (W - M - sm.width, H - M - sm.height + 4), sm)
     im.save(path, optimize=True)
 
 for d in data:

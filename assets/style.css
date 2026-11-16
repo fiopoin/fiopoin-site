@@ -186,3 +186,15 @@ footer .wm{font-size:17px}
 .lockup img{height:40px;width:auto}
 footer .lockup img{height:38px}
 @media (max-width:600px){.brand img{height:40px}}
+/* FIOPO Intelligence header lockup */
+.brand.fi{display:flex;flex-direction:column;gap:5px;text-decoration:none}
+.fi-r{display:flex;align-items:flex-end;gap:10px}
+.brand.fi img{height:44px;width:auto}
+.fi-int{font-family:Inter,Arial,sans-serif;font-weight:600;font-size:25.6px;line-height:1.05;color:#fff;padding-bottom:6px;margin-bottom:-.5px;background:linear-gradient(90deg,#E9A23B,#0091D2 55%,#8CC63F) bottom/100% 3px no-repeat}
+.fi-tag{font-family:Inter,Arial,sans-serif;font-weight:500;font-size:13px;color:#C9D6E8;letter-spacing:.01em}
+@media (max-width:600px){.brand.fi img{height:36px}.fi-int{font-size:21px}.fi-tag{font-size:12px}}
+.brand.fi span{background:none;padding:0}
+.brand.fi .fi-int{font-family:Inter,Arial,sans-serif;font-weight:600;font-size:25.6px;line-height:1.05;color:#fff;padding-bottom:6px;margin-bottom:-.5px;background:linear-gradient(90deg,#E9A23B,#0091D2 55%,#8CC63F) bottom/100% 3px no-repeat}
+.brand.fi .fi-tag{font-family:Inter,Arial,sans-serif;font-weight:500;font-size:13px;color:#C9D6E8;letter-spacing:.01em}
+@media (max-width:600px){.brand.fi .fi-int{font-size:21px}.brand.fi .fi-tag{font-size:12px}}
+.brand.fi{align-items:flex-start}
