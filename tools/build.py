@@ -20,21 +20,23 @@ if not editions:
     raise SystemExit("no content files")
 data = [json.load(open(p)) for p in editions]
 latest = data[-1]
+import hashlib
+V = hashlib.md5((open("assets/style.css").read() + open("assets/calc.js").read()).encode()).hexdigest()[:8]
 
 os.makedirs("archive", exist_ok=True)
 os.makedirs("social", exist_ok=True)
 
-open("index.html", "w").write(page.render(d=latest, root="", archived=False))
+open("index.html", "w").write(page.render(d=latest, root="", archived=False, v=V))
 for d in data:
-    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True))
+    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True, v=V))
 
 # archive index
 items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
 arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><div class="wrap"><a class="brand fi" href="../"><span class="fi-r"><img src="../brand/fiopo-white.svg" alt="FIOPO" width="106" height="44"><span class="fi-int">Intelligence</span></span><span class="fi-tag">Intelligence for prosperity</span></a>
+<title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css?v={V}"></head>
+<body><header class="top"><div class="wrap"><a class="brand fi" href="../"><span class="fi-r"><img src="../brand/fiopo-white.svg" alt="FIOPO" width="106" height="44"><span class="fi-int">Intelligence</span></span></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
 <ul class="archive-list">{items}</ul></div></section></main>
