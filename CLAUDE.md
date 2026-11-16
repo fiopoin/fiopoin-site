@@ -24,5 +24,6 @@ Story ids "money" and "world" must exist (the nav links to them).
 Commit as user "fiopoin" and push to main. GitHub Pages deploys within about a minute.
 
 ## Brand
+- "fiopoin" means FIOPO Intelligence (FIOPO + IN). Always keep the full name FIOPO Intelligence alongside fiopoin in titles, metadata, footer and about text.
 - Official logo: the fiopoin wordmark in `brand/` (white letters for navy backgrounds `fiopoin-logo-white.svg`, navy letters for light backgrounds `fiopoin-logo-navy.svg`). Do not add "Intelligence" or any other text next to it. Favicon and social profile icon: `brand/fiopoin-icon.svg` and PNG sizes.
 - Brand colors: navy #1B2A4A, amber #E9A23B (happened), blue #0091D2 (happening), green #8CC63F (next / what it means for you).

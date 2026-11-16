@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if archived %}{{ d.date_long }} | {% endif %}fiopoin | What happened, what is happening, what comes next</title>
-<meta property="og:site_name" content="fiopoin">
+<title>{% if archived %}{{ d.date_long }} | {% endif %}fiopoin | FIOPO Intelligence</title>
+<meta property="og:site_name" content="fiopoin, FIOPO Intelligence">
 <link rel="icon" type="image/svg+xml" href="{{ root }}brand/fiopoin-icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ root }}brand/fiopoin-icon-32.png">
 <link rel="apple-touch-icon" href="{{ root }}brand/fiopoin-icon-180.png">
@@ -24,7 +24,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="{{ root }}" aria-label="fiopoin home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin" width="150" height="50"></a>
+    <a class="brand" href="{{ root }}" aria-label="fiopoin, FIOPO Intelligence, home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin, FIOPO Intelligence" width="150" height="50"></a>
     <nav class="main" aria-label="Sections">
       <a href="#today">Today</a>
       <a href="#money">Your money</a>
@@ -169,11 +169,11 @@
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <a class="lockup" href="{{ root }}" aria-label="fiopoin home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin"></a>
+      <a class="lockup" href="{{ root }}" aria-label="fiopoin, FIOPO Intelligence, home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin"></a>
       <div>
         <nav aria-label="Footer"><a href="{{ root }}">Today</a><a href="{{ root }}archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a></nav>
         <p style="margin-top:12px">FIOPO Intelligence is general information, not financial, legal or medical advice. Make decisions with a professional who knows your situation.</p>
-        <p style="margin-top:8px">© {{ d.date[:4] }} fiopoin, FIOPO Intelligence. Updated every morning, Central Time.</p>
+        <p style="margin-top:8px">© {{ d.date[:4] }} fiopoin (FIOPO Intelligence). Updated every morning, Central Time.</p>
       </div>
     </div>
   </div>

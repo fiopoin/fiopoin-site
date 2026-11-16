@@ -33,7 +33,7 @@ items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
 arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Past editions | fiopoin</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css"></head>
+<title>Past editions | fiopoin, FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css"></head>
 <body><header class="top"><div class="wrap"><a class="brand" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin" width="150" height="50"></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
@@ -52,7 +52,7 @@ for d in reversed(data[-30:]):
 <pubDate>{rfc822(d['date'])}</pubDate><description>{html.escape(s.get('caption', d['hero']['dek']))}</description>
 <enclosure url="https://fiopoin.com/social/{d['date']}.png" type="image/png" length="0"/></item>""")
 feed = f"""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
-<title>fiopoin</title><link>https://fiopoin.com/</link>
+<title>fiopoin (FIOPO Intelligence)</title><link>https://fiopoin.com/</link>
 <description>What happened, what is happening, and what could happen next, connected to your money.</description>
 {''.join(entries)}</channel></rss>"""
 open("feed.xml", "w").write(feed)
