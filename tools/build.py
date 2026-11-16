@@ -33,12 +33,12 @@ items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
 arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Past editions | FIOPO Intelligence</title><link rel="icon" href="../fiopo-logo.png"><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><div class="wrap"><a class="brand" href="../"><img src="../fiopo-logo.png" alt="FIOPO" width="160" height="32"><span>Intelligence</span></a>
+<title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="top"><div class="wrap"><a class="brand" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin" width="150" height="50"></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
 <ul class="archive-list">{items}</ul></div></section></main>
-<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="../"><img src="../fiopo-logo.png" alt="FIOPO"><span class="wm">Intelligence</span></a><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice.</p></div></div></div></footer></body></html>"""
+<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin"></a><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice.</p></div></div></div></footer></body></html>"""
 open("archive/index.html", "w").write(arch)
 
 # RSS feed (latest 30) with the daily graphic attached for social automation tools
@@ -60,7 +60,7 @@ open("feed.xml", "w").write(feed)
 # Daily social graphics
 NAVY, INK, BLUE, GREEN, AMBER, WHITE, MUTE = (27,42,74), (15,26,49), (0,145,210), (140,198,63), (233,162,59), (255,255,255), (159,179,207)
 F = lambda w, s: ImageFont.truetype(f"tools/fonts/Inter-{w}.otf", s)
-logo = Image.open("fiopo-logo.png").convert("RGBA")
+logo = Image.open("brand/fiopoin-logo-white-900.png").convert("RGBA")
 
 def wrap(draw, text, font, width):
     words, lines, cur = text.split(), [], ""
@@ -78,17 +78,9 @@ def card(d, W, H, path):
     im = Image.new("RGB", (W, H), NAVY)
     dr = ImageDraw.Draw(im)
     M = 80
-    lg = logo.resize((300, int(300 * logo.height / logo.width)), Image.LANCZOS)
-    im.paste(lg, (M, M), lg)
-    wf = F("SemiBold", 34)
-    dr.text((M + 322, M + 8), "Intelligence", font=wf, fill=WHITE)
-    ww = int(dr.textlength("Intelligence", font=wf)); ly = M + 56
-    for x in range(ww):
-        t = x / max(ww - 1, 1)
-        a, c = ((AMBER, BLUE), t / 0.55) if t < 0.55 else ((BLUE, GREEN), (t - 0.55) / 0.45)
-        col = tuple(int(a[0][i] + (a[1][i] - a[0][i]) * c) for i in range(3))
-        dr.line((M + 322 + x, ly, M + 322 + x, ly + 4), fill=col)
-    y = M + 150
+    lg = logo.resize((330, int(330 * logo.height / logo.width)), Image.LANCZOS)
+    im.paste(lg, (M, M - 10), lg)
+    y = M + 170
     dr.text((M, y), s["kicker"], font=F("SemiBold", 34), fill=GREEN)
     y += 70
     hf = F("ExtraBold", 84 if H > W * 1.5 else 72)
