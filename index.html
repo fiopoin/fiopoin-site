@@ -6,192 +6,29 @@
 <title>FIOPO Intelligence</title>
 <link rel="icon" href="fiopo-logo.png">
 <meta name="description" content="What happened, what is happening, and what could happen next. The news, connected to your money and your life.">
+<meta property="og:title" content="A war 7,000 miles away is still in your gas tank.">
+<meta property="og:description" content="Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how this week&#39;s biggest story travels.">
+<meta property="og:image" content="https://fiopoin.com/social/2026-11-16.png">
+<meta property="og:url" content="https://fiopoin.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="FIOPO Intelligence" href="https://fiopoin.com/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#1B2A4A; --ink:#14213B; --blue:#0091D2; --green:#8CC63F;
-  --paper:#F3F6FA; --line:#D5DDE8; --mute:#5A6B86; --amber:#E9A23B; --white:#fff;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 100;background:var(--paper);color:var(--ink);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
-a{color:var(--blue)}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-
-/* masthead */
-header.top{background:var(--navy);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
-.brand img{height:32px;width:auto;display:block}
-.brand b{font-weight:800;font-variation-settings:"wdth" 125;font-size:26px;letter-spacing:.02em}
-.brand span{font-weight:400;font-size:16px;color:#BFD0E6}
-.brand i{width:10px;height:10px;border-radius:50%;background:var(--green);display:inline-block;transform:translateY(-2px)}
-nav.main{display:flex;gap:22px;flex-wrap:wrap}
-nav.main a{color:#DCE6F3;text-decoration:none;font-size:15px}
-nav.main a:hover{color:#fff;text-decoration:underline}
-.dateline{background:#0F1A31;color:#9FB3CF;font-size:14px}
-.dateline .wrap{padding-top:7px;padding-bottom:7px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-
-/* hero */
-.hero{background:var(--navy);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
-.hero h1{font-weight:750;font-variation-settings:"wdth" 72;font-size:clamp(40px,6.4vw,84px);line-height:.98;letter-spacing:-.01em;max-width:15ch}
-.hero p.dek{margin-top:18px;max-width:58ch;color:#C9D6E8;font-size:19px}
-.ripple{margin-top:44px;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
-.ripple::before{content:"";position:absolute;left:28px;right:28px;top:27px;height:3px;background:linear-gradient(90deg,var(--amber),var(--blue) 55%,var(--green))}
-.node{position:relative;padding-right:18px}
-.dot{width:56px;height:56px;border-radius:50%;background:var(--navy);border:3px solid var(--blue);display:grid;place-items:center;font-weight:800;font-size:15px;position:relative;z-index:1}
-.node:first-child .dot{border-color:var(--amber)}
-.node:last-child .dot{border-color:var(--green);background:var(--green);color:var(--navy)}
-.node h3{margin-top:16px;font-size:15px;font-weight:600;color:#9FB3CF}
-.node .v{font-variation-settings:"wdth" 80;font-weight:750;font-size:30px;line-height:1.05;margin-top:4px}
-.node p{font-size:14.5px;color:#C9D6E8;margin-top:6px;max-width:24ch}
-.hero .caption{margin-top:34px;font-size:14px;color:#8FA4C2;max-width:80ch}
-@media (prefers-reduced-motion:no-preference){
-  .node{opacity:0;transform:translateY(8px);animation:in .5s ease forwards}
-  .node:nth-child(2){animation-delay:.15s}.node:nth-child(3){animation-delay:.3s}
-  .node:nth-child(4){animation-delay:.45s}.node:nth-child(5){animation-delay:.6s}
-  @keyframes in{to{opacity:1;transform:none}}
-}
-
-/* tape */
-.tape{background:#fff;border-bottom:1px solid var(--line)}
-.tape .wrap{display:grid;grid-template-columns:repeat(6,1fr);}
-.tick{padding:16px 14px;border-right:1px solid var(--line)}
-.tick:last-child{border-right:0}
-.tick small{display:block;color:var(--mute);font-size:13px}
-.tick strong{font-variation-settings:"wdth" 85;font-size:22px;font-weight:700}
-.tick em{font-style:normal;font-size:13px;margin-left:6px}
-.up{color:#B3261E}.dn{color:#2E7D32}.flat{color:var(--mute)}
-
-/* section heads */
-section.block{padding:64px 0 24px}
-.shead{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:3px solid var(--navy);padding-bottom:12px;margin-bottom:28px;flex-wrap:wrap}
-.shead h2{font-variation-settings:"wdth" 75;font-weight:750;font-size:clamp(30px,3.6vw,44px);line-height:1}
-.shead p{color:var(--mute);max-width:52ch;font-size:16px}
-
-/* story */
-.story{background:#fff;border:1px solid var(--line);border-radius:4px;margin-bottom:28px;overflow:hidden}
-.story header{padding:26px 28px 6px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start}
-.topic{font-size:14px;font-weight:600;color:var(--blue)}
-.story h3{font-variation-settings:"wdth" 82;font-weight:720;font-size:clamp(23px,2.4vw,30px);line-height:1.12;margin-top:4px;max-width:34ch}
-.stake{justify-self:start;font-size:13px;font-weight:600;border-radius:30px;padding:5px 12px;white-space:nowrap;border:1.5px solid}
-.stake.hi{color:#B3261E;border-color:#E8B4AF;background:#FCF1F0}
-.stake.md{color:#9A6211;border-color:#EFD3A6;background:#FDF6EA}
-.stake.lo{color:#2E6B1F;border-color:#C9E3AC;background:#F3F9EC}
-.tenses{display:grid;grid-template-columns:1fr 1fr 1.15fr;border-top:1px solid var(--line);margin-top:18px}
-.tense{padding:20px 24px;border-right:1px solid var(--line);font-size:15.5px}
-.tense:last-child{border-right:0;background:#F7FAFD}
-.tense h4{font-size:14px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.tense h4::before{content:"";width:10px;height:10px;border-radius:50%;flex:none}
-.t1 h4::before{background:var(--navy)}
-.t2 h4::before{background:var(--blue)}
-.t3 h4::before{background:transparent;border:2px dashed var(--blue)}
-.tense p+p{margin-top:8px}
-.odds{margin-top:10px;display:grid;gap:6px}
-.odd{display:grid;grid-template-columns:1fr 46px;align-items:center;gap:10px;font-size:14px}
-.bar{height:7px;background:#E3EAF3;border-radius:4px;position:relative;grid-column:1/3}
-.bar span{position:absolute;inset:0 auto 0 0;background:var(--blue);border-radius:4px}
-.odd b{text-align:right}
-.ourread{font-size:12.5px;color:var(--mute);margin-top:8px}
-.you{display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--line);background:#F2F9E9}
-.you h4{padding:20px 24px;font-size:16px;font-weight:750;color:#2E5A12;border-right:1px solid #D7EBC0}
-.you ul{list-style:none;padding:18px 24px;display:grid;gap:8px;font-size:15.5px}
-.you li{padding-left:20px;position:relative}
-.you li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;background:var(--green);border-radius:2px}
-.watch{padding:14px 24px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mute);display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
-.watch b{color:var(--ink)}
-.src a{color:var(--mute);font-size:13px}
-
-/* culture row */
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.duo .story{margin-bottom:0}
-.duo .tenses{grid-template-columns:1fr}
-.duo .tense{border-right:0;border-bottom:1px solid var(--line)}
-.duo .tense:last-child{border-bottom:0}
-.duo .you{grid-template-columns:1fr}
-.duo .you h4{border-right:0;border-bottom:1px solid #D7EBC0;padding-bottom:12px}
-
-/* tool */
-.tool{background:var(--navy);color:#fff;border-radius:4px;display:grid;grid-template-columns:1fr 1.1fr;overflow:hidden}
-.tool .in{padding:34px}
-.tool h3{font-variation-settings:"wdth" 78;font-size:34px;line-height:1.05;font-weight:750}
-.tool p.lead{color:#C9D6E8;margin-top:10px;font-size:16px}
-.field{margin-top:22px}
-.field label{display:block;font-size:15px;font-weight:600;margin-bottom:6px}
-.field small{display:block;color:#9FB3CF;font-size:13px;margin-top:4px}
-.field input{width:100%;font:inherit;font-size:20px;padding:10px 12px;border-radius:4px;border:1px solid #3A4E75;background:#14223F;color:#fff}
-.tool .out{background:#fff;color:var(--ink);padding:34px;display:grid;gap:18px;align-content:start}
-.res{border-left:4px solid var(--blue);padding:4px 0 4px 16px}
-.res.g{border-color:var(--green)}.res.a{border-color:var(--amber)}
-.res small{display:block;color:var(--mute);font-size:14px}
-.res strong{font-variation-settings:"wdth" 80;font-size:34px;font-weight:750;line-height:1.1}
-.res p{font-size:14.5px;color:var(--mute)}
-.net{background:var(--paper);padding:16px;border-radius:4px;font-size:15.5px}
-
-/* how */
-.how{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.how div h3{font-size:19px;font-weight:700;margin-bottom:6px}
-.how div p{color:#33435F;font-size:15.5px}
-.why{margin-top:34px;padding:26px 28px;background:#fff;border:1px solid var(--line);border-radius:4px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center}
-.why strong{font-variation-settings:"wdth" 70;font-size:60px;font-weight:800;color:var(--navy);line-height:1}
-.why p{max-width:70ch}
-
-/* signup + footer */
-.signup{margin:64px 0 0;background:#E6F3FA;border-top:1px solid var(--line)}
-.signup .wrap{padding-top:44px;padding-bottom:44px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.signup h2{font-variation-settings:"wdth" 75;font-size:38px;line-height:1.02;font-weight:750}
-.signup form{display:flex;gap:10px;flex-wrap:wrap}
-.signup input{flex:1 1 240px;font:inherit;padding:13px 14px;border:1px solid #A9C3D9;border-radius:4px}
-.signup button{font:inherit;font-weight:700;padding:13px 22px;border:0;border-radius:4px;background:var(--navy);color:#fff;cursor:pointer}
-.signup .note{font-size:14px;color:var(--mute);margin-top:10px;width:100%}
-footer{background:var(--navy);color:#9FB3CF;font-size:14px}
-footer .wrap{padding-top:30px;padding-bottom:40px;display:grid;gap:12px}
-footer a{color:#C9D6E8}
-
-@media (max-width:900px){
-  .ripple{grid-template-columns:1fr;gap:22px}
-  .ripple::before{left:27px;right:auto;top:28px;bottom:28px;width:3px;height:auto;background:linear-gradient(180deg,var(--amber),var(--blue) 55%,var(--green))}
-  .node{display:grid;grid-template-columns:56px 1fr;column-gap:18px}
-  .node .dot{grid-row:1/4}
-  .node h3{margin-top:0}
-  .node p{max-width:none}
-  .tape .wrap{grid-template-columns:repeat(3,1fr)}
-  .tick:nth-child(3){border-right:0}
-  .tick:nth-child(-n+3){border-bottom:1px solid var(--line)}
-  .tenses{grid-template-columns:1fr}
-  .tense{border-right:0;border-bottom:1px solid var(--line)}
-  .you{grid-template-columns:1fr}
-  .you h4{border-right:0;padding-bottom:0}
-  .duo,.tool,.how,.signup .wrap{grid-template-columns:1fr}
-  .why{grid-template-columns:1fr}
-  .story header{grid-template-columns:1fr}
-}
-@media (max-width:600px){
-  .wrap{padding:0 18px}
-  .tape .wrap{grid-template-columns:1fr 1fr;padding:0}
-  .tick{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line);min-width:0}
-  .tick:nth-child(2n){border-right:0!important}
-  .tick em{display:block;margin-left:0}
-  .story header,.tense,.you h4,.you ul,.watch{padding-left:18px;padding-right:18px}
-  .tool .in,.tool .out{padding:24px 18px}
-}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body data-gas-now="3.98" data-gas-year-ago="3.08">
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="FIOPO Intelligence home"><img src="fiopo-logo.png" alt="FIOPO" width="160" height="32"><span>Intelligence</span></a>
+    <a class="brand" href="" aria-label="FIOPO Intelligence home"><img src="fiopo-logo.png" alt="FIOPO" width="160" height="32"><span>Intelligence</span></a>
     <nav class="main" aria-label="Sections">
       <a href="#today">Today</a>
       <a href="#money">Your money</a>
       <a href="#world">World</a>
       <a href="#culture">Sports and culture</a>
       <a href="#tool">Calculator</a>
-      <a href="#how">How we work</a>
+      <a href="archive/">Past editions</a>
     </nav>
   </div>
 </header>
@@ -200,39 +37,44 @@ footer a{color:#C9D6E8}
 <section class="hero" id="top">
   <div class="wrap">
     <h1>A war 7,000 miles away is still in your gas tank.</h1>
-    <p class="dek">Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how this week's biggest story travels.</p>
-
-    <div class="ripple" role="list" aria-label="How the Gulf conflict reaches your wallet">
+    <p class="dek">Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how this week&#39;s biggest story travels.</p>
+    <div class="ripple" role="list" aria-label="How today's top story reaches your wallet">
+      
       <div class="node" role="listitem">
         <div class="dot">1</div>
         <h3>The event</h3>
         <div class="v">Gulf attacks</div>
-        <p>Iran's Revolutionary Guards hit a US site in Bahrain twice in three days. Houthis fired on Saudi Arabia's bypass pipeline.</p>
+        <p>Iran&#39;s Revolutionary Guards hit a US site in Bahrain twice in three days. Houthis fired on Saudi Arabia&#39;s bypass pipeline.</p>
       </div>
+      
       <div class="node" role="listitem">
         <div class="dot">2</div>
         <h3>Crude oil</h3>
         <div class="v">$95.84</div>
-        <p>Brent at Friday's settle. Down from October, but a war premium is still built in.</p>
+        <p>Brent at Friday&#39;s settle. Down from October, but a war premium is still built in.</p>
       </div>
+      
       <div class="node" role="listitem">
         <div class="dot">3</div>
         <h3>Inflation</h3>
         <div class="v">+0.4%</div>
         <p>October consumer prices, hotter than the 0.3% forecast. Energy is the main push.</p>
       </div>
+      
       <div class="node" role="listitem">
         <div class="dot">4</div>
         <h3>Interest rates</h3>
         <div class="v">Hike likely</div>
         <p>Markets price about 91% odds of a quarter point Fed increase on December 9.</p>
       </div>
+      
       <div class="node" role="listitem">
         <div class="dot">5</div>
         <h3>You</h3>
         <div class="v">$3.98 a gallon</div>
         <p>US average, about 90 cents above a year ago. Borrowing costs rise next.</p>
       </div>
+      
     </div>
     <p class="caption">Sources: AAA national average November 10; ICE Brent settlement November 13; BLS CPI November 10; CME FedWatch November 10. The chain itself is FIOPO analysis.</p>
   </div>
@@ -246,6 +88,7 @@ footer a{color:#C9D6E8}
     <div class="tick"><small>Brent crude</small><strong>$95.84</strong><em class="flat">Fri settle</em></div>
     <div class="tick"><small>Gold</small><strong>~$3,870</strong><em class="up">−4.7% wk</em></div>
     <div class="tick"><small>Bitcoin</small><strong>~$64,900</strong><em class="up">dipped below $62K</em></div>
+    
   </div>
 </div>
 
@@ -256,7 +99,7 @@ footer a{color:#C9D6E8}
       <h2>Today in three tenses</h2>
       <p>What happened, what is happening now, and what could happen next, with our odds. Then the part most news skips: what it means for you.</p>
     </div>
-
+    
     <article class="story" id="money">
       <header>
         <div><div class="topic">Interest rates</div><h3>The Fed is about to raise rates again. Your loans will feel it before your savings do.</h3></div>
@@ -264,89 +107,86 @@ footer a{color:#C9D6E8}
       </header>
       <div class="tenses">
         <div class="tense t1"><h4>Happened</h4><p>October prices rose 0.4%, more than forecast. Core inflation printed 0.3% for a third straight month. Producer prices are up 6.5% over the year, the most since 2022.</p></div>
-        <div class="tense t2"><h4>Happening</h4><p>The Fed's rate sits at 3.75% to 4.00%. The 10 year Treasury yield, which steers mortgages, is near 5.15%. Fed Chair Warsh speaks today at 11 a.m. Central.</p></div>
+        <div class="tense t2"><h4>Happening</h4><p>The Fed&#39;s rate sits at 3.75% to 4.00%. The 10 year Treasury yield, which steers mortgages, is near 5.15%. Fed Chair Warsh speaks today at 11 a.m. Central.</p></div>
         <div class="tense t3"><h4>Could happen</h4>
           <div class="odds">
             <div class="odd"><span>Quarter point hike Dec 9</span><b>91%</b><div class="bar"><span style="width:91%"></span></div></div>
             <div class="odd"><span>Half point hike</span><b>9%</b><div class="bar"><span style="width:9%"></span></div></div>
-          </div>
+            </div>
+          
           <p class="ourread">Market odds from CME FedWatch, November 10. Not a FIOPO forecast.</p>
         </div>
       </div>
       <div class="you"><h4>What it means for you</h4>
-        <ul>
-          <li>Credit cards and HELOCs track the Fed almost one for one. Pay down variable balances first.</li>
-          <li>Buying a home or refinancing? Rates are unlikely to fall before spring. Lock if a deal works today.</li>
-          <li>Savers win slowly. Move idle cash to an account that pays near the Fed rate, not 0.5%.</li>
-        </ul>
+        <ul><li>Credit cards and HELOCs track the Fed almost one for one. Pay down variable balances first.</li><li>Buying a home or refinancing? Rates are unlikely to fall before spring. Lock if a deal works today.</li><li>Savers win slowly. Move idle cash to an account that pays near the Fed rate, not 0.5%.</li></ul>
       </div>
-      <div class="watch"><span><b>Watch:</b> Warsh today, retail sales Tuesday, Fed minutes Wednesday.</span><span class="src"><a href="https://www.axios.com/2026/11/10/federal-reserve-rate-hikes">Axios</a> · <a href="https://thenationalnews.com/business/economy/2026/11/10/federal-reserve-inflation-interest-rates-december">The National</a></span></div>
+      <div class="watch"><span><b>Watch:</b> Warsh today, retail sales Tuesday, Fed minutes Wednesday.</span><span class="src"><a href="https://www.axios.com/2026/11/10/federal-reserve-rate-hikes">Axios</a>, <a href="https://thenationalnews.com/business/economy/2026/11/10/federal-reserve-inflation-interest-rates-december">The National</a></span></div>
     </article>
-
+    
     <article class="story" id="world">
       <header>
         <div><div class="topic">Iran war and the Gulf</div><h3>Oil keeps flowing through Hormuz, but the backup route is now under fire.</h3></div>
         <span class="stake hi">High stakes for prices</span>
       </header>
       <div class="tenses">
-        <div class="tense t1"><h4>Happened</h4><p>Houthi missiles targeted Riyadh and Saudi Arabia's East West pipeline, the main way to ship crude around Hormuz. Iran says no talks are underway until the US accepts its seven conditions.</p></div>
-        <div class="tense t2"><h4>Happening</h4><p>Three US carriers are in the region. CENTCOM says 1.7 billion barrels have moved through Hormuz under escort. Qatar's LNG exports are running at about half of prewar levels.</p></div>
+        <div class="tense t1"><h4>Happened</h4><p>Houthi missiles targeted Riyadh and Saudi Arabia&#39;s East West pipeline, the main way to ship crude around Hormuz. Iran says no talks are underway until the US accepts its seven conditions.</p></div>
+        <div class="tense t2"><h4>Happening</h4><p>Three US carriers are in the region. CENTCOM says 1.7 billion barrels have moved through Hormuz under escort. Qatar&#39;s LNG exports are running at about half of prewar levels.</p></div>
         <div class="tense t3"><h4>Could happen</h4>
           <div class="odds">
             <div class="odd"><span>Brent drifts toward $90</span><b>55%</b><div class="bar"><span style="width:55%"></span></div></div>
             <div class="odd"><span>Spike above $105</span><b>25%</b><div class="bar"><span style="width:25%"></span></div></div>
             <div class="odd"><span>Deal sends oil below $85</span><b>20%</b><div class="bar"><span style="width:20%"></span></div></div>
-          </div>
+            </div>
+          
           <p class="ourread">FIOPO read for the next 30 days. Judgment, not fact.</p>
         </div>
       </div>
       <div class="you"><h4>What it means for you</h4>
-        <ul>
-          <li>Pump prices should keep easing slowly into December unless the pipeline is hit hard.</li>
-          <li>Heating bills, airfares and delivered goods carry fuel costs with a lag of weeks.</li>
-          <li>Planning holiday travel? Booking now protects you against the spike scenario.</li>
-        </ul>
+        <ul><li>Pump prices should keep easing slowly into December unless the pipeline is hit hard.</li><li>Heating bills, airfares and delivered goods carry fuel costs with a lag of weeks.</li><li>Planning holiday travel? Booking now protects you against the spike scenario.</li></ul>
       </div>
-      <div class="watch"><span><b>Watch:</b> any confirmed damage to Saudi pumping stations, and Bab al-Mandeb shipping.</span><span class="src"><a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/">CBS News</a> · <a href="https://www.foreignexchanges.news/p/world-roundup-november-14-15-2026">Foreign Exchanges</a></span></div>
+      <div class="watch"><span><b>Watch:</b> any confirmed damage to Saudi pumping stations, and Bab al-Mandeb shipping.</span><span class="src"><a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/">CBS News</a>, <a href="https://www.foreignexchanges.news/p/world-roundup-november-14-15-2026">Foreign Exchanges</a></span></div>
     </article>
-
-    <article class="story">
+    
+    <article class="story" id="ai">
       <header>
-        <div><div class="topic">AI and your retirement account</div><h3>Nvidia lost its founder. Tuesday's earnings will test the stock behind a big slice of most index funds.</h3></div>
+        <div><div class="topic">AI and your retirement account</div><h3>Nvidia lost its founder. Tuesday&#39;s earnings will test the stock behind a big slice of most index funds.</h3></div>
         <span class="stake md">Medium stakes for investors</span>
       </header>
       <div class="tenses">
         <div class="tense t1"><h4>Happened</h4><p>Jensen Huang left as CEO after an internal probe. Chip stocks fell for two days, and the Nasdaq lost 0.9% on Friday.</p></div>
-        <div class="tense t2"><h4>Happening</h4><p>Nasdaq futures are down about 0.8% this morning. South Korea's Kospi fell 3.4%, led by chipmakers.</p></div>
-        <div class="tense t3"><h4>Could happen</h4><p>The report lands Tuesday after the close. A clear succession answer and steady guidance would likely spark a rebound. A messy answer could drag tech lower into December.</p><p class="ourread">FIOPO read. Judgment, not fact.</p></div>
+        <div class="tense t2"><h4>Happening</h4><p>Nasdaq futures are down about 0.8% this morning. South Korea&#39;s Kospi fell 3.4%, led by chipmakers.</p></div>
+        <div class="tense t3"><h4>Could happen</h4>
+          
+          <p>The report lands Tuesday after the close. A clear succession answer and steady guidance would likely spark a rebound. A messy answer could drag tech lower into December.</p>
+          <p class="ourread">FIOPO read. Judgment, not fact.</p>
+        </div>
       </div>
       <div class="you"><h4>What it means for you</h4>
-        <ul>
-          <li>If you own an S&amp;P 500 or Nasdaq fund, you own a lot of Nvidia. A swing of 6% or more is normal on earnings day.</li>
-          <li>Don't trade on one quarter. Check whether your plan is too concentrated in tech.</li>
-        </ul>
+        <ul><li>If you own an S&amp;P 500 or Nasdaq fund, you own a lot of Nvidia. A swing of 6% or more is normal on earnings day.</li><li>Don&#39;t trade on one quarter. Check whether your plan is too concentrated in tech.</li></ul>
       </div>
-      <div class="watch"><span><b>Watch:</b> Nvidia guidance and who leads the company.</span><span class="src"><a href="https://nordfx.com/market-news/market-pulse-november-16-2026">NordFX</a> · <a href="https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-13-2026/">AP</a></span></div>
+      <div class="watch"><span><b>Watch:</b> Nvidia guidance and who leads the company.</span><span class="src"><a href="https://nordfx.com/market-news/market-pulse-november-16-2026">NordFX</a>, <a href="https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-13-2026/">AP</a></span></div>
     </article>
-
-    <article class="story">
+    
+    <article class="story" id="trade">
       <header>
-        <div><div class="topic">Trade and diplomacy</div><h3>Trump, Xi and Putin meet in Shenzhen Thursday. Don't expect a deal; do expect headlines.</h3></div>
+        <div><div class="topic">Trade and diplomacy</div><h3>Trump, Xi and Putin meet in Shenzhen Thursday. Don&#39;t expect a deal; do expect headlines.</h3></div>
         <span class="stake md">Medium stakes for prices</span>
       </header>
       <div class="tenses">
         <div class="tense t1"><h4>Happened</h4><p>Russia and Ukraine held their first talks in nine months and agreed a large prisoner swap. China ran its biggest naval drill yet around Taiwan.</p></div>
         <div class="tense t2"><h4>Happening</h4><p>APEC leaders meet November 18 and 19. A US official called the three way meeting a first conversation, not a deal. The US and China trade truce runs to January 10, 2027.</p></div>
-        <div class="tense t3"><h4>Could happen</h4><p>Most likely: the truce is extended and chips stay unresolved. The risk: the truce lapses, and tariffs return on electronics, toys and clothing.</p><p class="ourread">FIOPO read. Judgment, not fact.</p></div>
+        <div class="tense t3"><h4>Could happen</h4>
+          
+          <p>Most likely: the truce is extended and chips stay unresolved. The risk: the truce lapses, and tariffs return on electronics, toys and clothing.</p>
+          <p class="ourread">FIOPO read. Judgment, not fact.</p>
+        </div>
       </div>
       <div class="you"><h4>What it means for you</h4>
-        <ul>
-          <li>Big purchases made in China, like phones, laptops and appliances, are safer to buy before January than after.</li>
-          <li>A Ukraine deal would be the biggest relief for fuel prices in 2027.</li>
-        </ul>
+        <ul><li>Big purchases made in China, like phones, laptops and appliances, are safer to buy before January than after.</li><li>A Ukraine deal would be the biggest relief for fuel prices in 2027.</li></ul>
       </div>
-      <div class="watch"><span><b>Watch:</b> any mention of rare earths or chip export rules after Thursday.</span><span class="src"><a href="https://www.aa.com.tr/en/world/morning-briefing-nov-14-2026/4124855">Anadolu</a> · <a href="https://bowergroupasia.com/?p=8011">Bower Group Asia</a></span></div>
+      <div class="watch"><span><b>Watch:</b> any mention of rare earths or chip export rules after Thursday.</span><span class="src"><a href="https://www.aa.com.tr/en/world/morning-briefing-nov-14-2026/4124855">Anadolu</a>, <a href="https://bowergroupasia.com/?p=8011">Bower Group Asia</a></span></div>
     </article>
+    
   </div>
 </section>
 
@@ -357,6 +197,7 @@ footer a{color:#C9D6E8}
       <p>The games and shows you love are now some of the biggest businesses on earth, and they set what you pay to watch and play.</p>
     </div>
     <div class="duo">
+      
       <article class="story">
         <header><div><div class="topic">Sports business</div><h3>TV rights hit a record $67 billion this year. Your streaming bill is paying for it.</h3></div></header>
         <div class="tenses">
@@ -365,8 +206,9 @@ footer a{color:#C9D6E8}
           <div class="tense t3"><h4>Could happen</h4><p>Expect higher sports tier prices in 2027 as leagues renew deals. FIOPO read.</p></div>
         </div>
         <div class="you"><h4>What it means for you</h4><ul><li>Audit your subscriptions before the playoffs. Rotate services month to month instead of keeping all of them.</li></ul></div>
-        <div class="watch"><span class="src"><a href="https://voxbooster.com/blog/sports-media-rights-statistics-2026">Ampere via Voxbooster</a> · <a href="https://frontofficesports.com/nfl-nba-media-rights-deals-mirror-soaring-franchise-valuations">Front Office Sports</a></span></div>
+        <div class="watch"><span class="src"><a href="https://voxbooster.com/blog/sports-media-rights-statistics-2026">Ampere via Voxbooster</a>, <a href="https://frontofficesports.com/nfl-nba-media-rights-deals-mirror-soaring-franchise-valuations">Front Office Sports</a></span></div>
       </article>
+      
       <article class="story">
         <header><div><div class="topic">Entertainment</div><h3>GTA 6 launches Thursday. It is one game carrying an $8 billion forecast.</h3></div></header>
         <div class="tenses">
@@ -375,8 +217,9 @@ footer a{color:#C9D6E8}
           <div class="tense t3"><h4>Could happen</h4><p>A smooth launch lifts holiday spending on consoles. A rocky one becomes a warning about consumer stretch. FIOPO read.</p></div>
         </div>
         <div class="you"><h4>What it means for you</h4><ul><li>Console bundles and accessories will sell out early. Prices rarely fall in launch month.</li></ul></div>
-        <div class="watch"><span class="src"><a href="https://bloxodes.com/articles/gta-6-take-two-earnings-preorders">Bloxodes</a> · <a href="https://heise.de/-11303474">heise</a></span></div>
+        <div class="watch"><span class="src"><a href="https://bloxodes.com/articles/gta-6-take-two-earnings-preorders">Bloxodes</a>, <a href="https://heise.de/-11303474">heise</a></span></div>
       </article>
+      
     </div>
   </div>
 </section>
@@ -389,13 +232,13 @@ footer a{color:#C9D6E8}
         <p class="lead">Enter your own numbers. Nothing leaves your browser.</p>
         <div class="field"><label for="gal">Gallons of gas you buy per month</label><input id="gal" type="number" min="0" value="50" inputmode="decimal"><small>A typical commuter uses 40 to 60.</small></div>
         <div class="field"><label for="debt">Variable rate debt (credit cards, HELOC)</label><input id="debt" type="number" min="0" value="8000" inputmode="decimal"><small>Balances whose rate moves with the Fed.</small></div>
-        <div class="field"><label for="cash">Cash in savings</label><input id="cash" type="number" min="0" value="10000" inputmode="decimal"><small>Assumes your bank passes the hike through.</small></div>
+        <div class="field"><label for="cash">Cash in savings</label><input id="cash" type="number" min="0" value="10000" inputmode="decimal"><small>Assumes your bank passes a hike through.</small></div>
       </div>
       <div class="out" aria-live="polite">
-        <div class="res a"><small>Extra fuel cost vs a year ago, per month</small><strong id="r1">$45</strong><p>US average $3.98 now vs about $3.08 a year earlier.</p></div>
-        <div class="res"><small>Extra interest if the Fed hikes 0.25%, per year</small><strong id="r2">$20</strong><p>On variable balances, once lenders reprice.</p></div>
-        <div class="res g"><small>Extra savings interest, per year</small><strong id="r3">$25</strong><p>Only if your account pays near the Fed rate.</p></div>
-        <div class="net" id="net">Net effect: about $520 a year out of your pocket, mostly from fuel.</div>
+        <div class="res a"><small>Extra fuel cost vs a year ago, per month</small><strong id="r1">$0</strong><p>US average $3.98 now vs about $3.08 a year earlier.</p></div>
+        <div class="res"><small>Extra interest if the Fed hikes 0.25%, per year</small><strong id="r2">$0</strong><p>On variable balances, once lenders reprice.</p></div>
+        <div class="res g"><small>Extra savings interest, per year</small><strong id="r3">$0</strong><p>Only if your account pays near the Fed rate.</p></div>
+        <div class="net" id="net"></div>
       </div>
     </div>
   </div>
@@ -419,41 +262,28 @@ footer a{color:#C9D6E8}
 
 <section class="signup">
   <div class="wrap">
-    <h2>The five minute morning brief, in your inbox.</h2>
+    <div><img class="mark" src="fiopo-logo.png" alt="FIOPO"><h2>The five minute morning brief, in your inbox.</h2></div>
     <form id="sf" novalidate>
-      <label for="em" class="visually-hidden" style="position:absolute;left:-9999px">Email address</label>
+      <label for="em" style="position:absolute;left:-9999px">Email address</label>
       <input id="em" type="email" placeholder="you@example.com" autocomplete="email">
       <button type="submit">Join the list</button>
-      <p class="note" id="sn">Signup opens when the site goes live on fiopoin.com.</p>
+      <p class="note" id="sn">Email signup is opening soon. Until then, a new edition is posted here every morning.</p>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>FIOPO Intelligence is general information, not financial, legal or medical advice. Make decisions with a professional who knows your situation.</div>
-    <div>© 2026 FIOPO Intelligence, fiopoin.com</div>
+    <div class="fgrid">
+      <a href="" aria-label="FIOPO Intelligence home"><img class="flogo" src="fiopo-logo.png" alt="FIOPO"></a>
+      <div>
+        <nav aria-label="Footer"><a href="">Today</a><a href="archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a></nav>
+        <p style="margin-top:12px">FIOPO Intelligence is general information, not financial, legal or medical advice. Make decisions with a professional who knows your situation.</p>
+        <p style="margin-top:8px">© 2026 FIOPO Intelligence, fiopoin.com. Updated every morning, Central Time.</p>
+      </div>
+    </div>
   </div>
 </footer>
-
-<script>
-(function(){
-  var f=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
-  function calc(){
-    var g=+document.getElementById('gal').value||0,d=+document.getElementById('debt').value||0,c=+document.getElementById('cash').value||0;
-    var fuel=g*(3.98-3.08), intr=d*0.0025, sav=c*0.0025;
-    document.getElementById('r1').textContent=f(fuel);
-    document.getElementById('r2').textContent=f(intr);
-    document.getElementById('r3').textContent=f(sav);
-    var net=fuel*12+intr-sav;
-    document.getElementById('net').textContent= net>=0
-      ? 'Net effect: about '+f(net)+' a year out of your pocket'+(fuel*12>intr?', mostly from fuel.':'.')
-      : 'Net effect: about '+f(-net)+' a year in your favor.';
-  }
-  ['gal','debt','cash'].forEach(function(id){document.getElementById(id).addEventListener('input',calc)});
-  calc();
-  document.getElementById('sf').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sn').textContent='Signup is not live yet. It opens when the site launches on fiopoin.com.'});
-})();
-</script>
+<script src="assets/calc.js"></script>
 </body>
 </html>

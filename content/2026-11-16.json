@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-16",
+  "date_long": "Monday, November 16, 2026",
+  "edition": "Morning edition, English.",
+  "hero": {
+    "headline": "A war 7,000 miles away is still in your gas tank.",
+    "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how this week's biggest story travels.",
+    "chain": [
+      {"label": "The event", "value": "Gulf attacks", "text": "Iran's Revolutionary Guards hit a US site in Bahrain twice in three days. Houthis fired on Saudi Arabia's bypass pipeline."},
+      {"label": "Crude oil", "value": "$95.84", "text": "Brent at Friday's settle. Down from October, but a war premium is still built in."},
+      {"label": "Inflation", "value": "+0.4%", "text": "October consumer prices, hotter than the 0.3% forecast. Energy is the main push."},
+      {"label": "Interest rates", "value": "Hike likely", "text": "Markets price about 91% odds of a quarter point Fed increase on December 9."},
+      {"label": "You", "value": "$3.98 a gallon", "text": "US average, about 90 cents above a year ago. Borrowing costs rise next."}
+    ],
+    "caption": "Sources: AAA national average November 10; ICE Brent settlement November 13; BLS CPI November 10; CME FedWatch November 10. The chain itself is FIOPO analysis."
+  },
+  "tape": [
+    {"label": "S&P 500, Fri", "value": "7,561.67", "note": "−0.40%", "dir": "down"},
+    {"label": "Nasdaq, Fri", "value": "25,136", "note": "−0.91%", "dir": "down"},
+    {"label": "10 year Treasury", "value": "~5.15%", "note": "near 2026 highs", "dir": "flat"},
+    {"label": "Brent crude", "value": "$95.84", "note": "Fri settle", "dir": "flat"},
+    {"label": "Gold", "value": "~$3,870", "note": "−4.7% wk", "dir": "down"},
+    {"label": "Bitcoin", "value": "~$64,900", "note": "dipped below $62K", "dir": "down"}
+  ],
+  "stories": [
+    {
+      "id": "money", "topic": "Interest rates",
+      "headline": "The Fed is about to raise rates again. Your loans will feel it before your savings do.",
+      "stake": {"level": "hi", "text": "High stakes for borrowers"},
+      "happened": "October prices rose 0.4%, more than forecast. Core inflation printed 0.3% for a third straight month. Producer prices are up 6.5% over the year, the most since 2022.",
+      "happening": "The Fed's rate sits at 3.75% to 4.00%. The 10 year Treasury yield, which steers mortgages, is near 5.15%. Fed Chair Warsh speaks today at 11 a.m. Central.",
+      "could": {"odds": [{"label": "Quarter point hike Dec 9", "pct": 91}, {"label": "Half point hike", "pct": 9}], "text": "", "note": "Market odds from CME FedWatch, November 10. Not a FIOPO forecast."},
+      "you": ["Credit cards and HELOCs track the Fed almost one for one. Pay down variable balances first.", "Buying a home or refinancing? Rates are unlikely to fall before spring. Lock if a deal works today.", "Savers win slowly. Move idle cash to an account that pays near the Fed rate, not 0.5%."],
+      "watch": "Warsh today, retail sales Tuesday, Fed minutes Wednesday.",
+      "sources": [{"name": "Axios", "url": "https://www.axios.com/2026/11/10/federal-reserve-rate-hikes"}, {"name": "The National", "url": "https://thenationalnews.com/business/economy/2026/11/10/federal-reserve-inflation-interest-rates-december"}]
+    },
+    {
+      "id": "world", "topic": "Iran war and the Gulf",
+      "headline": "Oil keeps flowing through Hormuz, but the backup route is now under fire.",
+      "stake": {"level": "hi", "text": "High stakes for prices"},
+      "happened": "Houthi missiles targeted Riyadh and Saudi Arabia's East West pipeline, the main way to ship crude around Hormuz. Iran says no talks are underway until the US accepts its seven conditions.",
+      "happening": "Three US carriers are in the region. CENTCOM says 1.7 billion barrels have moved through Hormuz under escort. Qatar's LNG exports are running at about half of prewar levels.",
+      "could": {"odds": [{"label": "Brent drifts toward $90", "pct": 55}, {"label": "Spike above $105", "pct": 25}, {"label": "Deal sends oil below $85", "pct": 20}], "text": "", "note": "FIOPO read for the next 30 days. Judgment, not fact."},
+      "you": ["Pump prices should keep easing slowly into December unless the pipeline is hit hard.", "Heating bills, airfares and delivered goods carry fuel costs with a lag of weeks.", "Planning holiday travel? Booking now protects you against the spike scenario."],
+      "watch": "any confirmed damage to Saudi pumping stations, and Bab al-Mandeb shipping.",
+      "sources": [{"name": "CBS News", "url": "https://www.cbsnews.com/live-updates/us-iran-war-trump-nuclear-material-no-deal/"}, {"name": "Foreign Exchanges", "url": "https://www.foreignexchanges.news/p/world-roundup-november-14-15-2026"}]
+    },
+    {
+      "id": "ai", "topic": "AI and your retirement account",
+      "headline": "Nvidia lost its founder. Tuesday's earnings will test the stock behind a big slice of most index funds.",
+      "stake": {"level": "md", "text": "Medium stakes for investors"},
+      "happened": "Jensen Huang left as CEO after an internal probe. Chip stocks fell for two days, and the Nasdaq lost 0.9% on Friday.",
+      "happening": "Nasdaq futures are down about 0.8% this morning. South Korea's Kospi fell 3.4%, led by chipmakers.",
+      "could": {"odds": [], "text": "The report lands Tuesday after the close. A clear succession answer and steady guidance would likely spark a rebound. A messy answer could drag tech lower into December.", "note": "FIOPO read. Judgment, not fact."},
+      "you": ["If you own an S&P 500 or Nasdaq fund, you own a lot of Nvidia. A swing of 6% or more is normal on earnings day.", "Don't trade on one quarter. Check whether your plan is too concentrated in tech."],
+      "watch": "Nvidia guidance and who leads the company.",
+      "sources": [{"name": "NordFX", "url": "https://nordfx.com/market-news/market-pulse-november-16-2026"}, {"name": "AP", "url": "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-13-2026/"}]
+    },
+    {
+      "id": "trade", "topic": "Trade and diplomacy",
+      "headline": "Trump, Xi and Putin meet in Shenzhen Thursday. Don't expect a deal; do expect headlines.",
+      "stake": {"level": "md", "text": "Medium stakes for prices"},
+      "happened": "Russia and Ukraine held their first talks in nine months and agreed a large prisoner swap. China ran its biggest naval drill yet around Taiwan.",
+      "happening": "APEC leaders meet November 18 and 19. A US official called the three way meeting a first conversation, not a deal. The US and China trade truce runs to January 10, 2027.",
+      "could": {"odds": [], "text": "Most likely: the truce is extended and chips stay unresolved. The risk: the truce lapses, and tariffs return on electronics, toys and clothing.", "note": "FIOPO read. Judgment, not fact."},
+      "you": ["Big purchases made in China, like phones, laptops and appliances, are safer to buy before January than after.", "A Ukraine deal would be the biggest relief for fuel prices in 2027."],
+      "watch": "any mention of rare earths or chip export rules after Thursday.",
+      "sources": [{"name": "Anadolu", "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-14-2026/4124855"}, {"name": "Bower Group Asia", "url": "https://bowergroupasia.com/?p=8011"}]
+    }
+  ],
+  "culture": [
+    {
+      "topic": "Sports business",
+      "headline": "TV rights hit a record $67 billion this year. Your streaming bill is paying for it.",
+      "happened": "Global sports media rights reached about $67.3 billion in 2026, up 9.6%. The Lakers sold at a record $10 billion valuation.",
+      "happening": "Games are spreading across more streamers, so fans need more subscriptions to follow one team.",
+      "could": "Expect higher sports tier prices in 2027 as leagues renew deals. FIOPO read.",
+      "you": ["Audit your subscriptions before the playoffs. Rotate services month to month instead of keeping all of them."],
+      "sources": [{"name": "Ampere via Voxbooster", "url": "https://voxbooster.com/blog/sports-media-rights-statistics-2026"}, {"name": "Front Office Sports", "url": "https://frontofficesports.com/nfl-nba-media-rights-deals-mirror-soaring-franchise-valuations"}]
+    },
+    {
+      "topic": "Entertainment",
+      "headline": "GTA 6 launches Thursday. It is one game carrying an $8 billion forecast.",
+      "happened": "Take-Two says preorders are far above its expectations. It projects $8.0 billion to $8.2 billion in bookings this fiscal year.",
+      "happening": "The game releases November 19 on PlayStation 5 and Xbox Series X and S.",
+      "could": "A smooth launch lifts holiday spending on consoles. A rocky one becomes a warning about consumer stretch. FIOPO read.",
+      "you": ["Console bundles and accessories will sell out early. Prices rarely fall in launch month."],
+      "sources": [{"name": "Bloxodes", "url": "https://bloxodes.com/articles/gta-6-take-two-earnings-preorders"}, {"name": "heise", "url": "https://heise.de/-11303474"}]
+    }
+  ],
+  "calc": {"gas_now": 3.98, "gas_year_ago": 3.08, "gas_note": "US average $3.98 now vs about $3.08 a year earlier."},
+  "social": {
+    "kicker": "Today in three tenses",
+    "headline": "A war 7,000 miles away is still in your gas tank.",
+    "points": ["Brent crude $95.84", "Fed hike odds 91% for Dec 9", "US gas $3.98, up ~90¢ in a year"],
+    "caption": "One event, five steps to your wallet. Gulf attacks keep oil near $96, inflation hot, and a Fed hike likely in December. What it means for you at fiopoin.com\n\n#FIOPO #MoneyNews #Inflation #OilPrices #Fed #PersonalFinance"
+  }
+}
