@@ -242,3 +242,17 @@ footer .lockup img{height:38px}
 @media (max-width:900px){.cards3,.cards2,.yday,.duo2{grid-template-columns:1fr}}
 @media (max-width:600px){.card{padding:18px}.rows li,.cal li{grid-template-columns:1fr;gap:2px}.pick .tile{flex-basis:64px;height:90px;font-size:16px}}
 .card .body{display:flex;flex-direction:column;gap:10px;flex:1}
+
+/* follow us */
+.follow{background:#fff;border-top:1px solid var(--line)}
+.follow .wrap{padding-top:40px;padding-bottom:44px;display:grid;grid-template-columns:1fr 2fr;gap:30px;align-items:center}
+.follow h2{font-variation-settings:"wdth" 75;font-size:38px;line-height:1.02;font-weight:750;color:var(--navy)}
+.follow-head p{color:var(--mute);margin-top:10px;max-width:34ch}
+.follow-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.follow-grid a{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--navy);padding:16px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.follow-grid a:hover,.follow-grid a:focus-visible{border-color:#0091D2}
+.follow-grid img{width:132px;height:132px;display:block}
+.fl-net{font-weight:700;font-size:15px;text-align:center}
+.fl-handle{font-size:14px;color:#0091D2;text-align:center}
+@media (max-width:900px){.follow .wrap{grid-template-columns:1fr}}
+@media (max-width:600px){.follow-grid{gap:10px}.follow-grid a{padding:12px 6px}.follow-grid img{width:88px;height:88px}.fl-net{font-size:13px}}

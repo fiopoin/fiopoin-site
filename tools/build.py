@@ -59,7 +59,7 @@ ORG = {"@type": "NewsMediaOrganization", "@id": SITE + "#org", "name": "FIOPO In
        "alternateName": "fiopoin", "url": SITE, "email": "hello@fiopoin.com",
        "logo": {"@type": "ImageObject", "url": SITE + "brand/fiopoin-icon-512.png", "width": 512, "height": 512},
        "slogan": "Intelligence for prosperity",
-       "sameAs": ["https://www.linkedin.com/company/89727570/"]}
+       "sameAs": ["https://www.linkedin.com/company/fiopoin/", "https://x.com/fiopoinx", "https://www.instagram.com/fiopoin/", "https://www.facebook.com/profile.php?id=61596657421058"]}
 def published(d):
     return datetime.strptime(d["date"] + " 05:12", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("America/Chicago")).isoformat()
 def summary(d):
