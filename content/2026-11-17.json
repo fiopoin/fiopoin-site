@@ -658,70 +658,118 @@
  "events": {
   "global": [
    {
-    "when": "Nov 17",
-    "what": "Nvidia earnings after the close; US October retail sales"
+    "when": "Nov 17, 5 p.m. ET",
+    "what": "Nvidia third quarter results and call",
+    "where": "Live webcast",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
    },
    {
     "when": "Nov 18 to 19",
-    "what": "APEC Leaders' Meeting, Shenzhen"
+    "what": "33rd APEC Economic Leaders' Meeting",
+    "where": "Shenzhen, China",
+    "url": "https://www.sz.gov.cn/en_szgov/news/infocus/APEC2026/index_2.html"
    },
    {
     "when": "Nov 19",
-    "what": "Anthropic expected to start trading (ANT); GTA 6 launches"
+    "what": "Anthropic expected to start trading as ANT",
+    "where": "Nasdaq",
+    "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+   },
+   {
+    "when": "Nov 19",
+    "what": "GTA 6 launches at midnight local time",
+    "where": "PS5 and Xbox Series X and S",
+    "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"
    },
    {
     "when": "Nov 29",
-    "what": "OPEC+ meeting on 2027 output"
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
    },
    {
-    "when": "Dec 1",
-    "what": "MLB labor deal expires"
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
    },
    {
     "when": "Dec 2 to 4",
-    "what": "Reserve Bank of India rate meeting"
+    "what": "Reserve Bank of India rate meeting",
+    "where": "India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
    },
    {
     "when": "Dec 9",
-    "what": "US Fed and Brazil central bank rate decisions"
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
    },
    {
     "when": "Mar 18, 2027",
-    "what": "FIFA presidential election, Rabat"
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
    }
   ],
   "industry_title": "Industry: Produced Water Society 2027",
   "industry": [
    {
     "when": "Feb 8 to 11",
-    "what": "37th Annual Conference, Sugar Land, Texas"
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
    },
    {
     "when": "April",
-    "what": "4th African Conference; Dammam, Saudi Arabia"
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
    },
    {
     "when": "June",
-    "what": "Aberdeen, United Kingdom"
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
    },
    {
     "when": "August",
-    "what": "Midland, Texas"
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
    },
    {
     "when": "September",
-    "what": "Argentina Edition"
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
    },
    {
     "when": "November",
-    "what": "Asia Edition"
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
    },
    {
     "when": "December",
-    "what": "United Arab Emirates"
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
    }
   ],
-  "industry_note": "Exact dates beyond February are not yet published.",
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
   "sources": [
    {
     "name": "Produced Water Society",
@@ -771,5 +819,76 @@
     "url": "https://tokchart.com/tiktok-trending-hashtags"
    }
   ]
+ },
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 14",
+     "text": "SpaceX caught a returning Starship upper stage with its launch tower arms for the first time, after 14 orbits. The booster was lost over the Gulf.",
+     "source": "KPBS",
+     "url": "https://www.kpbs.org/news/science-technology/2026/11/14/spacex-successfully-catches-starship-and-makes-history"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India won its first ODI cricket series in New Zealand in seven years, 3 to 1.",
+     "source": "Pro Ace Predictions",
+     "url": "https://www.pro-ace-predictions.co.uk/cricket-news-today-16-november-2026/"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India beat Pakistan by one wicket to win the Under-19 Asia Cup, its ninth title.",
+     "source": "CareerIndia",
+     "url": "https://www.careerindia.com/news/school-assembly-news-headlines-today-november-16-2026-national-international-education-sports-068703.html"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
  }
 }

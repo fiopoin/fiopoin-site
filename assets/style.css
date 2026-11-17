@@ -256,3 +256,8 @@ footer .lockup img{height:38px}
 .fl-handle{font-size:14px;color:#0091D2;text-align:center}
 @media (max-width:900px){.follow .wrap{grid-template-columns:1fr}}
 @media (max-width:600px){.follow-grid{gap:10px}.follow-grid a{padding:12px 6px}.follow-grid img{width:88px;height:88px}.fl-net{font-size:13px}}
+.rows .where{display:block;font-style:normal;font-size:13.5px;color:var(--mute)}
+.rows span a{color:var(--ink);text-decoration-color:#9AAAC2}
+.hlrows li{grid-template-columns:64px 1fr}
+.srcl{font-size:13px;color:var(--mute)!important}
+@media (max-width:600px){.hlrows li{grid-template-columns:1fr}}

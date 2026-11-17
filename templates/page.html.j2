@@ -230,12 +230,25 @@
   </div>
 </section>
 
+{% if d.highlights %}
+<section class="block" id="highlights">
+  <div class="wrap">
+    <div class="shead"><h2>Highlights</h2><p>Extraordinary accomplishments worth remembering: last week, this month and this year.</p></div>
+    <div class="cards3">
+      {% for k in ['week','month','year'] %}{% set h = d.highlights[k] %}<div class="card hl">
+        <div class="kick">{{ h.label }}</div>
+        <ul class="rows hlrows">{% for i in h['items'] %}<li><b>{{ i.date }}</b><span>{{ i.text }} <a class="srcl" href="{{ i.url }}" rel="noopener noreferrer">{{ i.source }}</a></span></li>{% endfor %}</ul>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 <section class="block" id="events">
   <div class="wrap">
     <div class="shead"><h2>Events calendar</h2><p>The dates that move markets and prices, plus an industry track.</p></div>
     <div class="cards2">
-      <div class="card"><div class="kick">Global</div><ul class="rows cal">{% for e in d.events.global %}<li><b>{{ e.when }}</b><span>{{ e.what }}</span></li>{% endfor %}</ul></div>
-      <div class="card"><div class="kick">{{ d.events.industry_title }}</div><ul class="rows cal">{% for e in d.events.industry %}<li><b>{{ e.when }}</b><span>{{ e.what }}</span></li>{% endfor %}</ul>{% if d.events.industry_note %}<p class="mini">{{ d.events.industry_note }}</p>{% endif %}</div>
+      <div class="card"><div class="kick">Global</div><ul class="rows cal">{% for e in d.events.global %}<li><b>{{ e.when }}</b><span>{% if e.url %}<a href="{{ e.url }}" rel="noopener noreferrer">{{ e.what }}</a>{% else %}{{ e.what }}{% endif %}{% if e.where %}<em class="where">{{ e.where }}</em>{% endif %}</span></li>{% endfor %}</ul></div>
+      <div class="card"><div class="kick">{{ d.events.industry_title }}</div><ul class="rows cal">{% for e in d.events.industry %}<li><b>{{ e.when }}</b><span>{% if e.url %}<a href="{{ e.url }}" rel="noopener noreferrer">{{ e.what }}</a>{% else %}{{ e.what }}{% endif %}{% if e.where %}<em class="where">{{ e.where }}</em>{% endif %}</span></li>{% endfor %}</ul>{% if d.events.industry_note %}<p class="mini">{{ d.events.industry_note }}</p>{% endif %}</div>
     </div>
     <p class="src evsrc">Sources: {% for src in d.events.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
   </div>
