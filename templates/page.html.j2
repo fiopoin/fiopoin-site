@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="{{ csp|safe }}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{% if archived %}{{ d.date_long }} | {% endif %}FIOPO Intelligence | Intelligence for prosperity</title>
 <meta property="og:site_name" content="FIOPO Intelligence">
@@ -27,6 +27,10 @@
 <meta name="twitter:description" content="{{ desc }}">
 <meta name="twitter:image" content="https://fiopoin.com/social/{{ d.date }}.png">
 <script type="application/ld+json">{{ ld|safe }}</script>
+{% if cfg.google_site_verification %}<meta name="google-site-verification" content="{{ cfg.google_site_verification }}">{% endif %}
+{% if cfg.bing_site_verification %}<meta name="msvalidate.01" content="{{ cfg.bing_site_verification }}">{% endif %}
+{% if cfg.ga_id %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ cfg.ga_id }}"></script>
+<script src="{{ root }}assets/ga.js?v={{ v }}" data-id="{{ cfg.ga_id }}"></script>{% endif %}
 <link rel="alternate" type="application/rss+xml" title="FIOPO Intelligence" href="https://fiopoin.com/feed.xml">
 <link rel="stylesheet" href="{{ root }}assets/style.css?v={{ v }}">
 </head>
@@ -314,7 +318,7 @@
     <div class="fgrid">
       <a class="lockup" href="{{ root }}" aria-label="fiopoin, FIOPO Intelligence, home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin"></a>
       <div>
-        <nav aria-label="Footer"><a href="{{ root }}">Today</a><a href="{{ root }}archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a><a href="mailto:hello@fiopoin.com">Contact: hello@fiopoin.com</a></nav>
+        <nav aria-label="Footer"><a href="{{ root }}">Today</a><a href="{{ root }}archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a><a href="mailto:hello@fiopoin.com">Contact: hello@fiopoin.com</a><a href="{{ root }}privacy.html">Privacy</a></nav>
         <p style="margin-top:12px">FIOPO Intelligence is general information, not financial, legal or medical advice. Make decisions with a professional who knows your situation.</p>
         <p style="margin-top:8px"><b style="color:#fff">FIOPO Intelligence.</b> Intelligence for prosperity. © {{ d.date[:4] }} fiopoin.com. Updated every morning, Central Time.</p>
       </div>
