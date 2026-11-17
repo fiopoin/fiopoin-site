@@ -25,9 +25,12 @@ Story ids "money" and "world" must exist (the nav links to them).
 Commit as user "fiopoin" and push to main. GitHub Pages deploys within about a minute.
 
 ## Verify the live site after every update (mandatory)
-1. Wait about 90 seconds after pushing, then load https://fiopoin.com (use a browser if one is available, otherwise WebFetch) and confirm the new content is live: today's hero headline, the FIOPO Intelligence header, the footer with the fiopoin logo, and https://fiopoin.com/social/<date>.png loads.
-2. If a browser is available, check the top, middle and bottom of the page on desktop and mobile widths for overlap, broken images or unstyled sections. Force a fresh load (cache-busted URL) so you are not seeing a cached copy.
-3. Only report the update as done after this check passes. If it fails, fix it, republish and check again.
+In the cloud sandbox the shell and Playwright cannot reach fiopoin.com (proxy 403), WebFetch refuses URLs with a cache-busting query, and WebFetch cannot read PNGs. So verify this way:
+1. Deploy: about 90 seconds after pushing, call the GitHub MCP `actions_list` (method `list_workflow_runs`, owner fiopoin, repo fiopoin-site). The newest "pages build and deployment" run must match the pushed SHA with conclusion "success". Retry every 60 seconds if still running.
+2. Page: WebFetch exactly `https://fiopoin.com` (no query string) and confirm today's hero headline and date line, the FIOPO Intelligence header and the footer ("FIOPO Intelligence. Intelligence for prosperity."). If it still shows yesterday, wait 60 seconds and retry.
+3. Images: WebFetch `https://fiopoin.com/social/today.json` and confirm today's date and the morning, midday and evening slots. The PNGs themselves are covered by the successful deploy of the commit that contains them.
+4. Layout: check desktop and mobile renders of the local `index.html` with Playwright before pushing (the chain animates in on scroll, so a faded last step in a screenshot is expected).
+5. Only report the update as done after 1 to 3 pass. If one fails, fix it, republish and check again.
 
 ## Brand
 - Primary identity at the top of every page and social graphic: FIOPO Intelligence only (no tagline at the top). Header lockup = `brand/fiopo-white.svg` + "Intelligence" (Inter SemiBold, ripple underline). The tagline "Intelligence for prosperity" appears only in the page title and footer.
