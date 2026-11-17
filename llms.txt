@@ -1,0 +1,21 @@
+# FIOPO Intelligence
+
+> A free daily news site from fiopoin.com. Every morning (Central Time) it explains what happened, what is happening and what could happen next in markets, energy, geopolitics, technology, sports and entertainment, and what each story means for ordinary people's money. Facts are sourced and dated; odds and outlooks are labeled as FIOPO judgment or market odds. General information, not financial advice.
+
+Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
+
+## Today's edition
+- [Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/): Tuesday, November 17, 2026. One event, five steps to your wallet. The IEA says oil supply now tops demand, US crude closed at its lowest since August 28, and the gas average is $3.81, down about 54 cents since mid October. Markets still price 91% odds of a Fed hike December 9 (market odds).
+- [Interest rates: Cheaper gas will not stop a likely Fed hike. Today's retail sales report is the next test.](https://fiopoin.com/#money)
+- [Iran war and the Gulf: Tankers are burning near Hormuz, yet oil keeps falling. Here is why.](https://fiopoin.com/#world)
+- [AI and your retirement account: Nvidia reports tonight and Anthropic lists Thursday. One week will set the mood for AI stocks.](https://fiopoin.com/#ai)
+- [Trade and diplomacy: APEC opens in Shenzhen Wednesday. Trump and Xi meet Thursday with the trade truce on the clock.](https://fiopoin.com/#trade)
+
+## Archive and feeds
+- [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
+- [RSS feed](https://fiopoin.com/feed.xml)
+- [Sitemap](https://fiopoin.com/sitemap.xml)
+
+## Recent editions
+- [Tuesday, November 17, 2026: Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/archive/2026-11-17.html)
+- [Monday, November 16, 2026: A war 7,000 miles away is still in your gas tank.](https://fiopoin.com/archive/2026-11-16.html)

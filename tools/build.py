@@ -47,16 +47,52 @@ def score_for(asof):
 os.makedirs("archive", exist_ok=True)
 os.makedirs("social", exist_ok=True)
 
-open("index.html", "w").write(page.render(d=latest, root="", archived=False, v=V, score=score_for(latest["date"])))
+# Search and AI discovery: canonical URLs, publish times and schema.org structured data
+from zoneinfo import ZoneInfo
+SITE = "https://fiopoin.com/"
+ORG = {"@type": "NewsMediaOrganization", "@id": SITE + "#org", "name": "FIOPO Intelligence",
+       "alternateName": "fiopoin", "url": SITE, "email": "hello@fiopoin.com",
+       "logo": {"@type": "ImageObject", "url": SITE + "brand/fiopoin-icon-512.png", "width": 512, "height": 512},
+       "slogan": "Intelligence for prosperity",
+       "sameAs": ["https://www.linkedin.com/company/89727570/"]}
+def published(d):
+    return datetime.strptime(d["date"] + " 05:12", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("America/Chicago")).isoformat()
+def summary(d):
+    """Edition-specific description: the first paragraph of the morning caption, without hashtags or the site plug."""
+    t = d.get("social", {}).get("caption", "").split("\n")[0].strip() or d["hero"]["dek"]
+    for tail in ("What it means for you at fiopoin.com", "More at fiopoin.com.", "More at fiopoin.com"):
+        t = t.replace(tail, "").strip()
+    if len(t) > 300:
+        t = t[:300].rsplit(". ", 1)[0] + "."
+    return t
+def page_url(d, archived):
+    return SITE + (f"archive/{d['date']}.html" if archived else "")
+def ld_for(d, archived):
+    url = page_url(d, archived)
+    sections = [s.get("topic") for s in d.get("stories", []) if s.get("topic")]
+    art = {"@type": "NewsArticle", "@id": url + "#article", "headline": d["hero"]["headline"][:110],
+           "description": summary(d), "url": url, "mainEntityOfPage": url,
+           "image": [SITE + f"social/{d['date']}.png"], "datePublished": published(d), "dateModified": published(d),
+           "inLanguage": "en-US", "isAccessibleForFree": True, "articleSection": sections,
+           "author": {"@id": SITE + "#org"}, "publisher": {"@id": SITE + "#org"}}
+    graph = [ORG, art]
+    if not archived:
+        graph.append({"@type": "WebSite", "@id": SITE + "#site", "name": "FIOPO Intelligence", "url": SITE,
+                      "publisher": {"@id": SITE + "#org"}, "inLanguage": "en-US"})
+    return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("</", "<\\/")
+
+open("index.html", "w").write(page.render(d=latest, root="", archived=False, v=V, score=score_for(latest["date"]),
+                                          url=SITE, published=published(latest), desc=summary(latest), ld=ld_for(latest, False)))
 for d in data:
-    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True, v=V, score=score_for(d["date"])))
+    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True, v=V, score=score_for(d["date"]),
+                                                            url=page_url(d, True), published=published(d), desc=summary(d), ld=ld_for(d, True)))
 
 # archive index
 items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
 arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css?v={V}"></head>
+<title>Past editions | FIOPO Intelligence</title><meta name="description" content="Every FIOPO Intelligence morning edition: what happened, what is happening, what could happen next, and what it means for your money."><link rel="canonical" href="https://fiopoin.com/archive/"><meta name="robots" content="index, follow"><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css?v={V}"></head>
 <body><header class="top"><div class="wrap"><a class="brand fi" href="../"><span class="fi-r"><img src="../brand/fiopo-white.svg" alt="FIOPO" width="106" height="44"><span class="fi-int">Intelligence</span></span></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
@@ -79,6 +115,30 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
 <description>What happened, what is happening, and what could happen next, connected to your money.</description>
 {''.join(entries)}</channel></rss>"""
 open("feed.xml", "w").write(feed)
+
+# sitemap.xml, robots.txt and llms.txt so search engines and AI assistants can find and cite every edition
+urls = [(SITE, latest["date"], "daily", "1.0"), (SITE + "archive/", latest["date"], "daily", "0.6")]
+urls += [(page_url(d, True), d["date"], "monthly", "0.7") for d in reversed(data)]
+open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "\n".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{c}</changefreq><priority>{p}</priority></url>" for u, m, c, p in urls)
+    + "\n</urlset>\n")
+bots = ["Googlebot", "Bingbot", "Applebot", "DuckDuckBot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot",
+        "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended",
+        "Applebot-Extended", "meta-externalagent", "Meta-ExternalFetcher", "FacebookBot", "CCBot", "Amazonbot", "cohere-ai"]
+open("robots.txt", "w").write("# FIOPO Intelligence welcomes search engines and AI assistants.\n"
+    "# Quote and link freely; please credit FIOPO Intelligence and link to fiopoin.com.\n\n"
+    + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)
+    + "User-agent: *\nAllow: /\n\nSitemap: https://fiopoin.com/sitemap.xml\n")
+lines = ["# FIOPO Intelligence", "",
+         "> A free daily news site from fiopoin.com. Every morning (Central Time) it explains what happened, what is happening and what could happen next in markets, energy, geopolitics, technology, sports and entertainment, and what each story means for ordinary people's money. Facts are sourced and dated; odds and outlooks are labeled as FIOPO judgment or market odds. General information, not financial advice.", "",
+         "Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com", "",
+         "## Today's edition", f"- [{latest['hero']['headline']}]({SITE}): {latest['date_long']}. {summary(latest)}"]
+for s in latest.get("stories", []):
+    lines.append(f"- [{s.get('topic','Story')}: {s['headline']}]({SITE}#{s['id']})")
+lines += ["", "## Archive and feeds", f"- [Past editions]({SITE}archive/): every edition, kept so readers can check FIOPO calls against what happened",
+          f"- [RSS feed]({SITE}feed.xml)", f"- [Sitemap]({SITE}sitemap.xml)", "", "## Recent editions"]
+lines += [f"- [{d['date_long']}: {d['hero']['headline']}]({page_url(d, True)})" for d in list(reversed(data))[:30]]
+open("llms.txt", "w").write("\n".join(lines) + "\n")
 
 # Daily social graphics
 NAVY, INK, BLUE, GREEN, AMBER, WHITE, MUTE = (27,42,74), (15,26,49), (0,145,210), (140,198,63), (233,162,59), (255,255,255), (159,179,207)

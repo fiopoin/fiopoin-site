@@ -4,8 +4,8 @@ Static site on GitHub Pages (repo fiopoin/fiopoin-site, branch main, custom doma
 
 ## How the site is built
 - One JSON file per edition in `content/YYYY-MM-DD.json`. The newest file becomes the homepage.
-- `python3 tools/build.py` renders `templates/page.html.j2` into `index.html`, writes `archive/<date>.html`, `archive/index.html`, `feed.xml`, and the social graphics `social/<date>.png` (1080x1350 feed post), `social/<date>-story.png` (1080x1920 story or reel cover), `social/latest.png` and the caption `social/<date>.txt`.
-- Never hand edit `index.html`, `archive/` or `feed.xml`. Edit content JSON or the template, then rebuild.
+- `python3 tools/build.py` renders `templates/page.html.j2` into `index.html`, writes `archive/<date>.html`, `archive/index.html`, `feed.xml`, and the social graphics `social/<date>.png` (1080x1350 feed post), `social/<date>-story.png` (1080x1920 story or reel cover), `social/latest.png` and the caption `social/<date>.txt`. It also writes the search and AI discovery files: `sitemap.xml`, `robots.txt` (welcomes all search engines and AI crawlers) and `llms.txt`, plus per-page canonical URLs, descriptions and schema.org JSON-LD (NewsMediaOrganization and NewsArticle). Never hand edit these; never block crawlers.
+- Never hand edit `index.html`, `archive/`, `feed.xml`, `sitemap.xml`, `robots.txt` or `llms.txt`. Edit content JSON or the template, then rebuild.
 - Requires `jinja2` and `Pillow` (`pip install --break-system-packages jinja2 pillow` if missing). Fonts are bundled in `tools/fonts`.
 
 ## Content JSON schema (copy the latest file and replace every field)
@@ -24,6 +24,10 @@ Finding stories: prefer what is getting the most traction (most-read and trendin
 
 Three social posts a day, each with different content: morning = `social` (the hero ripple), midday = `social_slots.midday` (the "money" story, kicker "Midday: your money"), evening = `social_slots.evening` (the "world" story or the biggest sports or entertainment story, kicker "Evening: the world and your wallet"). The build writes `social/<date>-midday.png`, `social/<date>-evening.png`, their .txt captions, and `social/today.json`, the posting manifest the scheduled social task reads.
 Story ids "money" and "world" must exist (the nav links to them).
+
+## Search and AI discovery
+- The page description, social previews and `llms.txt` use the first paragraph of `social.caption`, so make that paragraph a factual, specific summary of the edition (under 300 characters works best).
+- Keep the hero headline under 110 characters (the NewsArticle limit).
 
 ## Editorial rules
 - Every fact is sourced, dated and linked. Never invent numbers. If a figure cannot be confirmed, leave it out.
