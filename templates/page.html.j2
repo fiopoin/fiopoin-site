@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{% if archived %}{{ d.date_long }} | {% endif %}FIOPO Intelligence | Intelligence for prosperity</title>
 <meta property="og:site_name" content="FIOPO Intelligence">
 <link rel="icon" type="image/svg+xml" href="{{ root }}brand/fiopoin-icon.svg">
@@ -15,9 +17,6 @@
 <meta property="og:url" content="https://fiopoin.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="FIOPO Intelligence" href="https://fiopoin.com/feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Inter:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}assets/style.css?v={{ v }}">
 </head>
 <body data-gas-now="{{ d.calc.gas_now }}" data-gas-year-ago="{{ d.calc.gas_year_ago }}">
@@ -89,7 +88,7 @@
       <div class="you"><h4>What it means for you</h4>
         <ul>{% for y in s.you %}<li>{{ y }}</li>{% endfor %}</ul>
       </div>
-      <div class="watch"><span><b>Watch:</b> {{ s.watch }}</span><span class="src">{% for src in s.sources %}<a href="{{ src.url }}">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></div>
+      <div class="watch"><span><b>Watch:</b> {{ s.watch }}</span><span class="src">{% for src in s.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></div>
     </article>
     {% endfor %}
   </div>
@@ -111,7 +110,7 @@
           <div class="tense t3"><h4>Could happen</h4><p>{{ c.could }}</p></div>
         </div>
         <div class="you"><h4>What it means for you</h4><ul>{% for y in c.you %}<li>{{ y }}</li>{% endfor %}</ul></div>
-        <div class="watch"><span class="src">{% for src in c.sources %}<a href="{{ src.url }}">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></div>
+        <div class="watch"><span class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></div>
       </article>
       {% endfor %}
     </div>
@@ -148,7 +147,7 @@
     </div>
     <div class="why">
       <strong>~50%</strong>
-      <p>of people now say they actively avoid the news, and trust has fallen to a record low across 48 countries. The answer is not more headlines. It is fewer, clearer ones that help you decide something. <span class="src"><a href="https://www.pulse.bot/media/news/dnr-what-audiences-actually-need-from-you-right-now-28129de2-b045-45c3-95f1-db19a640dc4c/">Reuters Institute Digital News Report 2026</a></span></p>
+      <p>of people now say they actively avoid the news, and trust has fallen to a record low across 48 countries. The answer is not more headlines. It is fewer, clearer ones that help you decide something. <span class="src"><a rel="noopener noreferrer" href="https://www.pulse.bot/media/news/dnr-what-audiences-actually-need-from-you-right-now-28129de2-b045-45c3-95f1-db19a640dc4c/">Reuters Institute Digital News Report 2026</a></span></p>
     </div>
   </div>
 </section>
