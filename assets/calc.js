@@ -15,3 +15,9 @@
   calc();
   document.getElementById('sf').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sn').textContent='Email signup is opening soon. A new edition is posted here every morning.'});
 })();
+(function(){
+  document.querySelectorAll('.card figure img').forEach(function(img){
+    function fail(){img.closest('figure').classList.add('noimg')}
+    if(img.complete&&img.naturalWidth===0){fail()}else{img.addEventListener('error',fail)}
+  });
+})();

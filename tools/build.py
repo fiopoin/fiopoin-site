@@ -23,18 +23,39 @@ latest = data[-1]
 import hashlib
 V = hashlib.md5((open("assets/style.css").read() + open("assets/calc.js").read()).encode()).hexdigest()[:8]
 
+
+# FIOPO scorecard: every odds call labeled as FIOPO judgment, checked 30 days after it was made.
+# Results are recorded in content/scorecard.json as {"YYYY-MM-DD|label": "hit" or "miss"}.
+from datetime import timedelta
+_results = json.load(open("content/scorecard.json")) if os.path.exists("content/scorecard.json") else {}
+def _long(dt): return dt.strftime("%B %-d, %Y")
+def score_for(asof):
+    calls = []
+    for e in data:
+        if e["date"] > asof: continue
+        made = datetime.strptime(e["date"], "%Y-%m-%d")
+        for s in e.get("stories", []):
+            c = s.get("could", {})
+            if "FIOPO" not in c.get("note", "") or not c.get("odds"): continue
+            for o in c["odds"]:
+                calls.append({"label": o["label"], "pct": o["pct"], "made": e["date"], "made_long": _long(made),
+                              "check_long": _long(made + timedelta(days=30)), "res": _results.get(e["date"] + "|" + o["label"])})
+    hit = sum(1 for c in calls if c["res"] == "hit"); miss = sum(1 for c in calls if c["res"] == "miss")
+    open_calls = [c for c in calls if not c["res"]]
+    return {"open": len(open_calls), "hit": hit, "miss": miss, "next": open_calls[-1] if open_calls else None}
+
 os.makedirs("archive", exist_ok=True)
 os.makedirs("social", exist_ok=True)
 
-open("index.html", "w").write(page.render(d=latest, root="", archived=False, v=V))
+open("index.html", "w").write(page.render(d=latest, root="", archived=False, v=V, score=score_for(latest["date"])))
 for d in data:
-    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True, v=V))
+    open(f"archive/{d['date']}.html", "w").write(page.render(d=d, root="../", archived=True, v=V, score=score_for(d["date"])))
 
 # archive index
 items = "\n".join(
     f'<li><a href="{d["date"]}.html">{html.escape(d["date_long"])}</a><br><span>{html.escape(d["hero"]["headline"])}</span></li>'
     for d in reversed(data))
-arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
+arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Past editions | FIOPO Intelligence</title><link rel="icon" type="image/svg+xml" href="../brand/fiopoin-icon.svg"><link rel="stylesheet" href="../assets/style.css?v={V}"></head>
 <body><header class="top"><div class="wrap"><a class="brand fi" href="../"><span class="fi-r"><img src="../brand/fiopo-white.svg" alt="FIOPO" width="106" height="44"><span class="fi-int">Intelligence</span></span></a>
 <nav class="main"><a href="../">Today</a></nav></div></header>

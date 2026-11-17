@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{% if archived %}{{ d.date_long }} | {% endif %}FIOPO Intelligence | Intelligence for prosperity</title>
 <meta property="og:site_name" content="FIOPO Intelligence">
@@ -27,8 +27,12 @@
     <nav class="main" aria-label="Sections">
       <a href="#today">Today</a>
       <a href="#money">Your money</a>
-      <a href="#world">World</a>
-      <a href="#culture">Sports and culture</a>
+      {% if d.regions %}<a href="#regions">World</a>
+      <a href="#sports">Sports</a>
+      <a href="#entertainment">Entertainment</a>
+      <a href="#travel">Travel</a>
+      <a href="#events">Events</a>{% else %}<a href="#world">World</a>
+      <a href="#culture">Sports and culture</a>{% endif %}
       <a href="#tool">Calculator</a>
       <a href="{{ root }}archive/">Past editions</a>
     </nav>
@@ -62,6 +66,26 @@
 </div>
 
 <main>
+{% if d.yesterday %}
+<section class="block" id="yesterday">
+  <div class="wrap">
+    <div class="shead"><h2>Yesterday in 60 seconds</h2><p>{{ d.yesterday.label }}. What moved, in one screen, plus how our past calls are tracking.</p></div>
+    <div class="yday">
+      <div class="card">
+        <ul class="rows">{% for i in d.yesterday['items'] %}<li><b>{{ i.label }}</b><span>{{ i.text }}</span></li>{% endfor %}</ul>
+        <p class="src">Sources: {% for src in d.yesterday.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      </div>
+      <div class="card score">
+        <div class="kick">Our scorecard</div>
+        <h3>Every FIOPO call is scored when its window closes.</h3>
+        <div class="stats"><div><strong>{{ score.open }}</strong><small>open calls</small></div><div><strong>{{ score.hit }}</strong><small>came true</small></div><div><strong>{{ score.miss }}</strong><small>missed</small></div></div>
+        {% if score.next %}<p class="mini">Latest open call: "{{ score.next.label }}" at {{ score.next.pct }}%, made {{ score.next.made_long }}. Scored on {{ score.next.check_long }}.</p>{% endif %}
+        <p class="mini">Market odds are not counted. Only calls labeled as FIOPO judgment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
 <section class="block" id="today">
   <div class="wrap">
     <div class="shead">
@@ -94,6 +118,114 @@
   </div>
 </section>
 
+
+{% if d.regions %}
+<section class="block" id="regions">
+  <div class="wrap">
+    <div class="shead"><h2>Around the world</h2><p>One story per region, weighted toward where most people live. Each ends with what it means for you.</p></div>
+    <div class="cards3">
+      {% for c in d.regions %}<article class="card">
+        <div class="kick">{{ c.region }}</div>
+        <h3>{{ c.headline }}</h3>
+        <p>{{ c.text }}</p>
+        <div class="foryou"><b>For you:</b> {{ c.you }}</div>
+        <p class="src">Covers {{ c.covers }}. {% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      </article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap duo2">
+    <div id="sports">
+      <div class="shead"><h2>Sports</h2><p>Global, followed by the money.</p></div>
+      <div class="stack">{% for c in d.sports %}<article class="card">
+          <div class="kick">{{ c.topic }}</div>
+          <h3>{{ c.headline }}</h3>
+          <p>{{ c.text }}</p>
+          <div class="foryou"><b>For you:</b> {{ c.you }}</div>
+          <p class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        </article>{% endfor %}</div>
+    </div>
+    <div id="entertainment">
+      <div class="shead"><h2>Entertainment</h2><p>Film, music, games and streaming.</p></div>
+      <div class="stack">{% for c in d.entertainment %}<article class="card">
+          <div class="kick">{{ c.topic }}</div>
+          <h3>{{ c.headline }}</h3>
+          <p>{{ c.text }}</p>
+          <div class="foryou"><b>For you:</b> {{ c.you }}</div>
+          <p class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        </article>{% endfor %}
+      {% if d.trending %}<aside class="card trend">
+        <div class="kick">{{ d.trending.label }}</div>
+        <ul class="rows">{% for t in d.trending['items'] %}<li><b>{{ t.where }}</b><span>{{ t.text }}</span></li>{% endfor %}</ul>
+        <p class="src">{% for src in d.trending.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      </aside>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="innovation">
+  <div class="wrap">
+    <div class="shead"><h2>Innovation and disruption</h2><p>What is changing jobs, prices or daily life, explained plainly.</p></div>
+    <div class="cards3">{% for c in d.innovation %}<article class="card">
+          <div class="kick">{{ c.topic }}</div>
+          <h3>{{ c.headline }}</h3>
+          <p>{{ c.text }}</p>
+          <div class="foryou"><b>For you:</b> {{ c.you }}</div>
+          <p class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        </article>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="block" id="travel">
+  <div class="wrap">
+    <div class="shead"><h2>Escape: travel</h2><p>Hidden treasures, famous places done smarter, and the money side of getting there.</p></div>
+    <div class="cards3">
+      {% for c in d.travel %}<article class="card{% if c.image %} pic{% endif %}">
+        {% if c.image %}<figure><img src="{{ c.image.src }}" alt="{{ c.image.alt }}" loading="lazy" referrerpolicy="no-referrer"><figcaption>Photo: {{ c.image.credit }}, <a href="{{ c.image.license_url }}" rel="noopener noreferrer license">{{ c.image.license }}</a>, via <a href="{{ c.image.source_url }}" rel="noopener noreferrer">Wikimedia Commons</a></figcaption></figure>{% endif %}
+        <div class="body">
+          <div class="kick">{{ c.tag }}</div>
+          <h3>{{ c.headline }}</h3>
+          <p>{{ c.text }}</p>
+          <div class="foryou"><b>For you:</b> {{ c.you }}</div>
+          <p class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        </div>
+      </article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block" id="picks">
+  <div class="wrap">
+    <div class="shead"><h2>Read and watch</h2><p>One book and one film or series worth your time this week, and why they matter now.</p></div>
+    <div class="cards2">
+      {% for c in d.picks %}<article class="card pick">
+        <div class="tile {{ c.kind|lower }}" aria-hidden="true">{{ c.kind }}</div>
+        <div class="body">
+          <div class="kick">{{ c.kind }}</div>
+          <h3>{{ c.title }}</h3>
+          <p class="by">{{ c.by }}. {{ c.where }}.</p>
+          <p>{{ c.text }}</p>
+          <p class="src">{% for src in c.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        </div>
+      </article>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block" id="events">
+  <div class="wrap">
+    <div class="shead"><h2>Events calendar</h2><p>The dates that move markets and prices, plus an industry track.</p></div>
+    <div class="cards2">
+      <div class="card"><div class="kick">Global</div><ul class="rows cal">{% for e in d.events.global %}<li><b>{{ e.when }}</b><span>{{ e.what }}</span></li>{% endfor %}</ul></div>
+      <div class="card"><div class="kick">{{ d.events.industry_title }}</div><ul class="rows cal">{% for e in d.events.industry %}<li><b>{{ e.when }}</b><span>{{ e.what }}</span></li>{% endfor %}</ul>{% if d.events.industry_note %}<p class="mini">{{ d.events.industry_note }}</p>{% endif %}</div>
+    </div>
+    <p class="src evsrc">Sources: {% for src in d.events.sources %}<a href="{{ src.url }}" rel="noopener noreferrer">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  </div>
+</section>
+{% else %}
 <section class="block" id="culture">
   <div class="wrap">
     <div class="shead">
@@ -116,6 +248,7 @@
     </div>
   </div>
 </section>
+{% endif %}
 
 <section class="block" id="tool">
   <div class="wrap">

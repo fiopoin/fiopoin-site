@@ -6,34 +6,93 @@
   "headline": "Oil just fell to its lowest since August. Your gas tank is next.",
   "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
   "chain": [
-   {"label": "The event", "value": "Glut warning", "text": "The IEA says oil supply now tops demand for the first time since the Iran war began, with a fourth quarter surplus of about 1.7 million barrels a day."},
-   {"label": "Crude oil", "value": "$85.72", "text": "US crude settled Monday down 3.2%, its lowest close since August 28. Brent fell 3.55% to $92.44."},
-   {"label": "Gas pump", "value": "$3.81", "text": "AAA national average on November 16, down from $4.36 in mid October. Still the priciest November on record."},
-   {"label": "Interest rates", "value": "Hike still likely", "text": "Markets price about 91% odds of a quarter point Fed increase on December 9. Cheaper oil has not changed that yet."},
-   {"label": "You", "value": "~54¢ a gallon", "text": "Saved versus mid October, about $8 on a 15 gallon fill. Borrowing costs are the part still rising."}
+   {
+    "label": "The event",
+    "value": "Glut warning",
+    "text": "The IEA says oil supply now tops demand for the first time since the Iran war began, with a fourth quarter surplus of about 1.7 million barrels a day."
+   },
+   {
+    "label": "Crude oil",
+    "value": "$85.72",
+    "text": "US crude settled Monday down 3.2%, its lowest close since August 28. Brent fell 3.55% to $92.44."
+   },
+   {
+    "label": "Gas pump",
+    "value": "$3.81",
+    "text": "AAA national average on November 16, down from $4.36 in mid October. Still the priciest November on record."
+   },
+   {
+    "label": "Interest rates",
+    "value": "Hike still likely",
+    "text": "Markets price about 91% odds of a quarter point Fed increase on December 9. Cheaper oil has not changed that yet."
+   },
+   {
+    "label": "You",
+    "value": "~54¢ a gallon",
+    "text": "Saved versus mid October, about $8 on a 15 gallon fill. Borrowing costs are the part still rising."
+   }
   ],
   "caption": "Sources: AAA national average November 16; NYMEX WTI and ICE Brent settlements November 16; IEA monthly report via FinanceFeeds; CME FedWatch November 16. The chain itself is FIOPO analysis."
  },
  "tape": [
-  {"label": "S&P 500, Mon", "value": "−1.9%", "note": "tech led the drop", "dir": "down"},
-  {"label": "Nasdaq, Mon", "value": "−2.5%", "note": "third losing day", "dir": "down"},
-  {"label": "10 year Treasury", "value": "5.12%", "note": "Tue morning", "dir": "flat"},
-  {"label": "Brent crude", "value": "$92.44", "note": "−3.55% Mon", "dir": "down"},
-  {"label": "Gold", "value": "~$3,858", "note": "Tue morning", "dir": "flat"},
-  {"label": "Bitcoin", "value": "~$64,200", "note": "−14% in a week", "dir": "down"}
+  {
+   "label": "S&P 500, Mon",
+   "value": "−1.9%",
+   "note": "tech led the drop",
+   "dir": "down"
+  },
+  {
+   "label": "Nasdaq, Mon",
+   "value": "−2.5%",
+   "note": "third losing day",
+   "dir": "down"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "5.12%",
+   "note": "Tue morning",
+   "dir": "flat"
+  },
+  {
+   "label": "Brent crude",
+   "value": "$92.44",
+   "note": "−3.55% Mon",
+   "dir": "down"
+  },
+  {
+   "label": "Gold",
+   "value": "~$3,858",
+   "note": "Tue morning",
+   "dir": "flat"
+  },
+  {
+   "label": "Bitcoin",
+   "value": "~$64,200",
+   "note": "−14% in a week",
+   "dir": "down"
+  }
  ],
  "stories": [
   {
    "id": "money",
    "topic": "Interest rates",
    "headline": "Cheaper gas will not stop a likely Fed hike. Today's retail sales report is the next test.",
-   "stake": {"level": "hi", "text": "High stakes for borrowers"},
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for borrowers"
+   },
    "happened": "Markets kept pricing about 91% odds of a quarter point Fed increase on December 9, even as oil slid. The 10 year Treasury yield, which steers mortgage rates, closed at 5.15% on Friday.",
    "happening": "October retail sales come out at 7:30 a.m. Central today. Forecasters expect a 0.2% gain after September's 0.8%. The Fed's rate sits at 3.75% to 4.00%.",
    "could": {
     "odds": [
-     {"label": "Quarter point hike Dec 9", "pct": 91},
-     {"label": "Half point hike", "pct": 9}
+     {
+      "label": "Quarter point hike Dec 9",
+      "pct": 91
+     },
+     {
+      "label": "Half point hike",
+      "pct": 9
+     }
     ],
     "text": "",
     "note": "Market odds from CME FedWatch, November 16. Not a FIOPO forecast."
@@ -45,22 +104,40 @@
    ],
    "watch": "retail sales this morning, Fed minutes Wednesday.",
    "sources": [
-    {"name": "Admirals", "url": "https://admiralmarkets.com/analytics/traders-blog/fed-december-rate-hike-treasury-yields-retail-sales"},
-    {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html"}
+    {
+     "name": "Admirals",
+     "url": "https://admiralmarkets.com/analytics/traders-blog/fed-december-rate-hike-treasury-yields-retail-sales"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html"
+    }
    ]
   },
   {
    "id": "world",
    "topic": "Iran war and the Gulf",
    "headline": "Tankers are burning near Hormuz, yet oil keeps falling. Here is why.",
-   "stake": {"level": "hi", "text": "High stakes for prices"},
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
    "happened": "Iran's navy said a fourth tanker hit a mine in 24 hours. A separate tanker was disabled near Khasab, Oman, with the crew reported safe. The IRGC says it targeted US radar in Bahrain again on Tuesday.",
    "happening": "Gulf exports have recovered faster than demand, the IEA says, so the market shrugged. Iran says a regional bloc backs its plan to reopen the strait within two days under a ceasefire. The White House calls Iran's demands unacceptable.",
    "could": {
     "odds": [
-     {"label": "Brent stays $85 to $95", "pct": 55},
-     {"label": "Spike above $100", "pct": 25},
-     {"label": "Deal sends Brent below $85", "pct": 20}
+     {
+      "label": "Brent stays $85 to $95",
+      "pct": 55
+     },
+     {
+      "label": "Spike above $100",
+      "pct": 25
+     },
+     {
+      "label": "Deal sends Brent below $85",
+      "pct": 20
+     }
     ],
     "text": "",
     "note": "FIOPO read for the next 30 days. Judgment, not fact."
@@ -72,15 +149,24 @@
    ],
    "watch": "whether the mine claims slow Hormuz traffic, and the OPEC+ meeting November 29.",
    "sources": [
-    {"name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/"},
-    {"name": "FinanceFeeds", "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"}
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/"
+    },
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+    }
    ]
   },
   {
    "id": "ai",
    "topic": "AI and your retirement account",
    "headline": "Nvidia reports tonight and Anthropic lists Thursday. One week will set the mood for AI stocks.",
-   "stake": {"level": "md", "text": "Medium stakes for investors"},
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
    "happened": "Nvidia closed Monday at $156.14, down 4.1%, after its CEO's sudden exit and new US limits on chip access through overseas data centers. The Nasdaq fell 2.5%.",
    "happening": "Nvidia reports after the close today under interim CEO Colette Kress. Anthropic set its IPO at $70 to $78 a share, up to a $1.404 trillion valuation, with trading expected Thursday under ANT on the Nasdaq.",
    "could": {
@@ -95,15 +181,24 @@
    ],
    "watch": "Nvidia guidance tonight and where Anthropic prices Wednesday evening.",
    "sources": [
-    {"name": "Eurasia Business News", "url": "https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/"},
-    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"}
+    {
+     "name": "Eurasia Business News",
+     "url": "https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    }
    ]
   },
   {
    "id": "trade",
    "topic": "Trade and diplomacy",
    "headline": "APEC opens in Shenzhen Wednesday. Trump and Xi meet Thursday with the trade truce on the clock.",
-   "stake": {"level": "md", "text": "Medium stakes for prices"},
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for prices"
+   },
    "happened": "The EU sanctioned nearly 50 banks and financial firms tied to Russia and approved its largest single payment to Ukraine, about €8 billion. Last week's UAE talks produced a prisoner swap but no breakthrough.",
    "happening": "APEC leaders meet November 18 and 19. Trump arrives late Wednesday and holds talks with Xi on Thursday, with a three way meeting with Putin also expected. A US official says Ukraine is not on that agenda. The US and China trade truce runs to January 10, 2027.",
    "could": {
@@ -117,9 +212,18 @@
    ],
    "watch": "any truce extension or tariff language after Thursday's meeting.",
    "sources": [
-    {"name": "Business Today", "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"},
-    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war"},
-    {"name": "Bower Group Asia", "url": "https://bowergroupasia.com/?p=8011"}
+    {
+     "name": "Business Today",
+     "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war"
+    },
+    {
+     "name": "Bower Group Asia",
+     "url": "https://bowergroupasia.com/?p=8011"
+    }
    ]
   }
  ],
@@ -134,8 +238,14 @@
     "Hold off on 2027 season tickets and travel packages until a deal is signed, or buy only with a clear refund policy."
    ],
    "sources": [
-    {"name": "ESPN", "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"},
-    {"name": "Front Office Sports", "url": "https://frontofficesports.com/newsletter/can-anyone-actually-beat-infantino/"}
+    {
+     "name": "ESPN",
+     "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+    },
+    {
+     "name": "Front Office Sports",
+     "url": "https://frontofficesports.com/newsletter/can-anyone-actually-beat-infantino/"
+    }
    ]
   },
   {
@@ -148,7 +258,10 @@
     "The preload is about 212 GB. Check your console storage before Thursday instead of buying a drive at launch week prices."
    ],
    "sources": [
-    {"name": "Shattered", "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"}
+    {
+     "name": "Shattered",
+     "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"
+    }
    ]
   }
  ],
@@ -190,5 +303,473 @@
    "watch": "Hormuz traffic after the mine claims, and OPEC+ on November 29.",
    "caption": "Iran's navy says a fourth tanker hit a mine near Hormuz, yet Brent fell 3.55% to $92.44 on Monday. The reason: Gulf exports recovered faster than demand. Diesel dipped below $6 for the first time since September, which eases freight costs with a lag. Our read, labeled as judgment: pump prices drift lower unless shipping is hit hard. More at fiopoin.com.\n\n#FIOPO #OilPrices #MiddleEast #GasPrices #Travel"
   }
+ },
+ "yesterday": {
+  "label": "Monday, November 16",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The S&P 500 fell 1.9% and the Nasdaq 2.5%, led by chip stocks."
+   },
+   {
+    "label": "Nvidia",
+    "text": "Closed at $156.14, down 4.1%, a day before its first report under an interim CEO."
+   },
+   {
+    "label": "Oil",
+    "text": "Brent fell 3.55% to $92.44 after the IEA said supply now tops demand."
+   },
+   {
+    "label": "Gas",
+    "text": "The AAA national average was $3.81, down from $4.36 in mid October."
+   },
+   {
+    "label": "Health",
+    "text": "The FDA approved Roche's Wilserdly, a pill for a hard to treat form of advanced breast cancer."
+   },
+   {
+    "label": "Football",
+    "text": "UEFA backed France's Philippe Diallo to challenge Gianni Infantino for the FIFA presidency."
+   }
+  ],
+  "sources": [
+   {
+    "name": "Yahoo Finance",
+    "url": "https://ca.finance.yahoo.com/news/stocks-slide-kick-off-major-220458015.html"
+   },
+   {
+    "name": "Eurasia Business News",
+    "url": "https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/"
+   },
+   {
+    "name": "FinanceFeeds",
+    "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/for-the-first-time-since-july-national-average-drops-below-4/"
+   },
+   {
+    "name": "STAT",
+    "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "APEC opens in Shenzhen Wednesday. Trump and Xi meet Thursday.",
+   "text": "Leaders of 21 economies meet November 18 and 19. The US and China trade truce runs to January 10, 2027.",
+   "you": "Phones, laptops and appliances made in China are safer to buy before January than after.",
+   "sources": [
+    {
+     "name": "Business Today",
+     "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+    },
+    {
+     "name": "Bower Group Asia",
+     "url": "https://bowergroupasia.com/?p=8011"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Sri Lanka, Nepal",
+   "headline": "India's inflation hit 6.09%, above the central bank's 6% ceiling.",
+   "text": "October prices rose at the fastest pace in two years, driven by food. Food inflation reached 8.94%, with onions up 116%. The RBI raised its rate to 5.50% in October and meets again December 2 to 4.",
+   "you": "Sending money home or paying bills in rupees? Another RBI hike in December would raise loan costs there and could support the rupee.",
+   "sources": [
+    {
+     "name": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "European Union, United Kingdom, Ukraine, Russia",
+   "headline": "The EU adds Russia sanctions and its largest single payment to Ukraine.",
+   "text": "Nearly 50 banks and financial firms were sanctioned on Monday, and about €8 billion was approved for Kyiv. Talks last week produced a prisoner swap but no breakthrough.",
+   "you": "A lasting ceasefire would be the biggest relief for fuel prices in 2027. Until then, energy stays the swing factor.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf states, Iran, Israel, Iraq, Yemen",
+   "headline": "Tankers hit near Hormuz, yet oil keeps falling.",
+   "text": "Iran's navy reported a fourth mine strike in 24 hours, a claim not independently confirmed. Gulf exports have recovered faster than demand, the IEA says.",
+   "you": "Pump prices should keep drifting lower unless shipping is hit hard. FIOPO read, judgment not fact.",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "DR Congo, Nigeria, Kenya, South Africa, Ethiopia, Egypt",
+   "headline": "The Ebola outbreak centered in DR Congo has passed 11,000 confirmed cases.",
+   "text": "CDC counts 11,407 confirmed cases and 5,572 deaths as of November 14, almost all in DR Congo, with cases in Uganda, Kenya, Nigeria and France. This strain has no approved vaccine. CDC says the risk to the American public remains low.",
+   "you": "Travelers who were in DR Congo in the past 21 days cannot board flights to the US. Check CDC travel notices before any trip to the region.",
+   "sources": [
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    },
+    {
+     "name": "WHO",
+     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Colombia, Chile, Peru",
+   "headline": "Brazil's real hit a 12 month low as Petrobras slid.",
+   "text": "The dollar closed Friday at 5.67 reais, the most in a year. Brazil's central bank holds its rate at 13.75% and decides again December 9. Lula won reelection on October 25.",
+   "you": "Dollars stretch further in Brazil right now. Travelers and buyers of Brazilian goods benefit; people sending money to Brazil get more reais.",
+   "sources": [
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+    },
+    {
+     "name": "MercoPress",
+     "url": "https://en.mercopress.com/2026/11/16"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Baseball, United States",
+   "headline": "MLB's labor deal expires December 1. A lockout looks likely.",
+   "text": "MLB proposed a salary cap from 2028 of $258.2 million with a $180.2 million floor. Players oppose a cap. The last cap fight led to the 1994 strike.",
+   "you": "Hold off on 2027 season tickets and travel packages until a deal is signed, or buy only with a clear refund policy.",
+   "sources": [
+    {
+     "name": "ESPN",
+     "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+    }
+   ]
+  },
+  {
+   "topic": "Cricket, India",
+   "headline": "India won its first ODI series in New Zealand in seven years, and landed two world events.",
+   "text": "India won the series 3 to 1 on November 15. The ICC also named India host of the 2029 Champions Trophy and co-host, with Bangladesh, of the 2031 World Cup.",
+   "you": "Planning to see a world event in India? The 2029 Champions Trophy runs October 9 to 28. Watch for official ticket sales only.",
+   "sources": [
+    {
+     "name": "Pro Ace Predictions",
+     "url": "https://www.pro-ace-predictions.co.uk/cricket-news-today-16-november-2026/"
+    },
+    {
+     "name": "CareerIndia",
+     "url": "https://www.careerindia.com/news/school-assembly-news-headlines-today-november-16-2026-national-international-education-sports-068703.html"
+    }
+   ]
+  },
+  {
+   "topic": "Football, worldwide",
+   "headline": "Infantino, unopposed in 2023, now faces a challenger backed by Europe.",
+   "text": "UEFA's 55 members backed France's Philippe Diallo. The vote is at the FIFA Congress in Rabat in March 2027. UEFA has sued in Florida over Infantino's dropped plan to sell World Cup stakes to investors.",
+   "you": "FIFA's leader shapes World Cup ticket prices and TV deals. A contested race means more scrutiny of both.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Games",
+   "headline": "GTA 6 arrives Thursday at $79.99. Preorders are estimated near $750 million.",
+   "text": "Sensor Tower estimates about 7.7 million copies were preordered. It launches November 19 on PS5 and Xbox Series X and S.",
+   "you": "The preload is about 212 GB. Check console storage before Thursday instead of buying a drive at launch week prices.",
+   "sources": [
+    {
+     "name": "Shattered",
+     "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"
+    }
+   ]
+  },
+  {
+   "topic": "Film, India and worldwide",
+   "headline": "Ramayana: Rise of a Legend has grossed $147.5 million worldwide in 11 days.",
+   "text": "Sony says the Indian epic made $24 million in the US and Canada alone. It reportedly cost Rs 2,000 crore and opens in Brazil, Italy and more markets this week.",
+   "you": "Big Indian releases now play wide in US theaters. Premium format tickets sell out first on opening weekends.",
+   "sources": [
+    {
+     "name": "Metro Vaartha",
+     "url": "https://english.metrovaartha.com/entertainment/ramayana-rise-of-a-legend-crosses-1475-million-globally-in-11-days"
+    },
+    {
+     "name": "The Numbers",
+     "url": "https://www.the-numbers.com/weekend-box-office-chart"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "AI",
+   "headline": "Anthropic lists Thursday at $70 to $78 a share.",
+   "text": "That values it at up to $1.404 trillion, ticker ANT on the Nasdaq. Up to 20% of shares are set aside for retail buyers.",
+   "you": "First day prices swing hard. Only risk money you can afford to see drop.",
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    }
+   ]
+  },
+  {
+   "topic": "Chips",
+   "headline": "New US rules limit access to advanced chips through overseas data centers.",
+   "text": "Malaysia, Thailand, Indonesia, Singapore and Brazil face added export licensing. The cost to chipmakers depends on how licenses are granted.",
+   "you": "If your retirement fund leans on tech, check how much sits in a few chip stocks.",
+   "sources": [
+    {
+     "name": "Eurasia Business News",
+     "url": "https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/"
+    }
+   ]
+  },
+  {
+   "topic": "Medicine",
+   "headline": "FDA approves a new breast cancer pill for patients whose tumors stop responding.",
+   "text": "Roche's Wilserdly (giredestrant) treats advanced HR positive, HER2 negative cancer with an ESR1 mutation. In trials it delayed tumor growth. Roche says it could become its best seller.",
+   "you": "Patients on hormone therapy can ask their oncologist whether ESR1 testing applies to them.",
+   "sources": [
+    {
+     "name": "STAT",
+     "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Tsavo, Kenya: big elephant herds with fewer crowds.",
+   "text": "Lonely Planet named Tsavo East and West to its Best in Travel 2027 list for wide red earth savannahs and large elephant herds, with fewer visitors than Kenya's famous parks.",
+   "you": "CDC rates Kenya at Level 1, usual precautions, despite the regional Ebola outbreak. Check the notice again before you book.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tsavo_east_panorama.jpg/1280px-Tsavo_east_panorama.jpg",
+    "alt": "Wide savanna in Tsavo East National Park with elephants and giraffes",
+    "credit": "Łukasz Ciesielski",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tsavo_east_panorama.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "California's redwood coast, picked for 2027.",
+   "text": "Lonely Planet's 2027 list includes the Northern California coast and redwoods. Redwood National and State Parks protect some of the tallest trees on earth along 40 miles of Pacific coast.",
+   "you": "Check the official park site for fees, closures and road conditions before you go.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Redwood_National_Park_REDW9343.jpg/960px-Redwood_National_Park_REDW9343.jpg",
+    "alt": "Old growth coast redwoods in fog",
+    "credit": "National Park Service",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "NPS via Wikimedia Commons",
+     "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "Book holiday flights before a possible fuel spike.",
+   "text": "Oil is falling, but our 30 day read still gives a 25% chance Brent spikes above $100. Airfares follow fuel within weeks. The dollar also buys more in Brazil than at any time in a year.",
+   "you": "Lock in fares you are happy with now. FIOPO read, judgment not fact.",
+   "sources": [
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+    },
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "The AGI Chronicles",
+   "by": "Kevin Roose",
+   "where": "Named one of Publishers Weekly's best books of 2026",
+   "text": "A behind the scenes account of the race to build advanced AI. Timely reading in the week Anthropic goes public and Nvidia reports.",
+   "sources": [
+    {
+     "name": "Publishers Weekly via Year End Lists",
+     "url": "https://www.yearendlists.com/2026/publishers-weekly-10-best-books-of-2026"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "The Altruists",
+   "by": "Limited series starring Julia Garner and Anthony Boyle",
+   "where": "Netflix, from Thursday, November 19",
+   "text": "A dramatized account of the rise and fraudulent collapse of the FTX crypto exchange. A useful reminder, with Bitcoin down 14% in a week, that hype is not a business plan.",
+   "sources": [
+    {
+     "name": "What's on Netflix",
+     "url": "https://www.whats-on-netflix.com/coming-soon/whats-coming-to-netflix-this-week-november-16-to-22-2026/"
+    }
+   ]
+  }
+ ],
+ "events": {
+  "global": [
+   {
+    "when": "Nov 17",
+    "what": "Nvidia earnings after the close; US October retail sales"
+   },
+   {
+    "when": "Nov 18 to 19",
+    "what": "APEC Leaders' Meeting, Shenzhen"
+   },
+   {
+    "when": "Nov 19",
+    "what": "Anthropic expected to start trading (ANT); GTA 6 launches"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output"
+   },
+   {
+    "when": "Dec 1",
+    "what": "MLB labor deal expires"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Fed and Brazil central bank rate decisions"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election, Rabat"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference, Sugar Land, Texas"
+   },
+   {
+    "when": "April",
+    "what": "4th African Conference; Dammam, Saudi Arabia"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen, United Kingdom"
+   },
+   {
+    "when": "August",
+    "what": "Midland, Texas"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates"
+   }
+  ],
+  "industry_note": "Exact dates beyond February are not yet published.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "FinanceFeeds",
+    "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+   },
+   {
+    "name": "The Tribune",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ]
+ },
+ "trending": {
+  "label": "Trending online",
+  "items": [
+   {
+    "where": "YouTube, US",
+    "text": "\"GTA 6: Everything You NEED To Know\" from TGG passed 2.1 million views ahead of Thursday's launch."
+   },
+   {
+    "where": "YouTube, US",
+    "text": "The final trailer for Avengers: Doomsday, and leak coverage of it, are among the top trending videos."
+   },
+   {
+    "where": "TikTok",
+    "text": "#latingrammys and #streamerawards are among the fastest rising hashtags this week."
+   }
+  ],
+  "sources": [
+   {
+    "name": "CreatorDB YouTube trending",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube/united-states/"
+   },
+   {
+    "name": "TokChart",
+    "url": "https://tokchart.com/tiktok-trending-hashtags"
+   }
+  ]
  }
 }
