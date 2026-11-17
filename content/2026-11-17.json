@@ -1,0 +1,194 @@
+{
+ "date": "2026-11-17",
+ "date_long": "Tuesday, November 17, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "Oil just fell to its lowest since August. Your gas tank is next.",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {"label": "The event", "value": "Glut warning", "text": "The IEA says oil supply now tops demand for the first time since the Iran war began, with a fourth quarter surplus of about 1.7 million barrels a day."},
+   {"label": "Crude oil", "value": "$85.72", "text": "US crude settled Monday down 3.2%, its lowest close since August 28. Brent fell 3.55% to $92.44."},
+   {"label": "Gas pump", "value": "$3.81", "text": "AAA national average on November 16, down from $4.36 in mid October. Still the priciest November on record."},
+   {"label": "Interest rates", "value": "Hike still likely", "text": "Markets price about 91% odds of a quarter point Fed increase on December 9. Cheaper oil has not changed that yet."},
+   {"label": "You", "value": "~54¢ a gallon", "text": "Saved versus mid October, about $8 on a 15 gallon fill. Borrowing costs are the part still rising."}
+  ],
+  "caption": "Sources: AAA national average November 16; NYMEX WTI and ICE Brent settlements November 16; IEA monthly report via FinanceFeeds; CME FedWatch November 16. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {"label": "S&P 500, Mon", "value": "−1.9%", "note": "tech led the drop", "dir": "down"},
+  {"label": "Nasdaq, Mon", "value": "−2.5%", "note": "third losing day", "dir": "down"},
+  {"label": "10 year Treasury", "value": "5.12%", "note": "Tue morning", "dir": "flat"},
+  {"label": "Brent crude", "value": "$92.44", "note": "−3.55% Mon", "dir": "down"},
+  {"label": "Gold", "value": "~$3,858", "note": "Tue morning", "dir": "flat"},
+  {"label": "Bitcoin", "value": "~$64,200", "note": "−14% in a week", "dir": "down"}
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Interest rates",
+   "headline": "Cheaper gas will not stop a likely Fed hike. Today's retail sales report is the next test.",
+   "stake": {"level": "hi", "text": "High stakes for borrowers"},
+   "happened": "Markets kept pricing about 91% odds of a quarter point Fed increase on December 9, even as oil slid. The 10 year Treasury yield, which steers mortgage rates, closed at 5.15% on Friday.",
+   "happening": "October retail sales come out at 7:30 a.m. Central today. Forecasters expect a 0.2% gain after September's 0.8%. The Fed's rate sits at 3.75% to 4.00%.",
+   "could": {
+    "odds": [
+     {"label": "Quarter point hike Dec 9", "pct": 91},
+     {"label": "Half point hike", "pct": 9}
+    ],
+    "text": "",
+    "note": "Market odds from CME FedWatch, November 16. Not a FIOPO forecast."
+   },
+   "you": [
+    "Credit cards and HELOCs move with the Fed almost one for one. Pay down variable balances before December 9.",
+    "Shopping for a mortgage? Rates follow the 10 year yield, which is near 5.1%. Lock if the payment works for you now.",
+    "Keep idle cash in an account paying close to the Fed rate. A hike helps savers a little."
+   ],
+   "watch": "retail sales this morning, Fed minutes Wednesday.",
+   "sources": [
+    {"name": "Admirals", "url": "https://admiralmarkets.com/analytics/traders-blog/fed-december-rate-hike-treasury-yields-retail-sales"},
+    {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html"}
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Iran war and the Gulf",
+   "headline": "Tankers are burning near Hormuz, yet oil keeps falling. Here is why.",
+   "stake": {"level": "hi", "text": "High stakes for prices"},
+   "happened": "Iran's navy said a fourth tanker hit a mine in 24 hours. A separate tanker was disabled near Khasab, Oman, with the crew reported safe. The IRGC says it targeted US radar in Bahrain again on Tuesday.",
+   "happening": "Gulf exports have recovered faster than demand, the IEA says, so the market shrugged. Iran says a regional bloc backs its plan to reopen the strait within two days under a ceasefire. The White House calls Iran's demands unacceptable.",
+   "could": {
+    "odds": [
+     {"label": "Brent stays $85 to $95", "pct": 55},
+     {"label": "Spike above $100", "pct": 25},
+     {"label": "Deal sends Brent below $85", "pct": 20}
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days. Judgment, not fact."
+   },
+   "you": [
+    "Pump prices should keep drifting lower into Thanksgiving unless shipping is hit hard.",
+    "Diesel dipped below $6 a gallon for the first time since September. Delivery and freight costs should ease with a lag.",
+    "Flying for the holidays? Book now. A spike would show up in fares within weeks."
+   ],
+   "watch": "whether the mine claims slow Hormuz traffic, and the OPEC+ meeting November 29.",
+   "sources": [
+    {"name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/"},
+    {"name": "FinanceFeeds", "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"}
+   ]
+  },
+  {
+   "id": "ai",
+   "topic": "AI and your retirement account",
+   "headline": "Nvidia reports tonight and Anthropic lists Thursday. One week will set the mood for AI stocks.",
+   "stake": {"level": "md", "text": "Medium stakes for investors"},
+   "happened": "Nvidia closed Monday at $156.14, down 4.1%, after its CEO's sudden exit and new US limits on chip access through overseas data centers. The Nasdaq fell 2.5%.",
+   "happening": "Nvidia reports after the close today under interim CEO Colette Kress. Anthropic set its IPO at $70 to $78 a share, up to a $1.404 trillion valuation, with trading expected Thursday under ANT on the Nasdaq.",
+   "could": {
+    "odds": [],
+    "text": "A steady Nvidia outlook and a calm Anthropic debut would likely lift tech into December. A weak guide could make the IPO price at the low end and extend the slide.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "If you own an S&P 500 or Nasdaq fund, you already own a lot of Nvidia. Big earnings day swings are normal.",
+    "Up to 20% of Anthropic's shares are set aside for retail investors. First day prices can swing hard, so size any purchase as money you can afford to see drop.",
+    "Check that your retirement plan is not more than you intended in a handful of tech names."
+   ],
+   "watch": "Nvidia guidance tonight and where Anthropic prices Wednesday evening.",
+   "sources": [
+    {"name": "Eurasia Business News", "url": "https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/"},
+    {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"}
+   ]
+  },
+  {
+   "id": "trade",
+   "topic": "Trade and diplomacy",
+   "headline": "APEC opens in Shenzhen Wednesday. Trump and Xi meet Thursday with the trade truce on the clock.",
+   "stake": {"level": "md", "text": "Medium stakes for prices"},
+   "happened": "The EU sanctioned nearly 50 banks and financial firms tied to Russia and approved its largest single payment to Ukraine, about €8 billion. Last week's UAE talks produced a prisoner swap but no breakthrough.",
+   "happening": "APEC leaders meet November 18 and 19. Trump arrives late Wednesday and holds talks with Xi on Thursday, with a three way meeting with Putin also expected. A US official says Ukraine is not on that agenda. The US and China trade truce runs to January 10, 2027.",
+   "could": {
+    "odds": [],
+    "text": "Most likely: warm words and a truce extension, with chips unresolved. The risk: the truce lapses in January and tariffs return on electronics, toys and clothing.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Phones, laptops and appliances made in China are safer to buy before January than after.",
+    "Watch for any line on chips. New US export rules already hit Malaysia, Thailand, Indonesia, Singapore and Brazil."
+   ],
+   "watch": "any truce extension or tariff language after Thursday's meeting.",
+   "sources": [
+    {"name": "Business Today", "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"},
+    {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war"},
+    {"name": "Bower Group Asia", "url": "https://bowergroupasia.com/?p=8011"}
+   ]
+  }
+ ],
+ "culture": [
+  {
+   "topic": "Sports business",
+   "headline": "Baseball's labor deal expires December 1. A lockout looks likely, and the fight is over a salary cap.",
+   "happened": "MLB proposed delaying a salary cap to 2028, at $258.2 million with a $180.2 million floor. Players oppose a cap. The last cap fight led to the 1994 strike.",
+   "happening": "Teams are expected to rush free agent signings before the deal expires. Talks are unlikely to speed up until January.",
+   "could": "If 60 or more games are lost, national TV deals extend a year. A spring delay is possible. FIOPO read.",
+   "you": [
+    "Hold off on 2027 season tickets and travel packages until a deal is signed, or buy only with a clear refund policy."
+   ],
+   "sources": [
+    {"name": "ESPN", "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"},
+    {"name": "Front Office Sports", "url": "https://frontofficesports.com/newsletter/can-anyone-actually-beat-infantino/"}
+   ]
+  },
+  {
+   "topic": "Entertainment",
+   "headline": "GTA 6 arrives Thursday at $79.99. Preorders alone are estimated near $750 million.",
+   "happened": "Sensor Tower estimates about 7.7 million copies were preordered. Take-Two's CEO says preorders are far above expectations.",
+   "happening": "The game launches at midnight local time on November 19 on PS5 and Xbox Series X and S. The Ultimate Edition costs $99.99.",
+   "could": "A smooth launch would lift holiday spending on consoles and accessories. A rocky one becomes a warning sign for stretched shoppers. FIOPO read.",
+   "you": [
+    "The preload is about 212 GB. Check your console storage before Thursday instead of buying a drive at launch week prices."
+   ],
+   "sources": [
+    {"name": "Shattered", "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"}
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.81,
+  "gas_year_ago": 3.08,
+  "gas_note": "US average $3.81 on November 16 vs about $3.08 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Today in three tenses",
+  "headline": "Oil hit its lowest since August. Gas is next.",
+  "points": [
+   "US crude $85.72, down 3.2% Monday",
+   "US gas $3.81, was $4.36 mid Oct",
+   "Fed hike odds still 91% (market)"
+  ],
+  "caption": "One event, five steps to your wallet. The IEA says oil supply now tops demand, US crude closed at its lowest since August 28, and the gas average is $3.81, down about 54 cents since mid October. Markets still price 91% odds of a Fed hike December 9 (market odds). What it means for you at fiopoin.com\n\n#FIOPO #GasPrices #OilPrices #Fed #PersonalFinance"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: your money",
+   "headline": "Cheaper gas won't stop a likely Fed hike.",
+   "points": [
+    "Pay variable card balances first",
+    "Mortgage? Lock if the payment works",
+    "Park idle cash near the Fed rate"
+   ],
+   "watch": "Fed minutes Wednesday, Nvidia earnings tonight.",
+   "caption": "Gas is down, but markets still price about 91% odds of a quarter point Fed hike on December 9 (CME FedWatch, market odds). Credit cards and HELOCs move with the Fed almost one for one. Mortgages follow the 10 year Treasury, near 5.1%. Savers gain a little. Full breakdown at fiopoin.com. General information, not financial advice.\n\n#FIOPO #InterestRates #Fed #PersonalFinance #Mortgage"
+  },
+  "evening": {
+   "kicker": "Evening: the world and your wallet",
+   "headline": "Tankers hit near Hormuz, yet oil keeps falling.",
+   "points": [
+    "IEA: supply now tops demand",
+    "Diesel dipped below $6 a gallon",
+    "Book holiday flights before a spike"
+   ],
+   "watch": "Hormuz traffic after the mine claims, and OPEC+ on November 29.",
+   "caption": "Iran's navy says a fourth tanker hit a mine near Hormuz, yet Brent fell 3.55% to $92.44 on Monday. The reason: Gulf exports recovered faster than demand. Diesel dipped below $6 for the first time since September, which eases freight costs with a lag. Our read, labeled as judgment: pump prices drift lower unless shipping is hit hard. More at fiopoin.com.\n\n#FIOPO #OilPrices #MiddleEast #GasPrices #Travel"
+  }
+ }
+}
