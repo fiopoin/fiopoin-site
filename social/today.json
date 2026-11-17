@@ -3,14 +3,17 @@
  "slots": {
   "morning": {
    "image": "https://fiopoin.com/social/2026-11-17.png",
+   "story": "https://fiopoin.com/social/2026-11-17-story.png",
    "caption": "One event, five steps to your wallet. The IEA says oil supply now tops demand, US crude closed at its lowest since August 28, and the gas average is $3.81, down about 54 cents since mid October. Markets still price 91% odds of a Fed hike December 9 (market odds). What it means for you at fiopoin.com\n\n#FIOPO #GasPrices #OilPrices #Fed #PersonalFinance"
   },
   "midday": {
    "image": "https://fiopoin.com/social/2026-11-17-midday.png",
+   "story": "https://fiopoin.com/social/2026-11-17-midday-story.png",
    "caption": "Gas is down, but markets still price about 91% odds of a quarter point Fed hike on December 9 (CME FedWatch, market odds). Credit cards and HELOCs move with the Fed almost one for one. Mortgages follow the 10 year Treasury, near 5.1%. Savers gain a little. Full breakdown at fiopoin.com. General information, not financial advice.\n\n#FIOPO #InterestRates #Fed #PersonalFinance #Mortgage"
   },
   "evening": {
    "image": "https://fiopoin.com/social/2026-11-17-evening.png",
+   "story": "https://fiopoin.com/social/2026-11-17-evening-story.png",
    "caption": "Iran's navy says a fourth tanker hit a mine near Hormuz, yet Brent fell 3.55% to $92.44 on Monday. The reason: Gulf exports recovered faster than demand. Diesel dipped below $6 for the first time since September, which eases freight costs with a lag. Our read, labeled as judgment: pump prices drift lower unless shipping is hit hard. More at fiopoin.com.\n\n#FIOPO #OilPrices #MiddleEast #GasPrices #Travel"
   }
  }

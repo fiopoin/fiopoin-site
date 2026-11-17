@@ -181,14 +181,14 @@ def wrap(draw, text, font, width):
     lines.append(cur)
     return lines
 
-def card(d, W, H, path, s=None, show_chain=True):
+def card(d, W, H, path, s=None, show_chain=True, pad=0):
     s = s or d["social"]
     im = Image.new("RGB", (W, H), NAVY)
     dr = ImageDraw.Draw(im)
     M = 80
     lg = logo.resize((600, int(600 * logo.height / logo.width)), Image.LANCZOS)
     im.paste(lg, (M, M - 10), lg)
-    y = M - 10 + lg.height + 60
+    y = M - 10 + lg.height + 60 + pad
     dr.text((M, y), s["kicker"], font=F("SemiBold", 34), fill=GREEN)
     y += 70
     hf = F("ExtraBold", 84 if H > W * 1.5 else 72)
@@ -230,12 +230,14 @@ def card(d, W, H, path, s=None, show_chain=True):
             dr.text((M + 70, y - 2), n["label"], font=F("Regular", 26), fill=MUTE)
             dr.text((M + 70 + dr.textlength(n["label"], font=F("Regular", 26)) + 18, y - 8), n["value"], font=F("Bold", 36), fill=WHITE)
             y += row
+    content_end = y
     dr.line((M, H - M - 96, W - M, H - M - 96), fill=(58, 78, 117), width=2)
     dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=MUTE)
     dr.text((M, H - M - 30), "What it means for you: fiopoin.com", font=F("SemiBold", 36), fill=GREEN)
     sm = small.resize((190, int(190 * small.height / small.width)), Image.LANCZOS)
     im.paste(sm, (W - M - sm.width, H - M - sm.height + 4), sm)
     im.save(path, optimize=True)
+    return content_end
 
 for d in data:
     if "social" not in d:
@@ -247,12 +249,20 @@ for d in data:
         open(f"social/{d['date']}.txt", "w").write(d["social"]["caption"] + "\n")
         for slot, ss in d.get("social_slots", {}).items():
             card(d, 1080, 1350, f"social/{d['date']}-{slot}.png", ss, show_chain=False)
+            sp = f"social/{d['date']}-{slot}-story.png"
+            end = card(d, 1080, 1920, sp, ss, show_chain=False)
+            top = 80 - 10 + int(600 * logo.height / logo.width) + 60
+            free = (1920 - 80 - 140) - end
+            if free > 80:
+                card(d, 1080, 1920, sp, ss, show_chain=False, pad=free // 2)
             open(f"social/{d['date']}-{slot}.txt", "w").write(ss["caption"] + "\n")
 
 # Posting manifest for the scheduled social task: three posts a day
-slots = {"morning": {"image": f"https://fiopoin.com/social/{latest['date']}.png", "caption": latest["social"]["caption"]}}
+slots = {"morning": {"image": f"https://fiopoin.com/social/{latest['date']}.png",
+                     "story": f"https://fiopoin.com/social/{latest['date']}-story.png", "caption": latest["social"]["caption"]}}
 for slot, ss in latest.get("social_slots", {}).items():
-    slots[slot] = {"image": f"https://fiopoin.com/social/{latest['date']}-{slot}.png", "caption": ss["caption"]}
+    slots[slot] = {"image": f"https://fiopoin.com/social/{latest['date']}-{slot}.png",
+                   "story": f"https://fiopoin.com/social/{latest['date']}-{slot}-story.png", "caption": ss["caption"]}
 json.dump({"date": latest["date"], "slots": slots}, open("social/today.json", "w"), indent=1)
 Image.open(f"social/{latest['date']}.png").save("social/latest.png")
 open("social/latest.txt", "w").write(latest["social"]["caption"] + "\n")

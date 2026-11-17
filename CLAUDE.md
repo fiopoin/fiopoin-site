@@ -22,7 +22,7 @@ Finding stories: prefer what is getting the most traction (most-read and trendin
 - Images load from upload.wikimedia.org only (the content security policy allows only that outside host). Build the Commons thumbnail URL as https://upload.wikimedia.org/wikipedia/commons/thumb/{md5[0]}/{md5[0:2]}/{File_name}/{960 or 1280}px-{File_name} where md5 is of the underscored file name; never request a width larger than the original. A broken image hides itself.
 - Videos are linked, never embedded.
 
-Three social posts a day, each with different content: morning = `social` (the hero ripple), midday = `social_slots.midday` (the "money" story, kicker "Midday: your money"), evening = `social_slots.evening` (the "world" story or the biggest sports or entertainment story, kicker "Evening: the world and your wallet"). The build writes `social/<date>-midday.png`, `social/<date>-evening.png`, their .txt captions, and `social/today.json`, the posting manifest the scheduled social task reads.
+Three social posts a day, each with different content: morning = `social` (the hero ripple), midday = `social_slots.midday` (the "money" story, kicker "Midday: your money"), evening = `social_slots.evening` (the "world" story or the biggest sports or entertainment story, kicker "Evening: the world and your wallet"). The build writes `social/<date>-midday.png`, `social/<date>-evening.png`, tall 1080x1920 story versions (`social/<date>-midday-story.png`, `social/<date>-evening-story.png`, and `social/<date>-story.png` for the morning), their .txt captions, and `social/today.json`, the posting manifest the scheduled social task reads.
 Story ids "money" and "world" must exist (the nav links to them).
 
 ## Site settings, analytics and privacy
