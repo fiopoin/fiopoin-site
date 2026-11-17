@@ -9,7 +9,8 @@ Static site on GitHub Pages (repo fiopoin/fiopoin-site, branch main, custom doma
 - Requires `jinja2` and `Pillow` (`pip install --break-system-packages jinja2 pillow` if missing). Fonts are bundled in `tools/fonts`.
 
 ## Content JSON schema (copy the latest file and replace every field)
-date, date_long, edition, hero{headline, dek, chain[5]{label,value,text}, caption}, tape[6]{label,value,note,dir: up|down|flat}, stories[4]{id, topic, headline, stake{level: hi|md|lo, text}, happened, happening, could{odds[]{label,pct}, text, note}, you[], watch, sources[]{name,url}}, culture[2]{topic, headline, happened, happening, could, you[], sources[]}, calc{gas_now, gas_year_ago, gas_note}, social{kicker, headline, points[3], caption}.
+date, date_long, edition, hero{headline, dek, chain[5]{label,value,text}, caption}, tape[6]{label,value,note,dir: up|down|flat}, stories[4]{id, topic, headline, stake{level: hi|md|lo, text}, happened, happening, could{odds[]{label,pct}, text, note}, you[], watch, sources[]{name,url}}, culture[2]{topic, headline, happened, happening, could, you[], sources[]}, calc{gas_now, gas_year_ago, gas_note}, social{kicker, headline, points[3], caption}, social_slots{midday{kicker, headline, points[3], watch, caption}, evening{kicker, headline, points[3], watch, caption}}.
+Three social posts a day, each with different content: morning = `social` (the hero ripple), midday = `social_slots.midday` (the "money" story, kicker "Midday: your money"), evening = `social_slots.evening` (the "world" story or the biggest culture story, kicker "Evening: the world and your wallet"). The build writes `social/<date>-midday.png`, `social/<date>-evening.png`, their .txt captions, and `social/today.json`, the posting manifest the scheduled social task reads.
 Story ids "money" and "world" must exist (the nav links to them).
 
 ## Editorial rules
@@ -18,7 +19,7 @@ Story ids "money" and "world" must exist (the nav links to them).
 - No em dashes or en dashes used as punctuation. Plain, direct, human prose. No hype.
 - Stay politically neutral: report positions and facts, no endorsements.
 - Every story ends with concrete "what it means for you" actions. General information only, never personalized investment advice.
-- Social headline under 60 characters; points under 40 characters each; caption under 600 characters with 4 to 6 hashtags.
+- Social headline under 60 characters; points under 40 characters each; caption under 600 characters with 4 to 6 hashtags. The same limits apply to each social_slots entry.
 
 ## Publishing
 Commit as user "fiopoin" and push to main. GitHub Pages deploys within about a minute.

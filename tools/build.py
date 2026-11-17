@@ -76,8 +76,8 @@ def wrap(draw, text, font, width):
     lines.append(cur)
     return lines
 
-def card(d, W, H, path):
-    s = d["social"]
+def card(d, W, H, path, s=None, show_chain=True):
+    s = s or d["social"]
     im = Image.new("RGB", (W, H), NAVY)
     dr = ImageDraw.Draw(im)
     M = 80
@@ -102,7 +102,12 @@ def card(d, W, H, path):
             dr.text((M + 50, y), line, font=pf, fill=WHITE); y += 58
         y += 22
     # the ripple chain: how the story reaches you
-    chain = d["hero"].get("chain", [])
+    if s.get("watch") and not show_chain:
+        y += 20
+        dr.text((M, y), "What to watch", font=F("SemiBold", 30), fill=AMBER); y += 52
+        for line in wrap(dr, s["watch"], F("Regular", 38), W - 2 * M):
+            dr.text((M, y), line, font=F("Regular", 38), fill=WHITE); y += 52
+    chain = d["hero"].get("chain", []) if show_chain else []
     foot_top = H - M - 110
     row = 92 if H > W * 1.5 else 60
     tall = H > W * 1.5
@@ -135,6 +140,15 @@ for d in data:
         card(d, 1080, 1350, p)
         card(d, 1080, 1920, f"social/{d['date']}-story.png")
         open(f"social/{d['date']}.txt", "w").write(d["social"]["caption"] + "\n")
+        for slot, ss in d.get("social_slots", {}).items():
+            card(d, 1080, 1350, f"social/{d['date']}-{slot}.png", ss, show_chain=False)
+            open(f"social/{d['date']}-{slot}.txt", "w").write(ss["caption"] + "\n")
+
+# Posting manifest for the scheduled social task: three posts a day
+slots = {"morning": {"image": f"https://fiopoin.com/social/{latest['date']}.png", "caption": latest["social"]["caption"]}}
+for slot, ss in latest.get("social_slots", {}).items():
+    slots[slot] = {"image": f"https://fiopoin.com/social/{latest['date']}-{slot}.png", "caption": ss["caption"]}
+json.dump({"date": latest["date"], "slots": slots}, open("social/today.json", "w"), indent=1)
 Image.open(f"social/{latest['date']}.png").save("social/latest.png")
 open("social/latest.txt", "w").write(latest["social"]["caption"] + "\n")
 print("built", latest["date"], "editions:", len(data))
