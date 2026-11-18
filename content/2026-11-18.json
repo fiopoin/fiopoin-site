@@ -1,0 +1,881 @@
+{
+ "date": "2026-11-18",
+ "date_long": "Wednesday, November 18, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "Nvidia beat and raised its forecast. Here is how that reaches your 401(k).",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "$115.8B",
+    "text": "Nvidia's third quarter revenue, up 103% from a year ago. Data center sales were $107.6 billion. Adjusted EPS of $2.68 topped an estimate of about $2.47."
+   },
+   {
+    "label": "The outlook",
+    "value": "$130B",
+    "text": "Nvidia guided next quarter to $130 billion, plus or minus 3%, above the $125.25 billion analysts expected (LSEG). It assumes no data center chip sales to China."
+   },
+   {
+    "label": "AI stocks",
+    "value": "NVDA +3.7%",
+    "text": "Nvidia rose 3.7% before the open Wednesday after closing Tuesday at $155.46. AMD gained 3%, Micron 3.4% and Broadcom 2.5%."
+   },
+   {
+    "label": "Index funds",
+    "value": "Nasdaq +1.2%",
+    "text": "Nasdaq 100 futures rose about 1.2% and S&P 500 futures 0.6%, after the S&P 500 fell Tuesday for a fourth straight day. Nvidia is one of the biggest holdings in both."
+   },
+   {
+    "label": "You",
+    "value": "$29.4B",
+    "text": "Data center growth has added that much to power system costs on PJM, the largest US grid, its independent monitor says. The AI boom shows up in 401(k)s and, over time, power bills."
+   }
+  ],
+  "caption": "Sources: NVIDIA results release November 17; LSEG estimate via Reuters November 18; premarket prices via Reuters and Techi November 18; PJM independent monitor via Reuters November 17. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "S&P 500, Tue",
+   "value": "−1.03%",
+   "note": "fourth losing day",
+   "dir": "down"
+  },
+  {
+   "label": "Nasdaq 100 futures",
+   "value": "+1.2%",
+   "note": "Wed premarket",
+   "dir": "up"
+  },
+  {
+   "label": "Nvidia, premarket",
+   "value": "+3.7%",
+   "note": "after earnings beat",
+   "dir": "up"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "5.11%",
+   "note": "Tue close",
+   "dir": "flat"
+  },
+  {
+   "label": "Brent crude",
+   "value": "$92.61",
+   "note": "Wed Asia, −0.6%",
+   "dir": "down"
+  },
+  {
+   "label": "US gas, AAA",
+   "value": "$3.75",
+   "note": "was $4.30 a month ago",
+   "dir": "down"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Interest rates",
+   "headline": "Gas fell to $3.75, but borrowing costs are still headed up. The Fed minutes land today.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for borrowers"
+   },
+   "happened": "The AAA national average fell to $3.75 a gallon on November 18, from $4.30 a month ago. The 10 year Treasury yield, which steers mortgage rates, closed Tuesday at 5.11%.",
+   "happening": "Minutes from the Fed's October meeting come out at 2 p.m. Eastern today. New York Fed President John Williams said rates will likely need to rise again, but he opposed an aggressive path. October housing starts and building permits are also due.",
+   "could": {
+    "odds": [],
+    "text": "Markets almost fully price a quarter point Fed increase on December 9. The minutes will show how many officials wanted more.",
+    "note": "Market pricing per Reuters, November 18. Not a FIOPO forecast."
+   },
+   "you": [
+    "Credit cards and HELOCs move with the Fed almost one for one. Pay down variable balances before December 9.",
+    "Shopping for a mortgage? Rates follow the 10 year yield, near 5.1%. Lock if the payment works for you now.",
+    "Put the gas savings to work: move idle cash into an account paying close to the Fed rate."
+   ],
+   "watch": "Fed minutes at 2 p.m. Eastern today.",
+   "sources": [
+    {
+     "name": "AAA",
+     "url": "https://gasprices.aaa.com/"
+    },
+    {
+     "name": "Reuters via Investing.com",
+     "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
+    },
+    {
+     "name": "The Motley Fool",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Iran war and the Gulf",
+   "headline": "Seven attacks near Hormuz since November 10, and a third US carrier arrives. Oil barely moved.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
+   "happened": "The UK Maritime Trade Operations centre has counted seven attacks in or near the Strait of Hormuz since November 10. The USS Theodore Roosevelt arrived, bringing US carriers in the region to three.",
+   "happening": "Brent traded at $92.61 early Wednesday, down 0.6%, after an industry report showed US crude stocks rose 5.28 million barrels. Diplomatic efforts to reopen the strait remain stalled.",
+   "could": {
+    "odds": [
+     {
+      "label": "Brent stays $85 to $95",
+      "pct": 55
+     },
+     {
+      "label": "Spike above $100",
+      "pct": 25
+     },
+     {
+      "label": "Deal sends Brent below $85",
+      "pct": 20
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days, unchanged from November 17. Judgment, not fact."
+   },
+   "you": [
+    "Pump prices are still falling. The national average dropped about 3 cents in a day.",
+    "Diesel is $5.96, below $6 for now. Freight and delivery costs should ease with a lag.",
+    "Flying for the holidays? Book now. A spike would show up in fares within weeks."
+   ],
+   "watch": "government crude stock data at 9:30 a.m. Central today, and OPEC+ on November 29.",
+   "sources": [
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-92-61-wednesday-us-stock-build-fed-minutes-bull-96-bear-88/"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field"
+    },
+    {
+     "name": "AAA",
+     "url": "https://gasprices.aaa.com/"
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "topic": "AI and your retirement account",
+   "headline": "Nvidia's first report since Jensen Huang's exit beat estimates. Anthropic prices its IPO tonight.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
+   "happened": "Nvidia reported $115.8 billion in quarterly revenue, up 103%, and guided to $130 billion next quarter versus $125.25 billion expected. It returned $28.1 billion to shareholders in the quarter. The stock closed Tuesday at $155.46.",
+   "happening": "Nvidia rose 3.7% before the open, with chip and AI cloud stocks up more. The four biggest AI spenders, Amazon, Alphabet, Microsoft and Meta, rose under 1%. Anthropic prices its IPO tonight, reportedly about six times oversubscribed, and trades Thursday as ANT.",
+   "could": {
+    "odds": [],
+    "text": "A strong guide eases fears that AI spending is peaking, but stocks fell for four days before this on rate and chip export worries. Expect big swings either way this week.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "If you own an S&P 500 or Nasdaq fund, you already own a lot of Nvidia. Earnings day swings are normal, so avoid trading on the headline.",
+    "Check that your retirement plan is not more concentrated in a few tech names than you intended.",
+    "First day IPO prices can swing hard. Size any Anthropic purchase as money you can afford to see drop."
+   ],
+   "watch": "where Anthropic prices tonight and whether Nvidia holds its gain at the close.",
+   "sources": [
+    {
+     "name": "NVIDIA investor relations",
+     "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+    },
+    {
+     "name": "Reuters via Investing.com",
+     "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
+    },
+    {
+     "name": "Techi",
+     "url": "https://www.techi.com/premarket-ai-hardware-stocks-rise-nvidia-buyers-flat/"
+    },
+    {
+     "name": "Stock Analysis",
+     "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+    }
+   ]
+  },
+  {
+   "id": "trade",
+   "topic": "Trade and diplomacy",
+   "headline": "Xi pitches free trade as Trump lands in China. A three way meeting with Putin follows.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for prices"
+   },
+   "happened": "At APEC in Shenzhen on Wednesday, Xi urged free and open trade and pledged lower tariffs, a veiled jab at America First policies. He did not mention US chip export limits.",
+   "happening": "Trump flew in from the Philippines to meet Xi, with an unprecedented three way summit with Putin to follow. The US and China trade truce runs to January 10, 2027.",
+   "could": {
+    "odds": [],
+    "text": "Most likely: warm words and a truce extension, with chips unresolved. The risk: the truce lapses in January and tariffs return on electronics, toys and clothing.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Phones, laptops and appliances made in China are safer to buy before January than after.",
+    "Watch for any line on chips. Export limits are already part of why AI stocks fell this week."
+   ],
+   "watch": "any truce extension or tariff language after the Trump and Xi meeting.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/18/xis-pitch-for-free-trade-amid-trumps-global-trade-disruptions"
+    },
+    {
+     "name": "Business Today",
+     "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.75,
+  "gas_year_ago": 3.08,
+  "gas_note": "US average $3.75 on November 18 vs about $3.08 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Today in three tenses",
+  "headline": "Nvidia beat estimates and raised its outlook.",
+  "points": [
+   "Q3 revenue $115.8B, up 103%",
+   "Q4 guide $130B vs $125.25B est.",
+   "NVDA +3.7% before the open"
+  ],
+  "caption": "Nvidia reported $115.8 billion in third quarter revenue, up 103%, and guided to $130 billion next quarter versus $125.25 billion expected (LSEG). Shares rose 3.7% before the open and Nasdaq 100 futures about 1.2%. If you own an index fund, you own a lot of Nvidia. Our read, labeled as judgment: expect big swings this week. General information, not investment advice. More at fiopoin.com\n\n#FIOPO #Nvidia #AI #Stocks #401k #PersonalFinance"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: your money",
+   "headline": "Gas fell to $3.75. Rates are still rising.",
+   "points": [
+    "Pay variable card balances first",
+    "Mortgage? Lock if the payment works",
+    "Park gas savings in high yield"
+   ],
+   "watch": "Fed minutes at 2 p.m. Eastern today.",
+   "caption": "The AAA gas average is $3.75, down from $4.30 a month ago. But markets almost fully price a quarter point Fed hike on December 9 (market pricing, per Reuters), and the 10 year Treasury sits at 5.11%. Credit cards and HELOCs follow the Fed. Mortgages follow the 10 year. Fed minutes land at 2 p.m. Eastern. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #InterestRates #Fed #GasPrices #PersonalFinance"
+  },
+  "evening": {
+   "kicker": "Evening: the world and your wallet",
+   "headline": "Hormuz attacks pile up. Oil barely moved.",
+   "points": [
+    "Third US carrier now in the region",
+    "US crude stocks up 5.28M barrels",
+    "Diesel $5.96, still under $6"
+   ],
+   "watch": "OPEC+ meets November 29.",
+   "caption": "Seven attacks in or near the Strait of Hormuz since November 10, and a third US aircraft carrier has arrived. Yet Brent traded near $92.61 Wednesday as US crude stocks rose. Diesel is $5.96 and gas $3.75 (AAA). Our read, labeled as judgment: a 25% chance Brent tops $100 in the next 30 days. Book holiday flights you are happy with now. More at fiopoin.com\n\n#FIOPO #OilPrices #MiddleEast #GasPrices #Travel"
+  }
+ },
+ "yesterday": {
+  "label": "Tuesday, November 17",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The S&P 500 fell 1.03% to 7,340.53, its fourth straight loss. The Dow lost 1.64%."
+   },
+   {
+    "label": "Nvidia",
+    "text": "Reported $115.8 billion in revenue after the close and guided above estimates. Shares rose after hours."
+   },
+   {
+    "label": "Software",
+    "text": "Salesforce fell 9.45% on worries that AI could replace software products."
+   },
+   {
+    "label": "Oil",
+    "text": "Brent settled at $93.14, up 0.76%, as attacks near Hormuz continued."
+   },
+   {
+    "label": "Ukraine",
+    "text": "Ukraine struck the Kerch Bridge to Crimea twice in 24 hours. Germany pledged $300 million for US air defense weapons for Kyiv."
+   },
+   {
+    "label": "Cricket",
+    "text": "IPL teams released stars including Matheesha Pathirana and Travis Head ahead of the December 16 auction."
+   }
+  ],
+  "sources": [
+   {
+    "name": "The Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/"
+   },
+   {
+    "name": "NVIDIA investor relations",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+   },
+   {
+    "name": "FinanceFeeds",
+    "url": "https://financefeeds.com/brent-crude-oil-price-92-61-wednesday-us-stock-build-fed-minutes-bull-96-bear-88/"
+   },
+   {
+    "name": "Forbes",
+    "url": "https://www.forbes.com/sites/katyasoldak/2026/11/17/tuesday-november-17-russias-war-on-ukraine-news-and-information-from-ukraine/"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "Xi pitches free trade at APEC as Trump arrives.",
+   "text": "Xi pledged lower tariffs and wider market access in Shenzhen on Wednesday. Trump meets Xi, then a three way summit with Putin. The trade truce runs to January 10, 2027.",
+   "you": "Phones, laptops and appliances made in China are safer to buy before January than after.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/18/xis-pitch-for-free-trade-amid-trumps-global-trade-disruptions"
+    },
+    {
+     "name": "Business Today",
+     "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Sri Lanka, Nepal",
+   "headline": "Foreign investors poured a record $9.53 billion into Indian stocks this month.",
+   "text": "The buying lifted the Sensex past 82,000 on Tuesday, helped by lower oil and solid earnings. Both main indexes are on track for about a 10% gain in November. The RBI meets December 2 to 4 with inflation above its ceiling.",
+   "you": "Hold Indian shares through an emerging markets fund? A strong month can reverse quickly. Rebalance rather than chase it.",
+   "sources": [
+    {
+     "name": "The Week",
+     "url": "https://www.theweek.in/news/biz-tech/2026/11/17/indian-markets-extend-rally-sensex-up.html"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "European Union, United Kingdom, Ukraine, Russia",
+   "headline": "UK inflation rose to 3.6% in October, pushed up by fuel.",
+   "text": "Prices rose from 3.5% in September, the ONS said Wednesday. The Bank of England raised its rate to 4.00% on November 4 and meets again December 17. About 2.3 million UK households come off fixed rate mortgages next year.",
+   "you": "Paying a UK mortgage or sending pounds abroad? Another hike would raise loan costs and could support sterling.",
+   "sources": [
+    {
+     "name": "ONS",
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026"
+    },
+    {
+     "name": "Mortgage Solutions",
+     "url": "https://www.mortgagesolutions.co.uk/mortgage-news/2026/11/18/uk-inflation-hits-3-6-in-october-in-increasingly-alarming-picture/"
+    },
+    {
+     "name": "IC Markets",
+     "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf states, Iran, Israel, Iraq, Yemen",
+   "headline": "Seven attacks near Hormuz since November 10, and a third US carrier.",
+   "text": "The UN's maritime agency counted 136 security incidents around Hormuz and the wider region from March 1 to November 11. A drone flew over Iraq's Khor Mor gas field on Monday, a week after an attack halted output there.",
+   "you": "Pump prices keep drifting lower unless shipping is hit hard. FIOPO read, judgment not fact.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field"
+    },
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-92-61-wednesday-us-stock-build-fed-minutes-bull-96-bear-88/"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, South Africa, Kenya, DR Congo, Ethiopia, Egypt",
+   "headline": "Nigeria's inflation eased to 14.06% in October.",
+   "text": "That is down from 14.63% in September, with food inflation at 19.13%. The central bank decides on rates November 24. South Africa reports October inflation today, forecast at 5.1%.",
+   "you": "Sending money to Nigeria? Slower inflation means each naira holds its value a little better. Compare transfer fees, which vary widely.",
+   "sources": [
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/africa-intelligence-brief-tuesday-november-17-2026/"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Colombia, Chile, Peru",
+   "headline": "Brazil's Senate passed Lula's budget fix, 45 to 31.",
+   "text": "The bill caps real spending growth at 2% in tight years from 2027 and trims corporate tax breaks. It could save R$45.1 to 56.1 billion and now goes to the lower house. The dollar buys about 5.77 reais.",
+   "you": "Dollars still stretch further in Brazil than at any time in the past year. Good for travelers and buyers of Brazilian goods.",
+   "sources": [
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/the-big-read-brazil-17-november-2026/"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Cricket, India",
+   "headline": "IPL teams cut big names. Ten teams take Rs 297.95 crore to the December 16 auction.",
+   "text": "Kolkata released Matheesha Pathirana (Rs 18 crore), Hyderabad released Travis Head and Delhi released Mitchell Starc. MS Dhoni steps back to mentor Chennai. 66 squad places are open for the auction in Goa.",
+   "you": "Fantasy and streaming fans: rosters reset in December, so wait before paying for any season pass or team package.",
+   "sources": [
+    {
+     "name": "Business Standard",
+     "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+    }
+   ]
+  },
+  {
+   "topic": "Football, worldwide",
+   "headline": "The World Cup paid off for US broadcasters. Fox says it will be disciplined on the next two.",
+   "text": "Comcast credited the 2026 tournament with $224 million in extra ad revenue, and Fox's ad revenue rose 47%. DAZN secured an exclusive option on global streaming of the 2029 Club World Cup.",
+   "you": "Big events are moving to streaming. Expect more matches behind paid apps, so budget for a subscription or two in tournament years.",
+   "sources": [
+    {
+     "name": "Sports Media Watch",
+     "url": "https://www.sportsmediawatch.com/2026/11/fox-corporation-world-cup-versant-sports-rights-mlb-salary-cap-floor-2028/"
+    }
+   ]
+  },
+  {
+   "topic": "Baseball, United States",
+   "headline": "MLB's labor deal expires December 1. A lockout is widely expected.",
+   "text": "Owners proposed a salary cap of $258.2 million from 2028 and a $1 million minimum salary. Players say a cap would hurt pay. Losing more than 60 games would extend most national TV deals by a year.",
+   "you": "Hold off on 2027 season tickets and travel packages until a deal is signed, or buy only with a clear refund policy.",
+   "sources": [
+    {
+     "name": "Sports Media Watch",
+     "url": "https://www.sportsmediawatch.com/2026/11/fox-corporation-world-cup-versant-sports-rights-mlb-salary-cap-floor-2028/"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Games",
+   "headline": "GTA 6 launches Thursday at $79.99, and creators are already streaming marathons.",
+   "text": "Kai Cenat and IShowSpeed GTA 6 videos are among the top trending on US YouTube. Sensor Tower estimates about 7.7 million preorders. It launches November 19 on PS5 and Xbox Series X and S.",
+   "you": "The preload is about 212 GB. Check console storage now instead of buying a drive at launch week prices.",
+   "sources": [
+    {
+     "name": "Shattered",
+     "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"
+    },
+    {
+     "name": "CreatorDB YouTube trending",
+     "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+    }
+   ]
+  },
+  {
+   "topic": "Film, India and worldwide",
+   "headline": "Ramayana: Rise of a Legend has grossed ₹1,437.25 crore worldwide in 12 days.",
+   "text": "₹490 crore of that came from overseas. It passed ₹300 crore in South India faster than any Hindi film this year.",
+   "you": "Big Indian releases now play wide in US theaters. Premium format tickets sell out first on weekends.",
+   "sources": [
+    {
+     "name": "The Week",
+     "url": "https://www.theweek.in/news/entertainment/2026/11/16/ramayana-box-office-day-12-south-india-300-crore.amp.html"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "AI",
+   "headline": "Anthropic prices its IPO tonight, reportedly six times oversubscribed.",
+   "text": "The range is $70 to $78 a share, for up to $64.4 billion raised. Trading is expected Thursday on the Nasdaq as ANT.",
+   "you": "First day prices swing hard. Only risk money you can afford to see drop.",
+   "sources": [
+    {
+     "name": "Stock Analysis",
+     "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-anthropic-ipo-090613569.html"
+    }
+   ]
+  },
+  {
+   "topic": "Energy and the grid",
+   "headline": "Tesla unveils Powercore, a solid state transformer for the grid.",
+   "text": "It is rated at 7.4 megawatts and replaces a bulky oil filled transformer, inverter and breaker with one unit. Tesla says it starts operating in 2027. Transformer waits now stretch into years as data centers and solar grow.",
+   "you": "Grid gear shortages are part of why new power is slow and costly. Faster equipment could ease pressure on bills over time.",
+   "sources": [
+    {
+     "name": "Electrek",
+     "url": "https://electrek.co/2026/11/17/tesla-powercore-solid-state-transformer-heron-link"
+    }
+   ]
+  },
+  {
+   "topic": "Medicine",
+   "headline": "Isomorphic Labs raised $5 billion to design drugs with AI.",
+   "text": "The London company, led by Demis Hassabis, is moving its own cancer and immune system drug candidates toward clinical trials. Greenoaks and Sequoia led the round, with Alphabet investing again.",
+   "you": "AI designed drugs are still years from pharmacies. Treat any \"AI cure\" headline with care until trial results are out.",
+   "sources": [
+    {
+     "name": "BioSpace",
+     "url": "https://biospace.com/press-releases/isomorphic-labs-announces-5-billion-series-c-funding"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Tsavo, Kenya: big elephant herds with fewer crowds.",
+   "text": "Lonely Planet named Tsavo East and West to its Best in Travel 2027 list for wide red earth savannahs and large elephant herds, with fewer visitors than Kenya's famous parks.",
+   "you": "CDC rates Kenya at Level 1, usual precautions, despite the regional Ebola outbreak. Check the notice again before you book.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tsavo_east_panorama.jpg/1280px-Tsavo_east_panorama.jpg",
+    "alt": "Wide savanna in Tsavo East National Park with elephants and giraffes",
+    "credit": "Łukasz Ciesielski",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tsavo_east_panorama.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "California's redwood coast, picked for 2027.",
+   "text": "Lonely Planet's 2027 list includes the Northern California coast and redwoods. Redwood National and State Parks protect some of the tallest trees on earth along 40 miles of Pacific coast.",
+   "you": "Check the official park site for fees, closures and road conditions before you go.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Redwood_National_Park_REDW9343.jpg/960px-Redwood_National_Park_REDW9343.jpg",
+    "alt": "Old growth coast redwoods in fog",
+    "credit": "National Park Service",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "NPS via Wikimedia Commons",
+     "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "Book holiday flights before a possible fuel spike.",
+   "text": "Oil is falling, but our 30 day read still gives a 25% chance Brent spikes above $100. Airfares follow fuel within weeks. The dollar also buys more in Brazil than at any time in a year.",
+   "you": "Lock in fares you are happy with now. FIOPO read, judgment not fact.",
+   "sources": [
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+    },
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "The AGI Chronicles",
+   "by": "Kevin Roose",
+   "where": "Named one of Publishers Weekly's best books of 2026",
+   "text": "A behind the scenes account of the race to build advanced AI. Timely reading in the week Anthropic goes public and Nvidia reports.",
+   "sources": [
+    {
+     "name": "Publishers Weekly via Year End Lists",
+     "url": "https://www.yearendlists.com/2026/publishers-weekly-10-best-books-of-2026"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "The Altruists",
+   "by": "Limited series starring Julia Garner and Anthony Boyle",
+   "where": "Netflix, from Thursday, November 19",
+   "text": "A dramatized account of the rise and fraudulent collapse of the FTX crypto exchange. A useful reminder, with Bitcoin down more than 20% in a month, that hype is not a business plan.",
+   "sources": [
+    {
+     "name": "What's on Netflix",
+     "url": "https://www.whats-on-netflix.com/coming-soon/whats-coming-to-netflix-this-week-november-16-to-22-2026/"
+    },
+    {
+     "name": "The Motley Fool",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-stocks-slide-on-ai-chip-and-tech-pressures-salesforce-plummets-9/"
+    }
+   ]
+  }
+ ],
+ "events": {
+  "global": [
+   {
+    "when": "Nov 18, 2 p.m. ET",
+    "what": "Fed minutes from the October meeting",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Nov 18 to 19",
+    "what": "33rd APEC Economic Leaders' Meeting",
+    "where": "Shenzhen, China",
+    "url": "https://www.sz.gov.cn/en_szgov/news/infocus/APEC2026/index_2.html"
+   },
+   {
+    "when": "Nov 19",
+    "what": "Anthropic expected to start trading as ANT",
+    "where": "Nasdaq",
+    "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+   },
+   {
+    "when": "Nov 19",
+    "what": "GTA 6 launches at midnight local time",
+    "where": "PS5 and Xbox Series X and S",
+    "url": "https://shattered.io/gta-6-pop-culture-spotlight-nov-19-79-99-three-consoles-2026/"
+   },
+   {
+    "when": "Nov 24",
+    "what": "Central Bank of Nigeria rate decision",
+    "where": "Abuja, Nigeria",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-tuesday-november-17-2026/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Stock Analysis",
+    "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   }
+  ]
+ },
+ "trending": {
+  "label": "Trending online",
+  "items": [
+   {
+    "where": "YouTube, US",
+    "text": "GTA 6 launch marathons from IShowSpeed (2.0 million views) and Kai Cenat (1.7 million) are top trending a day before release."
+   },
+   {
+    "where": "YouTube, US",
+    "text": "TXT's \"Angel Bite\" music video passed 8.8 million views in two days."
+   },
+   {
+    "where": "YouTube, US",
+    "text": "Netflix's first teaser for 3 Body Problem season 2 is trending."
+   }
+  ],
+  "sources": [
+   {
+    "name": "CreatorDB YouTube trending",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   }
+  ]
+ },
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 14",
+     "text": "SpaceX caught a returning Starship upper stage with its launch tower arms for the first time, after 14 orbits. The booster was lost over the Gulf.",
+     "source": "KPBS",
+     "url": "https://www.kpbs.org/news/science-technology/2026/11/14/spacex-successfully-catches-starship-and-makes-history"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India won its first ODI cricket series in New Zealand in seven years, 3 to 1.",
+     "source": "Pro Ace Predictions",
+     "url": "https://www.pro-ace-predictions.co.uk/cricket-news-today-16-november-2026/"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India beat Pakistan by one wicket to win the Under-19 Asia Cup, its ninth title.",
+     "source": "CareerIndia",
+     "url": "https://www.careerindia.com/news/school-assembly-news-headlines-today-november-16-2026-national-international-education-sports-068703.html"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ }
+}

@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/): Tuesday, November 17, 2026. One event, five steps to your wallet. The IEA says oil supply now tops demand, US crude closed at its lowest since August 28, and the gas average is $3.81, down about 54 cents since mid October. Markets still price 91% odds of a Fed hike December 9 (market odds).
-- [Interest rates: Cheaper gas will not stop a likely Fed hike. Today's retail sales report is the next test.](https://fiopoin.com/#money)
-- [Iran war and the Gulf: Tankers are burning near Hormuz, yet oil keeps falling. Here is why.](https://fiopoin.com/#world)
-- [AI and your retirement account: Nvidia reports tonight and Anthropic lists Thursday. One week will set the mood for AI stocks.](https://fiopoin.com/#ai)
-- [Trade and diplomacy: APEC opens in Shenzhen Wednesday. Trump and Xi meet Thursday with the trade truce on the clock.](https://fiopoin.com/#trade)
+- [Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/): Wednesday, November 18, 2026. Nvidia reported $115.8 billion in third quarter revenue, up 103%, and guided to $130 billion next quarter versus $125.25 billion expected (LSEG). Shares rose 3.7% before the open and Nasdaq 100 futures about 1.2%. If you own an index fund, you own a lot of Nvidia.
+- [Interest rates: Gas fell to $3.75, but borrowing costs are still headed up. The Fed minutes land today.](https://fiopoin.com/#money)
+- [Iran war and the Gulf: Seven attacks near Hormuz since November 10, and a third US carrier arrives. Oil barely moved.](https://fiopoin.com/#world)
+- [AI and your retirement account: Nvidia's first report since Jensen Huang's exit beat estimates. Anthropic prices its IPO tonight.](https://fiopoin.com/#ai)
+- [Trade and diplomacy: Xi pitches free trade as Trump lands in China. A three way meeting with Putin follows.](https://fiopoin.com/#trade)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,5 +17,6 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Wednesday, November 18, 2026: Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/archive/2026-11-18.html)
 - [Tuesday, November 17, 2026: Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/archive/2026-11-17.html)
 - [Monday, November 16, 2026: A war 7,000 miles away is still in your gas tank.](https://fiopoin.com/archive/2026-11-16.html)
