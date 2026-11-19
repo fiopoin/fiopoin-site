@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/): Wednesday, November 18, 2026. Nvidia reported $115.8 billion in third quarter revenue, up 103%, and guided to $130 billion next quarter versus $125.25 billion expected (LSEG). Shares rose 3.7% before the open and Nasdaq 100 futures about 1.2%. If you own an index fund, you own a lot of Nvidia.
-- [Interest rates: Gas fell to $3.75, but borrowing costs are still headed up. The Fed minutes land today.](https://fiopoin.com/#money)
-- [Iran war and the Gulf: Seven attacks near Hormuz since November 10, and a third US carrier arrives. Oil barely moved.](https://fiopoin.com/#world)
-- [AI and your retirement account: Nvidia's first report since Jensen Huang's exit beat estimates. Anthropic prices its IPO tonight.](https://fiopoin.com/#ai)
-- [Trade and diplomacy: Xi pitches free trade as Trump lands in China. A three way meeting with Putin follows.](https://fiopoin.com/#trade)
+- [Anthropic's record $81 billion IPO trades today. Here is how it reaches your wallet.](https://fiopoin.com/): Thursday, November 19, 2026. Anthropic priced its IPO at $83 a share, raising $81 billion, the largest listing on record, at a value near $1.5 trillion. It starts trading on the Nasdaq today as ANT. Nasdaq 100 futures rose 1.83% early Thursday. Amazon owns 14.7% and Google 13.7%, so most index funds already hold a slice.
+- [Interest rates: Fed minutes say nearly all officials see more rate hikes ahead. Gas is the one bill getting cheaper.](https://fiopoin.com/#money)
+- [Iran war, oil and the summit: Trump, Xi and Putin sign a peace declaration that backs stable energy flows. Oil slipped.](https://fiopoin.com/#world)
+- [AI and your retirement account: Anthropic debuts today after the biggest IPO ever. Here is what to know before you click buy.](https://fiopoin.com/#ai)
+- [Medicare and health insurers: Medicare proposes tougher audits of private plans. UnitedHealth fell 10%.](https://fiopoin.com/#health)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Thursday, November 19, 2026: Anthropic's record $81 billion IPO trades today. Here is how it reaches your wallet.](https://fiopoin.com/archive/2026-11-19.html)
 - [Wednesday, November 18, 2026: Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/archive/2026-11-18.html)
 - [Tuesday, November 17, 2026: Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/archive/2026-11-17.html)
 - [Monday, November 16, 2026: A war 7,000 miles away is still in your gas tank.](https://fiopoin.com/archive/2026-11-16.html)
