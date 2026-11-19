@@ -35,16 +35,22 @@ from datetime import timedelta
 _results = json.load(open("content/scorecard.json")) if os.path.exists("content/scorecard.json") else {}
 def _long(dt): return dt.strftime("%B %-d, %Y")
 def score_for(asof):
+    # One call per odds set: the outcome FIOPO rated most likely (a 20% call that does not happen is not a miss).
+    # A call carried over unchanged (same label and pct) while its 30 day window is still open counts once,
+    # under the date it was first made.
     calls = []
-    for e in data:
+    for e in sorted(data, key=lambda x: x["date"]):
         if e["date"] > asof: continue
         made = datetime.strptime(e["date"], "%Y-%m-%d")
         for s in e.get("stories", []):
             c = s.get("could", {})
-            if "FIOPO" not in c.get("note", "") or not c.get("odds"): continue
-            for o in c["odds"]:
-                calls.append({"label": o["label"], "pct": o["pct"], "made": e["date"], "made_long": _long(made),
-                              "check_long": _long(made + timedelta(days=30)), "res": _results.get(e["date"] + "|" + o["label"])})
+            note = c.get("note", "")
+            if "FIOPO" not in note or "Not a FIOPO" in note or "Market odds" in note or not c.get("odds"): continue
+            o = max(c["odds"], key=lambda x: x["pct"])
+            if any(p["label"] == o["label"] and p["pct"] == o["pct"] and made < p["check_dt"] for p in calls): continue
+            calls.append({"label": o["label"], "pct": o["pct"], "made": e["date"], "made_long": _long(made),
+                          "check_dt": made + timedelta(days=30),
+                          "check_long": _long(made + timedelta(days=30)), "res": _results.get(e["date"] + "|" + o["label"])})
     hit = sum(1 for c in calls if c["res"] == "hit"); miss = sum(1 for c in calls if c["res"] == "miss")
     open_calls = [c for c in calls if not c["res"]]
     return {"open": len(open_calls), "hit": hit, "miss": miss, "next": open_calls[-1] if open_calls else None}
