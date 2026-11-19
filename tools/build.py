@@ -56,7 +56,7 @@ os.makedirs("social", exist_ok=True)
 from zoneinfo import ZoneInfo
 SITE = "https://fiopoin.com/"
 ORG = {"@type": "NewsMediaOrganization", "@id": SITE + "#org", "name": "FIOPO Intelligence",
-       "alternateName": ["fiopoin", "fiopoin.com", "FIOPO"], "legalName": "FIOPO LLC", "foundingDate": "2017",
+       "alternateName": ["fiopoin", "fiopoin.com", "FIOPO"],
        "areaServed": "Worldwide",
        "url": SITE, "email": "hello@fiopoin.com", "publishingPrinciples": SITE + "about.html",
        "logo": {"@type": "ImageObject", "url": SITE + "brand/fiopoin-icon-512.png", "width": 512, "height": 512},
@@ -145,11 +145,11 @@ open("privacy.html", "w").write(priv.replace("<h3>", '<h3 style="margin:26px 0 8
 about_ld = json.dumps({"@context": "https://schema.org", "@graph": [ORG, {"@type": "AboutPage", "@id": SITE + "about.html", "url": SITE + "about.html",
     "name": "About FIOPO Intelligence (fiopoin)", "about": {"@id": SITE + "#org"}, "inLanguage": "en-US"}]}).replace("</", "<\\/")
 about = priv.split("<main>")[0].replace("<title>Privacy | FIOPO Intelligence</title>", "<title>About FIOPO Intelligence (fiopoin) | Daily markets, money and world brief</title>").replace(
-    'content="How FIOPO Intelligence (fiopoin.com) handles visitor data."', 'content="FIOPO Intelligence, known online as fiopoin, is a free daily brief on markets, money and the world, published by FIOPO LLC since 2017 at fiopoin.com."').replace(
+    'content="How FIOPO Intelligence (fiopoin.com) handles visitor data."', 'content="FIOPO Intelligence, known online as fiopoin, is a free daily brief on markets, money and the world at fiopoin.com."').replace(
     'href="https://fiopoin.com/privacy.html"', 'href="https://fiopoin.com/about.html"').replace("</head>", f'<script type="application/ld+json">{about_ld}</script></head>')
 about += """<main><section class="block"><div class="wrap" style="max-width:760px"><div class="shead"><h2>About FIOPO Intelligence</h2></div>
 <p><strong>FIOPO Intelligence</strong>, known online as <strong>fiopoin</strong> (FIOPO + IN), is a free morning brief at fiopoin.com. Each edition connects what happened, what is happening and what could happen next in markets, energy, policy and the world to what it means for your money.</p>
-<h3>Who publishes it</h3><p>fiopoin is published by FIOPO LLC, founded in 2017. FIOPO LLC also publishes <a href="https://carbonenergynexus.com/">Carbon Energy Nexus</a>, on carbon, energy, water and capital.</p>
+<h3>Sister publication</h3><p>Our sister publication <a href="https://carbonenergynexus.com/">Carbon Energy Nexus</a> covers carbon, energy, water and capital.</p>
 <h3>How we work</h3><p>Every fact is sourced, dated and linked. Outlooks and odds are labeled as our judgment, not fact. We stay politically neutral and write in plain language. Nothing here is personalized financial advice.</p>
 <h3>Not to be confused with</h3><p>fiopoin and FIOPO Intelligence are not affiliated with any internet service provider, fiber optic company or cryptocurrency project with a similar name.</p>
 <h3>Follow and contact</h3><p><a href="https://www.linkedin.com/company/fiopoin/">LinkedIn</a>, <a href="https://www.instagram.com/fiopoin/">Instagram @fiopoin</a>, <a href="https://www.facebook.com/profile.php?id=61596657421058">Facebook</a> and <a href="https://x.com/fiopoinx">X @fiopoinx</a>. Email <a href="mailto:hello@fiopoin.com">hello@fiopoin.com</a>.</p>
