@@ -104,7 +104,7 @@ arch = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name
 <nav class="main"><a href="../">Today</a></nav></div></header>
 <main><section class="block"><div class="wrap"><div class="shead"><h2>Past editions</h2><p>Every morning's brief, kept so you can check our calls against what happened.</p></div>
 <ul class="archive-list">{items}</ul></div></section></main>
-<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin"></a><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice. <a href="../privacy.html">Privacy</a></p></div></div></div></footer></body></html>"""
+<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="../"><img src="../brand/fiopoin-logo-white.svg" alt="fiopoin"></a><div><p>FIOPO Intelligence, fiopoin.com. General information, not financial advice. <a href="../about.html">About</a> <a href="../privacy.html">Privacy</a></p><p class="sister" style="margin-top:8px">Also from the FIOPO family: <a href="https://carbonenergynexus.com/">Carbon Energy Nexus</a> · <a href="https://uticamidstream.com/">Utica Midstream</a></p></div></div></div></footer></body></html>"""
 open("archive/index.html", "w").write(arch)
 
 # RSS feed (latest 30) with the daily graphic attached for social automation tools
@@ -138,7 +138,7 @@ priv = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name
 <h3>Hosting</h3><p>The site is hosted on GitHub Pages, which keeps standard server logs, including IP addresses, for security. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">GitHub's note on data collection</a>.</p>
 <h3>Questions</h3><p>Write to <a href="mailto:hello@fiopoin.com">hello@fiopoin.com</a> and we will answer.</p>
 </div></section></main>
-<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="./"><img src="brand/fiopoin-logo-white.svg" alt="fiopoin"></a><div><p>FIOPO Intelligence. Intelligence for prosperity. fiopoin.com. General information, not financial advice.</p></div></div></div></footer></body></html>"""
+<footer><div class="wrap"><div class="fgrid"><a class="lockup" href="./"><img src="brand/fiopoin-logo-white.svg" alt="fiopoin"></a><div><p>FIOPO Intelligence. Intelligence for prosperity. fiopoin.com. General information, not financial advice.</p><p class="sister" style="margin-top:8px">Also from the FIOPO family: <a href="https://carbonenergynexus.com/">Carbon Energy Nexus</a> · <a href="https://uticamidstream.com/">Utica Midstream</a></p></div></div></div></footer></body></html>"""
 open("privacy.html", "w").write(priv.replace("<h3>", '<h3 style="margin:26px 0 8px">'))
 
 # about page: tells readers and search engines who publishes fiopoin
