@@ -56,3 +56,9 @@ In the cloud sandbox the shell and Playwright cannot reach fiopoin.com (proxy 40
 - Primary identity at the top of every page and social graphic: FIOPO Intelligence only (no tagline at the top). Header lockup = `brand/fiopo-white.svg` + "Intelligence" (Inter SemiBold, ripple underline). The tagline "Intelligence for prosperity" appears only in the page title and footer.
 - "fiopoin" means FIOPO Intelligence (FIOPO + IN). The fiopoin wordmark (`brand/fiopoin-logo-white.svg`, `brand/fiopoin-logo-navy.svg`) is the secondary mark: footer, signup section, bottom corner of social graphics, favicon (`brand/fiopoin-icon.svg`). Always keep the full name FIOPO Intelligence in titles and metadata.
 - Brand colors: navy #1B2A4A, amber #E9A23B (happened), blue #0091D2 (happening), green #8CC63F (next / what it means for you).
+
+## Search engines (Raj, Nov 19, 2026)
+- After every published edition is verified live, notify search engines with IndexNow: WebFetch https://api.indexnow.org/indexnow?url=https://fiopoin.com/&key=3babc945b5366a7ff2e53db9c4674569 and then the same with url=https://fiopoin.com/archive/<date>.html. The key file `3babc945b5366a7ff2e53db9c4674569.txt` at the site root must stay in place (do not delete or rename it; its value is site.json indexnow_key). A 200 or 202 reply means accepted; a failure here never blocks publishing.
+- Google Search Console and Bing Webmaster Tools verification codes go in site.json (google_site_verification, bing_site_verification); the template prints them.
+- The homepage title leads with the brand name; archive pages lead with the headline. Footers link the sister sites (FIOPO Intelligence, Carbon Energy Nexus, Utica Midstream).
+
