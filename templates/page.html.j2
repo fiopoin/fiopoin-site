@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="{{ csp|safe }}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>{% if archived %}{{ d.date_long }} | {% endif %}FIOPO Intelligence | Intelligence for prosperity</title>
+<title>{% if archived %}{{ d.date_long }} | FIOPO Intelligence (fiopoin){% else %}FIOPO Intelligence (fiopoin) | Daily markets, money and world brief{% endif %}</title>
 <meta property="og:site_name" content="FIOPO Intelligence">
 <link rel="icon" type="image/svg+xml" href="{{ root }}brand/fiopoin-icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ root }}brand/fiopoin-icon-32.png">
@@ -345,7 +345,7 @@
     <div class="fgrid">
       <a class="lockup" href="{{ root }}" aria-label="fiopoin, FIOPO Intelligence, home"><img src="{{ root }}brand/fiopoin-logo-white.svg" alt="fiopoin"></a>
       <div>
-        <nav aria-label="Footer"><a href="{{ root }}">Today</a><a href="{{ root }}archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a><a href="mailto:hello@fiopoin.com">Contact: hello@fiopoin.com</a><a href="{{ root }}privacy.html">Privacy</a></nav>
+        <nav aria-label="Footer"><a href="{{ root }}">Today</a><a href="{{ root }}archive/">Past editions</a><a href="https://fiopoin.com/feed.xml">RSS feed</a><a href="mailto:hello@fiopoin.com">Contact: hello@fiopoin.com</a><a href="{{ root }}about.html">About</a><a href="{{ root }}privacy.html">Privacy</a></nav>
         <p style="margin-top:12px">FIOPO Intelligence is general information, not financial, legal or medical advice. Make decisions with a professional who knows your situation.</p>
         <p class="sister" style="margin-top:8px">Also from the FIOPO family: <a href="https://carbonenergynexus.com/">Carbon Energy Nexus</a> · <a href="https://uticamidstream.com/">Utica Midstream</a></p>
         <p style="margin-top:8px"><b style="color:#fff">FIOPO Intelligence.</b> Intelligence for prosperity. © {{ d.date[:4] }} fiopoin.com. Updated every morning, Central Time.</p>
