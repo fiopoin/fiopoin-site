@@ -1,0 +1,890 @@
+{
+ "date": "2026-11-20",
+ "date_long": "Friday, November 20, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "Dow −1,101",
+    "text": "The Dow fell 1,101.11 points, or 2.19%, to 49,097.06 on Thursday. The S&P 500 lost 2.02% and the Nasdaq 2.25%. All 11 S&P sectors fell."
+   },
+   {
+    "label": "The streak",
+    "value": "6 days",
+    "text": "It was the S&P 500's sixth straight loss, its longest losing run since April 2024."
+   },
+   {
+    "label": "The triggers",
+    "value": "AMD −7.72%",
+    "text": "AMD fell 7.72% after a Hunterbrook short report on its China ties. Investors also worried about AI spending, high valuations and a Fed that signals more rate hikes."
+   },
+   {
+    "label": "Fear gauge",
+    "value": "VIX 28.44",
+    "text": "The VIX volatility index jumped 15.8% to 28.44. Friday brought no relief: at 08:06 GMT Nasdaq 100 futures were down 0.7% and S&P 500 futures 0.4%."
+   },
+   {
+    "label": "You",
+    "value": "Index funds",
+    "text": "Most 401(k) and IRA savers hold S&P 500 or total market funds, so they took this hit too. Six down days hurt, but selling after a drop locks in the loss."
+   }
+  ],
+  "caption": "Sources: Yahoo Finance and The Motley Fool November 19; The Rio Times November 20; Yahoo Finance November 20. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "S&P 500, Thu",
+   "value": "−2.02%",
+   "note": "sixth losing day",
+   "dir": "down"
+  },
+  {
+   "label": "Nasdaq 100 futures",
+   "value": "−0.7%",
+   "note": "Fri, 08:06 GMT",
+   "dir": "down"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "5.05%",
+   "note": "Thu",
+   "dir": "flat"
+  },
+  {
+   "label": "Gold",
+   "value": "$3,685.50",
+   "note": "−1.50% Thu",
+   "dir": "down"
+  },
+  {
+   "label": "Brent crude",
+   "value": "$92.22",
+   "note": "Fri Asia, third weekly drop",
+   "dir": "down"
+  },
+  {
+   "label": "US gas, AAA",
+   "value": "$3.72",
+   "note": "down 18 cents in a week",
+   "dir": "down"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Gas and Thanksgiving travel",
+   "headline": "Gas fell 18 cents in a week to $3.72. It may fall further before Thanksgiving.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for drivers"
+   },
+   "happened": "The AAA national average was $3.72 on November 19, down from $3.91 a week earlier and $4.30 a month ago. It is still about 60 cents above a year ago. Prices are under $4 in 40 states.",
+   "happening": "US crude has slid into the low $80s and stockpiles rose 3.4 million barrels. AAA expects nearly 73 million people to take Thanksgiving road trips next week and says the average could drop another 15 cents by Thursday, avoiding a holiday record. The record is $3.58, set on Thanksgiving 2022.",
+   "could": {
+    "odds": [],
+    "text": "Falling crude points to cheaper gas into the holiday. A flare up in the Gulf is the main risk to that.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Driving for Thanksgiving? Use a price app to compare stations. The gap within a few miles is often bigger than the weekly drop.",
+    "California averages $5.51 and Texas $3.21. If your route crosses state lines, fill up in the cheaper state.",
+    "Put the savings toward variable rate debt. The Fed still signals more rate hikes, and card rates follow."
+   ],
+   "watch": "AAA's update before Thanksgiving, November 26.",
+   "sources": [
+    {
+     "name": "AAA",
+     "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+    },
+    {
+     "name": "MLive via Yahoo Finance",
+     "url": "https://finance.yahoo.com/energy/articles/gas-prices-11-19-26-170551109.html"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Iran war and oil",
+   "headline": "Trump delays any decision on new Iran strikes until 2027. Oil heads for a third weekly drop.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
+   "happened": "Flying home from China on Thursday, Trump told Reuters he would discuss new strikes on Iran \"after the beginning of the year\" and told Axios, \"I am not rushing into any decision.\" The Senate rejected a war powers resolution 48 to 51. The US naval blockade stays in place.",
+   "happening": "Brent traded at $92.22 in Asia on Friday, on course for a weekly fall of about 3.5%, its third in a row, as Gulf crude shipments recover. Houthi strikes damaged the PIF Tower in Riyadh's financial district, with no injuries reported. Iran's Revolutionary Guards say Hormuz will not fully reopen until the US meets their conditions.",
+   "could": {
+    "odds": [
+     {
+      "label": "Brent stays $85 to $95",
+      "pct": 55
+     },
+     {
+      "label": "Spike above $100",
+      "pct": 25
+     },
+     {
+      "label": "Deal sends Brent below $85",
+      "pct": 20
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days, unchanged from November 17. A delay is not a deal. Judgment, not fact."
+   },
+   "you": [
+    "A pause in US strikes lowers the near term risk to fuel prices. Pump prices are already falling.",
+    "Holding energy funds? Brent is down about 20% in November. Check that one sector is not a large share of your savings.",
+    "Flying through Gulf hubs? Keep bookings flexible. Houthi drones and missiles are still being intercepted over Saudi Arabia."
+   ],
+   "watch": "OPEC+ on November 29.",
+   "sources": [
+    {
+     "name": "Gulf News",
+     "url": "https://gulfnews.com/world/americas/will-us-strike-iran-again-trump-says-decision-can-wait-until-2027-1.500754568"
+    },
+    {
+     "name": "Gulf News live",
+     "url": "https://gulfnews.com/world/mena/us-israel-war-on-iran-saudi-faces-houthi-missiles-trump-delays-iran-decision-1.500754425"
+    },
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-92-22-friday-third-weekly-drop-before-opec-plus-bull-96-bear-88/"
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "topic": "AI stocks",
+   "headline": "Anthropic jumped 34% at the open, then gave back half. It is lower again before Friday's bell.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
+   "happened": "Anthropic's first trade on the Nasdaq was $111.50, 34% above its $83 IPO price, with 108 million shares changing hands. It closed Thursday at $97.17, up 17.07%, on a day when the Nasdaq fell 2.25%.",
+   "happening": "ANT traded at $90.99 at 4:01 a.m. Eastern Friday, down 6.36% from Thursday's close but still above $83. Nvidia stopped shipping advanced AI chips to China, and Colette Kress cited $2.4 billion in quarterly China sales.",
+   "could": {
+    "odds": [],
+    "text": "A small public float means big daily swings in both directions. Expect the price to stay volatile while the broader market looks for a floor.",
+    "note": "FIOPO read. Judgment, not fact. Not investment advice."
+   },
+   "you": [
+    "Bought ANT on day one? Decide now what drop you would accept, and use limit orders rather than market orders.",
+    "Do not chase a first day pop. Set the price you are willing to pay and wait for it.",
+    "Own an S&P 500 fund? You already have exposure through Amazon and Google, both large outside holders."
+   ],
+   "watch": "where ANT trades versus its $83 IPO price.",
+   "sources": [
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
+    },
+    {
+     "name": "The Motley Fool",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-google-s-stake/"
+    },
+    {
+     "name": "The Neuron",
+     "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/"
+    }
+   ]
+  },
+  {
+   "id": "havens",
+   "topic": "Gold and Bitcoin",
+   "headline": "Gold and Bitcoin fell with stocks. Bitcoin is near $60,000 as ETF money leaves.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for savers"
+   },
+   "happened": "Gold futures settled down 1.50% at $3,685.50 on Thursday. Bitcoin fell 2.15% to $61,635.18 by early evening. US spot Bitcoin ETFs lost more than $300 million on Wednesday, taking 2026 net outflows past $2.5 billion.",
+   "happening": "Gold was heading for a weekly drop of about 9% on Friday, its steepest in eight months, as the dollar sits near a 19 month high and the Fed signals more rate hikes.",
+   "could": {
+    "odds": [],
+    "text": "When rates rise and the dollar is strong, assets that pay no interest tend to struggle. That pressure lasts as long as the Fed keeps hiking.",
+    "note": "FIOPO read. Judgment, not fact. Not investment advice."
+   },
+   "you": [
+    "Gold and crypto did not cushion this selloff. Do not count on them as your only safety net.",
+    "For money you need within a year, insured savings and Treasury bills now pay near the Fed rate.",
+    "Keep any crypto to a share of savings you could lose without changing your plans."
+   ],
+   "watch": "Bitcoin around $60,000 and the Fed on December 9.",
+   "sources": [
+    {
+     "name": "The Motley Fool, crypto",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/"
+    },
+    {
+     "name": "The Motley Fool",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-google-s-stake/"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-fall-anthropic-094420820.html"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.72,
+  "gas_year_ago": 3.09,
+  "gas_note": "US average $3.72 on November 19 vs about $3.09 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Today in three tenses",
+  "headline": "Stocks fell 2% for a sixth straight day.",
+  "points": [
+   "Dow lost 1,101 points",
+   "AMD fell 7.72% on a short report",
+   "Futures lower again Friday"
+  ],
+  "caption": "US stocks fell for a sixth straight day on Thursday. The Dow lost 1,101 points, or 2.19%, the S&P 500 2.02% and the Nasdaq 2.25%, and all 11 sectors fell. AMD dropped 7.72% after a short report. Futures were lower again early Friday.\n\nOur read, labeled as judgment: selling after a drop locks in the loss. General information, not investment advice. More at fiopoin.com\n\n#FIOPO #StockMarket #401k #Investing #PersonalFinance"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: your money",
+   "headline": "Gas fell 18 cents in a week to $3.72.",
+   "points": [
+    "Compare stations with an app",
+    "Fill up in the cheaper state",
+    "Put savings toward card debt"
+   ],
+   "watch": "AAA update before Thanksgiving.",
+   "caption": "The AAA national average fell to $3.72 on November 19, down 18 cents in a week and from $4.30 a month ago. AAA expects nearly 73 million Thanksgiving road trips and says gas could drop another 15 cents by Thursday. Compare stations before you fill up. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #GasPrices #Thanksgiving #RoadTrip #PersonalFinance"
+  },
+  "evening": {
+   "kicker": "Evening: the world and your wallet",
+   "headline": "Iran strike decision pushed to 2027.",
+   "points": [
+    "Brent $92.22, third weekly drop",
+    "Houthis hit Riyadh's PIF Tower",
+    "Senate rejects war powers, 48 to 51"
+   ],
+   "watch": "OPEC+ meets November 29.",
+   "caption": "Trump said Thursday he is \"not rushing\" into new strikes on Iran and will revisit it after the new year. Brent traded at $92.22 on Friday, heading for a third weekly drop. Houthi strikes damaged the PIF Tower in Riyadh, with no injuries reported. Our read, labeled as judgment: a 25% chance Brent tops $100 in 30 days. More at fiopoin.com\n\n#FIOPO #OilPrices #Iran #GasPrices #Energy"
+  }
+ },
+ "yesterday": {
+  "label": "Thursday, November 19",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The Dow fell 2.19%, the S&P 500 2.02% and the Nasdaq 2.25%. It was the S&P 500's sixth straight loss."
+   },
+   {
+    "label": "Anthropic",
+    "text": "Opened at $111.50 in its Nasdaq debut and closed at $97.17, 17% above its $83 IPO price."
+   },
+   {
+    "label": "Chips",
+    "text": "AMD fell 7.72% after a Hunterbrook short report on its China ties."
+   },
+   {
+    "label": "Iran",
+    "text": "Trump put off any decision on new strikes until after January 1. The Senate rejected a war powers resolution 48 to 51."
+   },
+   {
+    "label": "Gas",
+    "text": "The AAA average fell to $3.72, down 18 cents in a week."
+   },
+   {
+    "label": "Bitcoin",
+    "text": "Fell 2.15% to $61,635, close to $60,000."
+   }
+  ],
+  "sources": [
+   {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
+   },
+   {
+    "name": "The Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-google-s-stake/"
+   },
+   {
+    "name": "Gulf News",
+    "url": "https://gulfnews.com/world/americas/will-us-strike-iran-again-trump-says-decision-can-wait-until-2027-1.500754568"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Motley Fool, crypto",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/crypto-market-today-nov-19-bitcoin-approaches-usd60-000-as-etf-outflows-surpass-usd2-5-billion-in-2026/"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "China's shoppers pulled back hard in October.",
+   "text": "Retail sales grew just 0.4% from a year earlier, down from 1.1% in September, and car sales fell 27.1%. Consumer prices rose 0.7%. Exports, by contrast, jumped 35.2% to $412.33 billion.",
+   "you": "Weak demand at home pushes Chinese factories to sell abroad. Expect plenty of low priced Chinese goods, and more trade friction over them.",
+   "sources": [
+    {
+     "name": "China Briefing",
+     "url": "https://www.china-briefing.com/news/how-did-chinas-economy-perform-in-october-2026/"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Sri Lanka, Nepal",
+   "headline": "The rupee hits a seven month high on foreign buying.",
+   "text": "The rupee settled at 93.30 per dollar on Thursday, its fourth straight gain. Foreign investors have put more than ₹88,000 crore into Indian stocks in November, the fastest monthly pace since November 2020.",
+   "you": "Sending dollars to India? Each dollar buys a little less than last week. Paying Indian suppliers in rupees costs a bit more.",
+   "sources": [
+    {
+     "name": "Business Standard",
+     "url": "https://www.business-standard.com/amp/economy/news/rupee-extends-gains-for-fourth-straight-session-on-strong-foreign-inflows-126111901118_1.html"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "European Union, United Kingdom, Ukraine, Russia",
+   "headline": "UK inflation edges up to 3.6%.",
+   "text": "Britain's statistics office said inflation rose to 3.6% in October from 3.5%, a touch below the 3.7% forecast. UK and EU leaders hold a summit in Brussels on Friday.",
+   "you": "Planning a UK trip or paying UK bills? Prices are still rising well above the Bank of England's 2% goal, which keeps UK rates high.",
+   "sources": [
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf states, Iran, Israel, Iraq, Yemen",
+   "headline": "Houthi strikes damage the PIF Tower in Riyadh.",
+   "text": "Saudi Civil Defence said the attack damaged the headquarters of the kingdom's sovereign wealth fund in the King Abdullah Financial District. No injuries were reported. The UAE, Qatar, Kuwait and the GCC condemned it.",
+   "you": "Traveling to or through Saudi Arabia? Check airline and embassy alerts before you go.",
+   "sources": [
+    {
+     "name": "Gulf News",
+     "url": "https://gulfnews.com/world/mena/us-israel-war-on-iran-saudi-faces-houthi-missiles-trump-delays-iran-decision-1.500754425"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, South Africa, Kenya, DR Congo, Ethiopia, Egypt",
+   "headline": "Nigeria's inflation hits a six year low, but cooking gas is up.",
+   "text": "Inflation fell to 14.06% in October. Cooking gas now costs ₦1,600 to ₦1,800 per kg in several cities, against about ₦1,400 a month ago, and some households are turning back to charcoal. The central bank meets November 23 to 24 with its rate at 23%.",
+   "you": "Sending money to Nigeria? The naira was ₦1,363 per dollar on November 18. Household fuel is eating into what remittances buy.",
+   "sources": [
+    {
+     "name": "The Nigeria Brief",
+     "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Colombia, Chile, Peru",
+   "headline": "Brazil's real and Argentina's peso slide as Wall Street sells off.",
+   "text": "The real fell to 5.93 per dollar, its weakest since April 2025. Argentina's peso weakened to 1,565 per dollar, its weakest close in at least 12 months, and the Merval fell 0.96%.",
+   "you": "A trip to Brazil or Argentina is getting cheaper in dollars. Locals there pay more for imported goods.",
+   "sources": [
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/latin-american-pulse-for-friday-november-20-2026/"
+    },
+    {
+     "name": "The Rio Times, Argentina",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-thursday-november-19-2026"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Golf, worldwide",
+   "headline": "LIV Golf is winding down after Saudi Arabia's wealth fund stops paying.",
+   "text": "Front Office Sports reports the league was backed by more than $5 billion from the Public Investment Fund. With that funding ending, stars are leaving and events are being canceled.",
+   "you": "Holding tickets for a LIV event? Check refund terms now and pay with a card that offers chargeback protection.",
+   "sources": [
+    {
+     "name": "Front Office Sports via Yahoo Sports",
+     "url": "https://sports.yahoo.com/videos/liv-golf-blew-5-billion-213200972.html"
+    }
+   ]
+  },
+  {
+   "topic": "Football, Brazil",
+   "headline": "Brazil's football federation suspends a regional cup as betting limits hit sponsors.",
+   "text": "The CBF suspended the South-Southeast Cup for 2027 after betting restrictions disrupted sponsorship talks. It forecasts a R$420 million revenue shortfall next year. Separately, Mercado Libre renewed its CONMEBOL club sponsorship through 2030.",
+   "you": "Betting sponsors fund much of global sport. Rule changes on gambling can quickly shrink schedules and raise ticket prices.",
+   "sources": [
+    {
+     "name": "Football Business News",
+     "url": "https://footballbusinessnews.substack.com/p/the-football-business-news-daily-4da"
+    }
+   ]
+  },
+  {
+   "topic": "Football, worldwide",
+   "headline": "Infantino faces two challengers for the FIFA presidency.",
+   "text": "FIFA received three nominations: Gianni Infantino, France's Philippe Diallo and Japan's Kohzo Tashima. Checks on eligibility come first. The vote is at the FIFA Congress in Rabat on March 18, 2027.",
+   "you": "FIFA's leader shapes World Cup ticket pricing and TV deals. Watch the campaign if you plan to attend 2030 matches.",
+   "sources": [
+    {
+     "name": "Football Business News",
+     "url": "https://footballbusinessnews.substack.com/p/the-football-business-news-daily-4da"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Film, India",
+   "headline": "2026 is India's biggest box office year ever, with 45 days to go.",
+   "text": "Indian cinemas grossed ₹13,775 crore through November 15, already ₹425 crore more than all of 2025, per Sacnilk estimates. Dhurandhar 2: The Revenge leads with ₹1,375 crore, ahead of Ramayana at ₹909 crore.",
+   "you": "Indian films now open widely in US theaters. Check local listings, since tickets for big releases sell fast on opening weekend.",
+   "sources": [
+    {
+     "name": "Business Today",
+     "url": "https://businesstoday.in/trending/entertainment/photo/2026-is-indias-biggest-box-office-year-ever-rs13775-crore-with-45-days-still-left-568213-2026-11-19"
+    }
+   ]
+  },
+  {
+   "topic": "Film, United States",
+   "headline": "Marvel's Avengers: Doomsday trailer is trending ahead of a December 18 release.",
+   "text": "The trailer had 6.5 million views and ranked second on YouTube's US trending list on November 20. The film opens in theaters December 18.",
+   "you": "Big holiday releases often sell premium formats out early. Book opening weekend seats ahead if you want IMAX.",
+   "sources": [
+    {
+     "name": "CreatorDB YouTube trending",
+     "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+    }
+   ]
+  }
+ ],
+ "trending": {
+  "label": "Trending online",
+  "items": [
+   {
+    "where": "YouTube, US",
+    "text": "IShowSpeed's GTA 6 early access stream has 63 million views. GTA 6 videos fill several top 20 spots."
+   },
+   {
+    "where": "YouTube, US",
+    "text": "Rajshri's trailer for Yeh Prem Mol Liya has 33 million views in two days."
+   },
+   {
+    "where": "YouTube, US",
+    "text": "Taylor Swift's live CMA Awards performance is the top trending video."
+   }
+  ],
+  "sources": [
+   {
+    "name": "CreatorDB YouTube trending",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   }
+  ]
+ },
+ "innovation": [
+  {
+   "topic": "Climate tech",
+   "headline": "A new material captures carbon even from humid exhaust.",
+   "text": "Oregon State University chemists built BVR-X, a metal-organic framework that keeps water and CO2 apart in its pores. It captured CO2 from a humid gas with only 4% CO2 and kept working over dozens of cycles. A patent has been filed.",
+   "you": "Humidity is a big cost in carbon capture. Cheaper capture could matter for power and industrial bills over time.",
+   "sources": [
+    {
+     "name": "ScienceDaily",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261116023405.htm"
+    }
+   ]
+  },
+  {
+   "topic": "AI and banking",
+   "headline": "Citi warns customers they may be liable for what AI agents do in their accounts.",
+   "text": "Citi told customers they may be responsible for actions taken by third party AI tools they give account access to. TechCrunch reports more banks are taking the same line.",
+   "you": "Do not hand bank logins to AI assistants. Read your bank's terms before letting any tool move money.",
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/"
+    }
+   ]
+  },
+  {
+   "topic": "AI and chips",
+   "headline": "OpenAI says its models helped redesign a chip.",
+   "text": "OpenAI said its models worked on chip design with AMD. One redesign cut estimated chip area about 15% and a calculation from two clock cycles to one.",
+   "you": "Smaller chips can mean cheaper AI services. Watch for price cuts on AI tools you pay for.",
+   "sources": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Tsavo, Kenya: big elephant herds with fewer crowds.",
+   "text": "Lonely Planet named Tsavo East and West to its Best in Travel 2027 list for wide red earth savannahs and large elephant herds, with fewer visitors than Kenya's famous parks.",
+   "you": "CDC rates Kenya at Level 1, usual precautions, despite the regional Ebola outbreak. Check the notice again before you book.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tsavo_east_panorama.jpg/1280px-Tsavo_east_panorama.jpg",
+    "alt": "Wide savanna in Tsavo East National Park with elephants and giraffes",
+    "credit": "Łukasz Ciesielski",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tsavo_east_panorama.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "CDC",
+     "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "California's redwood coast, picked for 2027.",
+   "text": "Lonely Planet's 2027 list includes the Northern California coast and redwoods. Redwood National and State Parks protect some of the tallest trees on earth along 40 miles of Pacific coast.",
+   "you": "Check the official park site for fees, closures and road conditions before you go.",
+   "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Redwood_National_Park_REDW9343.jpg/960px-Redwood_National_Park_REDW9343.jpg",
+    "alt": "Old growth coast redwoods in fog",
+    "credit": "National Park Service",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+   },
+   "sources": [
+    {
+     "name": "Time Out",
+     "url": "https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326"
+    },
+    {
+     "name": "NPS via Wikimedia Commons",
+     "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park_REDW9343.jpg"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "Book holiday flights before a possible fuel spike.",
+   "text": "Oil is falling, but our 30 day read still gives a 25% chance Brent spikes above $100. Airfares follow fuel within weeks. The dollar also buys more in Brazil than at any time in a year.",
+   "you": "Lock in fares you are happy with now. FIOPO read, judgment not fact.",
+   "sources": [
+    {
+     "name": "FinanceFeeds",
+     "url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/"
+    },
+    {
+     "name": "The Rio Times",
+     "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "What Should My Children Do?",
+   "by": "Daniel Susskind",
+   "where": "Allen Lane, published September 10, 2026",
+   "text": "An economist asks what the next generation should learn, and what it should stop worrying about, in a world changed by AI. Useful for any family planning school or career choices.",
+   "sources": [
+    {
+     "name": "Penguin",
+     "url": "https://www.penguin.co.uk/books/475229/what-should-my-children-do-by-susskind-daniel/9780241791172"
+    },
+    {
+     "name": "Next Big Idea Club",
+     "url": "https://nextbigideaclub.com/magazine/next-big-idea-clubs-november-2026-must-read-books/61737/"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "Primetime Preacher$",
+   "by": "Documentary from Joe Berlinger",
+   "where": "Netflix, from Friday, November 20",
+   "text": "A 113 minute film on Jim Bakker, Jerry Falwell and Jimmy Swaggart, three 1980s televangelists who built TV ministries before scandal. A sharp look at how money flows when trust is the product.",
+   "sources": [
+    {
+     "name": "Drawpie",
+     "url": "https://drawpie.com/blog/new-documentaries-netflix-november-2026/"
+    },
+    {
+     "name": "TheWrap",
+     "url": "https://www.thewrap.com/creative-content/movies/everything-new-on-streaming-november-2026/"
+    }
+   ]
+  }
+ ],
+ "events": {
+  "global": [
+   {
+    "when": "Nov 20",
+    "what": "UK and EU leaders' summit",
+    "where": "Brussels",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 23 to 24",
+    "what": "Central Bank of Nigeria rate decision",
+    "where": "Abuja, Nigeria",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   },
+   {
+    "when": "Nov 26",
+    "what": "US Thanksgiving, nearly 73 million expected on the road",
+    "where": "United States",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "Spain general election",
+    "where": "Spain",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Dec 18",
+    "what": "Avengers: Doomsday opens in theaters",
+    "where": "Worldwide",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   },
+   {
+    "when": "Jan 19, 2027",
+    "what": "Comment deadline for Medicare's CRUSH audit rule",
+    "where": "Online, regulations.gov",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "when": "Feb 7, 2027",
+    "what": "Grammy Awards",
+    "where": "Los Angeles",
+    "url": "https://www.complex.com/music/a/alex-ocho/lisa-grammy-nomination-blackpink-asian-pop"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "name": "FinChannel",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "name": "The Rio Times",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Nigeria Brief",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   }
+  ]
+ },
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 14",
+     "text": "SpaceX caught a returning Starship upper stage with its launch tower arms for the first time, after 14 orbits. The booster was lost over the Gulf.",
+     "source": "KPBS",
+     "url": "https://www.kpbs.org/news/science-technology/2026/11/14/spacex-successfully-catches-starship-and-makes-history"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India won its first ODI cricket series in New Zealand in seven years, 3 to 1.",
+     "source": "Pro Ace Predictions",
+     "url": "https://www.pro-ace-predictions.co.uk/cricket-news-today-16-november-2026/"
+    },
+    {
+     "date": "Nov 15",
+     "text": "India beat Pakistan by one wicket to win the Under-19 Asia Cup, its ninth title.",
+     "source": "CareerIndia",
+     "url": "https://www.careerindia.com/news/school-assembly-news-headlines-today-november-16-2026-national-international-education-sports-068703.html"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ }
+}

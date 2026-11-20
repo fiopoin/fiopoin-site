@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Anthropic's record $81 billion IPO trades today. Here is how it reaches your wallet.](https://fiopoin.com/): Thursday, November 19, 2026. Anthropic priced its IPO at $83 a share, raising $81 billion, the largest listing on record, at a value near $1.5 trillion. It starts trading on the Nasdaq today as ANT. Nasdaq 100 futures rose 1.83% early Thursday. Amazon owns 14.7% and Google 13.7%, so most index funds already hold a slice.
-- [Interest rates: Fed minutes say nearly all officials see more rate hikes ahead. Gas is the one bill getting cheaper.](https://fiopoin.com/#money)
-- [Iran war, oil and the summit: Trump, Xi and Putin sign a peace declaration that backs stable energy flows. Oil slipped.](https://fiopoin.com/#world)
-- [AI and your retirement account: Anthropic debuts today after the biggest IPO ever. Here is what to know before you click buy.](https://fiopoin.com/#ai)
-- [Medicare and health insurers: Medicare proposes tougher audits of private plans. UnitedHealth fell 10%.](https://fiopoin.com/#health)
+- [Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).](https://fiopoin.com/): Friday, November 20, 2026. US stocks fell for a sixth straight day on Thursday. The Dow lost 1,101 points, or 2.19%, the S&P 500 2.02% and the Nasdaq 2.25%, and all 11 sectors fell. AMD dropped 7.72% after a short report. Futures were lower again early Friday.
+- [Gas and Thanksgiving travel: Gas fell 18 cents in a week to $3.72. It may fall further before Thanksgiving.](https://fiopoin.com/#money)
+- [Iran war and oil: Trump delays any decision on new Iran strikes until 2027. Oil heads for a third weekly drop.](https://fiopoin.com/#world)
+- [AI stocks: Anthropic jumped 34% at the open, then gave back half. It is lower again before Friday's bell.](https://fiopoin.com/#ai)
+- [Gold and Bitcoin: Gold and Bitcoin fell with stocks. Bitcoin is near $60,000 as ETF money leaves.](https://fiopoin.com/#havens)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Friday, November 20, 2026: Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).](https://fiopoin.com/archive/2026-11-20.html)
 - [Thursday, November 19, 2026: Anthropic's record $81 billion IPO trades today. Here is how it reaches your wallet.](https://fiopoin.com/archive/2026-11-19.html)
 - [Wednesday, November 18, 2026: Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/archive/2026-11-18.html)
 - [Tuesday, November 17, 2026: Oil just fell to its lowest since August. Your gas tank is next.](https://fiopoin.com/archive/2026-11-17.html)
