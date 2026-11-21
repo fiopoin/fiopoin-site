@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).](https://fiopoin.com/): Friday, November 20, 2026. US stocks fell for a sixth straight day on Thursday. The Dow lost 1,101 points, or 2.19%, the S&P 500 2.02% and the Nasdaq 2.25%, and all 11 sectors fell. AMD dropped 7.72% after a short report. Futures were lower again early Friday.
-- [Gas and Thanksgiving travel: Gas fell 18 cents in a week to $3.72. It may fall further before Thanksgiving.](https://fiopoin.com/#money)
-- [Iran war and oil: Trump delays any decision on new Iran strikes until 2027. Oil heads for a third weekly drop.](https://fiopoin.com/#world)
-- [AI stocks: Anthropic jumped 34% at the open, then gave back half. It is lower again before Friday's bell.](https://fiopoin.com/#ai)
-- [Gold and Bitcoin: Gold and Bitcoin fell with stocks. Bitcoin is near $60,000 as ETF money leaves.](https://fiopoin.com/#havens)
+- [Nasdaq fell 5.3% as Nvidia lost 14%. Here is how the AI rout reaches your 401(k).](https://fiopoin.com/): Saturday, November 21, 2026. The Nasdaq fell 5.28% on Friday and turned negative for 2026 as Nvidia dropped 14.01% after a Reuters report that SEC staff are reviewing its accounting. The S&P 500 lost 3.70%, closed in correction and fell 8.6% for the week. Bitcoin slipped below $60,000.
+- [Gas, rates and Thanksgiving: Gas fell to $3.69, its lowest since March, as markets price in a December rate hike.](https://fiopoin.com/#money)
+- [Iran war and oil: Iran sets seven conditions to reopen Hormuz. Oil still posts a third weekly loss.](https://fiopoin.com/#world)
+- [Nvidia: Nvidia's 14% fall follows an SEC report, a CEO exit and a state subpoena.](https://fiopoin.com/#ai)
+- [Gold, Bitcoin and bonds: Gold and Bitcoin fell with stocks. Treasury bonds were the shelter.](https://fiopoin.com/#havens)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Saturday, November 21, 2026: Nasdaq fell 5.3% as Nvidia lost 14%. Here is how the AI rout reaches your 401(k).](https://fiopoin.com/archive/2026-11-21.html)
 - [Friday, November 20, 2026: Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).](https://fiopoin.com/archive/2026-11-20.html)
 - [Thursday, November 19, 2026: Anthropic's record $81 billion IPO trades today. Here is how it reaches your wallet.](https://fiopoin.com/archive/2026-11-19.html)
 - [Wednesday, November 18, 2026: Nvidia beat and raised its forecast. Here is how that reaches your 401(k).](https://fiopoin.com/archive/2026-11-18.html)
