@@ -260,7 +260,8 @@
    "Iran vows to break US blockade",
    "Gas $3.64, down from $3.82"
   ],
-  "caption": "Two tankers were hit near the Strait of Hormuz on Saturday and Bahrain said it intercepted Iranian attacks, as Iran said the US blockade must be broken. Brent settled at $92.57 on Friday, before the attacks. US gas is $3.64, down from $3.82 a week ago.\n\nOur read, labeled as judgment: fill up early in the week. More at fiopoin.com\n\n#FIOPO #OilPrices #GasPrices #Hormuz #Thanksgiving"
+  "caption": "Two tankers were hit near the Strait of Hormuz on Saturday and Bahrain said it intercepted Iranian attacks, as Iran said the US blockade must be broken. Brent settled at $92.57 on Friday, before the attacks. US gas is $3.64, down from $3.82 a week ago.\n\nOur read, labeled as judgment: fill up early in the week. More at fiopoin.com\n\n#FIOPO #OilPrices #GasPrices #Hormuz #Thanksgiving",
+  "watch": "Brent after the weekend tanker attacks, then Asia's open tonight."
  },
  "social_slots": {
   "midday": {
@@ -290,7 +291,33 @@
     "Gold fell 8.92%; 10 year at 4.92%"
    ],
    "watch": "Asia's open tonight, Dell and HP on Tuesday, US PCE inflation on Wednesday.",
-   "caption": "The AI sell-off went global last week. The S&P 500 fell 8.61% and the Nasdaq 10.02%, while Japan's Nikkei dropped 5.06% and South Korea's KOSPI 5.21% on Friday. Nvidia lost 23% on the week. Gold fell 8.92% to $3,537 and the 10 year Treasury yield held at 4.92%. Watch Asia's open tonight, Dell and HP earnings Tuesday and US PCE inflation Wednesday. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #GlobalMarkets #StockMarket #AI #Nikkei"
+   "caption": "The AI sell-off went global last week. The S&P 500 fell 8.61% and the Nasdaq 10.02%, while Japan's Nikkei dropped 5.06% and South Korea's KOSPI 5.21% on Friday. Nvidia lost 23% on the week. Gold fell 8.92% to $3,537 and the 10 year Treasury yield held at 4.92%. Watch Asia's open tonight, Dell and HP earnings Tuesday and US PCE inflation Wednesday. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #GlobalMarkets #StockMarket #AI #Nikkei",
+   "chart": {
+    "title": "Asia on Friday, % change",
+    "items": [
+     {
+      "label": "KOSPI",
+      "value": -5.21,
+      "display": "−5.21%"
+     },
+     {
+      "label": "Nikkei 225",
+      "value": -5.06,
+      "display": "−5.06%"
+     },
+     {
+      "label": "Hang Seng",
+      "value": -1.84,
+      "display": "−1.84%"
+     },
+     {
+      "label": "CSI 300",
+      "value": 0,
+      "display": "flat"
+     }
+    ],
+    "source": "The Rio Times, Nov 21, 2026"
+   }
   }
  },
  "yesterday": {

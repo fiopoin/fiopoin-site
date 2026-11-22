@@ -188,10 +188,14 @@ lines += ["", "## Archive and feeds", f"- [Past editions]({SITE}archive/): every
 lines += [f"- [{d['date_long']}: {d['hero']['headline']}]({page_url(d, True)})" for d in list(reversed(data))[:30]]
 open("llms.txt", "w").write("\n".join(lines) + "\n")
 
-# Daily social graphics: three distinct looks (Nov 22, 2026, Raj)
-#   morning  = "Global markets": navy, market board (tape or social.stats) + the one big driver
-#   midday   = "Business and deals": light paper, amber band, big number callout + numbered points
-#   evening  = "World and economy": deep ink, globe linework, numbered list + "What to watch" box
+# Daily social graphics (Raj, Nov 22, 2026): news first, money angle at the bottom in "What to watch".
+# Each slot has its own colors and layout, plus a visual: a bar chart (slot "chart") or a drawn topic illustration.
+#   morning = sunrise blue gradient, illustration or chart, market strip in the watch box
+#   midday  = light paper, amber accents, chart or big number
+#   evening = dark ink with globe linework, green watch box
+# Slot fields: kicker, headline, points[3] (news facts), watch (the money angle), optional
+#   chart{title, items[2..6]{label, value(number), display?}, source}, optional stats[1]{label,value,note} (midday big number),
+#   optional icon (oil chip bank ship market globe briefcase coins factory bolt drop plane scales).
 NAVY, INK, BLUE, GREEN, AMBER, WHITE, MUTE = (27,42,74), (15,26,49), (0,145,210), (140,198,63), (233,162,59), (255,255,255), (159,179,207)
 PAPER, RED = (246,242,234), (214,82,74)
 F = lambda w, s: ImageFont.truetype(f"tools/fonts/Inter-{w}.otf", s)
@@ -199,7 +203,6 @@ logo = Image.open("brand/fiopo-intelligence-white-1000.png").convert("RGBA")
 small = Image.open("brand/fiopoin-logo-white-900.png").convert("RGBA")
 
 def navyize(img):
-    # recolor white (and near white) pixels to navy for light backgrounds, keep brand colors
     px = img.copy(); data = px.load()
     for yy in range(px.height):
         for xx in range(px.width):
@@ -208,6 +211,15 @@ def navyize(img):
                 data[xx, yy] = (*NAVY, a)
     return px
 logo_n, small_n = navyize(logo), navyize(small)
+
+THEMES = {
+    "morning": dict(top=(8, 128, 196), bottom=(10, 70, 128), text=WHITE, sub=(205, 228, 245), accent=AMBER,
+                    pill=AMBER, pillfg=NAVY, card=(255, 255, 255, 34), watch=AMBER, light=False),
+    "midday": dict(top=PAPER, bottom=PAPER, text=NAVY, sub=(110, 118, 135), accent=(196, 124, 20),
+                   pill=NAVY, pillfg=AMBER, card=(27, 42, 74, 255), watch=(196, 124, 20), light=True),
+    "evening": dict(top=(17, 22, 38), bottom=(6, 9, 18), text=WHITE, sub=MUTE, accent=GREEN,
+                    pill=GREEN, pillfg=INK, card=(255, 255, 255, 22), watch=GREEN, light=False),
+}
 
 def wrap(draw, text, font, width):
     words, lines, cur = text.split(), [], ""
@@ -218,7 +230,6 @@ def wrap(draw, text, font, width):
         else:
             lines.append(cur); cur = w
     lines.append(cur)
-    # avoid a single orphan word on the last line
     if len(lines) > 1 and " " not in lines[-1]:
         prev = lines[-2].split()
         if len(prev) > 2:
@@ -233,186 +244,289 @@ def fit(dr, text, w, maxs, mins, maxlines=3, weight="ExtraBold"):
             return f, ls
     return f, ls
 
-def header(im, M, light=False):
-    lg = logo_n if light else logo
-    lg = lg.resize((520, int(520 * lg.height / lg.width)), Image.LANCZOS)
-    im.paste(lg, (M, M - 10), lg)
-    return M - 10 + lg.height
+# ---------- drawn illustrations (flat, brand colors, no people, no flags, no symbols of any group) ----------
+ICON_WORDS = [
+    ("oil", "oil crude brent wti opec barrel fuel gasoline diesel refin"),
+    ("ship", "ship tanker hormuz shipping port freight strait red sea canal"),
+    ("chip", "chip nvidia semiconductor ai tsmc data center gpu software tech"),
+    ("bank", "fed central bank rate ecb boj pboc yield treasury bond inflation pce cpi"),
+    ("bolt", "power grid electricity nuclear solar wind utility"),
+    ("drop", "water desal drought flood"),
+    ("plane", "airline travel flight airfare"),
+    ("factory", "factory manufactur tariff trade export import supply"),
+    ("briefcase", "deal merger acquisition ipo buyout stake funding raise"),
+    ("coins", "bitcoin crypto gold dollar currency yen euro"),
+    ("market", "stock s&p nasdaq dow nikkei kospi index sell-off rally shares market"),
+    ("globe", "world global war talks summit ceasefire"),
+]
 
-def footer(im, dr, d, W, H, M, light=False, cta="Full breakdown: fiopoin.com"):
-    line = (200, 192, 176) if light else (58, 78, 117)
-    dr.line((M, H - M - 96, W - M, H - M - 96), fill=line, width=2)
-    dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=(110, 118, 135) if light else MUTE)
-    dr.text((M, H - M - 30), cta, font=F("SemiBold", 34), fill=NAVY if light else GREEN)
-    sm = (small_n if light else small)
+def pick_icon(s):
+    if s.get("icon"):
+        return s["icon"]
+    txt = (s["headline"] + " " + " ".join(s.get("points", []))).lower()
+    for name, words in ICON_WORDS:
+        if any(w in txt for w in words.split()):
+            return name
+    return "globe"
+
+def draw_icon(name, size, bg, fg, ac):
+    S = size * 3
+    im = Image.new("RGBA", (S, S), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.ellipse((0, 0, S, S), fill=bg)
+    c, u = S / 2, S / 100
+    if name == "oil":
+        d.rounded_rectangle((c - 22*u, c - 30*u, c + 22*u, c + 32*u), radius=6*u, fill=fg)
+        for yy in (-14, 2, 18):
+            d.rectangle((c - 22*u, c + yy*u, c + 22*u, c + (yy + 4)*u), fill=bg)
+        d.polygon([(c + 30*u, c - 40*u), (c + 22*u, c - 24*u), (c + 38*u, c - 24*u)], fill=ac)
+        d.ellipse((c + 22*u, c - 30*u, c + 38*u, c - 14*u), fill=ac)
+    elif name == "ship":
+        d.polygon([(c - 36*u, c + 4*u), (c + 36*u, c + 4*u), (c + 26*u, c + 24*u), (c - 26*u, c + 24*u)], fill=fg)
+        for i, col in enumerate((ac, (0, 145, 210), GREEN)):
+            d.rectangle((c - 26*u + i * 18*u, c - 12*u, c - 12*u + i * 18*u, c + 4*u), fill=col)
+        d.rectangle((c + 22*u, c - 22*u, c + 30*u, c + 4*u), fill=fg)
+        d.arc((c - 40*u, c + 26*u, c - 10*u, c + 38*u), 180, 360, fill=fg, width=int(3*u))
+        d.arc((c + 10*u, c + 26*u, c + 40*u, c + 38*u), 180, 360, fill=fg, width=int(3*u))
+    elif name == "chip":
+        d.rounded_rectangle((c - 24*u, c - 24*u, c + 24*u, c + 24*u), radius=5*u, fill=fg)
+        d.rounded_rectangle((c - 12*u, c - 12*u, c + 12*u, c + 12*u), radius=3*u, fill=ac)
+        for k in (-14, 0, 14):
+            for (x1, y1, x2, y2) in [(c + k*u - 2*u, c - 36*u, c + k*u + 2*u, c - 24*u), (c + k*u - 2*u, c + 24*u, c + k*u + 2*u, c + 36*u),
+                                     (c - 36*u, c + k*u - 2*u, c - 24*u, c + k*u + 2*u), (c + 24*u, c + k*u - 2*u, c + 36*u, c + k*u + 2*u)]:
+                d.rectangle((x1, y1, x2, y2), fill=fg)
+    elif name == "bank":
+        d.polygon([(c - 36*u, c - 14*u), (c, c - 36*u), (c + 36*u, c - 14*u)], fill=fg)
+        for k in (-26, -9, 8, 25):
+            d.rectangle((c + k*u - 4*u, c - 10*u, c + k*u + 4*u, c + 20*u), fill=fg)
+        d.rectangle((c - 38*u, c + 22*u, c + 38*u, c + 30*u), fill=ac)
+    elif name == "bolt":
+        d.polygon([(c + 6*u, c - 40*u), (c - 22*u, c + 6*u), (c - 2*u, c + 6*u), (c - 8*u, c + 40*u), (c + 22*u, c - 8*u), (c + 2*u, c - 8*u)], fill=ac)
+    elif name == "drop":
+        d.polygon([(c, c - 38*u), (c - 24*u, c + 4*u), (c + 24*u, c + 4*u)], fill=(0, 145, 210))
+        d.ellipse((c - 25*u, c - 14*u, c + 25*u, c + 36*u), fill=(0, 145, 210))
+        d.ellipse((c - 12*u, c + 2*u, c - 4*u, c + 14*u), fill=WHITE)
+    elif name == "plane":
+        d.polygon([(c - 38*u, c + 2*u), (c + 30*u, c - 6*u), (c + 38*u, c), (c + 30*u, c + 6*u)], fill=fg)
+        d.polygon([(c - 4*u, c - 2*u), (c + 10*u, c - 2*u), (c - 10*u, c - 30*u), (c - 18*u, c - 30*u)], fill=fg)
+        d.polygon([(c - 4*u, c + 4*u), (c + 10*u, c + 4*u), (c - 10*u, c + 30*u), (c - 18*u, c + 30*u)], fill=fg)
+        d.polygon([(c - 34*u, c + 1*u), (c - 26*u, c), (c - 34*u, c - 14*u), (c - 40*u, c - 14*u)], fill=ac)
+    elif name == "factory":
+        d.polygon([(c - 36*u, c + 28*u), (c - 36*u, c - 4*u), (c - 18*u, c + 8*u), (c - 18*u, c - 4*u), (c, c + 8*u), (c, c - 4*u),
+                   (c + 18*u, c + 8*u), (c + 18*u, c - 30*u), (c + 30*u, c - 30*u), (c + 30*u, c + 28*u)], fill=fg)
+        d.ellipse((c + 16*u, c - 44*u, c + 30*u, c - 32*u), fill=ac)
+        for k in (-28, -10, 8):
+            d.rectangle((c + k*u, c + 14*u, c + (k + 8)*u, c + 20*u), fill=ac)
+    elif name == "briefcase":
+        d.rounded_rectangle((c - 36*u, c - 16*u, c + 36*u, c + 28*u), radius=6*u, fill=fg)
+        d.rounded_rectangle((c - 12*u, c - 28*u, c + 12*u, c - 14*u), radius=4*u, outline=fg, width=int(5*u))
+        d.rectangle((c - 36*u, c + 2*u, c + 36*u, c + 6*u), fill=bg)
+        d.rounded_rectangle((c - 6*u, c - 2*u, c + 6*u, c + 10*u), radius=2*u, fill=ac)
+    elif name == "coins":
+        for k, col in ((14, fg), (0, ac), (-14, ac)):
+            d.ellipse((c - 26*u, c + k*u - 8*u, c + 26*u, c + k*u + 8*u), fill=col, outline=bg, width=int(2*u))
+        d.ellipse((c + 6*u, c - 34*u, c + 38*u, c - 2*u), fill=ac, outline=bg, width=int(2*u))
+    elif name == "market":
+        for i, (h0, h1, col) in enumerate([(10, 26, GREEN), (-6, 14, RED), (-20, 2, GREEN), (-30, -10, GREEN)]):
+            x = c - 30*u + i * 19*u
+            d.line((x + 5*u, c + (h0 - 8)*u, x + 5*u, c + (h1 + 8)*u), fill=fg, width=int(2*u))
+            d.rectangle((x, c + h0*u, x + 10*u, c + h1*u), fill=col)
+        d.line((c - 36*u, c + 34*u, c + 38*u, c + 34*u), fill=fg, width=int(3*u))
+    else:  # globe
+        d.ellipse((c - 34*u, c - 34*u, c + 34*u, c + 34*u), fill=(0, 145, 210))
+        d.ellipse((c - 34*u, c - 34*u, c + 34*u, c + 34*u), outline=fg, width=int(3*u))
+        d.ellipse((c - 14*u, c - 34*u, c + 14*u, c + 34*u), outline=fg, width=int(3*u))
+        d.line((c - 34*u, c, c + 34*u, c), fill=fg, width=int(3*u))
+        d.line((c - 30*u, c - 16*u, c + 30*u, c - 16*u), fill=fg, width=int(2*u))
+        d.line((c - 30*u, c + 16*u, c + 30*u, c + 16*u), fill=fg, width=int(2*u))
+    return im.resize((size, size), Image.LANCZOS)
+
+# ---------- chart ----------
+def draw_chart(dr, ch, x, y, w, h, th):
+    items = ch["items"][:6]
+    dr.text((x, y), ch.get("title", ""), font=F("Bold", 30), fill=th["text"])
+    y0, n = y + 54, len(items)
+    lf = F("SemiBold", 26)
+    lw = max(dr.textlength(i["label"], font=lf) for i in items) + 24
+    lw = min(lw, w * 0.38)
+    vals = [float(i["value"]) for i in items]
+    mx = max(abs(v) for v in vals) or 1
+    neg = any(v < 0 for v in vals) and any(v > 0 for v in vals)
+    bx, bw = x + lw, w - lw - 150
+    zero = bx + bw / 2 if neg else bx
+    span = bw / 2 if neg else bw
+    rowh = min(64, (h - 54 - 40) / n)
+    for i, it in enumerate(items):
+        yy = y0 + i * rowh
+        v = vals[i]
+        col = GREEN if v > 0 else RED if v < 0 else MUTE
+        if not any(v < 0 for v in vals):
+            col = th["accent"]
+        lab = it["label"]
+        while dr.textlength(lab, font=lf) > lw - 16 and len(lab) > 4:
+            lab = lab[:-2] + "…" if not lab.endswith("…") else lab[:-2] + "…"
+        dr.text((x, yy + rowh / 2 - 16), lab, font=lf, fill=th["text"])
+        L = span * abs(v) / mx
+        bh = rowh * 0.62
+        if neg:
+            x1, x2 = (zero, zero + L) if v >= 0 else (zero - L, zero)
+        else:
+            x1, x2 = zero, zero + L
+        dr.rounded_rectangle((x1, yy + (rowh - bh) / 2, max(x2, x1 + 4), yy + (rowh + bh) / 2), radius=6, fill=col)
+        disp = it.get("display") or f"{v:g}"
+        vx = (x2 + 12) if (v >= 0 or not neg) else (zero + 12)
+        dr.text((vx, yy + rowh / 2 - 18), disp, font=F("Bold", 30), fill=th["text"])
+    if neg:
+        dr.line((zero, y0 - 6, zero, y0 + n * rowh), fill=th["sub"], width=2)
+    if ch.get("source"):
+        dr.text((x, y0 + n * rowh + 8), "Source: " + ch["source"], font=F("Regular", 22), fill=th["sub"])
+
+def gradient(W, H, top, bottom):
+    base = Image.new("RGB", (W, H), top)
+    if top == bottom:
+        return base
+    grad = Image.new("L", (1, H))
+    for yy in range(H):
+        grad.putpixel((0, yy), int(255 * yy / H))
+    grad = grad.resize((W, H))
+    return Image.composite(Image.new("RGB", (W, H), bottom), base, grad)
+
+def card(d, s, slot, W, H, path, pad=0):
+    th = THEMES[slot]; tall = H > W * 1.5; M = 80
+    im = gradient(W, H, th["top"], th["bottom"]).convert("RGBA")
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
+    if slot == "morning":   # rising sun arcs, top right
+        for k, a in enumerate((40, 28, 18)):
+            r = 260 + k * 110
+            od.ellipse((W - 120 - r, -160 - r, W - 120 + r, -160 + r), outline=(255, 214, 120, a), width=26)
+    elif slot == "evening":  # globe linework, bottom right
+        cx, cy, r = W - 40, H - 420, 330
+        for k in range(5):
+            od.ellipse((cx - r + k * 66, cy - r, cx + r - k * 66, cy + r), outline=(80, 120, 190, 55), width=2)
+        for k in range(-2, 3):
+            yy = cy + k * r / 3; hw = (r * r - (yy - cy) ** 2) ** 0.5
+            od.line((cx - hw, yy, cx + hw, yy), fill=(80, 120, 190, 55), width=2)
+    else:  # midday amber band
+        od.rectangle((0, 0, W, 18), fill=(*AMBER, 255))
+    im = Image.alpha_composite(im, ov); dr = ImageDraw.Draw(im)
+    lg = logo_n if th["light"] else logo
+    lg = lg.resize((500, int(500 * lg.height / lg.width)), Image.LANCZOS)
+    im.paste(lg, (M, M - 6), lg)
+    y = M - 6 + lg.height + (64 if tall else 40) + pad
+    kf = F("Bold", 26)
+    kt = s["kicker"].upper()
+    dr.rounded_rectangle((M, y, M + dr.textlength(kt, font=kf) + 40, y + 50), radius=25, fill=th["pill"])
+    dr.text((M + 20, y + 11), kt, font=kf, fill=th["pillfg"]); y += 76
+    hf, ls = fit(dr, s["headline"], W - 2 * M, 82 if tall else 70, 52)
+    for l in ls:
+        dr.text((M, y), l, font=hf, fill=th["text"]); y += int(hf.size * 1.12)
+    y += 34 if tall else 22
+    # visual
+    chart = s.get("chart")
+    big = (s.get("stats") or [None])[0] if slot == "midday" else None
+    pf = F("Bold", 38 if tall else 33)
+    if chart and chart.get("items"):
+        chh = 70 + min(len(chart["items"]), 6) * (64 if tall else 54) + 40
+        if th["light"]:
+            dr.rounded_rectangle((M - 20, y - 16, W - M + 20, y + chh), radius=22, fill=WHITE, outline=(226, 218, 202), width=2)
+        else:
+            cv = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ImageDraw.Draw(cv).rounded_rectangle((M - 20, y - 16, W - M + 20, y + chh), radius=22, fill=th["card"])
+            im.alpha_composite(cv); dr = ImageDraw.Draw(im)
+        draw_chart(dr, chart, M, y, W - 2 * M, chh, th)
+        y += chh + (36 if tall else 24)
+        textw = W - 2 * M - 40
+        icon_box = None
+    else:
+        isz = 250 if tall else 210
+        bgc = (255, 255, 255, 40) if not th["light"] else (*NAVY, 255)
+        ic = draw_icon(pick_icon(s), isz, bgc if th["light"] else (255, 255, 255, 46), WHITE, AMBER if slot != "evening" else GREEN)
+        icon_box = (W - M - isz, y, isz)
+        im.paste(ic, (W - M - isz, y), ic); dr = ImageDraw.Draw(im)
+        textw = W - 2 * M - isz - 70
+    if big:
+        bh = 190 if tall else 160
+        dr.rounded_rectangle((M, y, M + textw, y + bh), radius=20, fill=NAVY)
+        vf, _ = fit(dr, big["value"], textw - 60, 100 if tall else 84, 48, maxlines=1)
+        dr.text((M + 30, y + 18), big["value"], font=vf, fill=AMBER)
+        lab = big["label"] + (f", {big['note']}" if big.get("note") else "")
+        lf, ll = fit(dr, lab, textw - 60, 28, 20, maxlines=1, weight="SemiBold")
+        dr.text((M + 30, y + bh - 50), ll[0], font=lf, fill=WHITE)
+        y += bh + 26
+    ytxt = y
+    for i, p in enumerate(s["points"]):
+        if slot == "midday":
+            dr.ellipse((M, y, M + 46, y + 46), fill=AMBER)
+            n = str(i + 1); nf = F("ExtraBold", 28)
+            dr.text((M + 23 - dr.textlength(n, font=nf) / 2, y + 7), n, font=nf, fill=NAVY)
+        elif slot == "evening":
+            dr.text((M, y - 2), f"0{i + 1}", font=F("ExtraBold", 36), fill=GREEN)
+        else:
+            dr.ellipse((M + 4, y + 12, M + 22, y + 30), fill=AMBER)
+        for l in wrap(dr, p, pf, textw - 70):
+            dr.text((M + 70, y), l, font=pf, fill=th["text"]); y += int(pf.size * 1.28)
+        y += 14 if tall else 8
+    if icon_box:
+        y = max(y, icon_box[1] + icon_box[2] + 10)
+    # bottom: the money angle
+    y += 18 if tall else 10
+    wf = F("SemiBold", 34 if tall else 30)
+    wl = wrap(dr, s.get("watch", ""), wf, W - 2 * M - 60) if s.get("watch") else []
+    strip = (d.get("tape") or [])[:3] if slot == "morning" else []
+    bh = 64 + len(wl) * int(wf.size * 1.3) + (118 if strip else 0)
+    if wl or strip:
+        if th["light"]:
+            dr.rounded_rectangle((M - 20, y, W - M + 20, y + bh), radius=20, fill=(251, 236, 210))
+        else:
+            dr.rounded_rectangle((M - 20, y, W - M + 20, y + bh), radius=20, outline=th["watch"], width=3)
+        dr.text((M + 10, y + 20), "WHAT TO WATCH", font=F("Bold", 24), fill=th["watch"])
+        yy = y + 58
+        if strip:
+            tw = (W - 2 * M - 40) // 3
+            for k, t in enumerate(strip):
+                tx = M + 10 + k * (tw + 10)
+                dr.text((tx, yy), t["label"], font=F("SemiBold", 22), fill=th["sub"])
+                vfnt = F("ExtraBold", 38)
+                dr.text((tx, yy + 30), t["value"], font=vfnt, fill=th["text"])
+                col = GREEN if t.get("dir") == "up" else RED if t.get("dir") == "down" else th["sub"]
+                ax = tx + dr.textlength(t["value"], font=vfnt) + 10
+                if t.get("dir") == "up":
+                    dr.polygon([(ax, yy + 66), (ax + 18, yy + 66), (ax + 9, yy + 48)], fill=col)
+                elif t.get("dir") == "down":
+                    dr.polygon([(ax, yy + 48), (ax + 18, yy + 48), (ax + 9, yy + 66)], fill=col)
+            yy += 112
+        for l in wl:
+            dr.text((M + 10, yy), l, font=wf, fill=th["text"]); yy += int(wf.size * 1.3)
+        y += bh
+    # footer
+    line = (200, 192, 176) if th["light"] else (255, 255, 255)
+    dr.line((M, H - M - 96, W - M, H - M - 96), fill=line if th["light"] else (90, 120, 170), width=2)
+    dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=th["sub"])
+    dr.text((M, H - M - 30), "Full story: fiopoin.com", font=F("SemiBold", 34), fill=NAVY if th["light"] else GREEN if slot == "evening" else WHITE)
+    sm = small_n if th["light"] else small
     sm = sm.resize((180, int(180 * sm.height / sm.width)), Image.LANCZOS)
     im.paste(sm, (W - M - sm.width, H - M - sm.height + 4), sm)
-
-def pill(dr, x, y, text, bg, fg, f):
-    tw = dr.textlength(text, font=f)
-    dr.rounded_rectangle((x, y, x + tw + 40, y + f.size + 24), radius=(f.size + 24) // 2, fill=bg)
-    dr.text((x + 20, y + 10), text, font=f, fill=fg)
-    return y + f.size + 24
-
-def dir_col(s):
-    return {"up": GREEN, "down": RED}.get(s.get("dir"), MUTE)
-
-def arrow(dr, x, y, dirn, col, sz=18):
-    if dirn == "up":
-        dr.polygon([(x, y + sz), (x + sz, y + sz), (x + sz / 2, y)], fill=col)
-    elif dirn == "down":
-        dr.polygon([(x, y), (x + sz, y), (x + sz / 2, y + sz)], fill=col)
-    else:
-        dr.rectangle((x, y + sz / 2 - 3, x + sz, y + sz / 2 + 3), fill=col)
-
-def card_morning(d, s, W, H, path, pad=0):
-    tall = H > W * 1.5
-    im = Image.new("RGB", (W, H), NAVY); dr = ImageDraw.Draw(im); M = 80
-    y = header(im, M) + (70 if tall else 44) + pad
-    y = pill(dr, M, y, s["kicker"].upper(), BLUE, WHITE, F("Bold", 28)) + 34
-    hf, ls = fit(dr, s["headline"], W - 2 * M, 84 if tall else 72, 56)
-    for l in ls:
-        dr.text((M, y), l, font=hf, fill=WHITE); y += int(hf.size * 1.12)
-    y += 36 if tall else 26
-    stats = (s.get("stats") or d.get("tape") or [])[:6]
-    if stats:
-        cols, gap = 2, (24 if tall else 18)
-        cw = (W - 2 * M - gap) // cols
-        ch = 170 if tall else 150
-        for i, t in enumerate(stats):
-            cx, cy = M + (i % cols) * (cw + gap), y + (i // cols) * (ch + gap)
-            dr.rounded_rectangle((cx, cy, cx + cw, cy + ch), radius=18, fill=(36, 54, 92))
-            dr.rectangle((cx, cy + 18, cx + 6, cy + ch - 18), fill=dir_col(t))
-            dr.text((cx + 28, cy + 18), t["label"], font=F("SemiBold", 26), fill=MUTE)
-            vf = F("ExtraBold", 50 if tall else 44)
-            dr.text((cx + 28, cy + 52), t["value"], font=vf, fill=WHITE)
-            arrow(dr, cx + 36 + dr.textlength(t["value"], font=vf), cy + 66 if tall else cy + 62, t.get("dir"), dir_col(t), 22)
-            if t.get("note"):
-                nf = F("Regular", 24)
-                note = t["note"]
-                while dr.textlength(note, font=nf) > cw - 50 and " " in note:
-                    note = note.rsplit(" ", 1)[0]
-                dr.text((cx + 28, cy + ch - 42), note, font=nf, fill=MUTE)
-        y += ((len(stats) + 1) // 2) * (ch + gap) + (24 if tall else 6)
-    pf = F("Bold", 38 if tall else 34)
-    dr.text((M, y), "The driver", font=F("SemiBold", 28), fill=AMBER); y += 48
-    for p in s["points"]:
-        if y > H - M - 150: break
-        dr.ellipse((M, y + 12, M + 16, y + 28), fill=AMBER)
-        for l in wrap(dr, p, pf, W - 2 * M - 40):
-            dr.text((M + 36, y), l, font=pf, fill=WHITE); y += int(pf.size * 1.3)
-        y += 10 if tall else 4
-    footer(im, dr, d, W, H, M)
-    im.save(path, optimize=True)
+    im.convert("RGB").save(path, optimize=True)
     return y
 
-def card_midday(d, s, W, H, path, pad=0):
-    tall = H > W * 1.5
-    im = Image.new("RGB", (W, H), PAPER); dr = ImageDraw.Draw(im); M = 80
-    dr.rectangle((0, 0, W, 18), fill=AMBER)
-    y = header(im, M + 10, light=True) + (80 if tall else 50) + pad
-    dr.text((M, y), s["kicker"].upper(), font=F("Bold", 30), fill=(176, 112, 20)); y += 60
-    hf, ls = fit(dr, s["headline"], W - 2 * M, 86 if tall else 74, 56)
-    for l in ls:
-        dr.text((M, y), l, font=hf, fill=NAVY); y += int(hf.size * 1.12)
-    y += 40 if tall else 30
-    st = (s.get("stats") or [None])[0]
-    if st:
-        bh = 250 if tall else 200
-        dr.rounded_rectangle((M, y, W - M, y + bh), radius=24, fill=NAVY)
-        vf = F("ExtraBold", 120 if tall else 100)
-        dr.text((M + 44, y + (34 if tall else 24)), st["value"], font=vf, fill=AMBER)
-        ly = y + bh - (78 if tall else 66)
-        lab = st["label"] + (f"  ·  {st['note']}" if st.get("note") else "")
-        sz = 34 if tall else 30
-        while sz > 20 and dr.textlength(lab, font=F("SemiBold", sz)) > W - 2 * M - 88:
-            sz -= 2
-        lf = F("SemiBold", sz)
-        dr.text((M + 44, ly), lab, font=lf, fill=WHITE)
-        y += bh + (48 if tall else 34)
-    pf = F("Bold", 40 if tall else 36)
-    for i, p in enumerate(s["points"]):
-        if y > H - M - 200: break
-        dr.ellipse((M, y - 2, M + 56, y + 54), fill=AMBER)
-        n = str(i + 1); nf = F("ExtraBold", 32)
-        dr.text((M + 28 - dr.textlength(n, font=nf) / 2, y + 7), n, font=nf, fill=NAVY)
-        for l in wrap(dr, p, pf, W - 2 * M - 84):
-            dr.text((M + 84, y + 2), l, font=pf, fill=NAVY); y += int(pf.size * 1.3)
-        y += 26 if tall else 16
-    if s.get("watch") and y < H - M - 230:
-        y += 10
-        dr.text((M, y), "WATCH  " + s["watch"], font=F("SemiBold", 32), fill=(176, 112, 20)); y += 44
-    footer(im, dr, d, W, H, M, light=True)
-    im.save(path, optimize=True)
-    return y
-
-def card_evening(d, s, W, H, path, pad=0):
-    tall = H > W * 1.5
-    im = Image.new("RGB", (W, H), INK); dr = ImageDraw.Draw(im); M = 80
-    # globe linework, top right
-    cx, cy, r = W - 60, H - 380, 340
-    gl = (24, 40, 72)
-    for k in range(0, 5):
-        dr.ellipse((cx - r + k * 72, cy - r, cx + r - k * 72, cy + r), outline=gl, width=2)
-    for k in range(-2, 3):
-        yy = cy + k * r / 3
-        hw = (r * r - (yy - cy) ** 2) ** 0.5
-        dr.line((cx - hw, yy, cx + hw, yy), fill=gl, width=2)
-    dr.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(0, 70, 115), width=3)
-    y = header(im, M) + (90 if tall else 56) + pad
-    dr.text((M, y), s["kicker"].upper(), font=F("Bold", 30), fill=BLUE); y += 62
-    hf, ls = fit(dr, s["headline"], W - 2 * M, 84 if tall else 72, 56)
-    for l in ls:
-        dr.text((M, y), l, font=hf, fill=WHITE); y += int(hf.size * 1.12)
-    y += 44 if tall else 30
-    pf = F("Bold", 40 if tall else 36)
-    for i, p in enumerate(s["points"]):
-        if y > H - M - 260: break
-        n = f"0{i + 1}"
-        dr.text((M, y - 4), n, font=F("ExtraBold", 44), fill=BLUE)
-        top = y
-        for l in wrap(dr, p, pf, W - 2 * M - 100):
-            dr.text((M + 100, y), l, font=pf, fill=WHITE); y += int(pf.size * 1.3)
-        y += 20 if tall else 12
-        dr.line((M + 100, y - 8, W - M, y - 8), fill=(40, 58, 92), width=2)
-        y += 14 if tall else 8
-    if s.get("watch"):
-        y += 16 if tall else 6
-        wf = F("SemiBold", 36 if tall else 32)
-        wl = wrap(dr, s["watch"], wf, W - 2 * M - 64)
-        bh = 74 + len(wl) * int(wf.size * 1.3)
-        if y + bh < H - M - 120:
-            dr.rounded_rectangle((M, y, W - M, y + bh), radius=20, outline=GREEN, width=3)
-            dr.text((M + 32, y + 22), "WHAT TO WATCH", font=F("Bold", 24), fill=GREEN)
-            yy = y + 60
-            for l in wl:
-                dr.text((M + 32, yy), l, font=wf, fill=WHITE); yy += int(wf.size * 1.3)
-            y += bh
-    footer(im, dr, d, W, H, M)
-    im.save(path, optimize=True)
-    return y
-
-STYLES = {"morning": card_morning, "midday": card_midday, "evening": card_evening}
-
-def render(fn, d, s, W, H, path):
-    # draw once, then center the content block in the free space above the footer
-    end = fn(d, s, W, H, path)
-    free = (H - 80 - 130) - end
-    if free > 60:
-        fn(d, s, W, H, path, pad=min(free // 2, 260))
+def render(slot, d, s, W, H, path):
+    end = card(d, s, slot, W, H, path)
+    room = (H - 80 - 120) - end
+    if room < 0:
+        print(f"WARNING social overflow {path} by {-room}px")
+    elif room > 60:
+        card(d, s, slot, W, H, path, pad=min(room // 2, 420))
 
 for d in data:
     if "social" not in d:
         continue
     p = f"social/{d['date']}.png"
     if d is latest or not os.path.exists(p):
-        render(card_morning, d, d["social"], 1080, 1350, p)
-        render(card_morning, d, d["social"], 1080, 1920, f"social/{d['date']}-story.png")
+        render("morning", d, d["social"], 1080, 1350, p)
+        render("morning", d, d["social"], 1080, 1920, f"social/{d['date']}-story.png")
         open(f"social/{d['date']}.txt", "w").write(d["social"]["caption"] + "\n")
         for slot, ss in d.get("social_slots", {}).items():
-            fn = STYLES.get(slot, card_evening)
-            render(fn, d, ss, 1080, 1350, f"social/{d['date']}-{slot}.png")
-            render(fn, d, ss, 1080, 1920, f"social/{d['date']}-{slot}-story.png")
+            sl = slot if slot in THEMES else "evening"
+            render(sl, d, ss, 1080, 1350, f"social/{d['date']}-{slot}.png")
+            render(sl, d, ss, 1080, 1920, f"social/{d['date']}-{slot}-story.png")
             open(f"social/{d['date']}-{slot}.txt", "w").write(ss["caption"] + "\n")
 
 # Posting manifest for the scheduled social task: three posts a day
