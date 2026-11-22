@@ -188,11 +188,26 @@ lines += ["", "## Archive and feeds", f"- [Past editions]({SITE}archive/): every
 lines += [f"- [{d['date_long']}: {d['hero']['headline']}]({page_url(d, True)})" for d in list(reversed(data))[:30]]
 open("llms.txt", "w").write("\n".join(lines) + "\n")
 
-# Daily social graphics
+# Daily social graphics: three distinct looks (Nov 22, 2026, Raj)
+#   morning  = "Global markets": navy, market board (tape or social.stats) + the one big driver
+#   midday   = "Business and deals": light paper, amber band, big number callout + numbered points
+#   evening  = "World and economy": deep ink, globe linework, numbered list + "What to watch" box
 NAVY, INK, BLUE, GREEN, AMBER, WHITE, MUTE = (27,42,74), (15,26,49), (0,145,210), (140,198,63), (233,162,59), (255,255,255), (159,179,207)
+PAPER, RED = (246,242,234), (214,82,74)
 F = lambda w, s: ImageFont.truetype(f"tools/fonts/Inter-{w}.otf", s)
 logo = Image.open("brand/fiopo-intelligence-white-1000.png").convert("RGBA")
 small = Image.open("brand/fiopoin-logo-white-900.png").convert("RGBA")
+
+def navyize(img):
+    # recolor white (and near white) pixels to navy for light backgrounds, keep brand colors
+    px = img.copy(); data = px.load()
+    for yy in range(px.height):
+        for xx in range(px.width):
+            r, g, b, a = data[xx, yy]
+            if a and min(r, g, b) > 200:
+                data[xx, yy] = (*NAVY, a)
+    return px
+logo_n, small_n = navyize(logo), navyize(small)
 
 def wrap(draw, text, font, width):
     words, lines, cur = text.split(), [], ""
@@ -203,82 +218,201 @@ def wrap(draw, text, font, width):
         else:
             lines.append(cur); cur = w
     lines.append(cur)
+    # avoid a single orphan word on the last line
+    if len(lines) > 1 and " " not in lines[-1]:
+        prev = lines[-2].split()
+        if len(prev) > 2:
+            lines[-2], lines[-1] = " ".join(prev[:-1]), prev[-1] + " " + lines[-1]
     return lines
 
-def card(d, W, H, path, s=None, show_chain=True, pad=0):
-    s = s or d["social"]
-    im = Image.new("RGB", (W, H), NAVY)
-    dr = ImageDraw.Draw(im)
-    M = 80
-    lg = logo.resize((600, int(600 * logo.height / logo.width)), Image.LANCZOS)
+def fit(dr, text, w, maxs, mins, maxlines=3, weight="ExtraBold"):
+    for sz in range(maxs, mins - 1, -4):
+        f = F(weight, sz)
+        ls = wrap(dr, text, f, w)
+        if len(ls) <= maxlines:
+            return f, ls
+    return f, ls
+
+def header(im, M, light=False):
+    lg = logo_n if light else logo
+    lg = lg.resize((520, int(520 * lg.height / lg.width)), Image.LANCZOS)
     im.paste(lg, (M, M - 10), lg)
-    y = M - 10 + lg.height + 60 + pad
-    dr.text((M, y), s["kicker"], font=F("SemiBold", 34), fill=GREEN)
-    y += 70
-    hf = F("ExtraBold", 84 if H > W * 1.5 else 72)
-    for line in wrap(dr, s["headline"], hf, W - 2 * M):
-        dr.text((M, y), line, font=hf, fill=WHITE); y += int(hf.size * 1.12)
-    y += 50
-    # ripple bar
-    dr.rectangle((M, y, W - M, y + 8), fill=BLUE)
-    dr.rectangle((M, y, M + (W - 2 * M) // 3, y + 8), fill=AMBER)
-    dr.rectangle((W - M - (W - 2 * M) // 3, y, W - M, y + 8), fill=GREEN)
-    y += 60
-    pf = F("Bold", 44)
-    for p in s["points"]:
-        dr.ellipse((M, y + 14, M + 20, y + 34), fill=GREEN)
-        for i, line in enumerate(wrap(dr, p, pf, W - 2 * M - 50)):
-            dr.text((M + 50, y), line, font=pf, fill=WHITE); y += 58
-        y += 22
-    # the ripple chain: how the story reaches you
-    if s.get("watch") and not show_chain:
-        y += 20
-        dr.text((M, y), "What to watch", font=F("SemiBold", 30), fill=AMBER); y += 52
-        for line in wrap(dr, s["watch"], F("Regular", 38), W - 2 * M):
-            dr.text((M, y), line, font=F("Regular", 38), fill=WHITE); y += 52
-    chain = d["hero"].get("chain", []) if show_chain else []
-    foot_top = H - M - 110
-    row = 92 if H > W * 1.5 else 60
-    tall = H > W * 1.5
-    if chain and y + (86 if tall else 30) + row * (len(chain) - 1) + 44 < foot_top + 40:
-        y += 30 if tall else 0
-        dr.text((M, y), "How it reaches you", font=F("SemiBold", 30), fill=MUTE); y += 56 if tall else 50
-        cols = [AMBER, BLUE, BLUE, BLUE, GREEN]
-        x0 = M + 22
-        dr.line((x0, y + 22, x0, y + 22 + row * (len(chain) - 1)), fill=BLUE, width=4)
-        for i, n in enumerate(chain):
-            c = cols[min(i, 4)] if i < len(chain) - 1 else GREEN
-            dr.ellipse((x0 - 22, y, x0 + 22, y + 44), fill=NAVY, outline=c, width=5)
-            if i == len(chain) - 1:
-                dr.ellipse((x0 - 22, y, x0 + 22, y + 44), fill=GREEN)
-            dr.text((M + 70, y - 2), n["label"], font=F("Regular", 26), fill=MUTE)
-            dr.text((M + 70 + dr.textlength(n["label"], font=F("Regular", 26)) + 18, y - 8), n["value"], font=F("Bold", 36), fill=WHITE)
-            y += row
-    content_end = y
-    dr.line((M, H - M - 96, W - M, H - M - 96), fill=(58, 78, 117), width=2)
-    dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=MUTE)
-    dr.text((M, H - M - 30), "What it means for you: fiopoin.com", font=F("SemiBold", 36), fill=GREEN)
-    sm = small.resize((190, int(190 * small.height / small.width)), Image.LANCZOS)
+    return M - 10 + lg.height
+
+def footer(im, dr, d, W, H, M, light=False, cta="Full breakdown: fiopoin.com"):
+    line = (200, 192, 176) if light else (58, 78, 117)
+    dr.line((M, H - M - 96, W - M, H - M - 96), fill=line, width=2)
+    dr.text((M, H - M - 70), d["date_long"], font=F("Regular", 28), fill=(110, 118, 135) if light else MUTE)
+    dr.text((M, H - M - 30), cta, font=F("SemiBold", 34), fill=NAVY if light else GREEN)
+    sm = (small_n if light else small)
+    sm = sm.resize((180, int(180 * sm.height / sm.width)), Image.LANCZOS)
     im.paste(sm, (W - M - sm.width, H - M - sm.height + 4), sm)
+
+def pill(dr, x, y, text, bg, fg, f):
+    tw = dr.textlength(text, font=f)
+    dr.rounded_rectangle((x, y, x + tw + 40, y + f.size + 24), radius=(f.size + 24) // 2, fill=bg)
+    dr.text((x + 20, y + 10), text, font=f, fill=fg)
+    return y + f.size + 24
+
+def dir_col(s):
+    return {"up": GREEN, "down": RED}.get(s.get("dir"), MUTE)
+
+def arrow(dr, x, y, dirn, col, sz=18):
+    if dirn == "up":
+        dr.polygon([(x, y + sz), (x + sz, y + sz), (x + sz / 2, y)], fill=col)
+    elif dirn == "down":
+        dr.polygon([(x, y), (x + sz, y), (x + sz / 2, y + sz)], fill=col)
+    else:
+        dr.rectangle((x, y + sz / 2 - 3, x + sz, y + sz / 2 + 3), fill=col)
+
+def card_morning(d, s, W, H, path, pad=0):
+    tall = H > W * 1.5
+    im = Image.new("RGB", (W, H), NAVY); dr = ImageDraw.Draw(im); M = 80
+    y = header(im, M) + (70 if tall else 44) + pad
+    y = pill(dr, M, y, s["kicker"].upper(), BLUE, WHITE, F("Bold", 28)) + 34
+    hf, ls = fit(dr, s["headline"], W - 2 * M, 84 if tall else 72, 56)
+    for l in ls:
+        dr.text((M, y), l, font=hf, fill=WHITE); y += int(hf.size * 1.12)
+    y += 36 if tall else 26
+    stats = (s.get("stats") or d.get("tape") or [])[:6]
+    if stats:
+        cols, gap = 2, (24 if tall else 18)
+        cw = (W - 2 * M - gap) // cols
+        ch = 170 if tall else 150
+        for i, t in enumerate(stats):
+            cx, cy = M + (i % cols) * (cw + gap), y + (i // cols) * (ch + gap)
+            dr.rounded_rectangle((cx, cy, cx + cw, cy + ch), radius=18, fill=(36, 54, 92))
+            dr.rectangle((cx, cy + 18, cx + 6, cy + ch - 18), fill=dir_col(t))
+            dr.text((cx + 28, cy + 18), t["label"], font=F("SemiBold", 26), fill=MUTE)
+            vf = F("ExtraBold", 50 if tall else 44)
+            dr.text((cx + 28, cy + 52), t["value"], font=vf, fill=WHITE)
+            arrow(dr, cx + 36 + dr.textlength(t["value"], font=vf), cy + 66 if tall else cy + 62, t.get("dir"), dir_col(t), 22)
+            if t.get("note"):
+                nf = F("Regular", 24)
+                note = t["note"]
+                while dr.textlength(note, font=nf) > cw - 50 and " " in note:
+                    note = note.rsplit(" ", 1)[0]
+                dr.text((cx + 28, cy + ch - 42), note, font=nf, fill=MUTE)
+        y += ((len(stats) + 1) // 2) * (ch + gap) + (24 if tall else 6)
+    pf = F("Bold", 38 if tall else 34)
+    dr.text((M, y), "The driver", font=F("SemiBold", 28), fill=AMBER); y += 48
+    for p in s["points"]:
+        if y > H - M - 150: break
+        dr.ellipse((M, y + 12, M + 16, y + 28), fill=AMBER)
+        for l in wrap(dr, p, pf, W - 2 * M - 40):
+            dr.text((M + 36, y), l, font=pf, fill=WHITE); y += int(pf.size * 1.3)
+        y += 10 if tall else 4
+    footer(im, dr, d, W, H, M)
     im.save(path, optimize=True)
-    return content_end
+    return y
+
+def card_midday(d, s, W, H, path, pad=0):
+    tall = H > W * 1.5
+    im = Image.new("RGB", (W, H), PAPER); dr = ImageDraw.Draw(im); M = 80
+    dr.rectangle((0, 0, W, 18), fill=AMBER)
+    y = header(im, M + 10, light=True) + (80 if tall else 50) + pad
+    dr.text((M, y), s["kicker"].upper(), font=F("Bold", 30), fill=(176, 112, 20)); y += 60
+    hf, ls = fit(dr, s["headline"], W - 2 * M, 86 if tall else 74, 56)
+    for l in ls:
+        dr.text((M, y), l, font=hf, fill=NAVY); y += int(hf.size * 1.12)
+    y += 40 if tall else 30
+    st = (s.get("stats") or [None])[0]
+    if st:
+        bh = 250 if tall else 200
+        dr.rounded_rectangle((M, y, W - M, y + bh), radius=24, fill=NAVY)
+        vf = F("ExtraBold", 120 if tall else 100)
+        dr.text((M + 44, y + (34 if tall else 24)), st["value"], font=vf, fill=AMBER)
+        ly = y + bh - (78 if tall else 66)
+        lab = st["label"] + (f"  ·  {st['note']}" if st.get("note") else "")
+        sz = 34 if tall else 30
+        while sz > 20 and dr.textlength(lab, font=F("SemiBold", sz)) > W - 2 * M - 88:
+            sz -= 2
+        lf = F("SemiBold", sz)
+        dr.text((M + 44, ly), lab, font=lf, fill=WHITE)
+        y += bh + (48 if tall else 34)
+    pf = F("Bold", 40 if tall else 36)
+    for i, p in enumerate(s["points"]):
+        if y > H - M - 200: break
+        dr.ellipse((M, y - 2, M + 56, y + 54), fill=AMBER)
+        n = str(i + 1); nf = F("ExtraBold", 32)
+        dr.text((M + 28 - dr.textlength(n, font=nf) / 2, y + 7), n, font=nf, fill=NAVY)
+        for l in wrap(dr, p, pf, W - 2 * M - 84):
+            dr.text((M + 84, y + 2), l, font=pf, fill=NAVY); y += int(pf.size * 1.3)
+        y += 26 if tall else 16
+    if s.get("watch") and y < H - M - 230:
+        y += 10
+        dr.text((M, y), "WATCH  " + s["watch"], font=F("SemiBold", 32), fill=(176, 112, 20)); y += 44
+    footer(im, dr, d, W, H, M, light=True)
+    im.save(path, optimize=True)
+    return y
+
+def card_evening(d, s, W, H, path, pad=0):
+    tall = H > W * 1.5
+    im = Image.new("RGB", (W, H), INK); dr = ImageDraw.Draw(im); M = 80
+    # globe linework, top right
+    cx, cy, r = W - 60, H - 380, 340
+    gl = (24, 40, 72)
+    for k in range(0, 5):
+        dr.ellipse((cx - r + k * 72, cy - r, cx + r - k * 72, cy + r), outline=gl, width=2)
+    for k in range(-2, 3):
+        yy = cy + k * r / 3
+        hw = (r * r - (yy - cy) ** 2) ** 0.5
+        dr.line((cx - hw, yy, cx + hw, yy), fill=gl, width=2)
+    dr.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(0, 70, 115), width=3)
+    y = header(im, M) + (90 if tall else 56) + pad
+    dr.text((M, y), s["kicker"].upper(), font=F("Bold", 30), fill=BLUE); y += 62
+    hf, ls = fit(dr, s["headline"], W - 2 * M, 84 if tall else 72, 56)
+    for l in ls:
+        dr.text((M, y), l, font=hf, fill=WHITE); y += int(hf.size * 1.12)
+    y += 44 if tall else 30
+    pf = F("Bold", 40 if tall else 36)
+    for i, p in enumerate(s["points"]):
+        if y > H - M - 260: break
+        n = f"0{i + 1}"
+        dr.text((M, y - 4), n, font=F("ExtraBold", 44), fill=BLUE)
+        top = y
+        for l in wrap(dr, p, pf, W - 2 * M - 100):
+            dr.text((M + 100, y), l, font=pf, fill=WHITE); y += int(pf.size * 1.3)
+        y += 20 if tall else 12
+        dr.line((M + 100, y - 8, W - M, y - 8), fill=(40, 58, 92), width=2)
+        y += 14 if tall else 8
+    if s.get("watch"):
+        y += 16 if tall else 6
+        wf = F("SemiBold", 36 if tall else 32)
+        wl = wrap(dr, s["watch"], wf, W - 2 * M - 64)
+        bh = 74 + len(wl) * int(wf.size * 1.3)
+        if y + bh < H - M - 120:
+            dr.rounded_rectangle((M, y, W - M, y + bh), radius=20, outline=GREEN, width=3)
+            dr.text((M + 32, y + 22), "WHAT TO WATCH", font=F("Bold", 24), fill=GREEN)
+            yy = y + 60
+            for l in wl:
+                dr.text((M + 32, yy), l, font=wf, fill=WHITE); yy += int(wf.size * 1.3)
+            y += bh
+    footer(im, dr, d, W, H, M)
+    im.save(path, optimize=True)
+    return y
+
+STYLES = {"morning": card_morning, "midday": card_midday, "evening": card_evening}
+
+def render(fn, d, s, W, H, path):
+    # draw once, then center the content block in the free space above the footer
+    end = fn(d, s, W, H, path)
+    free = (H - 80 - 130) - end
+    if free > 60:
+        fn(d, s, W, H, path, pad=min(free // 2, 260))
 
 for d in data:
     if "social" not in d:
         continue
     p = f"social/{d['date']}.png"
     if d is latest or not os.path.exists(p):
-        card(d, 1080, 1350, p)
-        card(d, 1080, 1920, f"social/{d['date']}-story.png")
+        render(card_morning, d, d["social"], 1080, 1350, p)
+        render(card_morning, d, d["social"], 1080, 1920, f"social/{d['date']}-story.png")
         open(f"social/{d['date']}.txt", "w").write(d["social"]["caption"] + "\n")
         for slot, ss in d.get("social_slots", {}).items():
-            card(d, 1080, 1350, f"social/{d['date']}-{slot}.png", ss, show_chain=False)
-            sp = f"social/{d['date']}-{slot}-story.png"
-            end = card(d, 1080, 1920, sp, ss, show_chain=False)
-            top = 80 - 10 + int(600 * logo.height / logo.width) + 60
-            free = (1920 - 80 - 140) - end
-            if free > 80:
-                card(d, 1080, 1920, sp, ss, show_chain=False, pad=free // 2)
+            fn = STYLES.get(slot, card_evening)
+            render(fn, d, ss, 1080, 1350, f"social/{d['date']}-{slot}.png")
+            render(fn, d, ss, 1080, 1920, f"social/{d['date']}-{slot}-story.png")
             open(f"social/{d['date']}-{slot}.txt", "w").write(ss["caption"] + "\n")
 
 # Posting manifest for the scheduled social task: three posts a day
