@@ -3,7 +3,7 @@
  "date_long": "Monday, November 23, 2026",
  "edition": "Morning edition, English.",
  "hero": {
-  "headline": "Futures bounce after Wall Street's worst week since 2020. Here is how it reaches your savings.",
+  "headline": "Nvidia brings back Jensen Huang after Wall Street's worst week since 2020.",
   "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
   "chain": [
    {
@@ -22,9 +22,9 @@
     "text": "Taiwan's Taiex lost about 18% last week, its worst week since 1991, Saxo says. On Monday it rose 2.2%, while South Korea's KOSPI fell 3.3% and Japan was closed for a holiday."
    },
    {
-    "label": "The bounce",
-    "value": "Dow fut. +798",
-    "text": "By 9:16 p.m. ET on Sunday, Dow futures were up 798 points, or 1.66%. S&P 500 futures rose 2.11% and Nasdaq futures 2.75%, Fortune reported."
+    "label": "The turn",
+    "value": "NVDA +8.69%",
+    "text": "On Monday Nvidia's board unanimously reinstated Jensen Huang as CEO, effective immediately. Earlier, Nvidia rose 8.69% to $136.44 in premarket trading at 6:35 a.m. ET, and by 7:53 a.m. ET S&P 500 futures were up 2.60%, Yahoo Finance showed."
    },
    {
     "label": "You",
@@ -37,8 +37,8 @@
  "tape": [
   {
    "label": "S&P 500 futures",
-   "value": "+2.11%",
-   "note": "Sun 9:16 p.m. ET",
+   "value": "+2.60%",
+   "note": "Mon 7:53 a.m. ET",
    "dir": "up"
   },
   {
@@ -60,10 +60,10 @@
    "dir": "down"
   },
   {
-   "label": "US gas, AAA",
-   "value": "$3.64",
-   "note": "Nov 23",
-   "dir": "flat"
+   "label": "Nvidia premarket",
+   "value": "$136.44",
+   "note": "+8.69%, 6:35 a.m. ET",
+   "dir": "up"
   },
   {
    "label": "Gold",
@@ -76,13 +76,13 @@
   {
    "id": "money",
    "topic": "Stocks and your savings",
-   "headline": "Stock futures bounce after Wall Street's worst week since 2020.",
+   "headline": "Nvidia rehires Jensen Huang as stocks try to bounce from the worst week since 2020.",
    "stake": {
     "level": "hi",
     "text": "High stakes for savers"
    },
    "happened": "The S&P 500 fell 3.7% on Friday to 6,910.39 and 8.6% for the week, entering a correction. The Dow fell 1.93% to 48,147.33 and 8% for the week, its worst since March 2020. The Nasdaq dropped 5.28% to 22,617.73 and is now down 2.7% for 2026. Nvidia fell about 14% on Friday. The VIX fear gauge closed at 35.89, its highest since April 2025.",
-   "happening": "On Sunday night Dow futures rose 798 points, or 1.66%, S&P 500 futures 2.11% and Nasdaq futures 2.75%. The 10 year Treasury yield was about 4.94%. Gold rose 2.62% to $3,607.55 on Monday after falling about 9% last week. US markets close Thursday for Thanksgiving and close early on Friday.",
+   "happening": "On Monday Nvidia's board voted unanimously to reinstate Jensen Huang as president, CEO and board director, effective immediately, 11 days after he resigned on November 12. The board said input from senior levels of the US government gave it confidence that his return poses no national security risk. An independent board investigation will continue, a new National Security and Export Control Committee of independent directors will oversee those risks, and Colette Kress returns to her role as CFO. Earlier, after President Trump urged the board on Truth Social to rehire Huang, Nvidia rose 8.69% to $136.44 in premarket trading at 6:35 a.m. ET. By 7:53 a.m. ET, S&P 500 futures were up 2.60% and Nasdaq 100 futures 3.49%, Yahoo Finance showed. On Sunday night Dow futures rose 798 points, or 1.66%, S&P 500 futures 2.11% and Nasdaq futures 2.75%. The 10 year Treasury yield was about 4.94%. Gold rose 2.62% to $3,607.55 on Monday after falling about 9% last week. US markets close Thursday for Thanksgiving and close early on Friday.",
    "could": {
     "odds": [],
     "text": "One strong morning does not end a correction. Wednesday's PCE inflation report and the Fed's December 9 decision will shape whether the selling resumes.",
@@ -91,10 +91,26 @@
    "you": [
     "Investing for retirement? Keep your regular contributions going; selling after an 8.6% week locks in the loss.",
     "Need cash in the next year or two? Keep it in savings or short Treasury bills, not stocks.",
-    "Check how much of your fund is in a few big tech names before you add more."
+    "Own an S&P 500 or Nasdaq fund? Nvidia is one of its largest weights, so a big Nvidia day moves your balance too. Check your exposure before you add more."
    ],
    "watch": "US flash PMI at 9:45 a.m. ET Monday, then PCE and GDP at 8:30 a.m. ET Wednesday.",
    "sources": [
+    {
+     "name": "Nvidia press release (SEC filing), Nov 23",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm"
+    },
+    {
+     "name": "Nvidia, CEO transition, Nov 12",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+    },
+    {
+     "name": "Yahoo Finance, Nvidia premarket",
+     "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-jumps-as-dc-makes-stunning-u-turn-on-jensen-huang-113419437.html"
+    },
+    {
+     "name": "Yahoo Finance, markets live",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+    },
     {
      "name": "IC Markets",
      "url": "https://www.ic.com/blog/wall-street-suffers-worst-weekly-decline-in-years-23-november-2026-ic/"
@@ -183,7 +199,7 @@
     "text": "Medium stakes for investors"
    },
    "happened": "CrowdStrike and Zscaler announced a definitive all-stock deal on Monday, November 23. Zscaler holders get 1.135 CrowdStrike shares for each share, about $260.41 based on Friday's close, a premium of about 34%. The enterprise value is about $43.9 billion. Bloomberg first reported talks on November 20.",
-   "happening": "CrowdStrike holders would own about 84.1% of the combined company and Zscaler holders 15.9%. Zscaler founder Jay Chaudhry, whose group holds about 34% of the shares, signed voting agreements and will join CrowdStrike's board. The firms target about $1 billion a year in extra revenue within 30 months and $500 million in cost savings, with combined annual recurring revenue above $10 billion.",
+   "happening": "In premarket trading on Monday, CrowdStrike fell 9.6% and Zscaler rose 13%, Yahoo Finance reported. CrowdStrike holders would own about 84.1% of the combined company and Zscaler holders 15.9%. Zscaler founder Jay Chaudhry, whose group holds about 34% of the shares, signed voting agreements and will join CrowdStrike's board. The firms target about $1 billion a year in extra revenue within 30 months and $500 million in cost savings, with combined annual recurring revenue above $10 billion.",
    "could": {
     "odds": [],
     "text": "The deal needs Zscaler shareholder and regulatory approval and is expected to close in the second half of CrowdStrike's fiscal 2028, so a long review is likely.",
@@ -203,6 +219,10 @@
     {
      "name": "Silicon Republic",
      "url": "https://www.siliconrepublic.com/enterprise/crowdstrike-reportedly-eyes-zscaler-as-threat-landscape-intensifies"
+    },
+    {
+     "name": "Yahoo Finance, markets live",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
     }
    ]
   },
@@ -283,22 +303,15 @@
  "social_slots": {
   "midday": {
    "kicker": "Midday: business and deals",
-   "headline": "CrowdStrike agrees to buy Zscaler for $43.9B",
+   "headline": "Nvidia brings back Jensen Huang as CEO",
    "points": [
-    "All-stock deal, 34% premium",
-    "About $260.41 per Zscaler share",
-    "Combined recurring revenue over $10B"
+    "Board vote was unanimous",
+    "Back 11 days after he resigned",
+    "New national security committee"
    ],
-   "watch": "How both stocks trade at the open; approvals come next.",
-   "stats": [
-    {
-     "label": "Enterprise value",
-     "value": "$43.9B",
-     "note": "all-stock, announced Nov 23"
-    }
-   ],
+   "watch": "Nvidia was up 8.69% premarket before the news. Next: US PCE inflation on Wednesday.",
    "icon": "chip",
-   "caption": "CrowdStrike agreed on Monday to buy Zscaler in an all-stock deal valued at about $43.9 billion. Zscaler holders get 1.135 CrowdStrike shares each, about $260.41, a 34% premium. Founder Jay Chaudhry will join CrowdStrike's board. The deal needs shareholder and regulatory approval. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #MergersAndAcquisitions #Cybersecurity #CrowdStrike #Zscaler"
+   "caption": "Nvidia's board voted unanimously on Monday to reinstate Jensen Huang as president, CEO and board director, effective immediately, 11 days after he resigned. The board said input from senior US government officials gave it confidence his return poses no national security risk. Its independent investigation continues, and a new board committee will oversee export control and security risks. Before the news, Nvidia was up 8.69% in premarket trading. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Nvidia #AI #StockMarket #Semiconductors"
   },
   "evening": {
    "kicker": "Evening: the world and the economy",
