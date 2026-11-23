@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Tankers hit near Hormuz as Iran vows to break the blockade. Here is how it reaches your gas tank.](https://fiopoin.com/): Sunday, November 22, 2026. Two tankers were hit near the Strait of Hormuz on Saturday and Bahrain said it intercepted Iranian attacks, as Iran said the US blockade must be broken. Brent settled at $92.57 on Friday, before the attacks. US gas is $3.64, down from $3.82 a week ago.
-- [Thanksgiving week: Gas is $3.64 as 81.5 million people get ready to travel for Thanksgiving.](https://fiopoin.com/#money)
-- [Iran war and oil: Tankers are hit and Bahrain is attacked as Iran says the US blockade must be broken.](https://fiopoin.com/#world)
-- [Nvidia: Nvidia had its worst week since October 2008, losing about $1 trillion in value.](https://fiopoin.com/#ai)
-- [Stocks and your 401(k): The S&P 500 lost 8.61% last week and is the most oversold since April 2025.](https://fiopoin.com/#markets)
+- [Futures bounce after Wall Street's worst week since 2020. Here is how it reaches your savings.](https://fiopoin.com/): Monday, November 23, 2026. US stock futures rose on Sunday night after Wall Street's worst week since 2020. Dow futures gained 798 points after the S&P 500 fell 8.6% last week. Taiwan had its worst week since 1991 and Korea's KOSPI fell 3.3% on Monday. Gold rose to $3,607.55.
+- [Stocks and your savings: Stock futures bounce after Wall Street's worst week since 2020.](https://fiopoin.com/#money)
+- [Iran war and oil: Iran's Revolutionary Guard says it hit US sites in Bahrain as the Houthis claim a Saudi refinery attack.](https://fiopoin.com/#world)
+- [Cybersecurity deal: CrowdStrike agrees to buy Zscaler for about $43.9 billion in stock.](https://fiopoin.com/#deals)
+- [Asian markets: Asia steadies after Taiwan's worst week since 1991, but Korea keeps falling.](https://fiopoin.com/#asia)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Monday, November 23, 2026: Futures bounce after Wall Street's worst week since 2020. Here is how it reaches your savings.](https://fiopoin.com/archive/2026-11-23.html)
 - [Sunday, November 22, 2026: Tankers hit near Hormuz as Iran vows to break the blockade. Here is how it reaches your gas tank.](https://fiopoin.com/archive/2026-11-22.html)
 - [Saturday, November 21, 2026: Nasdaq fell 5.3% as Nvidia lost 14%. Here is how the AI rout reaches your 401(k).](https://fiopoin.com/archive/2026-11-21.html)
 - [Friday, November 20, 2026: Stocks fell 2% for a sixth straight day. Here is how the slide reaches your 401(k).](https://fiopoin.com/archive/2026-11-20.html)
