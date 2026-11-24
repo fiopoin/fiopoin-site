@@ -1,0 +1,988 @@
+{
+ "date": "2026-11-24",
+ "date_long": "Tuesday, November 24, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "Stocks have their best day since April 2025, but a December Fed hike looks near certain.",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "S&P +4.7%",
+    "text": "The S&P 500 rose 4.7% to 7,237.17 on Monday, its best day since April 2025, and won back just over half of last week's loss. The Nasdaq jumped 6.5% and the Dow gained 1,447.98 points, AP reports."
+   },
+   {
+    "label": "The trigger",
+    "value": "Nvidia +31.5%",
+    "text": "Nvidia surged 31.5% after its board reinstated Jensen Huang as CEO, a week after the stock fell nearly 23%. The VIX fear gauge dropped about 26% to 26.62."
+   },
+   {
+    "label": "The world",
+    "value": "TSMC +$158B",
+    "text": "On Tuesday South Korea's KOSPI rose 6.5% to 5,014.41, Japan's Nikkei 3.9% and Taiwan's Taiex more than 9%. TSMC added $158 billion in market value in one day, Fortune reports."
+   },
+   {
+    "label": "The catch",
+    "value": "Hike odds 95%",
+    "text": "New York Fed President John Williams said inflation is still too high. Traders now see about a 95% chance of a quarter point rate hike at the Fed's December 8 to 9 meeting, Yahoo Finance reports."
+   },
+   {
+    "label": "You",
+    "value": "10 yr 4.93%",
+    "text": "The 10 year Treasury yield sat near 4.93%, which keeps mortgage and loan rates high. Wednesday's PCE inflation report, forecast at 3.8% a year, is the next test."
+   }
+  ],
+  "caption": "Sources: AP, Fortune, Reuters, Yahoo Finance and TraderFactor, November 23 to 24, 2026. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "Brent crude",
+   "value": "$89.39",
+   "note": "Mon close, −3.45%",
+   "dir": "down"
+  },
+  {
+   "label": "S&P 500",
+   "value": "7,237.17",
+   "note": "Mon, +4.7%",
+   "dir": "up"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "4.93%",
+   "note": "Tue, Asia hours",
+   "dir": "flat"
+  },
+  {
+   "label": "Nasdaq",
+   "value": "24,089.56",
+   "note": "Mon, +6.5%",
+   "dir": "up"
+  },
+  {
+   "label": "Gold",
+   "value": "$3,617.10",
+   "note": "Tue, −0.94%",
+   "dir": "down"
+  },
+  {
+   "label": "Bitcoin",
+   "value": "$59,944.68",
+   "note": "Tue, −2.31%",
+   "dir": "down"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Stocks and your savings",
+   "headline": "Stocks have their best day since April 2025 as Nvidia jumps 31.5%.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for savers"
+   },
+   "happened": "On Monday the S&P 500 rose 326.78 points, or 4.7%, to 7,237.17, ending a seven day losing streak. The Dow rose 1,447.98 points, or 3%, to 49,595.31, the Nasdaq 6.5% to 24,089.56 and the Russell 2000 3.4% to 2,669.66, AP reports. Nvidia rose 31.5% after its board reinstated Jensen Huang as CEO. The VIX fell to 26.62.",
+   "happening": "Early Tuesday, Dow futures were up 0.1%, S&P 500 futures were near flat and Nasdaq 100 futures were down 0.3%, while Nvidia slipped 3% before the open, Yahoo Finance reported. Asia rallied: the KOSPI rose 6.5%, the Nikkei 3.9% and Taiwan more than 9%, while the Hang Seng lagged. Dell, HP, Best Buy, Medtronic, Analog Devices, Workday and Dollar Tree report earnings on Tuesday, and the Conference Board consumer confidence index is expected at 92.1, from 91.7. US markets close Thursday for Thanksgiving.",
+   "could": {
+    "odds": [],
+    "text": "A one day rally after a seven day slide does not settle the market's direction. Wednesday's PCE inflation report and the Fed's December decision matter more now.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Saving for retirement? Keep your regular contributions on schedule; trying to time a 4.7% day is how investors miss them.",
+    "Rebalance only if your stock share has drifted well past your target, and do it on a set date, not after a headline.",
+    "Need the money within two years? Keep it in savings or short Treasury bills, not in stocks."
+   ],
+   "watch": "Consumer confidence at 10 a.m. ET Tuesday, then PCE inflation at 8:30 a.m. ET Wednesday.",
+   "sources": [
+    {
+     "name": "AP via Yahoo Finance, Nov 23",
+     "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-213053319.html"
+    },
+    {
+     "name": "Yahoo Finance, markets live, Nov 24",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-rebound-090614276.html"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 24",
+     "url": "https://www.ksat.com/business/2026/11/24/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo/"
+    },
+    {
+     "name": "Fortune, TSMC, Nov 24",
+     "url": "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/"
+    },
+    {
+     "name": "IC Markets, Nov 24",
+     "url": "https://www.ic.com/blog/general-market-analysis-24-november-2026-ic/"
+    },
+    {
+     "name": "TraderFactor, Nov 24",
+     "url": "https://traderfactor.com/gold-stocks-rebound-nvidia-surges-pmis-cool/"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Iran war and oil",
+   "headline": "Iran's Revolutionary Guard says three tankers hit mines in Hormuz as Qatar works to revive talks.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
+   "happened": "Iran's Revolutionary Guard navy said on Monday that three tankers caught fire after hitting naval mines in the Strait of Hormuz, despite a US Navy escort, Iranian state media reported. It said US escorts would not exempt shipowners from its traffic rules. US Central Command had not responded, and the claim could not be independently verified.",
+   "happening": "Qatar's prime minister is working with Iran and the US to revive negotiations and met Vice President Vance and Secretary of State Rubio, Newsquawk reports. Iran wants sanctions lifted, frozen assets released and the US naval blockade removed; the US wants nuclear concessions. Brent fell 3.45% on Monday to $89.39, a three month low, and traded near $89 on Tuesday. Goldman Sachs raised its December Brent forecast to $105 from $90. The Houthis claimed an attack on Saudi Arabia's Rabigh refinery; Saudi officials have not confirmed damage.",
+   "could": {
+    "odds": [
+     {
+      "label": "Brent stays $85 to $95",
+      "pct": 55
+     },
+     {
+      "label": "Spike above $100",
+      "pct": 25
+     },
+     {
+      "label": "Deal sends Brent below $85",
+      "pct": 20
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days, unchanged from November 17. Brent at $89.39 is still inside the range despite the mine claims. Judgment, not fact."
+   },
+   "you": [
+    "Driving for Thanksgiving? The US average is $3.61 a gallon; fill up before Wednesday's rush.",
+    "Flying through the Gulf? Check your airline's change rules and your government's travel advice before you go.",
+    "Heat with oil or propane? Ask your dealer about a fixed price plan for the winter."
+   ],
+   "watch": "OPEC+ meets November 29 to set 2027 output.",
+   "sources": [
+    {
+     "name": "UNB via The Business Standard, Nov 24",
+     "url": "https://www.tbsnews.net/worldbiz/middle-east/irgc-claims-three-oil-tankers-hit-naval-mines-strait-hormuz-1612351"
+    },
+    {
+     "name": "Reuters via Times of Israel, Nov 23",
+     "url": "https://www.timesofisrael.com/liveblog_entry/irgc-says-3-oil-tankers-caught-fire-after-hitting-naval-mines-in-hormuz-iranian-report"
+    },
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    },
+    {
+     "name": "Kotak Neo, oil, Nov 24",
+     "url": "https://www.kotakneo.com/news/commodities/oil-price-today-24-november-2026-brent-falls-below-90-us-iran-talks-supply-risks/"
+    },
+    {
+     "name": "IC Markets, Nov 24",
+     "url": "https://www.ic.com/blog/general-market-analysis-24-november-2026-ic/"
+    },
+    {
+     "name": "AAA",
+     "url": "https://gasprices.aaa.com/"
+    }
+   ]
+  },
+  {
+   "id": "rates",
+   "topic": "The Fed and your loans",
+   "headline": "The Fed's Williams says inflation is still too high as traders bet on a December hike.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for borrowers"
+   },
+   "happened": "New York Fed President John Williams said on Monday that inflation is too high and the Fed must act over time to bring it back to 2%. He expects inflation to end 2026 at 3.5% and reach the target in 2028, and said he would not rule out moves at consecutive meetings. The Fed's rate range is 3.75% to 4.00%, Reuters reports.",
+   "happening": "Traders see about a 95% chance of a quarter point hike at the December meeting and a 5% chance of a half point, Yahoo Finance reported Tuesday. Governor Christopher Waller has signaled he could support a half point move, Reuters says. The 2 year Treasury yield rose to 4.683% and the dollar index hit a fresh annual high of 104.33 on Monday, IC Markets says. November's flash composite PMI fell to 54.6 from 55.9. Wednesday's PCE report is forecast to show inflation at 3.8% a year, up from 3.6%.",
+   "could": {
+    "odds": [
+     {
+      "label": "Quarter point hike Dec 9",
+      "pct": 95
+     },
+     {
+      "label": "Half point hike",
+      "pct": 5
+     }
+    ],
+    "text": "A hotter PCE reading on Wednesday would raise talk of a bigger move.",
+    "note": "Market odds from futures pricing, Yahoo Finance, November 24. Not a FIOPO call."
+   },
+   "you": [
+    "Carrying a credit card balance? Rates follow the Fed; pay down the highest rate card first.",
+    "Shopping for a mortgage? Ask your lender about a rate lock before the December 9 decision.",
+    "Holding cash? Compare high yield savings and money market rates, which tend to rise after hikes."
+   ],
+   "watch": "PCE inflation at 8:30 a.m. ET Wednesday.",
+   "sources": [
+    {
+     "name": "Reuters via Kitco, Williams, Nov 23",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-23/feds-williams-says-inflation-still-too-high-signals-more-rate-hikes"
+    },
+    {
+     "name": "Yahoo Finance, markets live, Nov 24",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-rebound-090614276.html"
+    },
+    {
+     "name": "IC Markets, Nov 24",
+     "url": "https://www.ic.com/blog/general-market-analysis-24-november-2026-ic/"
+    },
+    {
+     "name": "TraderFactor, Nov 24",
+     "url": "https://traderfactor.com/gold-stocks-rebound-nvidia-surges-pmis-cool/"
+    },
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    }
+   ]
+  },
+  {
+   "id": "deals",
+   "topic": "Trade and chips",
+   "headline": "The US blacklists an Alibaba unit and six other firms linked to Megaspeed.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
+   "happened": "The Commerce Department added seven companies in Singapore, Malaysia and Thailand to its Entity List on Monday, including Megaspeed International and Apex Enterprise Solutions, Alibaba's Singapore subsidiary. It cited the risk of moving advanced AI chips to buyers the US has not approved. Export licenses for them will face a presumption of denial.",
+   "happening": "Alibaba said the listing is erroneous because Apex never diverted restricted chips, and that it will seek all legal avenues. Its Hong Kong shares were down 0.5% on Tuesday afternoon. Singapore Prime Minister Lawrence Wong said Singapore does not want to be used as a conduit to evade US controls and its investigation continues. Senators Maria Cantwell and Pete Ricketts said Commerce still owes Congress answers. The rule is due in the Federal Register on Wednesday.",
+   "could": {
+    "odds": [],
+    "text": "Alibaba's legal challenge and congressional probes could keep export controls in the headlines for weeks.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Own Alibaba or a China tech fund? Expect headline swings; check how much of your fund sits in Chinese tech.",
+    "Buy cloud computing in Southeast Asia? Ask providers how US export rules affect their chip supply.",
+    "Work in tech trade or compliance? Entity List changes are a sign to review your customer screening."
+   ],
+   "watch": "Federal Register publication on November 25.",
+   "sources": [
+    {
+     "name": "StockAnalysis, Nov 24",
+     "url": "https://stockanalysis.com/news/us-blacklists-alibaba-unit-megaspeed/"
+    },
+    {
+     "name": "Reuters via The Tribune, Nov 24",
+     "url": "https://www.tribuneindia.com/news/world/us-blacklists-megaspeed-alibabas-singapore-unit-over-links-to-nvidia-scandal"
+    },
+    {
+     "name": "Fortune, TSMC, Nov 24",
+     "url": "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/"
+    },
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.61,
+  "gas_year_ago": 3.08,
+  "gas_note": "US average $3.61 on November 24 vs $3.08 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Morning: the big story",
+  "headline": "Iran says three tankers hit mines in Hormuz",
+  "points": [
+   "IRGC says tankers caught fire",
+   "US has not responded to claim",
+   "Qatar pushes to revive talks"
+  ],
+  "watch": "Brent fell 3.45% Monday to $89.39, a three month low.",
+  "icon": "ship",
+  "caption": "Iran's Revolutionary Guard said three tankers caught fire after hitting mines in the Strait of Hormuz on Monday. US Central Command had not responded and the claim is unverified. Qatar's prime minister is working to revive US and Iran talks. Brent fell 3.45% to $89.39.\n\nWatch OPEC+ on November 29. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Hormuz #OilPrices #MiddleEast #Energy"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: business and deals",
+   "headline": "US blacklists Alibaba unit and six other firms",
+   "points": [
+    "Includes Alibaba's Singapore arm",
+    "All linked to Megaspeed",
+    "Alibaba says it will fight it"
+   ],
+   "watch": "Alibaba's Hong Kong shares slipped 0.5% Tuesday. The rule publishes November 25.",
+   "stats": [
+    {
+     "label": "Companies added",
+     "value": "7",
+     "note": "US Entity List, Nov 23"
+    }
+   ],
+   "icon": "chip",
+   "caption": "The US Commerce Department added seven companies to its Entity List on Monday, including Alibaba's Singapore unit and Megaspeed, citing the risk of AI chips reaching unapproved buyers. Alibaba called it erroneous and plans to fight it. Singapore's prime minister said the country will not be a conduit to evade US controls. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Alibaba #ExportControls #Semiconductors #Trade"
+  },
+  "evening": {
+   "kicker": "Evening: the world and the economy",
+   "headline": "Fed's Williams says inflation is still too high",
+   "points": [
+    "Sees 3.5% inflation end of 2026",
+    "Back to back hikes not ruled out",
+    "Fed decides on December 9"
+   ],
+   "watch": "Futures price a 95% chance of a December hike. US PCE inflation lands Wednesday.",
+   "chart": {
+    "title": "December Fed hike odds, %",
+    "items": [
+     {
+      "label": "Quarter point",
+      "value": 95,
+      "display": "95%"
+     },
+     {
+      "label": "Half point",
+      "value": 5,
+      "display": "5%"
+     }
+    ],
+    "source": "Yahoo Finance, Nov 24, 2026"
+   },
+   "caption": "New York Fed President John Williams said inflation is still too high and expects it to end 2026 at 3.5%. He would not rule out rate hikes at consecutive meetings. Traders see about a 95% chance of a quarter point hike on December 9. Watch US PCE inflation on Wednesday. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #FederalReserve #Inflation #InterestRates #Economy"
+  }
+ },
+ "yesterday": {
+  "label": "Monday, November 23",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The S&P 500 rose 4.7% to 7,237.17, its best day since April 2025."
+   },
+   {
+    "label": "Nvidia",
+    "text": "Shares jumped 31.5% after the board reinstated Jensen Huang as CEO."
+   },
+   {
+    "label": "Trade",
+    "text": "The US added seven firms, including an Alibaba unit, to its Entity List."
+   },
+   {
+    "label": "Fed",
+    "text": "New York Fed President John Williams said inflation is still too high."
+   },
+   {
+    "label": "Oil",
+    "text": "Brent fell 3.45% to $89.39, a three month low."
+   },
+   {
+    "label": "Brazil",
+    "text": "The lower house passed a spending curbs bill by 353 votes to 128."
+   }
+  ],
+  "sources": [
+   {
+    "name": "AP via Yahoo Finance, Nov 23",
+    "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-213053319.html"
+   },
+   {
+    "name": "StockAnalysis, Nov 24",
+    "url": "https://stockanalysis.com/news/us-blacklists-alibaba-unit-megaspeed/"
+   },
+   {
+    "name": "Reuters via Kitco, Williams, Nov 23",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-11-23/feds-williams-says-inflation-still-too-high-signals-more-rate-hikes"
+   },
+   {
+    "name": "IC Markets, Nov 24",
+    "url": "https://www.ic.com/blog/general-market-analysis-24-november-2026-ic/"
+   },
+   {
+    "name": "The Rio Times, fiscal bill, Nov 24",
+    "url": "https://www.riotimesonline.com/brazil-lower-house-passes-fiscal-bill-353-128-vote/"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "Korea and Taiwan chip stocks surge while Hong Kong lags.",
+   "text": "On Tuesday Seoul's KOSPI rose 6.5% to 5,014.41, with Samsung up 7.5% and SK Hynix 8.6%, AP reports. TSMC rose 9.9%, the daily limit, adding about $158 billion in value. The Hang Seng and Shanghai traded mixed. China's central bank set the yuan midpoint at 6.7111 per dollar. Fortune reports China and Japan relations remain frozen after Xi Jinping and Sanae Takaichi only shook hands at APEC in Shenzhen.",
+   "you": "Own an Asia fund? Single day moves near 10% cut both ways; check how much of it sits in two or three chip stocks.",
+   "sources": [
+    {
+     "name": "AP via KSAT, Asian markets, Nov 24",
+     "url": "https://www.ksat.com/business/2026/11/24/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo/"
+    },
+    {
+     "name": "Fortune, TSMC, Nov 24",
+     "url": "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/"
+    },
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    },
+    {
+     "name": "Fortune, China and Japan, Nov 24",
+     "url": "https://fortune.com/2026/11/24/takaichi-xi-apec-handshake-china-japan-tensions/"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Nepal, Sri Lanka",
+   "headline": "Indian stocks slip ahead of monthly expiry as Hasina plans a return.",
+   "text": "The Sensex fell 331.21 points to 84,900.71 and the Nifty 108.65 points to 25,959.50 on November 24, with IT the only gaining sector, Moneycontrol reports. HAL fell 3% after a Tejas fighter jet crashed at a Dubai airshow. Former Bangladesh Prime Minister Sheikh Hasina plans to return to Bangladesh on December 16, Reuters reports.",
+   "you": "Investing in Indian funds? Expiry days bring extra swings, so avoid large trades right around them.",
+   "sources": [
+    {
+     "name": "Moneycontrol via TradingView",
+     "url": "https://cn.tradingview.com/news/moneycontrol:61f9d4786094b:0-taking-stock-nifty-ends-below-26-000-ahead-of-monthly-expiry-sensex-dips-331-points-it-outperforms"
+    },
+    {
+     "name": "Economic Times via FVBB, Nov 24",
+     "url": "https://fvbb.com/ns/oil-price-today-november-24-brent-crude-dips/332376"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "EU, UK, Ukraine, Russia",
+   "headline": "European fertilizer plants shut as stocks gave back early gains.",
+   "text": "European fertilizer producers have shut plants, with a third of ammonia output suspended, the Financial Times reports via Newsquawk. The Euro Stoxx 50 closed up 2.2% on Monday, but futures pointed lower on Tuesday. Russia's defense ministry said it hit a vessel southwest of Odesa and a power substation in Chernihiv region. About 60 Patriot interceptors for Ukraine await Pentagon approval, the FT reports.",
+   "you": "Farm or garden at scale? Fertilizer prices often rise when European ammonia output falls, so price your spring orders early.",
+   "sources": [
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf, Levant, Iran, Turkey",
+   "headline": "Qatar's prime minister meets Vance and Rubio to restart Iran talks.",
+   "text": "Qatar's Prime Minister and Foreign Minister Sheikh Mohammed bin Abdulrahman Al Thani is working with Iran and the US to revive negotiations, Newsquawk reports. Iran's air defense said it destroyed a US drone, and the Saudi-led coalition said it destroyed a Houthi drone. Kpler said Iran appears to be testing the US naval blockade with spoofed tracking signals, with no confirmed breach.",
+   "you": "Shipping goods through the Gulf? Ask your freight forwarder about war risk surcharges before you book.",
+   "sources": [
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    },
+    {
+     "name": "Kotak Neo, oil, Nov 24",
+     "url": "https://www.kotakneo.com/news/commodities/oil-price-today-24-november-2026-brent-falls-below-90-us-iran-talks-supply-risks/"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, Kenya, South Africa, Egypt, Sahel",
+   "headline": "Nigeria's central bank decides on rates today with the naira near 1,394.",
+   "text": "Nigeria's Monetary Policy Committee ends its last meeting of 2026 on Tuesday, with the policy rate at 23% after a 350 basis point cut in September. Inflation eased to 14.06% in October from 14.63% in September, but food inflation is 19.13%. The naira closed Monday at 1,394.01 per dollar on the official market, its weakest close in about eight months, and reserves were $54.58 billion.",
+   "you": "Sending money to Nigeria? Compare official and transfer app rates; the gap to the street rate was about 51 naira on Monday.",
+   "sources": [
+    {
+     "name": "Daily Trust via AllAfrica, Nov 24",
+     "url": "https://allafrica.com/stories/202611240181.html"
+    },
+    {
+     "name": "WithinNigeria, Nov 24",
+     "url": "https://www.withinnigeria.com/2026/11/24/dollar-to-naira-today-november-24-2026-naira-weakens-to-%E2%82%A61394-at-nfem-as-mpc-meets-black-market-near-%E2%82%A61445/"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Chile, Colombia, Peru",
+   "headline": "Brazil's lower house passes spending curbs as stocks hit a six month low.",
+   "text": "Brazil's Chamber of Deputies approved the main text of a fiscal bill by 353 votes to 128 on Monday night. It would cap real spending growth at 2% instead of 2.5% in some years, and the government estimates a 2027 gain of R$45.1 billion to R$56.1 billion. The Ibovespa fell 0.95% to 164,796, 21.2% below its October 9 peak, and the dollar closed at 5.9306 reais. Petrobras raised its five year investment plan to $122 billion.",
+   "you": "Visiting Brazil? The real is near its weakest in over a year, so your dollars go further; pay in reais at card terminals.",
+   "sources": [
+    {
+     "name": "The Rio Times, fiscal bill, Nov 24",
+     "url": "https://www.riotimesonline.com/brazil-lower-house-passes-fiscal-bill-353-128-vote/"
+    },
+    {
+     "name": "The Rio Times, Brazil markets, Nov 24",
+     "url": "https://www.riotimesonline.com/brazil-markets-ibovespa-real-monday-november-23-2026"
+    },
+    {
+     "name": "Newsquawk, Nov 24",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-daily-european-opening-news---24th-november-2026"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Football, England",
+   "headline": "Manchester United's revenue rises 4.1% but its quarterly loss grows.",
+   "text": "In the quarter to September 30, revenue rose to £146.1 million from £140.3 million, while the wage bill rose 8.6% to £79.9 million. The after tax loss was £18.1 million, up 174.2%. Long term debt rose to £577.4 million after a refinancing, while interest payments fell 32% to £14.5 million.",
+   "you": "Own shares in a listed club? Watch wages against revenue; when wages grow faster, profits usually shrink.",
+   "sources": [
+    {
+     "name": "Yahoo Sports, Nov 20",
+     "url": "https://sports.yahoo.com/articles/manchester-united-report-increased-revenue-000000637.html"
+    }
+   ]
+  },
+  {
+   "topic": "Basketball, TV",
+   "headline": "The NBA says viewership is up 37% in the first month of its new TV deals.",
+   "text": "The NBA reported a 37% viewership increase through the first month of the season, with NBC averaging 4.5 million viewers, Front Office Sports reported on November 23. The 37% figure is the league's own claim.",
+   "you": "Paying for several streaming services to follow one league? Check which games sit on free broadcast TV before you renew.",
+   "sources": [
+    {
+     "name": "Front Office Sports, Nov 23",
+     "url": "https://frontofficesports.com/article/nba-nbc-tv-ratings-increase/"
+    }
+   ]
+  },
+  {
+   "topic": "American football, media",
+   "headline": "Super Bowl LXI will play in IMAX theaters as Disney widens distribution.",
+   "text": "Disney will show Super Bowl LXI in hundreds of IMAX theaters, Front Office Sports reported on November 23, part of a wider push to put the game on more screens.",
+   "you": "Planning a Super Bowl outing? Theater seats for big live events often sell out early, so watch for ticket releases.",
+   "sources": [
+    {
+     "name": "Front Office Sports, Nov 23",
+     "url": "https://frontofficesports.com/article/super-bowl-lxi-coming-to-imax-as-disney-expands-distribution/"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Film, India",
+   "headline": "Ramayana passes Rs 1,580 crore worldwide in 16 days.",
+   "text": "The Indian epic reached Rs 1,582.95 crore worldwide gross after 16 days, including Rs 879.50 crore net in India and an estimated Rs 532 crore overseas, Sacnilk reports. It took $2.1 million in the US over the November 20 to 22 weekend.",
+   "you": "Indian films now get wide overseas releases. Check local theater listings rather than waiting for streaming.",
+   "sources": [
+    {
+     "name": "Sacnilk",
+     "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_16"
+    },
+    {
+     "name": "WPTF, Nov 23",
+     "url": "https://www.wptf.com/2026/11/23/weekend-box-office-a-resurgent-hunger-games-goes-big/"
+    }
+   ]
+  },
+  {
+   "topic": "Film, United States",
+   "headline": "Four new films arrive for Thanksgiving after the Hunger Games' $120 million opening.",
+   "text": "Sunrise on the Reaping opened to about $120 million in North America and $225 million worldwide on a reported budget of about $150 million. Thanksgiving week brings Focker in Law, Disney's animated Hexed, Netflix's The Further Mis-Adventures of Cliff Booth in IMAX, and Neon's Paper Tiger.",
+   "you": "Going to the movies over the holiday? Matinees and theater loyalty programs are the easiest way to cut ticket costs.",
+   "sources": [
+    {
+     "name": "WPTF, Nov 23",
+     "url": "https://www.wptf.com/2026/11/23/weekend-box-office-a-resurgent-hunger-games-goes-big/"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "Quantum computing",
+   "headline": "IBM says its quantum computer solved a problem classical computers can't in 15 minutes.",
+   "text": "IBM and the University of Chicago reported a quantum computer result that solved, in about 15 minutes, a problem beyond reach of classical computers, ScienceDaily reported on November 23.",
+   "you": "Work in finance, chemistry or logistics? These are the fields expected to use quantum computing first, so it is worth tracking.",
+   "sources": [
+    {
+     "name": "ScienceDaily, Nov 23",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261123231244.htm"
+    }
+   ]
+  },
+  {
+   "topic": "Biology and medicine",
+   "headline": "Scientists find how microbes make drug-like molecules.",
+   "text": "University of Michigan researchers reported in Science on November 23 that a protein family called REACT lets bacteria and fungi build complex drug-like molecules, with more than 40,000 related proteins identified.",
+   "you": "Follow biotech? Discoveries like this can shorten the search for new antibiotics, though new drugs take years to reach pharmacies.",
+   "sources": [
+    {
+     "name": "News-Medical, Nov 23",
+     "url": "https://www.news-medical.net/news/20261123/Scientists-uncover-mechanism-that-enables-microscopic-organisms-to-produce-drug-like-molecules.aspx"
+    }
+   ]
+  },
+  {
+   "topic": "Energy grid",
+   "headline": "Experts warn the US is building just 10% of the power lines it needs.",
+   "text": "A report covered by ScienceDaily on November 23 says the United States is building only about a tenth of the high voltage transmission lines it needs to meet rising power demand.",
+   "you": "Seeing higher electricity bills? Ask your utility about time of use plans; grid limits tend to raise peak hour prices first.",
+   "sources": [
+    {
+     "name": "ScienceDaily, Nov 23",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261123005339.htm"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Lake Balaton, Hungary: a lake holiday without Como's crowds.",
+   "text": "Lonely Planet named Lake Balaton one of its most underrated places for 2027, for summer festivals, castles and lavender fields, as an alternative to Lake Como.",
+   "you": "Planning summer 2027? Look at lakeside towns now, and pay in forint rather than accepting a card conversion to dollars.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "St. Augustine, Florida: Spanish streets without a transatlantic flight.",
+   "text": "Lonely Planet's 2027 underrated list includes St. Augustine for centuries of history and Spanish style streets that give a European feel on a domestic trip.",
+   "you": "Want old Europe on a short break? A domestic trip skips passports and long haul fares. Check the official visitor site for events before you book.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "The dollar buys more in Argentina and Brazil than in a year.",
+   "text": "Argentina's peso closed at 1,580 per dollar on November 20, its weakest in at least 12 months, and Brazil's real closed near 5.93, its weakest since January 2025. Lonely Planet's 2027 list also picks Bolivia and Quito.",
+   "you": "Pay in the local currency when a card terminal offers dollars, and use a card with no foreign transaction fee.",
+   "sources": [
+    {
+     "name": "The Rio Times, Argentina",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-friday-november-20-2026/"
+    },
+    {
+     "name": "The Rio Times, Brazil",
+     "url": "https://www.riotimesonline.com/brazil-central-bank-sells-us-1-billion-real-still-falls/"
+    },
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "What Should My Children Do?",
+   "by": "Daniel Susskind",
+   "where": "Allen Lane, published September 10, 2026",
+   "text": "An economist asks what the next generation should learn, and what it should stop worrying about, in a world changed by AI. Useful for any family planning school or career choices.",
+   "sources": [
+    {
+     "name": "Penguin",
+     "url": "https://www.penguin.co.uk/books/475229/what-should-my-children-do-by-susskind-daniel/9780241791172"
+    },
+    {
+     "name": "Next Big Idea Club",
+     "url": "https://nextbigideaclub.com/magazine/next-big-idea-clubs-november-2026-must-read-books/61737/"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "Primetime Preacher$",
+   "by": "Documentary from Joe Berlinger",
+   "where": "Netflix, from Friday, November 20",
+   "text": "A 113 minute film on Jim Bakker, Jerry Falwell and Jimmy Swaggart, three 1980s televangelists who built TV ministries before scandal. A sharp look at how money flows when trust is the product.",
+   "sources": [
+    {
+     "name": "Drawpie",
+     "url": "https://drawpie.com/blog/new-documentaries-netflix-november-2026/"
+    },
+    {
+     "name": "TheWrap",
+     "url": "https://www.thewrap.com/creative-content/movies/everything-new-on-streaming-november-2026/"
+    }
+   ]
+  }
+ ],
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 18",
+     "text": "NASA ran a developmental RS-25 Moon rocket engine for its full 200 seconds at Stennis Space Center.",
+     "source": "ScienceDaily, NASA",
+     "url": "https://sciencedaily.com/releases/2026/11/261120075551.htm"
+    },
+    {
+     "date": "Nov 19",
+     "text": "Scientists found bacteria that removed about 98% of radioactive promethium-147 in 60 hours.",
+     "source": "Everything Science",
+     "url": "https://everythingscience.substack.com/p/10-positive-science-stories-worth"
+    },
+    {
+     "date": "Nov 21",
+     "text": "India declared at 720 for 9 in Wellington, the highest Test innings ever made in New Zealand.",
+     "source": "Dainik Jagran English",
+     "url": "https://english.dainikjagranmpcg.com/special-news/november-22-2026-todays-top-news-headlines/article-45743"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ },
+ "events": {
+  "global": [
+   {
+    "when": "Nov 24",
+    "what": "Earnings from Dell, HP, Best Buy, Medtronic and Dollar Tree",
+    "where": "United States",
+    "url": "https://finance.yahoo.com/calendar/earnings?day=2026-11-24"
+   },
+   {
+    "when": "Nov 24",
+    "what": "Nigeria central bank rate decision",
+    "where": "Abuja, Nigeria",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-saturday-november-21-2026/"
+   },
+   {
+    "when": "Nov 25",
+    "what": "US PCE inflation, third quarter GDP and the Fed Beige Book",
+    "where": "Washington, D.C.",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-23-2026"
+   },
+   {
+    "when": "Nov 26",
+    "what": "US Thanksgiving, nearly 73 million expected on the road",
+    "where": "United States",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "Spain general election",
+    "where": "Spain",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 5 to 6",
+    "what": "Asia Artist Awards",
+    "where": "Kaohsiung National Stadium, Taiwan",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 11",
+    "what": "US government funding deadline",
+    "where": "Washington, D.C.",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Dec 18",
+    "what": "Avengers: Doomsday opens in theaters",
+    "where": "Worldwide",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   },
+   {
+    "when": "Jan 19, 2027",
+    "what": "Comment deadline for Medicare's CRUSH audit rule",
+    "where": "Online, regulations.gov",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "when": "Feb 7, 2027",
+    "what": "Grammy Awards",
+    "where": "Los Angeles",
+    "url": "https://www.complex.com/music/a/alex-ocho/lisa-grammy-nomination-blackpink-asian-pop"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "name": "FinChannel",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "name": "The Rio Times",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Nigeria Brief",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-23-2026"
+   },
+   {
+    "name": "Korea Daily",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-saturday-november-21-2026/"
+   },
+   {
+    "name": "Yahoo Finance earnings calendar",
+    "url": "https://finance.yahoo.com/calendar/earnings?day=2026-11-24"
+   }
+  ]
+ }
+}
