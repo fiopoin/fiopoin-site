@@ -7,3 +7,4 @@ A standing tradition: on every major holiday and occasion in `calendar.json`, al
 - Graphics go to each repo at `social/holidays/<slug>.png` and `<slug>-story.png`, so they are served at https://<site>/social/holidays/<slug>.png.
 - Copy: one short message per brand (under about 170 characters), in that brand's voice, warm, respectful and plain. No em or en dashes as punctuation, no politics, no jokes about any faith or culture, no religious imagery beyond the neutral motif. Never name the owner or FIOPO LLC.
 - After posting, set "posted": true on that entry in calendar.json.
+- Follow any "tone" or "note" field on a calendar entry.
