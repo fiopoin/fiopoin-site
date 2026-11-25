@@ -1,0 +1,961 @@
+{
+ "date": "2026-11-25",
+ "date_long": "Wednesday, November 25, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "The AI chip selloff spreads to Asia: Korea's KOSPI falls 6.2% as Samsung drops nearly 10%.",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "Chips -7.9%",
+    "text": "On Tuesday the Philadelphia Semiconductor Index fell 7.9% and the Nasdaq 1.48% to 23,733.54. Nvidia fell 5.86% a day after its 31.5% jump, Micron 11.01% and AMD 8.86%."
+   },
+   {
+    "label": "The trigger",
+    "value": "AI doubts",
+    "text": "Investors questioned the returns on debt funded AI data center spending and Nvidia's governance after Jensen Huang's reinstatement, AP and Al Jazeera report. Fears of new US tariffs added pressure."
+   },
+   {
+    "label": "The world",
+    "value": "KOSPI -6.2%",
+    "text": "On Wednesday the KOSPI fell 6.2% to 4,697.51, Taiwan's Taiex 5% and the Nikkei 2.8%. Samsung fell 9.9% and SK Hynix 11.1%. In Europe, Infineon fell 9.7% and ASML 5.6%, Saxo reports."
+   },
+   {
+    "label": "The catch",
+    "value": "Dow 50,018",
+    "text": "Not everything fell. The Dow rose 0.85% to 50,018.70 as money moved into health care and consumer stocks, and US consumer confidence jumped to 103.3 from 91.9."
+   },
+   {
+    "label": "You",
+    "value": "10 yr 4.875%",
+    "text": "The 10 year Treasury yield eased to 4.875% early Wednesday from 4.93%, Saxo says. Funds heavy in a few chip stocks are swinging hardest. PCE inflation lands at 8:30 a.m. ET."
+   }
+  ],
+  "caption": "Sources: AP, Al Jazeera, Saxo, Motley Fool via Yahoo Finance, Startup Fortune and the Conference Board, November 24 to 25, 2026. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "Brent crude",
+   "value": "$87.50",
+   "note": "Wed Asia, -1.4%",
+   "dir": "down"
+  },
+  {
+   "label": "S&P 500",
+   "value": "7,201.09",
+   "note": "Tue, -0.50%",
+   "dir": "down"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "4.93%",
+   "note": "Tue close",
+   "dir": "flat"
+  },
+  {
+   "label": "Nasdaq",
+   "value": "23,733.54",
+   "note": "Tue, -1.48%",
+   "dir": "down"
+  },
+  {
+   "label": "Gold",
+   "value": "$3,554.00",
+   "note": "Tue, -2.67%",
+   "dir": "down"
+  },
+  {
+   "label": "Bitcoin",
+   "value": "$59,241",
+   "note": "Wed, -0.87%",
+   "dir": "down"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Stocks and your savings",
+   "headline": "Chip stocks slump from New York to Seoul as AI doubts return.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for savers"
+   },
+   "happened": "On Tuesday the S&P 500 fell 0.50% to 7,201.09, its eighth loss in nine sessions, and the Nasdaq fell 1.48% to 23,733.54. The Dow rose 0.85% to 50,018.70. The Philadelphia Semiconductor Index dropped 7.9%. Nvidia fell 5.86%, Micron 11.01%, Intel 8.15% and AMD 8.86%, while Kohl's, Dollar Tree and Dick's Sporting Goods jumped after earnings.",
+   "happening": "On Wednesday Asia followed: the KOSPI fell 6.2%, the Taiex 5%, the Nikkei 2.8% to 57,011.62 and the Shanghai Composite 1.5% to its lowest in more than a year, AP reports. Samsung fell 9.9%, SK Hynix 11.1% and SoftBank Group 14.8%. India's Sensex rose 2.4%. Europe's STOXX 600 was down 0.7% in early trade and the DAX 1.3%, Saxo says. US markets close Thursday for Thanksgiving.",
+   "could": {
+    "odds": [],
+    "text": "Two days of 30% and 6% swings in one stock show how much of the market now rides on a handful of AI names. Wednesday's PCE report adds a second test.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Check how much of your retirement fund sits in the ten largest tech stocks; an S&P 500 fund is more concentrated than it looks.",
+    "Keep regular contributions on schedule rather than reacting to single day swings.",
+    "Money you need within two years belongs in savings or short Treasury bills, not in chip stocks."
+   ],
+   "watch": "PCE inflation at 8:30 a.m. ET Wednesday, then the Fed's Beige Book at 2 p.m. ET.",
+   "sources": [
+    {
+     "name": "Motley Fool via Yahoo Finance, Nov 24",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-24-221148355.html"
+    },
+    {
+     "name": "Startup Fortune, Nov 25",
+     "url": "https://startupfortune.com/the-dow-closes-at-50019-while-nasdaq-drops-148-on-an-ai-chip-selloff/"
+    },
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 25",
+     "url": "https://www.ksat.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-tumble-after-a-retreat-on-wall-street/"
+    },
+    {
+     "name": "Al Jazeera, Nov 25",
+     "url": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom"
+    },
+    {
+     "name": "Saxo Market Quick Take, Nov 25",
+     "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Trade and tariffs",
+   "headline": "The US is preparing new tariffs on China, the EU and 14 other economies.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
+   "happened": "The Trump administration is expected to soon announce higher tariffs on 16 economies, including China and the EU, two people familiar with the matter told AP on Tuesday. The US Trade Representative is due to release results of monthslong Section 301 investigations into industrial subsidies in the coming days. Bloomberg and The Wall Street Journal reported the plans earlier.",
+   "happening": "The tariff levels were not clear and timing could still change, AP says. The White House says subsidized overproduction in those countries floods the US with cheap goods. The duties would come on top of 10% to 12.5% tariffs announced this year, and would replace broader April 2025 tariffs the Supreme Court struck down in February. The White House and USTR did not respond to AP. Trump met Xi Jinping in Shenzhen last week, and Xi is expected at the G20 in Florida next month.",
+   "could": {
+    "odds": [
+     {
+      "label": "New Section 301 tariffs announced by Dec 25",
+      "pct": 65
+     },
+     {
+      "label": "Announcement slips past Dec 25",
+      "pct": 35
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days. Judgment, not fact."
+   },
+   "you": [
+    "Planning a big purchase of imported goods, such as appliances or electronics? Prices can rise once new tariffs take effect.",
+    "Run a small business that imports? Ask suppliers now how they would share any new duty.",
+    "Own funds with heavy exposure to exporters in China or Europe? Expect swings when the list is published."
+   ],
+   "watch": "USTR findings in the coming days.",
+   "sources": [
+    {
+     "name": "AP via WPXI, Nov 24",
+     "url": "https://www.wpxi.com/news/local/us-ready-slap-tariffs-china-eu-others-over-subsidized-production-ap-sources-say/54SVDLC3PRCQVMMWR3US3FERJU/"
+    },
+    {
+     "name": "Startup Fortune, Nov 25",
+     "url": "https://startupfortune.com/the-dow-closes-at-50019-while-nasdaq-drops-148-on-an-ai-chip-selloff/"
+    }
+   ]
+  },
+  {
+   "id": "rates",
+   "topic": "The Fed and your loans",
+   "headline": "Consumer confidence jumps to 103.3 as traders bet on a December Fed hike.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for borrowers"
+   },
+   "happened": "The Conference Board's consumer confidence index rose 11.4 points to 103.3 in November from 91.9, well above the 92.2 forecast. The expectations index rose to 83.6 and 12 month inflation expectations eased to 5.7%. Conference Board economist Fergus McCormick linked the gain to lower uncertainty after the midterm elections, while consumers still complained about high prices.",
+   "happening": "Futures put the odds of a quarter point Fed hike on December 9 at about 95% to 96%, with the rest on a half point, according to CME FedWatch data cited by Closing Look. The 10 year Treasury yield closed Tuesday at 4.93% and eased to 4.875% early Wednesday, Saxo says. Australia's October inflation came in at 4.9%, above the 4.7% forecast. US PCE inflation, income and spending, jobless claims and durable goods all arrive Wednesday.",
+   "could": {
+    "odds": [
+     {
+      "label": "Quarter point hike Dec 9",
+      "pct": 95
+     },
+     {
+      "label": "Half point hike",
+      "pct": 5
+     }
+    ],
+    "text": "A hot PCE reading would revive talk of a half point move.",
+    "note": "Market odds from futures pricing, Closing Look citing CME FedWatch, November 24. Not a FIOPO call."
+   },
+   "you": [
+    "Carry a credit card balance? Pay down the highest rate card first; card rates follow the Fed.",
+    "Shopping for a mortgage? Ask about a rate lock before the December 9 decision.",
+    "Holding cash? Compare high yield savings rates, which tend to rise after hikes."
+   ],
+   "watch": "PCE inflation at 8:30 a.m. ET Wednesday.",
+   "sources": [
+    {
+     "name": "Conference Board via PR Newswire, Nov 24",
+     "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
+    },
+    {
+     "name": "StockAnalysis, Nov 24",
+     "url": "https://stockanalysis.com/news/consumer-confidence-jumps-november-2026/"
+    },
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    },
+    {
+     "name": "Saxo Market Quick Take, Nov 25",
+     "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026"
+    }
+   ]
+  },
+  {
+   "id": "deals",
+   "topic": "Deals and health care",
+   "headline": "Sanofi agrees to buy Insmed for about $41 billion in cash.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
+   "happened": "France's Sanofi agreed on November 24 to buy US drugmaker Insmed for $175 a share in cash, a total equity value of about $41.0 billion. The deal brings Brinsupri, a once daily pill for the lung disease non cystic fibrosis bronchiectasis, which Sanofi says earned $1.09 billion through September 30, 2026, a little over a year after its US launch.",
+   "happening": "Both boards approved the deal, which needs Insmed shareholder and regulatory approval and is expected to close in the first half of 2027. Sanofi will fund it with debt and cash and expects it to add to earnings per share by the end of 2028. Insmed shares rose 14.13% on Tuesday, and Sanofi's shares were up 9.8% in Paris on Wednesday morning, Saxo reports.",
+   "could": {
+    "odds": [],
+    "text": "A deal this size draws close review from regulators, but the two companies have little overlap in respiratory drugs.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Own Insmed shares? A cash offer usually caps the upside; read the shareholder vote materials when they arrive.",
+    "Taking Brinsupri? Ownership changes rarely affect prescriptions, but ask your pharmacy about any change in patient support programs.",
+    "Own a health care fund? Big pharma deals can lift other mid size biotech stocks on takeover hopes."
+   ],
+   "watch": "The Insmed shareholder vote date.",
+   "sources": [
+    {
+     "name": "Sanofi press release (SEC filing), Nov 24",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001121404/000119312526473314/d130092dex991.htm"
+    },
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    },
+    {
+     "name": "Saxo Market Quick Take, Nov 25",
+     "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.61,
+  "gas_year_ago": 3.08,
+  "gas_note": "US average $3.61 on November 24 vs $3.08 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Morning: the big story",
+  "headline": "AI chip selloff hits Asia as KOSPI falls 6.2%",
+  "points": [
+   "Samsung -9.9%, SK Hynix -11.1%",
+   "US chip index fell 7.9% Tuesday",
+   "Taiwan's Taiex falls 5%"
+  ],
+  "watch": "US PCE inflation is out at 8:30 a.m. ET.",
+  "chart": {
+   "title": "Asian stock indexes, Wednesday, %",
+   "items": [
+    {
+     "label": "KOSPI",
+     "value": -6.2,
+     "display": "-6.2%"
+    },
+    {
+     "label": "Nikkei",
+     "value": -2.8,
+     "display": "-2.8%"
+    },
+    {
+     "label": "Sensex",
+     "value": 2.4,
+     "display": "+2.4%"
+    }
+   ],
+   "source": "AP, Nov 25, 2026"
+  },
+  "caption": "Chip stocks slumped across Asia on Wednesday. Korea's KOSPI fell 6.2%, Taiwan's Taiex 5% and Japan's Nikkei 2.8%, with Samsung down 9.9% and SK Hynix 11.1%, after a 7.9% drop in US chip stocks on doubts about AI spending. India's Sensex rose 2.4%.\n\nWatch US PCE inflation at 8:30 a.m. ET. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Semiconductors #AsiaMarkets #KOSPI #Stocks"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: business and deals",
+   "headline": "Sanofi to buy Insmed for about $41 billion",
+   "points": [
+    "$175 a share, all in cash",
+    "Adds lung drug Brinsupri",
+    "Set to close in first half of 2027"
+   ],
+   "watch": "Insmed shares rose 14.13% Tuesday. Sanofi expects the deal to add to EPS by end of 2028.",
+   "stats": [
+    {
+     "label": "Deal value",
+     "value": "$41B",
+     "note": "Sanofi, Nov 24"
+    }
+   ],
+   "icon": "briefcase",
+   "caption": "Sanofi agreed to buy Insmed for $175 a share in cash, about $41 billion. The deal adds Brinsupri, a once daily lung disease pill that Sanofi says earned $1.09 billion through September. It is expected to close in the first half of 2027 and is funded with debt and cash. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Sanofi #Insmed #Pharma #MergersAndAcquisitions"
+  },
+  "evening": {
+   "kicker": "Evening: the world and the economy",
+   "headline": "US readies new tariffs on China, EU and 14 others",
+   "points": [
+    "Follows US subsidy probes",
+    "Tariff rates not yet disclosed",
+    "White House has not commented"
+   ],
+   "watch": "USTR findings are due in days. Fed decides December 9; OPEC+ meets November 29.",
+   "icon": "factory",
+   "caption": "The US is expected to soon announce higher tariffs on China, the EU and 14 other economies after Section 301 investigations into industrial subsidies, two people familiar with the plan told AP. Rates and timing are not yet clear, and the White House did not comment. Watch for USTR's findings this week. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Tariffs #Trade #China #EU"
+  }
+ },
+ "yesterday": {
+  "label": "Tuesday, November 24",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The Dow rose 0.85% to 50,018.70 while the S&P 500 fell 0.50%."
+   },
+   {
+    "label": "Chips",
+    "text": "Nvidia fell 5.86% and the Philadelphia chip index 7.9%."
+   },
+   {
+    "label": "Consumers",
+    "text": "US consumer confidence jumped to 103.3 from 91.9."
+   },
+   {
+    "label": "Deals",
+    "text": "Sanofi agreed to buy Insmed for about $41 billion in cash."
+   },
+   {
+    "label": "Trade",
+    "text": "AP reported new US tariffs are coming for 16 economies."
+   },
+   {
+    "label": "Nigeria",
+    "text": "The central bank held its benchmark rate at 23%."
+   }
+  ],
+  "sources": [
+   {
+    "name": "Motley Fool via Yahoo Finance, Nov 24",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-24-221148355.html"
+   },
+   {
+    "name": "Conference Board via PR Newswire, Nov 24",
+    "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
+   },
+   {
+    "name": "Sanofi press release (SEC filing), Nov 24",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001121404/000119312526473314/d130092dex991.htm"
+   },
+   {
+    "name": "AP via WPXI, Nov 24",
+    "url": "https://www.wpxi.com/news/local/us-ready-slap-tariffs-china-eu-others-over-subsidized-production-ap-sources-say/54SVDLC3PRCQVMMWR3US3FERJU/"
+   },
+   {
+    "name": "News Agency of Nigeria, Nov 24",
+    "url": "https://nannews.ng/cbn-retains-mpr-at-23-holds-all-other-parameters-constant/"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "Shanghai stocks hit a more than one year low as Xiaomi's profit falls 68%.",
+   "text": "The Shanghai Composite fell 1.5% to 3,494.75 on Wednesday, its lowest in more than a year, while the KOSPI fell 6.2% and the Nikkei 2.8%, AP reports. Xiaomi said third quarter net profit fell 68% to 3.9 billion yuan as revenue slipped 5.2% to 107 billion yuan and smartphone shipments dropped 29.1%, City News Service reports.",
+   "you": "Own a China or Asia fund? Check its weight in chips and consumer electronics, the two areas under the most pressure this week.",
+   "sources": [
+    {
+     "name": "AP via KSAT, Asian markets, Nov 25",
+     "url": "https://www.ksat.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-tumble-after-a-retreat-on-wall-street/"
+    },
+    {
+     "name": "City News Service, Nov 25",
+     "url": "https://www.citynewsservice.cn/articles/china-biz-buzz/daily-buzz/daily-buzz-25-november-2026-3n70vlam"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Nepal, Sri Lanka",
+   "headline": "India's Sensex jumps 2.4% to a six month high as the rest of Asia falls.",
+   "text": "The Sensex rose 2.4% on Wednesday to its highest in six months, AP reports, after markets were shut Tuesday for Guru Nanak Jayanti. In morning trade it was up 1,736.10 points at 84,172.09, with foreign buying and gains in Infosys, HDFC Bank and Reliance, The Open Press reports. The rupee opened near 92.74 per dollar from 92.91.",
+   "you": "Investing in Indian funds? Big single day gains often follow holidays; add on a fixed schedule rather than chasing a rally.",
+   "sources": [
+    {
+     "name": "AP via KSAT, Asian markets, Nov 25",
+     "url": "https://www.ksat.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-tumble-after-a-retreat-on-wall-street/"
+    },
+    {
+     "name": "The Open Press, Nov 25",
+     "url": "https://theopenpress.in/article/why-stock-market-rallied-today-sensex-nifty-november-25-2026"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "EU, UK, Ukraine, Russia",
+   "headline": "European chip stocks drop as German business confidence hits a two and a half year high.",
+   "text": "Europe's STOXX 600 fell 0.7% and Germany's DAX 1.3% early Wednesday, with Infineon down 9.7% and ASML 5.6%, Saxo reports. Germany's Ifo business climate index rose to 90.6, its highest since May 2023. The European Central Bank meets December 16 to 17, with markets expecting another rate hike, IC Markets says.",
+   "you": "Hold European stocks? Chip makers and banks are moving in opposite directions; check which side your fund leans toward.",
+   "sources": [
+    {
+     "name": "Saxo Market Quick Take, Nov 25",
+     "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026"
+    },
+    {
+     "name": "IC Markets, Nov 24",
+     "url": "https://www.ic.com/blog/europe-fundamental-forecast-24-november-2026-ic/"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf, Levant, Iran, Turkey",
+   "headline": "Trump dismisses Iran's statements as mine claims in Hormuz continue.",
+   "text": "President Trump told Fox News that Iran's statements were \"all BS\" and suggested the US could resume strikes on Iranian targets after the end of the year, OilPrice.com reports. Iran's Revolutionary Guard said tankers hit naval mines in the Strait of Hormuz, claims not independently verified. Brent settled up 2.27% at $91.40 on Tuesday and fell 1.4% to $87.50 on Wednesday, AP says.",
+   "you": "Shipping goods through the Gulf? Confirm insurance and routing with your carrier; mine claims can change war risk premiums quickly.",
+   "sources": [
+    {
+     "name": "OilPrice.com, Nov 24",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Hold-Near-Three-Month-Lows-Despite-Hormuz-Mine-Claims.html"
+    },
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 25",
+     "url": "https://www.ksat.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-tumble-after-a-retreat-on-wall-street/"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, Kenya, South Africa, Egypt, Sahel",
+   "headline": "Nigeria's central bank holds its key rate at 23%.",
+   "text": "The Central Bank of Nigeria kept its monetary policy rate at 23% on November 24 and held all other settings, citing a moderation in headline inflation, the News Agency of Nigeria and Parrot Nigeria report. In Cabo Verde, President José Maria Neves won 63.8% with 97% of provisional results counted, avoiding a runoff, The Rio Times reports.",
+   "you": "Borrowing or saving in naira? With the rate on hold, compare fixed deposit rates now before banks reprice.",
+   "sources": [
+    {
+     "name": "News Agency of Nigeria, Nov 24",
+     "url": "https://nannews.ng/cbn-retains-mpr-at-23-holds-all-other-parameters-constant/"
+    },
+    {
+     "name": "Parrot Nigeria, Nov 24",
+     "url": "https://parrotnigeria.com/2026/11/24/cbn-retains-interest-rate-at-23-cites-moderation-in-headline-inflation/"
+    },
+    {
+     "name": "The Rio Times, Africa brief, Nov 24",
+     "url": "https://www.riotimesonline.com/africa-intelligence-brief-tuesday-november-24-2026/"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Chile, Colombia, Peru",
+   "headline": "Argentina's peso hits its weakest close in a year as Brazil's spending bill heads to Lula.",
+   "text": "The dollar closed at 1,592 pesos on Tuesday, the peso's weakest close in 12 months, after September economic activity fell 1.2% from a year earlier, The Rio Times reports. In Brazil the spending curbs bill, passed 353 to 128, now goes to President Lula, who has 15 working days to sign or veto it. Overdue household and company debt hit a record R$371.1 billion in the third quarter.",
+   "you": "Traveling to Argentina? A weaker peso stretches dollars further, but check card fees and official exchange rates before you go.",
+   "sources": [
+    {
+     "name": "The Rio Times, Argentina markets, Nov 24",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-tuesday-november-24-2026/"
+    },
+    {
+     "name": "The Rio Times, Latin American Pulse, Nov 25",
+     "url": "https://www.riotimesonline.com/latin-american-pulse-for-wednesday-november-25-2026/"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Football, World Cup TV",
+   "headline": "Netflix leads the race for US rights to the 2030 World Cup.",
+   "text": "FIFA has moved US rights to the 2030 men's World Cup into a second round of bidding, with Netflix the clear leader, Inside World Football reported on November 25. Fox and Univision, bidding together, and Amazon are also in. FIFA is seeking $1.5 billion to $2 billion, against $485 million from Fox and $600 million from Telemundo for 2026.",
+   "you": "Expect more big sports events behind streaming subscriptions; check which services carry the games you watch before renewing.",
+   "sources": [
+    {
+     "name": "Inside World Football, Nov 25",
+     "url": "https://insideworldfootball.com/2026/11/25/netflix-noses-ahead-in-us-tv-rights-race-for-2030-world-cup-but-fifa-wants-more"
+    }
+   ]
+  },
+  {
+   "topic": "Football, Europe",
+   "headline": "DAZN and Viaplay win UEFA club rights in a new round of deals.",
+   "text": "UC3, the UEFA and European Football Clubs joint venture, named preferred bidders in 10 more markets for 2027 to 2031 on November 24, Broadband TV News reports. DAZN takes all three men's club competitions in Israel and Champions League rights in Australia, and Viaplay keeps the Champions League in Iceland. The deals start in July 2027.",
+   "you": "Follow European football abroad? Your local broadcaster may change in 2027, so watch for new subscription offers.",
+   "sources": [
+    {
+     "name": "Broadband TV News, Nov 24",
+     "url": "https://broadbandtvnews.com/2026/11/24/dazn-and-viaplay-among-winners-in-latest-uefa-club-rights-tender"
+    }
+   ]
+  },
+  {
+   "topic": "Sporting goods",
+   "headline": "Dick's Sporting Goods jumps 14.59% after earnings.",
+   "text": "Shares of Dick's Sporting Goods rose 14.59% on November 24 after its quarterly report, one of several retailers, with Kohl's and Abercrombie, that gained on results as investors moved into consumer stocks, Closing Look reports.",
+   "you": "Buying gear for the holidays? Retailers reporting strong demand tend to offer fewer deep discounts, so compare prices early.",
+   "sources": [
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Film, India",
+   "headline": "Ramayana jumps 35% on Tuesday at the Indian box office.",
+   "text": "Ramayana Part I earned Rs 15.98 crore net in India on Tuesday, November 24, up about 35% from Monday's Rs 11.83 crore, with the Hindi version contributing Rs 13.31 crore, Bollywood Hungama reports.",
+   "you": "Indian epics are getting long theater runs abroad too; check local listings before waiting for streaming.",
+   "sources": [
+    {
+     "name": "Bollywood Hungama, Nov 25",
+     "url": "https://www.bollywoodhungama.com/news/box-office-special-features/india-box-office-report-november-24-ramayana-stages-a-big-comeback-jumps-35-to-rs-15-98-crores-godzilla-minus-zero-the-hunger-games-bounce-back/"
+    }
+   ]
+  },
+  {
+   "topic": "Film, Japan",
+   "headline": "Godzilla Minus Zero passes Rs 4 crore in India in five days.",
+   "text": "The Japanese film earned Rs 56 lakh net in India on November 24, up 37.5% from Monday, bringing its five day total to about Rs 4.05 crore, Bollywood Hungama reports. Almost all of that came from the Japanese language version.",
+   "you": "Subtitled films are drawing real audiences in India; look for original language screenings if you prefer them.",
+   "sources": [
+    {
+     "name": "Bollywood Hungama, Nov 25",
+     "url": "https://www.bollywoodhungama.com/news/box-office-special-features/india-box-office-report-november-24-ramayana-stages-a-big-comeback-jumps-35-to-rs-15-98-crores-godzilla-minus-zero-the-hunger-games-bounce-back/"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "AI, markets",
+   "headline": "Anthropic shares fall below their $83 IPO price four days after listing.",
+   "text": "Anthropic closed at $81.90 on November 24, down 6.54% and below its $83 IPO price, Closing Look reports, after briefly reaching $115 on its first day of trading, AP says. Bloomberg reported the shares broke below the IPO price in premarket trading. Gartner forecasts global AI investment of $2.7 trillion this year, Al Jazeera reports.",
+   "you": "Thinking of buying a hot new listing? First week prices swing widely; wait for the first earnings report before committing much money.",
+   "sources": [
+    {
+     "name": "Closing Look, Nov 24",
+     "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+    },
+    {
+     "name": "Bloomberg, Nov 24",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 25",
+     "url": "https://www.ksat.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-tumble-after-a-retreat-on-wall-street/"
+    },
+    {
+     "name": "Al Jazeera, Nov 25",
+     "url": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom"
+    }
+   ]
+  },
+  {
+   "topic": "Memory chips",
+   "headline": "Samsung plans to raise its Xi'an NAND output about fivefold.",
+   "text": "Samsung plans to lift capacity for its V9 NAND memory at its Xi'an plant in China from about 10,000 to about 50,000 wafers a month, City News Service reported on November 25.",
+   "you": "Shopping for laptops or phones? More memory supply over time usually means cheaper storage upgrades.",
+   "sources": [
+    {
+     "name": "City News Service, Nov 25",
+     "url": "https://www.citynewsservice.cn/articles/china-biz-buzz/daily-buzz/daily-buzz-25-november-2026-3n70vlam"
+    }
+   ]
+  },
+  {
+   "topic": "Shipping",
+   "headline": "Maersk orders 12 ultra large container ships for 2030 delivery.",
+   "text": "Maersk has ordered 12 ultra large container ships for delivery in 2030 and 2031, linked by industry reports to China's Hengli Heavy Industries, City News Service reports. Brokers estimate about $229 million per vessel.",
+   "you": "Shipping costs feed into the price of imported goods; bigger ships aim to cut cost per container over time.",
+   "sources": [
+    {
+     "name": "City News Service, Nov 25",
+     "url": "https://www.citynewsservice.cn/articles/china-biz-buzz/daily-buzz/daily-buzz-25-november-2026-3n70vlam"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Lake Balaton, Hungary: a lake holiday without Como's crowds.",
+   "text": "Lonely Planet named Lake Balaton one of its most underrated places for 2027, for summer festivals, castles and lavender fields, as an alternative to Lake Como.",
+   "you": "Planning summer 2027? Look at lakeside towns now, and pay in forint rather than accepting a card conversion to dollars.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "St. Augustine, Florida: Spanish streets without a transatlantic flight.",
+   "text": "Lonely Planet's 2027 underrated list includes St. Augustine for centuries of history and Spanish style streets that give a European feel on a domestic trip.",
+   "you": "Want old Europe on a short break? A domestic trip skips passports and long haul fares. Check the official visitor site for events before you book.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "The dollar buys more in Argentina and Brazil than in a year.",
+   "text": "Argentina's peso closed at 1,580 per dollar on November 20, its weakest in at least 12 months, and Brazil's real closed near 5.93, its weakest since January 2025. Lonely Planet's 2027 list also picks Bolivia and Quito.",
+   "you": "Pay in the local currency when a card terminal offers dollars, and use a card with no foreign transaction fee.",
+   "sources": [
+    {
+     "name": "The Rio Times, Argentina",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-friday-november-20-2026/"
+    },
+    {
+     "name": "The Rio Times, Brazil",
+     "url": "https://www.riotimesonline.com/brazil-central-bank-sells-us-1-billion-real-still-falls/"
+    },
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "What Should My Children Do?",
+   "by": "Daniel Susskind",
+   "where": "Allen Lane, published September 10, 2026",
+   "text": "An economist asks what the next generation should learn, and what it should stop worrying about, in a world changed by AI. Useful for any family planning school or career choices.",
+   "sources": [
+    {
+     "name": "Penguin",
+     "url": "https://www.penguin.co.uk/books/475229/what-should-my-children-do-by-susskind-daniel/9780241791172"
+    },
+    {
+     "name": "Next Big Idea Club",
+     "url": "https://nextbigideaclub.com/magazine/next-big-idea-clubs-november-2026-must-read-books/61737/"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "Primetime Preacher$",
+   "by": "Documentary from Joe Berlinger",
+   "where": "Netflix, from Friday, November 20",
+   "text": "A 113 minute film on Jim Bakker, Jerry Falwell and Jimmy Swaggart, three 1980s televangelists who built TV ministries before scandal. A sharp look at how money flows when trust is the product.",
+   "sources": [
+    {
+     "name": "Drawpie",
+     "url": "https://drawpie.com/blog/new-documentaries-netflix-november-2026/"
+    },
+    {
+     "name": "TheWrap",
+     "url": "https://www.thewrap.com/creative-content/movies/everything-new-on-streaming-november-2026/"
+    }
+   ]
+  }
+ ],
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 18",
+     "text": "NASA ran a developmental RS-25 Moon rocket engine for its full 200 seconds at Stennis Space Center.",
+     "source": "ScienceDaily, NASA",
+     "url": "https://sciencedaily.com/releases/2026/11/261120075551.htm"
+    },
+    {
+     "date": "Nov 19",
+     "text": "Scientists found bacteria that removed about 98% of radioactive promethium-147 in 60 hours.",
+     "source": "Everything Science",
+     "url": "https://everythingscience.substack.com/p/10-positive-science-stories-worth"
+    },
+    {
+     "date": "Nov 21",
+     "text": "India declared at 720 for 9 in Wellington, the highest Test innings ever made in New Zealand.",
+     "source": "Dainik Jagran English",
+     "url": "https://english.dainikjagranmpcg.com/special-news/november-22-2026-todays-top-news-headlines/article-45743"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ },
+ "events": {
+  "global": [
+   {
+    "when": "Nov 25",
+    "what": "US PCE inflation, jobless claims, durable goods and the Fed Beige Book",
+    "where": "Washington, D.C.",
+    "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chip-stocks-slump-again-in-new-york-and-seoul---25-november-2026-25112026"
+   },
+   {
+    "when": "Nov 26",
+    "what": "US Thanksgiving, nearly 73 million expected on the road",
+    "where": "United States",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "Spain general election",
+    "where": "Spain",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 5 to 6",
+    "what": "Asia Artist Awards",
+    "where": "Kaohsiung National Stadium, Taiwan",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 11",
+    "what": "US government funding deadline",
+    "where": "Washington, D.C.",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Dec 18",
+    "what": "Avengers: Doomsday opens in theaters",
+    "where": "Worldwide",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   },
+   {
+    "when": "Jan 19, 2027",
+    "what": "Comment deadline for Medicare's CRUSH audit rule",
+    "where": "Online, regulations.gov",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "when": "Feb 7, 2027",
+    "what": "Grammy Awards",
+    "where": "Los Angeles",
+    "url": "https://www.complex.com/music/a/alex-ocho/lisa-grammy-nomination-blackpink-asian-pop"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "name": "FinChannel",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "name": "The Rio Times",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Nigeria Brief",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-23-2026"
+   },
+   {
+    "name": "Korea Daily",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-saturday-november-21-2026/"
+   },
+   {
+    "name": "Yahoo Finance earnings calendar",
+    "url": "https://finance.yahoo.com/calendar/earnings?day=2026-11-24"
+   }
+  ]
+ }
+}
