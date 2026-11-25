@@ -1,45 +1,11 @@
-"""Holiday greeting graphics for the four sister publications.
-Usage: python3 make.py <out_dir> <slug> "<Headline>" "<kicker>" "<date line>" messages.json
-messages.json maps brand key -> message text.
-Renders <brand>-<slug>.png (1080x1350) and <brand>-<slug>-story.png (1080x1920).
+"""Holiday greeting graphics for the four sister publications, one distinct layout per brand.
+Usage: python3 make.py <out_dir> <spec.json>
 """
-import json, math, random, sys
+import json, math, os, random, sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
-import os
-H = Path(os.environ.get('HOLIDAY_ROOT', '/home/claude'))
-
-BRANDS = {
- 'fiopoin': dict(repo='fiopoin-site', url='fiopoin.com',
-    bg='linear-gradient(165deg,#22365e 0%,#1B2A4A 55%,#121d35 100%)', ink='#ffffff', sub='#c9d3e6',
-    accent='#E9A23B', c2='#8CC63F', c3='#0091D2',
-    head=('Inter', 'tools/fonts/Inter-ExtraBold.otf', 800), body=('InterR', 'tools/fonts/Inter-Regular.otf', 400),
-    lock='<img src="{R}/brand/fiopo-white.svg" style="height:64px"><span style="font:600 46px InterS;color:#fff;margin-left:16px;border-bottom:4px solid #0091D2;padding-bottom:2px">Intelligence</span>',
-    extra_font=('InterS', 'tools/fonts/Inter-SemiBold.otf', 600),
-    foot='<img src="{R}/brand/fiopoin-logo-white.svg" style="height:46px">'),
- 'carbonenergynexus': dict(repo='carbonenergynexus-site', url='carbonenergynexus.com',
-    bg='linear-gradient(170deg,#F7F8F6 0%,#EEF1EF 100%)', ink='#1A2226', sub='#3d4a50',
-    accent='#D0481E', c2='#F2C14E', c3='#1F7A8C',
-    head=('SS4', 'tools/fonts/SourceSerif4-Bold.ttf', 700), body=('Plex', 'tools/fonts/IBMPlexSans-Regular.ttf', 400),
-    lock='<img src="{R}/brand/cen-lockup-navy.svg" style="height:120px;margin:-24px 0 -24px -28px">',
-    extra_font=('PlexS', 'tools/fonts/IBMPlexSans-SemiBold.ttf', 600),
-    foot='<img src="{R}/brand/cen-mark.svg" style="height:78px">'),
- 'uticamidstream': dict(repo='uticamidstream-site', url='uticamidstream.com',
-    bg='linear-gradient(165deg,#1C3550 0%,#13263A 60%,#0d1b2a 100%)', ink='#ffffff', sub='#c6d2df',
-    accent='#F5B000', c2='#3E8ED0', c3='#2E8FD6',
-    head=('Barlow', 'tools/fonts/BarlowSemiCondensed-Bold.ttf', 700), body=('Plex', 'tools/fonts/IBMPlexSans-Regular.ttf', 400),
-    lock='<img src="{R}/brand/um-lockup-dark.svg" style="height:84px">',
-    extra_font=('PlexS', 'tools/fonts/IBMPlexSans-SemiBold.ttf', 600),
-    foot='<img src="{R}/brand/um-mark-white.svg" style="height:60px">'),
- 'watercapitalwire': dict(repo='watercapitalwire-site', url='watercapitalwire.com',
-    bg='linear-gradient(165deg,#10263f 0%,#0b1a2b 60%,#07121f 100%)', ink='#ffffff', sub='#c3d0de',
-    accent='#E9A23B', c2='#8CC63F', c3='#2E9BE6',
-    head=('News', 'tools/fonts/newsreader-latin-700-normal.ttf', 700), body=('Arch', 'tools/fonts/archivo-latin-400-normal.ttf', 400),
-    lock='<img src="{R}/brand/wcw-lockup-white-1200.png" style="height:96px">',
-    extra_font=('ArchS', 'tools/fonts/archivo-latin-600-normal.ttf', 600),
-    foot='<img src="{R}/brand/wcw-ring-white.svg" style="height:62px">'),
-}
+ROOT = Path(os.environ.get("HOLIDAY_ROOT", "/home/claude"))
 
 
 def wheat(x, y, h, ang, col, rnd):
@@ -138,96 +104,259 @@ def drop(x, y, s, col):
             f'<path d="M-18 14 A 20 20 0 0 0 -4 38" stroke="rgba(255,255,255,.6)" stroke-width="6" fill="none" stroke-linecap="round"/></g>')
 
 
-def art(b, W, Hh, seed, motif='harvest'):
-    rnd = random.Random(seed)
-    dark = b['ink'] == '#ffffff'
+
+
+def kite(x, y, s, col, col2, ang):
+    return (f'<g transform="translate({x},{y}) rotate({ang}) scale({s})">'
+            f'<path d="M0 -70 L48 0 L0 70 L-48 0 Z" fill="{col}"/><path d="M0 -70 L0 70 M-48 0 L48 0" stroke="{col2}" stroke-width="4"/>'
+            f'<path d="M0 70 q 14 40 -6 80 q -18 40 8 90" stroke="{col2}" stroke-width="3" fill="none"/></g>')
+
+
+def marigold(x, y, r):
+    g = [f'<g transform="translate({x},{y})">']
+    for ring, (rr, c) in enumerate([(1.0, '#E07B12'), (0.72, '#F29B1D'), (0.45, '#F7B733')]):
+        for i in range(12):
+            a = i * 30 + ring * 15
+            g.append(f'<ellipse cx="0" cy="{-r*rr*0.62:.1f}" rx="{r*rr*0.28:.1f}" ry="{r*rr*0.42:.1f}" fill="{c}" transform="rotate({a})"/>')
+    g.append('</g>')
+    return ''.join(g)
+
+
+def motif(name, box, b, rnd, dark):
+    """Draw a holiday motif inside box (x, y, w, h)."""
+    x0, y0, w, h = box
+    cx, cy = x0 + w / 2, y0 + h / 2
     gold = '#D9A441' if dark else '#C08A2B'
-    parts = []
-    corner = [(0.86, 0.06), (0.70, 0.09), (0.95, 0.19), (0.955, 0.33), (0.93, 0.47)]
-    if motif == 'harvest':
-        for i in range(9):
-            x = W * 0.62 + i * 38 + rnd.uniform(-8, 8)
-            parts.append(wheat(x, Hh + 20, rnd.uniform(Hh*0.2, Hh*0.29), -26 + i * 6 + rnd.uniform(-4, 4), gold, rnd))
-        cols = [b['accent'], '#C8553D', '#B5651D', b['c2'], '#D98E04']
-        for i, (fx, fy) in enumerate(corner):
-            parts.append(leaf(W * fx, Hh * fy, rnd.uniform(0.6, 1.0), rnd.uniform(-70, 70), cols[i % len(cols)]))
-    elif motif == 'fireworks':
+    P = []
+    R = lambda a, c: rnd.uniform(a, c)
+    if name == 'harvest':
+        n = 9
+        for i in range(n):
+            P.append(wheat(cx + (i - n // 2) * w * 0.045, y0 + h, h * R(0.62, 0.82), (i - n // 2) * 7 + R(-3, 3), gold, rnd))
+        cols = [b['accent'], '#C8553D', '#B5651D', b['c2'], '#D98E04', '#A44A1F']
+        for i in range(7):
+            P.append(leaf(x0 + w * R(0.05, 0.95), y0 + h * R(0.02, 0.42), R(0.55, 0.95), R(-80, 80), cols[i % 6]))
+    elif name == 'fireworks':
         cols = [b['accent'], b['c2'], b['c3'], gold]
-        for i, (fx, fy, r) in enumerate([(0.80, 0.80, 120), (0.62, 0.90, 70), (0.93, 0.66, 60), (0.88, 0.10, 54)]):
-            parts.append(burst(W*fx, Hh*fy, r, cols[i % 4], rnd))
+        for i, (fx, fy, r) in enumerate([(0.5, 0.45, 0.24), (0.2, 0.3, 0.13), (0.82, 0.25, 0.14), (0.75, 0.75, 0.11), (0.22, 0.75, 0.1)]):
+            P.append(burst(x0 + w * fx, y0 + h * fy, min(w, h) * r, cols[i % 4], rnd))
         for _ in range(14):
-            parts.append(star(W*rnd.uniform(0.55, 0.98), Hh*rnd.uniform(0.55, 0.98), rnd.uniform(5, 11), gold, 0.8))
-    elif motif == 'snow':
+            P.append(star(x0 + w * R(0, 1), y0 + h * R(0, 1), R(5, 10), gold, 0.8))
+    elif name == 'snow':
         green = '#2F6B4F' if dark else '#3C7A57'
         for i in range(3):
-            parts.append(branch(W*0.80 + i*70, Hh + 30, Hh*0.30 - i*30, -28 + i*24, green))
-        for fx, fy in [(0.58, 0.78), (0.70, 0.68), (0.92, 0.62)] + corner:
-            parts.append(flake(W*fx, Hh*fy, rnd.uniform(18, 30), '#ffffff' if dark else '#9db7c9'))
+            P.append(branch(cx + (i - 1) * w * 0.18, y0 + h, h * (0.75 - abs(i - 1) * 0.15), (i - 1) * 24, green))
+        for _ in range(9):
+            P.append(flake(x0 + w * R(0.05, 0.95), y0 + h * R(0.05, 0.6), R(14, 28), '#ffffff' if dark else '#8fb0c6'))
         for _ in range(8):
-            parts.append(f'<circle cx="{W*rnd.uniform(0.6,0.98):.0f}" cy="{Hh*rnd.uniform(0.75,0.98):.0f}" r="9" fill="{b["accent"]}"/>')
-    elif motif == 'lanterns':
+            P.append(f'<circle cx="{cx + R(-w*0.3, w*0.3):.0f}" cy="{y0 + h*R(0.5, 0.95):.0f}" r="9" fill="{b["accent"]}"/>')
+    elif name == 'lanterns':
         cols = ['#C8312C', '#D8442F', '#B8261F']
-        for i, (fx, fy, s) in enumerate([(0.88, 0.12, 0.9), (0.74, 0.08, 0.7), (0.80, 0.80, 1.1), (0.64, 0.88, 0.8), (0.94, 0.70, 0.75)]):
-            parts.append(lantern(W*fx, Hh*fy, s, cols[i % 3]))
-    elif motif == 'crescent':
-        moon_bg = b['bg'].split('#')[-1][:6]
-        cx, cy, r = W*0.82, Hh*0.80, 110
-        parts.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{gold}"/><circle cx="{cx+44}" cy="{cy-30}" r="{r*0.88}" fill="#{moon_bg}"/>')
-        for fx, fy, rr in [(0.64, 0.74, 14), (0.70, 0.90, 9), (0.95, 0.64, 10), (0.90, 0.95, 8)] + [(a, b2, 9) for a, b2 in corner]:
-            parts.append(star(W*fx, Hh*fy, rr, gold, 0.9))
-    elif motif == 'lights':
-        for i in range(7):
-            parts.append(lamp(W*(0.58 + i*0.065), Hh*0.94 - (i % 2)*24, 0.9, gold))
-        for fx, fy in corner:
-            parts.append(f'<circle cx="{W*fx:.0f}" cy="{Hh*fy:.0f}" r="10" fill="#F7C548" opacity=".85"/><circle cx="{W*fx:.0f}" cy="{Hh*fy:.0f}" r="26" fill="#F7C548" opacity=".18"/>')
-    elif motif == 'blooms':
+        for i, fx in enumerate([0.15, 0.38, 0.62, 0.85]):
+            s = min(w, h) / 380 * (1.1 if i in (1, 2) else 0.85)
+            P.append(lantern(x0 + w * fx, y0 + h * (0.45 if i in (1, 2) else 0.32) + 40, s, cols[i % 3]))
+    elif name == 'crescent':
+        r = min(w, h) * 0.32
+        mid = f"m{rnd.randint(0, 99999)}"
+        P.append(f'<mask id="{mid}"><rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="#fff"/><circle cx="{cx + r*0.42:.0f}" cy="{cy - r*0.28:.0f}" r="{r*0.86:.0f}" fill="#000"/></mask>'
+                 f'<circle cx="{cx}" cy="{cy}" r="{r:.0f}" fill="{gold}" mask="url(#{mid})"/>')
+        for _ in range(9):
+            P.append(star(x0 + w * R(0.05, 0.95), y0 + h * R(0.05, 0.95), R(7, 14), gold, 0.9))
+    elif name == 'lights':
+        n = 5
+        for i in range(n):
+            P.append(lamp(x0 + w * (0.1 + 0.8 * i / (n - 1)), y0 + h * (0.82 if i % 2 else 0.72), min(w, h) / 260, gold))
+        for _ in range(8):
+            fx, fy = x0 + w * R(0.05, 0.95), y0 + h * R(0.05, 0.5)
+            P.append(f'<circle cx="{fx:.0f}" cy="{fy:.0f}" r="8" fill="#F7C548" opacity=".9"/><circle cx="{fx:.0f}" cy="{fy:.0f}" r="24" fill="#F7C548" opacity=".18"/>')
+    elif name == 'blooms':
         cols = ['#E58FB0', '#B07CC6', b['accent'], '#F2C14E', '#E86A6A']
-        for i, (fx, fy) in enumerate([(0.82, 0.84), (0.66, 0.92), (0.95, 0.74), (0.74, 0.74), (0.92, 0.94)] + corner):
-            parts.append(bloom(W*fx, Hh*fy, rnd.uniform(36, 62), cols[i % 5]))
-    elif motif == 'drops':
+        for i in range(9):
+            P.append(bloom(x0 + w * R(0.1, 0.9), y0 + h * R(0.15, 0.9), min(w, h) * R(0.07, 0.13), cols[i % 5]))
+    elif name == 'drops':
         cols = [b['c3'], '#5FB8E6', '#2E9BE6', b['c2']]
-        for i, (fx, fy, s) in enumerate([(0.82, 0.80, 1.5), (0.66, 0.90, 0.9), (0.94, 0.66, 0.8)] + [(a, b2, 0.45) for a, b2 in corner]):
-            parts.append(drop(W*fx, Hh*fy, s, cols[i % 4]))
-    elif motif == 'earth':
-        cols = [b['c2'], '#4F8F1F', '#6FAF3F', b['c3']]
-        cx, cy = W*0.84, Hh*0.84
-        parts.append(f'<circle cx="{cx}" cy="{cy}" r="150" fill="{b["c3"]}" opacity=".9"/>'
-                     f'<path d="M{cx-110} {cy-40} q 40 -60 90 -30 q 30 30 -10 60 q -40 20 -80 -30 z M{cx+20} {cy+30} q 60 -30 90 10 q -20 60 -70 50 z" fill="#4F8F1F"/>')
-        for i, (fx, fy) in enumerate(corner):
-            parts.append(leaf(W*fx, Hh*fy, rnd.uniform(0.6, 0.9), rnd.uniform(-70, 70), cols[i % 4]))
-    elif motif == 'stars':
+        P.append(drop(cx, cy + h * 0.08, min(w, h) / 120 * 0.9, cols[0]))
+        for i in range(6):
+            P.append(drop(x0 + w * R(0.08, 0.92), y0 + h * R(0.1, 0.9), R(0.3, 0.6), cols[(i + 1) % 4]))
+    elif name == 'earth':
+        r = min(w, h) * 0.32
+        P.append(f'<circle cx="{cx}" cy="{cy}" r="{r:.0f}" fill="#2E9BE6"/>'
+                 f'<path d="M{cx - r*0.75:.0f} {cy - r*0.25:.0f} q {r*0.3:.0f} {-r*0.45:.0f} {r*0.6:.0f} {-r*0.2:.0f} q {r*0.2:.0f} {r*0.25:.0f} {-r*0.05:.0f} {r*0.45:.0f} q {-r*0.3:.0f} {r*0.15:.0f} {-r*0.55:.0f} {-r*0.25:.0f} z '
+                 f'M{cx + r*0.1:.0f} {cy + r*0.2:.0f} q {r*0.4:.0f} {-r*0.2:.0f} {r*0.6:.0f} {r*0.1:.0f} q {-r*0.15:.0f} {r*0.4:.0f} {-r*0.45:.0f} {r*0.35:.0f} z" fill="#4F8F1F"/>')
+        for i in range(6):
+            P.append(leaf(x0 + w * R(0.05, 0.95), y0 + h * R(0.05, 0.95), R(0.5, 0.8), R(-80, 80), ['#4F8F1F', b['c2'], '#6FAF3F'][i % 3]))
+    elif name == 'stars':
         for i in range(5):
-            parts.append(star(W*(0.66 + i*0.07), Hh*(0.90 - (i % 2)*0.05), 30, gold if i % 2 else b['accent'], 0.95))
-        for fx, fy in corner:
-            parts.append(star(W*fx, Hh*fy, 12, gold, 0.8))
-    return f'<svg width="{W}" height="{Hh}" viewBox="0 0 {W} {Hh}" style="position:absolute;inset:0" xmlns="http://www.w3.org/2000/svg">{"".join(parts)}</svg>'
+            P.append(star(x0 + w * (0.1 + 0.2 * i), cy + (i % 2) * h * 0.12, min(w, h) * 0.08, gold if i % 2 else b['accent'], 0.95))
+        for _ in range(10):
+            P.append(star(x0 + w * R(0, 1), y0 + h * R(0, 1), R(5, 9), gold, 0.7))
+    elif name == 'kites':
+        cols = [('#E4572E', '#F7C548'), ('#2E9BE6', '#ffffff'), ('#8CC63F', '#1B2A4A'), ('#B07CC6', '#F7C548')]
+        for i, (fx, fy) in enumerate([(0.22, 0.22), (0.6, 0.14), (0.84, 0.32), (0.4, 0.4)]):
+            c1, c2 = cols[i]
+            P.append(kite(x0 + w * fx, y0 + h * fy, min(w, h) / 520, c1, c2, R(-25, 25)))
+        P.append(marigold(x0 + w * 0.1, y0 + h * 0.85, 24) + marigold(x0 + w * 0.9, y0 + h * 0.85, 22))
+    elif name == 'tihar':
+        n = 5
+        for i in range(n):
+            P.append(lamp(x0 + w * (0.1 + 0.8 * i / (n - 1)), y0 + h * 0.86, min(w, h) / 300, gold))
+        for i in range(9):
+            P.append(marigold(x0 + w * (0.06 + 0.88 * i / 8), y0 + h * (0.18 + 0.12 * math.sin(i / 8 * math.pi)), 22))
+    return ''.join(P)
 
 
-def page(key, W, Hh, headline, kicker, dateline, msg, motif='harvest'):
+# ------------------------------------------------------------------ brands
+
+BRANDS = {
+ 'fiopoin': dict(repo='fiopoin-site', url='fiopoin.com', ink='#ffffff', sub='#d5e2f3',
+    accent='#E9A23B', c2='#8CC63F', c3='#0091D2', moonbg='#16325e',
+    fonts=[('Head', 'tools/fonts/Inter-ExtraBold.otf'), ('Body', 'tools/fonts/Inter-Regular.otf'), ('Semi', 'tools/fonts/Inter-SemiBold.otf')]),
+ 'carbonenergynexus': dict(repo='carbonenergynexus-site', url='carbonenergynexus.com', ink='#1A2226', sub='#3d4a50',
+    accent='#D0481E', c2='#F2C14E', c3='#1F7A8C', moonbg='#F4F6F5',
+    fonts=[('Head', 'tools/fonts/SourceSerif4-Bold.ttf'), ('Body', 'tools/fonts/IBMPlexSans-Regular.ttf'), ('Semi', 'tools/fonts/IBMPlexSans-SemiBold.ttf')]),
+ 'uticamidstream': dict(repo='uticamidstream-site', url='uticamidstream.com', ink='#ffffff', sub='#c6d2df',
+    accent='#F5B000', c2='#3E8ED0', c3='#2E8FD6', moonbg='#13263A',
+    fonts=[('Head', 'tools/fonts/BarlowSemiCondensed-Bold.ttf'), ('Body', 'tools/fonts/IBMPlexSans-Regular.ttf'), ('Semi', 'tools/fonts/IBMPlexSans-SemiBold.ttf'), ('Mono', 'tools/fonts/IBMPlexMono-SemiBold.ttf')]),
+ 'watercapitalwire': dict(repo='watercapitalwire-site', url='watercapitalwire.com', ink='#ffffff', sub='#c9d6e4',
+    accent='#E9A23B', c2='#8CC63F', c3='#2E9BE6', moonbg='#0d2036',
+    fonts=[('Head', 'tools/fonts/newsreader-latin-700-normal.ttf'), ('Body', 'tools/fonts/archivo-latin-400-normal.ttf'), ('Semi', 'tools/fonts/archivo-latin-600-normal.ttf')]),
+}
+
+
+def svg(W, H, body):
+    return f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" style="position:absolute;inset:0" xmlns="http://www.w3.org/2000/svg">{body}</svg>'
+
+
+def hexagon(cx, cy, r, b):
+    pts = [(cx + r * math.cos(math.radians(90 + 60 * i)), cy - r * math.sin(math.radians(90 + 60 * i))) for i in range(6)]
+    cols = ['#F2C14E', '#E4572E', '#2B8A9E', '#F2C14E', '#E4572E', '#2B8A9E']
+    g = [f'<polygon points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="#ffffff" stroke="#1A2226" stroke-width="10" stroke-linejoin="round"/>']
+    for i in range(0, 6, 2):  # inner double bonds
+        (x1, y1), (x2, y2) = pts[i], pts[(i + 1) % 6]
+        k = 0.84
+        ix1, iy1 = cx + (x1 - cx) * k, cy + (y1 - cy) * k
+        ix2, iy2 = cx + (x2 - cx) * k, cy + (y2 - cy) * k
+        t = 0.15
+        g.append(f'<line x1="{ix1 + (ix2-ix1)*t:.1f}" y1="{iy1 + (iy2-iy1)*t:.1f}" x2="{ix2 - (ix2-ix1)*t:.1f}" y2="{iy2 - (iy2-iy1)*t:.1f}" stroke="#1A2226" stroke-width="7" stroke-linecap="round"/>')
+    for i, (x, y) in enumerate(pts):
+        g.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="22" fill="{cols[i]}" stroke="#F4F6F5" stroke-width="6"/>')
+    return ''.join(g)
+
+
+def pipe_rack(W, y, b):
+    # three pipes side by side as seen along the rack: crude, gas (raised), water
+    g = [f'<rect x="0" y="{y + 30}" width="{W}" height="14" fill="#2a4766"/>']
+    for x in range(60, W, 250):
+        g.append(f'<rect x="{x}" y="{y + 44}" width="18" height="170" fill="#2a4766"/>')
+    g.append(f'<rect x="0" y="{y - 104}" width="{W}" height="46" rx="23" fill="#F5B000"/>')
+    g.append(f'<rect x="0" y="{y - 52}" width="{W}" height="40" rx="20" fill="#E9EEF3"/>')
+    g.append(f'<rect x="0" y="{y - 8}" width="{W}" height="38" rx="19" fill="#2E8FD6"/>')
+    for x in range(140, W, 250):  # pipe shoes and highlights
+        g.append(f'<rect x="{x}" y="{y - 100}" width="10" height="38" fill="#d29600"/><rect x="{x}" y="{y - 48}" width="10" height="32" fill="#c3ccd6"/><rect x="{x}" y="{y - 4}" width="10" height="30" fill="#2272ad"/>')
+    return ''.join(g)
+
+
+def waves(W, y, H):
+    def wave(yy, amp, col, ph, op):
+        pts = [f'M0 {yy}']
+        for x in range(0, W + 41, 40):
+            pts.append(f'L{x} {yy + amp * math.sin(x / 140 + ph):.1f}')
+        pts.append(f'L{W} {H} L0 {H} Z')
+        return f'<path d="{" ".join(pts)}" fill="{col}" opacity="{op}"/>'
+    return wave(y, 16, '#7A3CC2', 0.5, 0.85) + wave(y + 40, 20, '#2E9BE6', 2.0, 0.95) + wave(y + 90, 14, '#1F6FD1', 3.6, 1) + wave(y + 150, 12, '#123a63', 1.2, 1)
+
+
+def page(key, W, H, headline, kicker, dateline, msg, mname='harvest'):
     b = BRANDS[key]
-    R = 'file://' + str(H / b['repo'])
-    fonts = ''.join(f"@font-face{{font-family:{n};src:url('{R}/{p}')}}" for n, p, _ in (b['head'], b['body'], b['extra_font']))
-    story = Hh > 1500
-    hs = 124 if not story else 128
-    leaf_layer = art(b, W, Hh, sum(map(ord, key)) + Hh, motif)
-    return f"""<html><head><style>{fonts}
-*{{margin:0;padding:0;box-sizing:border-box}}
-body{{width:{W}px;height:{Hh}px;background:{b['bg']};position:relative;overflow:hidden;color:{b['ink']}}}
-.c{{position:absolute;inset:0;padding:{120 if story else 76}px 80px;display:flex;flex-direction:column}}
-.lock{{display:flex;align-items:flex-end}}
-.k{{margin-top:{140 if story else 90}px;font:600 30px {b['extra_font'][0]};letter-spacing:5px;text-transform:uppercase;color:{b['accent']}}}
-.bar{{width:120px;height:8px;margin-top:22px;background:linear-gradient(90deg,{b['accent']} 0 33%,{b['c2']} 33% 66%,{b['c3']} 66%)}}
-h1{{margin-top:34px;font:{b['head'][2]} {hs}px/0.98 {b['head'][0]};letter-spacing:-1px;max-width:880px}}
-p{{margin-top:44px;font:400 {42 if story else 38}px/1.38 {b['body'][0]};color:{b['sub']};max-width:{760 if story else 640}px}}
-.f{{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;position:relative;z-index:2}}
-.d{{font:400 28px {b['body'][0]};color:{b['sub']}}}
-.u{{font:600 34px {b['extra_font'][0]};margin-top:8px}}
-</style></head><body>{leaf_layer}<div class="c">
-<div class="lock">{b['lock'].format(R=R)}</div>
-<div class="k">{kicker}</div><div class="bar"></div>
-<h1>{headline}</h1><p>{msg}</p>
-<div class="f"><div><div class="d">{dateline}</div><div class="u">{b['url']}</div></div></div>
-</div></body></html>"""
+    R = 'file://' + str(ROOT / b['repo'])
+    rnd = random.Random(sum(map(ord, key + mname)) + H)
+    fonts = ''.join(f"@font-face{{font-family:{n};src:url('{R}/{p}')}}" for n, p in b['fonts'])
+    story = H > 1500
+    css = f"""{fonts}*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:{W}px;height:{H}px;position:relative;overflow:hidden;color:{b['ink']}}}
+.abs{{position:absolute}} .k{{font:600 28px Semi;letter-spacing:5px;text-transform:uppercase;color:{b['accent']}}}
+h1{{font-family:Head;font-weight:700}} p{{font-family:Body;color:{b['sub']}}}
+.d{{font:400 27px Body;color:{b['sub']}}} .u{{font:600 34px Semi;margin-top:6px}}"""
+    if key == 'fiopoin':
+        # centered sunrise card: art on top in a glowing arc, text centered below
+        top = 150 if not story else 230
+        bh = int(H * (0.33 if not story else 0.38))
+        box = (90, top, W - 180, bh)
+        art = (f'<defs><radialGradient id="g" cx="50%" cy="100%" r="70%"><stop offset="0" stop-color="#E9A23B" stop-opacity=".35"/><stop offset="1" stop-color="#E9A23B" stop-opacity="0"/></radialGradient></defs>'
+               f'<ellipse cx="{W/2}" cy="{top + bh}" rx="{W*0.55}" ry="{bh*0.9}" fill="url(#g)"/>'
+               + ''.join(f'<circle cx="{W/2}" cy="{top + bh}" r="{bh*(0.75 + 0.28*i)}" fill="none" stroke="#{c}" stroke-opacity=".35" stroke-width="3"/>' for i, c in enumerate(['E9A23B', '0091D2', '8CC63F']))
+               + f'<line x1="70" y1="{top + bh}" x2="{W-70}" y2="{top + bh}" stroke="#ffffff" stroke-opacity=".25" stroke-width="2"/>'
+               + motif(mname, box, b, rnd, True))
+        body = f"""<style>{css}
+body{{background:linear-gradient(180deg,#0f4c8a 0%,#1B2A4A 55%,#141f38 100%)}}
+.t{{position:absolute;left:80px;right:80px;top:{top + bh + 36}px;text-align:center;display:flex;flex-direction:column;align-items:center}}
+h1{{font-weight:800;font-size:{104 if not story else 124}px;line-height:1;margin-top:16px;letter-spacing:-1px}}
+p{{font-size:{34 if not story else 40}px;line-height:1.4;margin-top:26px;max-width:840px}}
+.f{{position:absolute;left:80px;right:80px;bottom:{64 if not story else 110}px;display:flex;justify-content:space-between;align-items:flex-end}}
+</style>{svg(W, H, art)}
+<div class="abs" style="left:80px;top:{60 if not story else 110}px;display:flex;align-items:flex-end"><img src="{R}/brand/fiopo-white.svg" style="height:58px"><span style="font:600 42px Semi;margin-left:14px;border-bottom:4px solid #0091D2">Intelligence</span></div>
+<div class="t"><div class="k">{kicker}</div><h1>{headline}</h1><p>{msg}</p></div>
+<div class="f"><div><div class="d">{dateline}</div><div class="u">{b['url']}</div></div><img src="{R}/brand/fiopoin-logo-white.svg" style="height:44px"></div>"""
+    elif key == 'carbonenergynexus':
+        # light editorial page; art lives inside the benzene ring on the right
+        hy = int(H * (0.555 if not story else 0.56))
+        r = 228 if not story else 270
+        cx = W - r - 40
+        ring = hexagon(cx, hy + 40, r, b)
+        box = (cx - r * 0.72, hy + 40 - r * 0.62, r * 1.44, r * 1.24)
+        art = ring + motif(mname, box, b, rnd, False)
+        body = f"""<style>{css}
+body{{background:#F4F6F5}}
+.t{{position:absolute;left:80px;right:80px;top:{200 if not story else 300}px}}
+.bar{{width:150px;height:8px;margin-top:20px;background:linear-gradient(90deg,#F2C14E 0 33%,#E4572E 33% 66%,#2B8A9E 66%)}}
+h1{{font-size:{118 if not story else 128}px;line-height:.98;margin-top:28px;color:#1A2226}}
+p{{position:absolute;left:80px;width:{W - 2*r - 170}px;top:{hy - 60}px;font-size:{34 if not story else 38}px;line-height:1.42}}
+.f{{position:absolute;left:80px;right:80px;bottom:{64 if not story else 110}px;border-top:2px solid #cfd8d6;padding-top:22px}}
+.u{{color:#1F7A8C}}
+</style>{svg(W, H, art)}
+<div class="abs" style="left:52px;top:{38 if not story else 90}px"><img src="{R}/brand/cen-lockup-navy.svg" style="height:120px"></div>
+<div class="t"><div class="k">{kicker}</div><div class="bar"></div><h1>{headline}</h1></div>
+<p>{msg}</p>
+<div class="f"><div class="d">{dateline}</div><div class="u">{b['url']}</div></div>"""
+    elif key == 'uticamidstream':
+        # industrial: amber band, condensed caps headline left, art right, pipe rack across the bottom
+        py = int(H * (0.80 if not story else 0.80))
+        box = (W * 0.52, H * (0.36 if not story else 0.40), W * 0.44, py - 110 - H * (0.36 if not story else 0.40))
+        art = (f'<rect x="0" y="0" width="{W}" height="14" fill="#F5B000"/>' + pipe_rack(W, py, b) + motif(mname, box, b, rnd, True)
+               + ''.join(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="#ffffff" stroke-opacity=".04" stroke-width="2"/>' for y in range(60, py - 120, 60)))
+        body = f"""<style>{css}
+body{{background:linear-gradient(170deg,#1C3550 0%,#13263A 70%)}}
+.t{{position:absolute;left:80px;top:{190 if not story else 300}px;width:{W - 160}px}}
+.k{{font-family:Mono;letter-spacing:3px}}
+h1{{font-size:{124 if not story else 136}px;line-height:.92;text-transform:uppercase;margin-top:22px;letter-spacing:1px}}
+p{{font-size:{33 if not story else 37}px;line-height:1.42;margin-top:34px;max-width:{W*0.44}px}}
+.f{{position:absolute;left:80px;right:80px;bottom:{40 if not story else 90}px;display:flex;justify-content:space-between;align-items:flex-end}}
+.d{{font-family:Mono;font-size:24px}}
+</style>{svg(W, H, art)}
+<div class="abs" style="left:66px;top:{56 if not story else 110}px"><img src="{R}/brand/um-lockup-dark.svg" style="height:84px"></div>
+<div class="t"><div class="k">{kicker}</div><h1>{headline}</h1><p>{msg}</p></div>
+<div class="f"><div class="d">{dateline}</div><div class="u">{b['url']}</div></div>"""
+    else:
+        # water: centered serif, art above, layered waves at the bottom carrying the footer
+        wy = int(H * (0.80 if not story else 0.82))
+        top = 160 if not story else 260
+        bh = int(H * 0.26)
+        box = (W * 0.18, top, W * 0.64, bh)
+        art = (f'<rect x="0" y="0" width="{W/3}" height="10" fill="#2E9BE6"/><rect x="{W/3}" y="0" width="{W/3}" height="10" fill="#7A3CC2"/><rect x="{2*W/3}" y="0" width="{W/3}" height="10" fill="#8CC63F"/>'
+               f'<circle cx="{W/2}" cy="{top + bh/2}" r="{bh*0.62}" fill="#2E9BE6" opacity=".10"/>'
+               + motif(mname, box, b, rnd, True) + waves(W, wy, H))
+        body = f"""<style>{css}
+body{{background:linear-gradient(180deg,#0b1a2b 0%,#0d2036 100%)}}
+.t{{position:absolute;left:70px;right:70px;top:{top + bh + 40}px;text-align:center;display:flex;flex-direction:column;align-items:center}}
+h1{{font-size:{118 if not story else 128}px;line-height:1;margin-top:20px}}
+p{{font-size:{34 if not story else 38}px;line-height:1.42;margin-top:28px;max-width:800px}}
+.f{{position:absolute;left:0;right:0;bottom:{46 if not story else 96}px;text-align:center}}
+.d{{color:#e6eef7}}
+</style>{svg(W, H, art)}
+<div class="abs" style="left:0;right:0;top:{52 if not story else 110}px;text-align:center"><img src="{R}/brand/wcw-lockup-white-1200.png" style="height:92px"></div>
+<div class="t"><div class="k">{kicker}</div><h1>{headline}</h1><p>{msg}</p></div>
+<div class="f"><div class="d">{dateline}</div><div class="u">{b['url']}</div></div>"""
+    return f'<html><head></head><body>{body}</body></html>'
 
 
 def main():
@@ -239,11 +368,14 @@ def main():
     with sync_playwright() as p:
         br = p.chromium.launch()
         for key, msg in spec['messages'].items():
-            for W, Hh, suf in ((1080, 1350, ''), (1080, 1920, '-story')):
-                pg = br.new_page(viewport={'width': W, 'height': Hh})
+            for W, H, suf in ((1080, 1350, ''), (1080, 1920, '-story')):
+                pg = br.new_page(viewport={'width': W, 'height': H})
                 f = out / f"{key}-{spec['slug']}{suf}.html"
-                f.write_text(page(key, W, Hh, spec['headline'], spec['kicker'], spec['dateline'], msg, spec.get('motif', 'harvest')))
-                pg.goto('file://' + str(f)); pg.wait_for_timeout(400)
+                f.write_text(page(key, W, H, spec['headline'], spec['kicker'], spec['dateline'], msg, spec.get('motif', 'harvest')))
+                pg.goto('file://' + str(f)); pg.wait_for_timeout(500)
+                over = pg.evaluate("() => { const p=document.querySelector('p').getBoundingClientRect(); const f=document.querySelector('.f').getBoundingClientRect(); const h=document.querySelector('h1'); return [p.bottom > f.top - 10, h.scrollWidth > h.clientWidth + 2] }")
+                if any(over):
+                    print('WARNING layout overflow', key, suf or 'feed', over)
                 pg.screenshot(path=str(out / f"{key}-{spec['slug']}{suf}.png"))
                 pg.close()
         br.close()
