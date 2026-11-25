@@ -3,11 +3,12 @@
  "holidays": [
   {
    "date": "2026-11-26",
-   "slug": "thanksgiving-2026",
+   "slug": "thanksgiving-day-2026",
    "name": "Thanksgiving",
    "headline": "Happy Thanksgiving",
    "motif": "harvest",
-   "posted": true
+   "posted": false,
+   "note": "Second Thanksgiving post on the day itself (Raj, Nov 25, 2026). A greeting already went out Nov 25 with slug thanksgiving-2026-b; write new messages and captions that do not repeat those."
   },
   {
    "date": "2026-12-04",
