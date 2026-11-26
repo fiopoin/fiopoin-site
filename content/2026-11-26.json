@@ -1,0 +1,993 @@
+{
+ "date": "2026-11-26",
+ "date_long": "Thursday, November 26, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "14 economies",
+    "text": "On November 25 the US Trade Representative proposed Section 301 tariffs on 14 economies it says flood the US with subsidized goods, after investigations opened in March. Top proposed rates run from 15% to 35%."
+   },
+   {
+    "label": "The list",
+    "value": "Vietnam 35%",
+    "text": "Vietnam faces up to 35%, India up to 25%, China and Singapore up to 20%, and five Southeast Asian and South Asian economies up to 18%. The EU, Japan, Korea, Taiwan and Switzerland face up to 15%."
+   },
+   {
+    "label": "The reaction",
+    "value": "STOXX +1.4%",
+    "text": "China's commerce ministry called the probes \"a typical act of unilateralism.\" Brazil called a separate 10% US tariff on its aircraft \"unilateral and unacceptable.\" European stocks rose 1.4% Thursday on hopes EU duties stay capped at 15%, Reuters reports."
+   },
+   {
+    "label": "The timeline",
+    "value": "Jan 25",
+    "text": "Nothing takes effect yet. Comments are due January 5 and hearings start January 25. USTR Jamieson Greer told CNBC he did not expect tariffs earlier than \"a couple months from now.\" China's rate could rise to 40% if the truce expiring January 10 fails."
+   },
+   {
+    "label": "You",
+    "value": "Import prices",
+    "text": "Cars, steel, aluminum, copper, patented drugs and chips already under Section 232 tariffs are exempt for most economies. Other imports from these 14 economies, from clothing to furniture and electronics, could cost more in 2027."
+   }
+  ],
+  "caption": "Sources: Husch Blackwell, The Boston Report citing USTR, Reuters and CNBC, Cross Pacific Watchers, Reuters via KFGO and The Rio Times, November 25 to 26, 2026. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "Brent crude",
+   "value": "$91.11",
+   "note": "Thu Asia, +0.5%",
+   "dir": "up"
+  },
+  {
+   "label": "S&P 500",
+   "value": "7,182.78",
+   "note": "Wed, -0.25%",
+   "dir": "down"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "4.85%",
+   "note": "Wed close, -6 bp",
+   "dir": "down"
+  },
+  {
+   "label": "Nasdaq",
+   "value": "23,585.80",
+   "note": "Wed, -0.62%",
+   "dir": "down"
+  },
+  {
+   "label": "Gold",
+   "value": "$3,581.60",
+   "note": "Thu, +1.61%",
+   "dir": "up"
+  },
+  {
+   "label": "Bitcoin",
+   "value": "$60,119",
+   "note": "Wed, +0.62%",
+   "dir": "up"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Stocks and your savings",
+   "headline": "Wall Street erases a 1,100 point Dow drop, and Asia rebounds on Thursday.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for savers"
+   },
+   "happened": "On Wednesday the Dow closed up 0.33% at 50,182.95 after falling more than 1,100 points. The S&P 500 fell 0.25% to 7,182.78 after being down as much as 3.2%, and the Nasdaq fell 0.62% to 23,585.80 after a 4.6% intraday drop. At its low the Nasdaq 100 touched 20% below its October peak, GSM reports. About three quarters of S&P 500 stocks rose. Nvidia fell 3.9% to $149.30.",
+   "happening": "On Thursday Asia bounced: the Nikkei rose 1.3% to 57,768.92, the KOSPI 1.2%, the Hang Seng 1.9% and the Taiex 2.6%, AP reports. SoftBank Group rose 9% and SK Hynix 3.7%. Europe's STOXX 600 was up 1.4% at 634.94 in early trade, Reuters says. The VIX fear gauge closed Wednesday at 28.29. US markets are shut Thursday for Thanksgiving and close at 1 p.m. ET Friday.",
+   "could": {
+    "odds": [],
+    "text": "Intraday swings of 3% to 5% in the big indexes, followed by a rebound, show how nervous the market is about AI spending and a December rate hike at once.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Check whether your retirement fund leans heavily on a few large tech stocks; Wednesday's gains came mostly from smaller and mid size companies.",
+    "Avoid placing market orders in the short Friday session, when trading is thin and prices can jump.",
+    "Keep money you need within two years in savings or short Treasury bills, not in stocks swinging 4% in a day."
+   ],
+   "watch": "The short US session Friday, closing at 1 p.m. ET.",
+   "sources": [
+    {
+     "name": "Motley Fool, Nov 25",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/"
+    },
+    {
+     "name": "Closing Look, Nov 25",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+    },
+    {
+     "name": "GSM Global News, Nov 25",
+     "url": "https://gsmglobalnews.com/article/d20261125-mktclose1.html"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 26",
+     "url": "https://www.ksat.com/business/2026/11/26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses/"
+    },
+    {
+     "name": "Reuters via KFGO, European stocks, Nov 26",
+     "url": "https://kfgo.com/2026/11/26/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease/"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Trade and tariffs",
+   "headline": "The US proposes tariffs of 15% to 35% on 14 economies, including China, the EU and India.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for prices"
+   },
+   "happened": "On November 25 the US Trade Representative found that industrial policies in 14 economies are actionable under Section 301 and proposed new tariffs. Proposed top rates: Vietnam 35%, India 25% (17% with a trade deal), China and Singapore 20%, Bangladesh, Cambodia, Indonesia, Malaysia and Thailand 18%, and the EU, Japan, Korea, Taiwan and Switzerland 15%. USTR made no finding on Mexico or Norway. It also proposed a 10% tariff on finished Brazilian aircraft.",
+   "happening": "The rates are proposals. Comments are due January 5 and hearings start January 25, 2027. Most economies get exemptions for goods already under Section 232 tariffs, such as cars, steel and chips. China's commerce ministry said it \"firmly opposes\" the plan and reserves the right to respond. Senator Ron Wyden said the tariffs would raise prices for Americans. European shares rose Thursday on hopes EU duties stay capped at the 15% agreed last year.",
+   "could": {
+    "odds": [
+     {
+      "label": "None of the proposed tariffs in force by Dec 26",
+      "pct": 90
+     },
+     {
+      "label": "Some take effect by Dec 26",
+      "pct": 10
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days, given the January hearing schedule. Judgment, not fact."
+   },
+   "you": [
+    "Planning to buy furniture, clothing or electronics made in Vietnam, India or China? Prices may rise in 2027 if the rates are confirmed.",
+    "Run a business that imports from these economies? Ask your customs broker whether your goods fall under the exemption annexes, and note the January 5 comment deadline.",
+    "Hold funds focused on Southeast Asian or Indian exporters? Expect swings as the hearings approach."
+   ],
+   "watch": "Comments due January 5; hearings from January 25; the US China truce expires January 10.",
+   "sources": [
+    {
+     "name": "Husch Blackwell trade blog, Nov 25",
+     "url": "https://www.internationaltradeinsights.com/2026/11/ustr-announces-proposed-section-301-excess-capacity-tariffs-on-fourteen-economies/"
+    },
+    {
+     "name": "The Boston Report, citing USTR, Reuters and CNBC, Nov 25",
+     "url": "https://thebostonreport.com/2026/11/25/ustr-section-301-tariffs-14-countries-china-20-percent"
+    },
+    {
+     "name": "Cross Pacific Watchers, Nov 26",
+     "url": "https://crosspacificwatchers.substack.com/p/everything-you-should-know-about-266"
+    },
+    {
+     "name": "Reuters via KFGO, European stocks, Nov 26",
+     "url": "https://kfgo.com/2026/11/26/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease/"
+    },
+    {
+     "name": "The Rio Times, The Big Read: Brazil, Nov 26",
+     "url": "https://www.riotimesonline.com/the-big-read-brazil-26-november-2026/"
+    }
+   ]
+  },
+  {
+   "id": "rates",
+   "topic": "The Fed and your loans",
+   "headline": "US core inflation hits 3.3% as Korea raises rates and a Fed hike looks near certain.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for borrowers"
+   },
+   "happened": "October PCE inflation rose 3.8% from a year earlier, in line with forecasts, and core PCE rose 3.3%, above the 3.2% consensus. Third quarter growth was revised up to a 4.3% annual pace from 3.4%. The Fed's Beige Book said eight of 12 districts reported growth, with prices still rising moderately. On Thursday the Bank of Korea raised its rate a quarter point to 3.25%, its third hike this year, in a 5 to 2 vote.",
+   "happening": "After the data, CME FedWatch put the odds of a quarter point Fed hike on December 9 at 97.8%, Closing Look reports. The 10 year Treasury yield fell 6 basis points to 4.85% and the 2 year to 4.61%. The average 30 year mortgage rate was 7.21%, The Rio Times reports. Bank of Korea Governor Shin Hyun-song called the move \"both a preemptive move and a response to mounting inflationary pressures\" and said more hikes remain on the table.",
+   "could": {
+    "odds": [
+     {
+      "label": "Quarter point Fed hike Dec 9",
+      "pct": 98
+     },
+     {
+      "label": "No change or larger move",
+      "pct": 2
+     }
+    ],
+    "text": "Central banks from Seoul to Washington are still raising rates while growth stays strong.",
+    "note": "Market odds from futures pricing, Closing Look citing CME FedWatch, November 25. Not a FIOPO call."
+   },
+   "you": [
+    "Carry a credit card balance? Pay down the highest rate card first; card rates move with the Fed.",
+    "Shopping for a mortgage? Ask lenders about a rate lock before December 9.",
+    "Holding cash? Compare high yield savings and certificate rates, which tend to rise after hikes."
+   ],
+   "watch": "The Fed decision on December 9.",
+   "sources": [
+    {
+     "name": "Closing Look, Nov 25",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+    },
+    {
+     "name": "GSM Global News, Nov 25",
+     "url": "https://gsmglobalnews.com/article/d20261125-mktclose1.html"
+    },
+    {
+     "name": "Korea JoongAng Daily, Nov 26",
+     "url": "https://www.koreajoongangdaily.com/business/bok-lifts-rate-to-325-as-it-sharply-upgrades-growth-forecasts-through-next-year/12991322"
+    },
+    {
+     "name": "The Rio Times, global economy briefing, Nov 26",
+     "url": "https://www.riotimesonline.com/global-economy-briefing-november-26-2026/"
+    }
+   ]
+  },
+  {
+   "id": "energy",
+   "topic": "Oil and the Gulf",
+   "headline": "Yemen's Houthis say they struck Saudi Arabia's largest refinery at Ras Tanura.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for fuel prices"
+   },
+   "happened": "Houthi spokesman Yahya Saree said on November 25 that the group struck the Ras Tanura refinery, causing fires, and attacked Riyadh's financial district. The Saudi led coalition said air defenses destroyed four drones at Ras Tanura and did not say the refinery was hit. Saudi civil defense said 11 people were wounded on November 24 in a strike on a Riyadh tower. The National says the Houthi claims could not be independently verified.",
+   "happening": "Ras Tanura can process 550,000 barrels a day, about 16% of Saudi refining capacity, The National reports. US crude settled up 2% at $83.68 on Wednesday, and on Thursday Brent traded at $91.11, up 0.5%, and WTI at $84.33, AP says. Brent was about $72 before the US Iran war began in late February. OPEC+ meets November 29.",
+   "could": {
+    "odds": [],
+    "text": "Repeated strikes on Gulf energy sites keep a risk premium in oil prices even as US pump prices fall.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Driving this weekend? US gas averaged $3.59 on November 25, AAA says, down from $3.72 a week earlier, so fill up where prices are posted lowest.",
+    "Heat with heating oil? Oil shocks reach heating oil quickly; compare suppliers before you refill.",
+    "Shipping goods through the Gulf? Ask your carrier about war risk surcharges."
+   ],
+   "watch": "The OPEC+ meeting on November 29.",
+   "sources": [
+    {
+     "name": "The National, Nov 25",
+     "url": "https://www.thenationalnews.com/news/gulf/2026/11/25/yemens-houthis-say-they-attacked-saudi-arabias-ras-tanura-refinery/"
+    },
+    {
+     "name": "Closing Look, Nov 25",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+    },
+    {
+     "name": "GSM Global News, Nov 25",
+     "url": "https://gsmglobalnews.com/article/d20261125-mktclose1.html"
+    },
+    {
+     "name": "AP via KSAT, Asian markets, Nov 26",
+     "url": "https://www.ksat.com/business/2026/11/26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses/"
+    },
+    {
+     "name": "AAA, Nov 2026",
+     "url": "https://gasprices.aaa.com/2026/11/"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.59,
+  "gas_year_ago": 3.08,
+  "gas_note": "US average $3.59 on November 25, 2026 vs $3.08 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Morning: the big story",
+  "headline": "US proposes tariffs of 15% to 35% on 14 economies",
+  "points": [
+   "China up to 20%, Vietnam 35%",
+   "EU, Japan, Korea up to 15%",
+   "Hearings start January 25"
+  ],
+  "watch": "EU stocks rose 1.4% on hopes of a 15% cap.",
+  "chart": {
+   "title": "Proposed top US tariff rates, %",
+   "items": [
+    {
+     "label": "Vietnam",
+     "value": 35,
+     "display": "35%"
+    },
+    {
+     "label": "India",
+     "value": 25,
+     "display": "25%"
+    },
+    {
+     "label": "EU",
+     "value": 15,
+     "display": "15%"
+    }
+   ],
+   "source": "USTR via Husch Blackwell, Nov 25, 2026"
+  },
+  "caption": "The US Trade Representative proposed new Section 301 tariffs on 14 economies on November 25, with top rates of 35% for Vietnam, 25% for India, 20% for China and 15% for the EU and Japan. Comments are due January 5 and hearings start January 25.\n\nChina's commerce ministry said it firmly opposes the plan. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Tariffs #Trade #China #Vietnam"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: business and deals",
+   "headline": "S&P puts Nvidia's credit rating on watch",
+   "points": [
+    "AA rating on CreditWatch Negative",
+    "Governance worries after CEO return",
+    "Shares fell 3.9% to $149.30"
+   ],
+   "watch": "Meta rose 3.4% and HP 11.49% on Wednesday.",
+   "chart": {
+    "title": "Big US stock moves, Wednesday, %",
+    "items": [
+     {
+      "label": "HP Inc.",
+      "value": 11.49,
+      "display": "+11.49%"
+     },
+     {
+      "label": "Meta",
+      "value": 3.4,
+      "display": "+3.4%"
+     },
+     {
+      "label": "Amazon",
+      "value": -3.12,
+      "display": "-3.12%"
+     },
+     {
+      "label": "Nvidia",
+      "value": -3.9,
+      "display": "-3.9%"
+     }
+    ],
+    "source": "Closing Look, GSM, Nov 25, 2026"
+   },
+   "caption": "S&P Global Ratings placed Nvidia's AA credit rating on CreditWatch Negative, citing management and governance concerns after Jensen Huang's return as CEO, AP and Closing Look report. Nvidia shares fell 3.9% to $149.30 on Wednesday after being down more than 9% at one point. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Nvidia #Stocks #CreditRating #Tech"
+  },
+  "evening": {
+   "kicker": "Evening: the world and the economy",
+   "headline": "Korea hikes as US inflation runs hot",
+   "points": [
+    "Korea's rate rises to 3.25%",
+    "US core PCE 3.3%, above forecast",
+    "Fed hike odds near 98%"
+   ],
+   "watch": "US markets close early Friday. OPEC+ meets November 29 and the Fed decides December 9.",
+   "icon": "bank",
+   "caption": "The Bank of Korea raised its rate to 3.25% on Thursday, its third hike this year, citing inflation and household debt. In the US, October core PCE inflation rose 3.3%, above forecasts, and futures put the odds of a December 9 Fed hike near 98%.\n\nWatch Asia and Europe opens and the Fed on December 9. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Inflation #Fed #BankOfKorea #Rates"
+  }
+ },
+ "yesterday": {
+  "label": "Wednesday, November 25",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "The Dow rose 0.33% after erasing a 1,100 point drop."
+   },
+   {
+    "label": "Inflation",
+    "text": "US core PCE rose 3.3% in October, above the 3.2% forecast."
+   },
+   {
+    "label": "Growth",
+    "text": "US third quarter GDP was revised up to 4.3%."
+   },
+   {
+    "label": "Trade",
+    "text": "The US proposed tariffs of 15% to 35% on 14 economies."
+   },
+   {
+    "label": "Nvidia",
+    "text": "S&P put Nvidia's AA rating on watch; shares fell 3.9%."
+   },
+   {
+    "label": "Gulf",
+    "text": "The Houthis said they struck Saudi Arabia's Ras Tanura refinery."
+   }
+  ],
+  "sources": [
+   {
+    "name": "Closing Look, Nov 25",
+    "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+   },
+   {
+    "name": "GSM Global News, Nov 25",
+    "url": "https://gsmglobalnews.com/article/d20261125-mktclose1.html"
+   },
+   {
+    "name": "Husch Blackwell trade blog, Nov 25",
+    "url": "https://www.internationaltradeinsights.com/2026/11/ustr-announces-proposed-section-301-excess-capacity-tariffs-on-fourteen-economies/"
+   },
+   {
+    "name": "The National, Nov 25",
+    "url": "https://www.thenationalnews.com/news/gulf/2026/11/25/yemens-houthis-say-they-attacked-saudi-arabias-ras-tanura-refinery/"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "China says it firmly opposes the new US tariff plan as Hong Kong stocks rise.",
+   "text": "China's commerce ministry spokesman He Yadong called the US investigations \"a typical act of unilateralism\" and said China reserves the right to take necessary measures, Cross Pacific Watchers reports. The Hang Seng rose 1.19% to 22,226.88 on Thursday while the Shanghai Composite was flat at 3,476.88. The Bank of Korea raised its rate to 3.25% and lifted its 2027 growth forecast to 4.1%.",
+   "you": "Buy goods made in China or Southeast Asia? Watch the January hearings before big purchases; prices could change in 2027.",
+   "sources": [
+    {
+     "name": "Cross Pacific Watchers, Nov 26",
+     "url": "https://crosspacificwatchers.substack.com/p/everything-you-should-know-about-266"
+    },
+    {
+     "name": "Korea JoongAng Daily, Nov 26",
+     "url": "https://www.koreajoongangdaily.com/business/bok-lifts-rate-to-325-as-it-sharply-upgrades-growth-forecasts-through-next-year/12991322"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Nepal, Sri Lanka",
+   "headline": "India faces a proposed US tariff of up to 25% as foreign money pours into its stocks.",
+   "text": "The US proposed a tariff of up to 25% on Indian goods, or 17% if India reaches a trade deal, and up to 18% on Bangladesh. The Sensex rose 1.82% to 83,938.28 on Wednesday and was little changed in early Thursday trade. Foreign portfolio inflows reached a record $15.16 billion in November, The Open Press reports. The rupee closed Wednesday at 92.23 per dollar, an eight month high, HDFC Sky says.",
+   "you": "Export to the US from India or Bangladesh? Ask buyers how they plan to share a possible 2027 duty, and track the January 5 comment deadline.",
+   "sources": [
+    {
+     "name": "Husch Blackwell trade blog, Nov 25",
+     "url": "https://www.internationaltradeinsights.com/2026/11/ustr-announces-proposed-section-301-excess-capacity-tariffs-on-fourteen-economies/"
+    },
+    {
+     "name": "The Open Press, Nov 26",
+     "url": "https://theopenpress.in/article/sensex-today-november-26-2026-nifty"
+    },
+    {
+     "name": "HDFC Sky, Nov 26",
+     "url": "https://hdfcsky.com/news/bse-nse-sensex-november-26-2026-open-report-sensex-nifty-diverge-at-open-on-thursday-as-strong-asia-steady-oil-offset-hot-us-inflation"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "EU, UK, Ukraine, Russia",
+   "headline": "European stocks jump 1.4% on hopes US tariffs on the EU stay at 15%.",
+   "text": "The STOXX 600 rose 1.4% to 634.94 early Thursday, led by banks and tech, after falling more than 1% on Wednesday, Reuters reports. Deutsche Bank rose 3%, Infineon and Soitec about 4%, and Babcock 5.8% after Britain signed an £8 billion contract for nuclear submarine facility upgrades. The US proposal sets the EU rate at 15%, the level agreed last year.",
+   "you": "Hold European stocks? Banks and chip makers are leading the rebound; check your fund's weighting before adding more.",
+   "sources": [
+    {
+     "name": "Reuters via KFGO, European stocks, Nov 26",
+     "url": "https://kfgo.com/2026/11/26/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease/"
+    },
+    {
+     "name": "Husch Blackwell trade blog, Nov 25",
+     "url": "https://www.internationaltradeinsights.com/2026/11/ustr-announces-proposed-section-301-excess-capacity-tariffs-on-fourteen-economies/"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf, Levant, Iran, Turkey",
+   "headline": "Houthis claim a strike on Ras Tanura; Saudi Arabia says it downed four drones.",
+   "text": "Yemen's Houthis said they hit Saudi Arabia's Ras Tanura refinery and Riyadh's financial district on November 25. The Saudi led coalition said it destroyed four drones at Ras Tanura, and civil defense said 11 people were wounded in a November 24 strike on a Riyadh tower that houses the Public Investment Fund. The claims were not independently verified, The National reports.",
+   "you": "Traveling to the Gulf? Check your government's travel advice and your airline's updates before you fly.",
+   "sources": [
+    {
+     "name": "The National, Nov 25",
+     "url": "https://www.thenationalnews.com/news/gulf/2026/11/25/yemens-houthis-say-they-attacked-saudi-arabias-ras-tanura-refinery/"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, Kenya, South Africa, Egypt, Sahel",
+   "headline": "Zambia and Nigeria report key numbers on Friday after South African stocks slip.",
+   "text": "Zambia's central bank announces its rate decision on November 27, with a 10.75% forecast, and Nigeria publishes third quarter GDP the same day, forecast at 4.45% growth, The Rio Times reports. South Africa's JSE Top 40 fell 1.59% to 97,103 on Wednesday. A South African court is due to give judgment on December 3 in the corruption trial of former speaker Nosiviwe Mapisa-Nqakula, who denies the charges.",
+   "you": "Saving or borrowing in kwacha? Compare deposit and loan rates after Friday's decision, when banks may reprice.",
+   "sources": [
+    {
+     "name": "The Rio Times, Africa brief, Nov 25",
+     "url": "https://www.riotimesonline.com/africa-intelligence-brief-wednesday-november-25-2026/"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Chile, Colombia, Peru",
+   "headline": "Brazil calls a proposed 10% US tariff on its aircraft \"unilateral and unacceptable.\"",
+   "text": "USTR proposed a 10% tariff on finished Brazilian aircraft on November 25, ending an exemption, and Embraer shares fell as much as about 9% during the session, The Rio Times reports. Brazil's presidency said it will seek a negotiated solution and keeps WTO options open. The Ibovespa still rose 1.58% to 166,684.61 and the real strengthened to 5.82 per dollar. Chile's lower house passed the 2027 budget 113 to 9.",
+   "you": "Planning a trip to Brazil? The real strengthened this week, so compare exchange rates and card fees before you go.",
+   "sources": [
+    {
+     "name": "The Rio Times, The Big Read: Brazil, Nov 26",
+     "url": "https://www.riotimesonline.com/the-big-read-brazil-26-november-2026/"
+    },
+    {
+     "name": "The Rio Times, Brazil morning call, Nov 26",
+     "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-thursday-november-26-2026/"
+    },
+    {
+     "name": "The Rio Times, Latin American Pulse, Nov 26",
+     "url": "https://www.riotimesonline.com/latin-american-pulse-for-thursday-november-26-2026/"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Basketball, Europe",
+   "headline": "The NBA sets up a €10 billion fund for arenas in Europe.",
+   "text": "The NBA is creating a €10 billion ($10.9 billion) fund for arenas and entertainment districts across Europe, backed by investors including Apollo, Ares, Blackstone, JP Morgan and Sixth Street, SportsPro reported on November 25. It supports a planned European league, with FIBA, targeted to launch with 16 teams in 2027. Target cities include London, Paris, Madrid, Milan, Berlin and Istanbul.",
+   "you": "Live in a target city? New arenas often come with transport and housing projects; follow local planning notices.",
+   "sources": [
+    {
+     "name": "SportsPro, Nov 25",
+     "url": "https://www.sportspro.com/news/finance-investment/nba-europe-basketball-arena-fund-arctos-sixth-street-apollo/"
+    }
+   ]
+  },
+  {
+   "topic": "Football, South America",
+   "headline": "Palmeiras and Estudiantes meet in Saturday's Copa Libertadores final.",
+   "text": "Palmeiras face Estudiantes in the Copa Libertadores final on Saturday, November 28, at the Estadio Centenario in Montevideo, The Rio Times reports. Prediction market Polymarket gives Palmeiras about 67%. Flamengo clinched Brazil's league title on November 21 with two rounds to spare.",
+   "you": "Watching from abroad? Check which streaming service carries the final in your country before kickoff at 17:00 Brasília time.",
+   "sources": [
+    {
+     "name": "The Rio Times, Latin America Sports Daily, Nov 26",
+     "url": "https://www.riotimesonline.com/latin-america-sports-daily-thursday-november-26-2026/"
+    }
+   ]
+  },
+  {
+   "topic": "Football, Africa",
+   "headline": "Senegal is restored as Africa Cup of Nations champion after a court ruling.",
+   "text": "Senegal was restored as Africa Cup of Nations champion after a ruling by the Court of Arbitration for Sport, The Guardian reported on November 24.",
+   "you": "Collect or buy team merchandise? Official champion branding can change after rulings, so check licensed retailers.",
+   "sources": [
+    {
+     "name": "The Guardian, Nov 24",
+     "url": "https://www.theguardian.com/football/2026/nov/24/afcon-verdict-senegal-morocco-africa-cup-of-nations-champions-court-ruling-cas"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Film, US holiday box office",
+   "headline": "Sunrise on the Reaping heads for about $85 million over Thanksgiving.",
+   "text": "Lionsgate's The Hunger Games: Sunrise on the Reaping earned $15.98 million on Tuesday, a franchise record for the day, and is projected to earn more than $85 million over the five day holiday, Wisevoter and Deadline report. Its domestic total stood at $148.1 million. Hexed is projected at $35 million to $40 million and Focker-in-Law at about $36.1 million.",
+   "you": "Going to the movies this weekend? Matinee and weekday tickets are usually cheaper than evening shows.",
+   "sources": [
+    {
+     "name": "Wisevoter, Nov 26",
+     "url": "https://wisevoter.com/world/us/2026/11/26/hunger-games-sunrise-reaping-thanksgiving-box-office"
+    },
+    {
+     "name": "Deadline, Nov 2026",
+     "url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/"
+    }
+   ]
+  },
+  {
+   "topic": "Film, India",
+   "headline": "Ramayana becomes the fifth highest grossing Indian film worldwide.",
+   "text": "Ramayana Part I passed Rs 1,384 crore worldwide by mid November, overtaking Dhurandhar's Rs 1,307 crore to become the fifth highest grossing Indian film, ThePrint reported on November 16. It crossed Rs 1,000 crore within eight days and set a second weekend record in India of Rs 196 crore net.",
+   "you": "Want to see it on a big screen abroad? Check local listings; Indian epics are getting long international runs.",
+   "sources": [
+    {
+     "name": "ThePrint, Nov 16",
+     "url": "https://theprint.in/entertainment/ramayana-dhurandhar-box-office-5th-highest-grossing-indian-film/3099994/"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "Space and AI",
+   "headline": "The FCC authorizes SpaceX to launch up to 1 million AI computing satellites.",
+   "text": "The Federal Communications Commission authorized SpaceX to launch up to 1 million satellites for AI computing in orbit, Closing Look and GSM report. SpaceX shares rose 1.30% to $127.44 on November 25. SpaceX first asked the FCC for the orbital data center constellation in January.",
+   "you": "Curious about space stocks? New listings and big plans swing widely; read the risk section of any filing before you buy.",
+   "sources": [
+    {
+     "name": "Closing Look, Nov 25",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+    },
+    {
+     "name": "GSM Global News, Nov 25",
+     "url": "https://gsmglobalnews.com/article/d20261125-mktclose1.html"
+    }
+   ]
+  },
+  {
+   "topic": "Medicine",
+   "headline": "The FDA approves the first systemic US treatment for vitiligo and two other drugs.",
+   "text": "AbbVie's Rinvoq won approval for nonsegmental vitiligo in adults and patients 12 and older, the first systemic US therapy for the condition, announced November 23. BridgeBio's Welgemda was approved for a form of limb girdle muscular dystrophy, and Cogent's Ekitna for advanced GIST, a rare stomach cancer, PR Newswire's roundup says.",
+   "you": "Have one of these conditions? Ask your doctor whether a new option fits and whether your insurer covers it yet.",
+   "sources": [
+    {
+     "name": "PR Newswire biotech roundup, Nov 25",
+     "url": "https://www.prnewswire.com/news-releases/a-41-billion-deal-and-three-new-approvals-fill-biotechs-holiday-week-302950406.html"
+    }
+   ]
+  },
+  {
+   "topic": "Batteries",
+   "headline": "Researchers build a rechargeable zinc air battery using vitamin B12.",
+   "text": "Researchers at Spain's University of Córdoba used vitamin B12 bound to carbon nanotubes as a catalyst in a rechargeable zinc air battery that completed up to 250 charge cycles, ScienceDaily reported on November 18. The work, published in the Journal of Materials Chemistry A, remains at the research stage.",
+   "you": "Cheaper, safer battery materials take years to reach stores; do not pay a premium for products claiming this technology today.",
+   "sources": [
+    {
+     "name": "ScienceDaily, University of Córdoba, Nov 18",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261117033909.htm"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Lake Balaton, Hungary: a lake holiday without Como's crowds.",
+   "text": "Lonely Planet named Lake Balaton one of its most underrated places for 2027, for summer festivals, castles and lavender fields, as an alternative to Lake Como.",
+   "you": "Planning summer 2027? Look at lakeside towns now, and pay in forint rather than accepting a card conversion to dollars.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "St. Augustine, Florida: Spanish streets without a transatlantic flight.",
+   "text": "Lonely Planet's 2027 underrated list includes St. Augustine for centuries of history and Spanish style streets that give a European feel on a domestic trip.",
+   "you": "Want old Europe on a short break? A domestic trip skips passports and long haul fares. Check the official visitor site for events before you book.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "The dollar buys more in Argentina and Brazil than in a year.",
+   "text": "Argentina's peso closed at 1,580 per dollar on November 20, its weakest in at least 12 months, and Brazil's real closed near 5.93, its weakest since January 2025. Lonely Planet's 2027 list also picks Bolivia and Quito.",
+   "you": "Pay in the local currency when a card terminal offers dollars, and use a card with no foreign transaction fee.",
+   "sources": [
+    {
+     "name": "The Rio Times, Argentina",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-friday-november-20-2026/"
+    },
+    {
+     "name": "The Rio Times, Brazil",
+     "url": "https://www.riotimesonline.com/brazil-central-bank-sells-us-1-billion-real-still-falls/"
+    },
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "What Should My Children Do?",
+   "by": "Daniel Susskind",
+   "where": "Allen Lane, published September 10, 2026",
+   "text": "An economist asks what the next generation should learn, and what it should stop worrying about, in a world changed by AI. Useful for any family planning school or career choices.",
+   "sources": [
+    {
+     "name": "Penguin",
+     "url": "https://www.penguin.co.uk/books/475229/what-should-my-children-do-by-susskind-daniel/9780241791172"
+    },
+    {
+     "name": "Next Big Idea Club",
+     "url": "https://nextbigideaclub.com/magazine/next-big-idea-clubs-november-2026-must-read-books/61737/"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "Primetime Preacher$",
+   "by": "Documentary from Joe Berlinger",
+   "where": "Netflix, from Friday, November 20",
+   "text": "A 113 minute film on Jim Bakker, Jerry Falwell and Jimmy Swaggart, three 1980s televangelists who built TV ministries before scandal. A sharp look at how money flows when trust is the product.",
+   "sources": [
+    {
+     "name": "Drawpie",
+     "url": "https://drawpie.com/blog/new-documentaries-netflix-november-2026/"
+    },
+    {
+     "name": "TheWrap",
+     "url": "https://www.thewrap.com/creative-content/movies/everything-new-on-streaming-november-2026/"
+    }
+   ]
+  }
+ ],
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 18",
+     "text": "NASA ran a developmental RS-25 Moon rocket engine for its full 200 seconds at Stennis Space Center.",
+     "source": "ScienceDaily, NASA",
+     "url": "https://sciencedaily.com/releases/2026/11/261120075551.htm"
+    },
+    {
+     "date": "Nov 19",
+     "text": "Scientists found bacteria that removed about 98% of radioactive promethium-147 in 60 hours.",
+     "source": "Everything Science",
+     "url": "https://everythingscience.substack.com/p/10-positive-science-stories-worth"
+    },
+    {
+     "date": "Nov 21",
+     "text": "India declared at 720 for 9 in Wellington, the highest Test innings ever made in New Zealand.",
+     "source": "Dainik Jagran English",
+     "url": "https://english.dainikjagranmpcg.com/special-news/november-22-2026-todays-top-news-headlines/article-45743"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "BepiColombo is entering orbit around Mercury, only the second spacecraft ever to do so.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ },
+ "events": {
+  "global": [
+   {
+    "when": "Nov 27",
+    "what": "US stock markets close early, at 1 p.m. ET",
+    "where": "New York",
+    "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25"
+   },
+   {
+    "when": "Nov 27",
+    "what": "Zambia rate decision and Nigeria third quarter GDP",
+    "where": "Lusaka and Abuja",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-wednesday-november-25-2026/"
+   },
+   {
+    "when": "Nov 28",
+    "what": "Copa Libertadores final, Palmeiras v Estudiantes",
+    "where": "Estadio Centenario, Montevideo",
+    "url": "https://www.riotimesonline.com/latin-america-sports-daily-thursday-november-26-2026/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "Spain general election",
+    "where": "Spain",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 5 to 6",
+    "what": "Asia Artist Awards",
+    "where": "Kaohsiung National Stadium, Taiwan",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 11",
+    "what": "US government funding deadline",
+    "where": "Washington, D.C.",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Dec 18",
+    "what": "Avengers: Doomsday opens in theaters",
+    "where": "Worldwide",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   },
+   {
+    "when": "Jan 19, 2027",
+    "what": "Comment deadline for Medicare's CRUSH audit rule",
+    "where": "Online, regulations.gov",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "when": "Feb 7, 2027",
+    "what": "Grammy Awards",
+    "where": "Los Angeles",
+    "url": "https://www.complex.com/music/a/alex-ocho/lisa-grammy-nomination-blackpink-asian-pop"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "name": "FinChannel",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "name": "The Rio Times",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Nigeria Brief",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-23-2026"
+   },
+   {
+    "name": "Korea Daily",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-saturday-november-21-2026/"
+   },
+   {
+    "name": "Yahoo Finance earnings calendar",
+    "url": "https://finance.yahoo.com/calendar/earnings?day=2026-11-24"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-wednesday-november-25-2026/"
+   },
+   {
+    "name": "The Rio Times, sports",
+    "url": "https://www.riotimesonline.com/latin-america-sports-daily-thursday-november-26-2026/"
+   }
+  ]
+ }
+}

@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [The AI chip selloff spreads to Asia: Korea's KOSPI falls 6.2% as Samsung drops nearly 10%.](https://fiopoin.com/): Wednesday, November 25, 2026. Chip stocks slumped across Asia on Wednesday. Korea's KOSPI fell 6.2%, Taiwan's Taiex 5% and Japan's Nikkei 2.8%, with Samsung down 9.9% and SK Hynix 11.1%, after a 7.9% drop in US chip stocks on doubts about AI spending. India's Sensex rose 2.4%.
-- [Stocks and your savings: Chip stocks slump from New York to Seoul as AI doubts return.](https://fiopoin.com/#money)
-- [Trade and tariffs: The US is preparing new tariffs on China, the EU and 14 other economies.](https://fiopoin.com/#world)
-- [The Fed and your loans: Consumer confidence jumps to 103.3 as traders bet on a December Fed hike.](https://fiopoin.com/#rates)
-- [Deals and health care: Sanofi agrees to buy Insmed for about $41 billion in cash.](https://fiopoin.com/#deals)
+- [The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.](https://fiopoin.com/): Thursday, November 26, 2026. The US Trade Representative proposed new Section 301 tariffs on 14 economies on November 25, with top rates of 35% for Vietnam, 25% for India, 20% for China and 15% for the EU and Japan. Comments are due January 5 and hearings start January 25.
+- [Stocks and your savings: Wall Street erases a 1,100 point Dow drop, and Asia rebounds on Thursday.](https://fiopoin.com/#money)
+- [Trade and tariffs: The US proposes tariffs of 15% to 35% on 14 economies, including China, the EU and India.](https://fiopoin.com/#world)
+- [The Fed and your loans: US core inflation hits 3.3% as Korea raises rates and a Fed hike looks near certain.](https://fiopoin.com/#rates)
+- [Oil and the Gulf: Yemen's Houthis say they struck Saudi Arabia's largest refinery at Ras Tanura.](https://fiopoin.com/#energy)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Thursday, November 26, 2026: The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.](https://fiopoin.com/archive/2026-11-26.html)
 - [Wednesday, November 25, 2026: The AI chip selloff spreads to Asia: Korea's KOSPI falls 6.2% as Samsung drops nearly 10%.](https://fiopoin.com/archive/2026-11-25.html)
 - [Tuesday, November 24, 2026: Stocks have their best day since April 2025, but a December Fed hike looks near certain.](https://fiopoin.com/archive/2026-11-24.html)
 - [Monday, November 23, 2026: Nvidia brings back Jensen Huang after Wall Street's worst week since 2020.](https://fiopoin.com/archive/2026-11-23.html)
