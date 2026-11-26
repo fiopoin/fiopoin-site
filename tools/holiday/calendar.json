@@ -1,156 +1,156 @@
 {
- "note": "Holiday and occasion greetings for all four sister publications. Moon-dependent dates (Eid) are astronomical estimates: confirm the official announcement before posting and shift by a day if needed. Add years as they come.",
- "holidays": [
-  {
-   "date": "2026-11-26",
-   "slug": "thanksgiving-day-2026",
-   "name": "Thanksgiving",
-   "headline": "Happy Thanksgiving",
-   "motif": "harvest",
-   "posted": false,
-   "note": "Second Thanksgiving post on the day itself (Raj, Nov 25, 2026). A greeting already went out Nov 25 with slug thanksgiving-2026-b; write new messages and captions that do not repeat those."
-  },
-  {
-   "date": "2026-12-04",
-   "slug": "hanukkah-2026",
-   "name": "Hanukkah (first night, sundown Dec 4)",
-   "headline": "Happy Hanukkah",
-   "motif": "lights"
-  },
-  {
-   "date": "2026-12-25",
-   "slug": "christmas-2026",
-   "name": "Christmas",
-   "headline": "Merry Christmas",
-   "motif": "snow"
-  },
-  {
-   "date": "2027-01-01",
-   "slug": "new-year-2027",
-   "name": "New Year's Day",
-   "headline": "Happy New Year",
-   "motif": "fireworks"
-  },
-  {
-   "date": "2027-02-06",
-   "slug": "lunar-new-year-2027",
-   "name": "Lunar New Year",
-   "headline": "Happy Lunar New Year",
-   "motif": "lanterns"
-  },
-  {
-   "date": "2027-03-08",
-   "slug": "womens-day-2027",
-   "name": "International Women's Day",
-   "headline": "International Women's Day",
-   "motif": "blooms"
-  },
-  {
-   "date": "2027-03-10",
-   "slug": "eid-al-fitr-2027",
-   "name": "Eid al-Fitr (estimate Mar 9 or 10, moon sighting)",
-   "headline": "Eid Mubarak",
-   "motif": "crescent"
-  },
-  {
-   "date": "2027-03-22",
-   "slug": "world-water-day-2027",
-   "name": "World Water Day",
-   "headline": "World Water Day",
-   "motif": "drops"
-  },
-  {
-   "date": "2027-03-28",
-   "slug": "easter-2027",
-   "name": "Easter",
-   "headline": "Happy Easter",
-   "motif": "blooms"
-  },
-  {
-   "date": "2027-04-22",
-   "slug": "earth-day-2027",
-   "name": "Earth Day",
-   "headline": "Happy Earth Day",
-   "motif": "earth"
-  },
-  {
-   "date": "2027-05-16",
-   "slug": "eid-al-adha-2027",
-   "name": "Eid al-Adha (estimate May 16 or 17, moon sighting)",
-   "headline": "Eid Mubarak",
-   "motif": "crescent"
-  },
-  {
-   "date": "2027-05-31",
-   "slug": "memorial-day-2027",
-   "name": "Memorial Day (US)",
-   "headline": "Memorial Day",
-   "motif": "stars",
-   "tone": "solemn: honor and remember those who died in service; no celebration words"
-  },
-  {
-   "date": "2027-07-04",
-   "slug": "independence-day-2027",
-   "name": "Independence Day (US)",
-   "headline": "Happy Fourth of July",
-   "motif": "fireworks"
-  },
-  {
-   "date": "2027-09-06",
-   "slug": "labor-day-2027",
-   "name": "Labor Day (US)",
-   "headline": "Happy Labor Day",
-   "motif": "stars"
-  },
-  {
-   "date": "2027-10-09",
-   "slug": "dashain-2027",
-   "name": "Dashain (Vijaya Dashami, Nepal)",
-   "headline": "Happy Dashain",
-   "motif": "kites"
-  },
-  {
-   "date": "2027-10-29",
-   "slug": "diwali-tihar-2027",
-   "name": "Diwali and Tihar (Laxmi Puja)",
-   "headline": "Happy Diwali and Tihar",
-   "motif": "tihar"
-  },
-  {
-   "date": "2027-11-11",
-   "slug": "veterans-day-2027",
-   "name": "Veterans Day (US)",
-   "headline": "Thank You, Veterans",
-   "motif": "stars",
-   "tone": "grateful and respectful"
-  },
-  {
-   "date": "2027-11-25",
-   "slug": "thanksgiving-2027",
-   "name": "Thanksgiving",
-   "headline": "Happy Thanksgiving",
-   "motif": "harvest"
-  },
-  {
-   "date": "2027-12-24",
-   "slug": "hanukkah-2027",
-   "name": "Hanukkah (first night, sundown Dec 24)",
-   "headline": "Happy Hanukkah",
-   "motif": "lights"
-  },
-  {
-   "date": "2027-12-25",
-   "slug": "christmas-2027",
-   "name": "Christmas",
-   "headline": "Merry Christmas",
-   "motif": "snow"
-  },
-  {
-   "date": "2028-01-01",
-   "slug": "new-year-2028",
-   "name": "New Year's Day",
-   "headline": "Happy New Year",
-   "motif": "fireworks"
-  }
- ]
+  "note": "Holiday and occasion greetings for all four sister publications. Moon-dependent dates (Eid) are astronomical estimates: confirm the official announcement before posting and shift by a day if needed. Add years as they come.",
+  "holidays": [
+    {
+      "date": "2026-11-26",
+      "slug": "thanksgiving-day-2026",
+      "name": "Thanksgiving",
+      "headline": "Happy Thanksgiving",
+      "motif": "harvest",
+      "posted": true,
+      "note": "Second Thanksgiving post on the day itself (Raj, Nov 25, 2026). A greeting already went out Nov 25 with slug thanksgiving-2026-b; write new messages and captions that do not repeat those."
+    },
+    {
+      "date": "2026-12-04",
+      "slug": "hanukkah-2026",
+      "name": "Hanukkah (first night, sundown Dec 4)",
+      "headline": "Happy Hanukkah",
+      "motif": "lights"
+    },
+    {
+      "date": "2026-12-25",
+      "slug": "christmas-2026",
+      "name": "Christmas",
+      "headline": "Merry Christmas",
+      "motif": "snow"
+    },
+    {
+      "date": "2027-01-01",
+      "slug": "new-year-2027",
+      "name": "New Year's Day",
+      "headline": "Happy New Year",
+      "motif": "fireworks"
+    },
+    {
+      "date": "2027-02-06",
+      "slug": "lunar-new-year-2027",
+      "name": "Lunar New Year",
+      "headline": "Happy Lunar New Year",
+      "motif": "lanterns"
+    },
+    {
+      "date": "2027-03-08",
+      "slug": "womens-day-2027",
+      "name": "International Women's Day",
+      "headline": "International Women's Day",
+      "motif": "blooms"
+    },
+    {
+      "date": "2027-03-10",
+      "slug": "eid-al-fitr-2027",
+      "name": "Eid al-Fitr (estimate Mar 9 or 10, moon sighting)",
+      "headline": "Eid Mubarak",
+      "motif": "crescent"
+    },
+    {
+      "date": "2027-03-22",
+      "slug": "world-water-day-2027",
+      "name": "World Water Day",
+      "headline": "World Water Day",
+      "motif": "drops"
+    },
+    {
+      "date": "2027-03-28",
+      "slug": "easter-2027",
+      "name": "Easter",
+      "headline": "Happy Easter",
+      "motif": "blooms"
+    },
+    {
+      "date": "2027-04-22",
+      "slug": "earth-day-2027",
+      "name": "Earth Day",
+      "headline": "Happy Earth Day",
+      "motif": "earth"
+    },
+    {
+      "date": "2027-05-16",
+      "slug": "eid-al-adha-2027",
+      "name": "Eid al-Adha (estimate May 16 or 17, moon sighting)",
+      "headline": "Eid Mubarak",
+      "motif": "crescent"
+    },
+    {
+      "date": "2027-05-31",
+      "slug": "memorial-day-2027",
+      "name": "Memorial Day (US)",
+      "headline": "Memorial Day",
+      "motif": "stars",
+      "tone": "solemn: honor and remember those who died in service; no celebration words"
+    },
+    {
+      "date": "2027-07-04",
+      "slug": "independence-day-2027",
+      "name": "Independence Day (US)",
+      "headline": "Happy Fourth of July",
+      "motif": "fireworks"
+    },
+    {
+      "date": "2027-09-06",
+      "slug": "labor-day-2027",
+      "name": "Labor Day (US)",
+      "headline": "Happy Labor Day",
+      "motif": "stars"
+    },
+    {
+      "date": "2027-10-09",
+      "slug": "dashain-2027",
+      "name": "Dashain (Vijaya Dashami, Nepal)",
+      "headline": "Happy Dashain",
+      "motif": "kites"
+    },
+    {
+      "date": "2027-10-29",
+      "slug": "diwali-tihar-2027",
+      "name": "Diwali and Tihar (Laxmi Puja)",
+      "headline": "Happy Diwali and Tihar",
+      "motif": "tihar"
+    },
+    {
+      "date": "2027-11-11",
+      "slug": "veterans-day-2027",
+      "name": "Veterans Day (US)",
+      "headline": "Thank You, Veterans",
+      "motif": "stars",
+      "tone": "grateful and respectful"
+    },
+    {
+      "date": "2027-11-25",
+      "slug": "thanksgiving-2027",
+      "name": "Thanksgiving",
+      "headline": "Happy Thanksgiving",
+      "motif": "harvest"
+    },
+    {
+      "date": "2027-12-24",
+      "slug": "hanukkah-2027",
+      "name": "Hanukkah (first night, sundown Dec 24)",
+      "headline": "Happy Hanukkah",
+      "motif": "lights"
+    },
+    {
+      "date": "2027-12-25",
+      "slug": "christmas-2027",
+      "name": "Christmas",
+      "headline": "Merry Christmas",
+      "motif": "snow"
+    },
+    {
+      "date": "2028-01-01",
+      "slug": "new-year-2028",
+      "name": "New Year's Day",
+      "headline": "Happy New Year",
+      "motif": "fireworks"
+    }
+  ]
 }
