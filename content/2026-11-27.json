@@ -1,0 +1,1019 @@
+{
+ "date": "2026-11-27",
+ "date_long": "Friday, November 27, 2026",
+ "edition": "Morning edition, English.",
+ "hero": {
+  "headline": "Oil nears $97 after reported mine hits on two tankers and a strike on a Saudi refinery.",
+  "dek": "Every story on FIOPO is traced to where it lands: your fuel, your rent, your savings, your job. Here is how today's biggest story travels.",
+  "chain": [
+   {
+    "label": "The event",
+    "value": "2 tankers",
+    "text": "Iran's Revolutionary Guards said on November 26 that two oil tankers hit naval mines and caught fire north of Oman's port of Khasab in the Strait of Hormuz. It said one was a supertanker carrying more than 2 million barrels. The account comes from the IRGC and was reported by Iran International."
+   },
+   {
+    "label": "The second hit",
+    "value": "Jazan",
+    "text": "The same day, Saudi Arabia's Energy Ministry said a hostile aerial projectile hit the Jazan refinery, which can process up to 400,000 barrels a day, starting a fire and suspending some operations. One Nepali worker was killed and several others were injured, Arab News reports."
+   },
+   {
+    "label": "The price",
+    "value": "Brent $97.31",
+    "text": "Brent rose 0.77% to $97.31 a barrel in Asian trade on Friday and US crude rose 2.99% to $86.18, AP reports. Brent settled Thursday at its highest since November 6. On Wednesday Brent closed at $90.82."
+   },
+   {
+    "label": "The ripple",
+    "value": "Sensex -1.17%",
+    "text": "India, a big oil importer, felt it first: the Sensex fell 989.33 points to 83,339.26 on Friday and the rupee weakened to about 92.98 per dollar, with rising crude the main drag, IANS reports. ANZ says Brent can push above $100 even without another major escalation."
+   },
+   {
+    "label": "You",
+    "value": "Gas $3.56",
+    "text": "US gas averaged $3.56 on November 26, down from $3.72 a week earlier, AAA says. Higher crude, if it lasts, could slow that decline. OPEC+ meets Sunday to set 2027 output policy."
+   }
+  ],
+  "caption": "Sources: Iran International, Arab News, AP, Wisevoter citing FXEmpire, PiQ Markets, IANS and AAA, November 26 to 27, 2026. The chain itself is FIOPO analysis."
+ },
+ "tape": [
+  {
+   "label": "Brent crude",
+   "value": "$97.31",
+   "note": "Fri Asia, +0.77%",
+   "dir": "up"
+  },
+  {
+   "label": "Nikkei 225",
+   "value": "58,628.59",
+   "note": "Fri, +2.0%",
+   "dir": "up"
+  },
+  {
+   "label": "10 year Treasury",
+   "value": "4.85%",
+   "note": "Wed close, -6 bp",
+   "dir": "down"
+  },
+  {
+   "label": "Hang Seng",
+   "value": "22,694.77",
+   "note": "Fri close, +2.11%",
+   "dir": "up"
+  },
+  {
+   "label": "Gold",
+   "value": "$3,662.00",
+   "note": "Fri, Dec futures, +2.7%",
+   "dir": "up"
+  },
+  {
+   "label": "Bitcoin",
+   "value": "$61,463",
+   "note": "Fri, +0.8%",
+   "dir": "up"
+  }
+ ],
+ "stories": [
+  {
+   "id": "money",
+   "topic": "Stocks and your savings",
+   "headline": "Asian stocks rally and US futures rise before Wall Street's Black Friday half day.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for savers"
+   },
+   "happened": "On Thursday, with US markets shut for Thanksgiving, Europe's STOXX 600 closed up 1.8% at 636.98, Germany's DAX rose 2.1% to 25,215.52 and France's CAC 40 rose 1.6% to 8,108.74, JBizNews reports. On Friday Japan's Nikkei 225 rose about 2.0% to 58,628.59, South Korea's KOSPI 4.2% to 4,906.93 and the Shanghai Composite 3.2% to 3,586.30 in AP's midday count.",
+   "happening": "Hong Kong's Hang Seng closed up 2.11% at 22,694.77 and its tech index jumped 6.45% after a State Council meeting discussed stabilizing China's capital market, Longbridge reports. US stock futures were up about 0.7% for the S&P 500 overnight, IC Markets says. US markets close at 1 p.m. ET on Friday. Adobe forecasts $12.9 billion in US online Black Friday spending, up 9.2%.",
+   "could": {
+    "odds": [],
+    "text": "A rebound across Asia and Europe after a volatile week is meeting a short, thin US session, which can exaggerate moves either way.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Avoid market orders in Friday's short session, when trading is thin and prices can jump.",
+    "Check how much of your fund sits in Asian and European stocks; they led this week's rebound.",
+    "Shopping Black Friday deals? Compare the price with the past month's history before you buy; Salesforce says November discounts are 8% bigger than last year."
+   ],
+   "watch": "The US session closing at 1 p.m. ET Friday.",
+   "sources": [
+    {
+     "name": "JBizNews, Nov 26",
+     "url": "https://jbiznews.com/european-stocks-jump-as-tariff-fears-ease-stoxx-600-gains-1-8-dax-rises-2-1/"
+    },
+    {
+     "name": "AP via Click2Houston, Asian markets, Nov 27",
+     "url": "https://www.click2houston.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/"
+    },
+    {
+     "name": "Longbridge, Hang Seng close, Nov 27",
+     "url": "https://longbridge.com/en/news/306998352"
+    },
+    {
+     "name": "IC Markets, Nov 27",
+     "url": "https://www.icmarkets.com.au/blog/u-s-futures-rise-as-markets-end-holiday-week-27-november-ic-markets/"
+    },
+    {
+     "name": "Digital Commerce 360, Adobe data, Nov 25",
+     "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/"
+    },
+    {
+     "name": "AP via Bangor Daily News, Nov 26",
+     "url": "https://www.bangordailynews.com/2026/11/26/nation/black-fridays-new-playbook-early-deals-essentials-in-carts-and-ai-nudging-clicks/"
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "topic": "Oil and the Gulf",
+   "headline": "Oil climbs as Iran's IRGC says two tankers hit mines in Hormuz and a strike shuts part of a Saudi refinery.",
+   "stake": {
+    "level": "hi",
+    "text": "High stakes for fuel prices"
+   },
+   "happened": "Iran's Revolutionary Guards navy said on November 26 that two oil tankers hit naval mines and caught fire north of Khasab, Oman, while using what it called an unauthorized route. It said one was a supertanker with more than 2 million barrels aboard. No tanker names were given. The same day Saudi Arabia's Energy Ministry said a projectile hit Aramco's Jazan refinery, killing a Nepali worker and suspending some operations. Arab News attributes the attack to the Houthis.",
+   "happening": "Brent traded at $97.31 on Friday, up 0.77%, and US crude at $86.18, up 2.99%, AP reports. On Wednesday Brent closed at $90.82 and WTI at $84.15, Globicus says. Oil is set for its first weekly gain after a string of losses. OPEC+ meets Sunday to set 2027 output; Iraq and Kazakhstan are pressing for higher capacity estimates, Wisevoter reports. The Saudi led coalition said it destroyed a missile launch platform at Hodeidah port.",
+   "could": {
+    "odds": [
+     {
+      "label": "Brent below $100 on Dec 27",
+      "pct": 60
+     },
+     {
+      "label": "Brent at or above $100 on Dec 27",
+      "pct": 40
+     }
+    ],
+    "text": "",
+    "note": "FIOPO read for the next 30 days, given repeated attacks on Gulf energy sites and the OPEC+ decision. Judgment, not fact."
+   },
+   "you": [
+    "Driving this weekend? Fill up where prices are posted lowest; the US average was $3.56 on November 26, AAA says.",
+    "Heat with heating oil or propane? Compare suppliers now, since oil price jumps reach heating fuel quickly.",
+    "Flying in the Gulf region? Check your airline's updates; Al Jazeera reports most international flights to Riyadh are cancelled."
+   ],
+   "watch": "The OPEC+ meeting on Sunday, November 29.",
+   "sources": [
+    {
+     "name": "Iran International, Nov 26",
+     "url": "https://www.iranintl.com/en/202611269792"
+    },
+    {
+     "name": "Arab News, Nov 26",
+     "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153"
+    },
+    {
+     "name": "AP via Click2Houston, Asian markets, Nov 27",
+     "url": "https://www.click2houston.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/"
+    },
+    {
+     "name": "Globicus, Nov 25 close",
+     "url": "https://globicus.com/daily-markets-2026-11-25/"
+    },
+    {
+     "name": "Wisevoter citing FXEmpire, Nov 27",
+     "url": "https://wisevoter.com/world/2026/11/27/brent-rises-ahead-of-opec-meeting"
+    },
+    {
+     "name": "PiQ Markets, Nov 27",
+     "url": "https://piqmarkets.com/story/brent-near-96-61-as-hormuz-tanker-attacks-lift-weekly-oil-gain"
+    },
+    {
+     "name": "Al Jazeera, Riyadh, Nov 24",
+     "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh"
+    }
+   ]
+  },
+  {
+   "id": "deals",
+   "topic": "Deals and companies",
+   "headline": "Altria says it may make a cash offer for Imperial Brands, and Imperial's shares jump 13.3%.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for investors"
+   },
+   "happened": "On November 26 Altria, the Marlboro maker in the US, said it is considering a possible offer for Britain's Imperial Brands that would likely be solely in cash, and that it is talking with a third party about buying part of Imperial's business. Imperial said it has had no discussions with and received no approach from Altria or the third party. Imperial shares rose 13.3% to 3,432 pence, their highest close since July 2017, Investing.com reports.",
+   "happening": "Bloomberg reported that Japan Tobacco has explored partnering with another buyer and splitting Imperial's assets by region, at an early stage, Investing.com says. Japan Tobacco shares closed up 4.5% on Friday against a 1.7% rise in the TOPIX, Reuters reports. Imperial is valued at £25.90 billion ($34 billion), and Altria had $2.7 billion in cash at the end of September. Under UK takeover rules Altria must make a firm offer or walk away by 5 p.m. on December 24.",
+   "could": {
+    "odds": [],
+    "text": "A deal of this size would be the largest takeover of a listed UK company in more than eight years, but nothing has been offered yet.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Own Imperial shares? Imperial has told shareholders to take no action for now.",
+    "Hold Altria for its dividend? Watch Friday's first US trade on the news and any detail on how a deal would be paid for.",
+    "Hold a UK or global dividend fund? Check whether Imperial is a large holding after the jump."
+   ],
+   "watch": "Altria's December 24 deadline to bid or walk away.",
+   "sources": [
+    {
+     "name": "Imperial Brands statement, Nov 26",
+     "url": "https://www.imperialbrandsplc.com/news/key-announcements/2026/response-to-possible-offer-for-imperial-brands"
+    },
+    {
+     "name": "Investing.com, Nov 26",
+     "url": "https://www.investing.com/news/stock-market-news/imperial-shares-jump-to-highest-since-2017-on-japan-tobacco-deal-report-5052501"
+    },
+    {
+     "name": "Reuters via WBOW, Nov 27",
+     "url": "https://1027wbow.com/2026/11/27/japan-tobacco-shares-surge-on-talk-it-may-acquire-part-of-imperial/"
+    },
+    {
+     "name": "The Company Chronicle, Nov 26",
+     "url": "https://thecompanychronicle.com/story/altria-imperial-brands-possible-cash-offer-november-26-2026"
+    }
+   ]
+  },
+  {
+   "id": "rates",
+   "topic": "Central banks and your loans",
+   "headline": "EU leaders pick Spain's Pablo Hernández de Cos to lead the ECB as Tokyo inflation hits a 16 month high.",
+   "stake": {
+    "level": "md",
+    "text": "Medium stakes for borrowers"
+   },
+   "happened": "At a summit that opened on November 26, EU leaders agreed to nominate Pablo Hernández de Cos, former governor of Spain's central bank and head of the Bank for International Settlements, as the next ECB president, Reuters and AFP report. He would be the first Spaniard in the job. France's Laurence Boone was nominated to run market operations and Germany's Markus Brunnermeier as chief economist. Christine Lagarde said in October she will step down on February 7, 2027.",
+   "happening": "The European Council will consult the European Parliament and the ECB Governing Council, then formally appoint all three at its December meeting, LB.ua reports. The same summit ended without a deal on the 2028 to 2034 EU budget, Eunews says. In Japan, Tokyo core inflation rose to 2.9% in November, a 16 month high but below the 3.0% forecast. The Bank of Japan, at 1.25%, meets December 17 to 18, and markets expect a hike to 1.5%.",
+   "could": {
+    "odds": [],
+    "text": "A new ECB leadership seen as continuity, a likely Japanese hike and a likely US Fed hike on December 9 point to borrowing costs staying high into 2027.",
+    "note": "FIOPO read. Judgment, not fact."
+   },
+   "you": [
+    "Have a variable rate loan in euros or yen? Ask your lender how a December rate change would affect your payment.",
+    "Holding cash? Compare savings and certificate rates, which tend to rise after hikes.",
+    "Traveling to Japan? The yen is near 160 per dollar, investingLive reports, so compare card and exchange fees."
+   ],
+   "watch": "The Fed on December 9 and the Bank of Japan on December 17 to 18.",
+   "sources": [
+    {
+     "name": "The Copenhagen Post citing Reuters and AFP, Nov 27",
+     "url": "https://cphpost.dk/2026-11-27/global/eu-leaders-agree-on-new-european-central-bank-president/"
+    },
+    {
+     "name": "LB.ua, Nov 26",
+     "url": "https://en.lb.ua/news/2026/11/26/51606_eu_ambassadors_agree_new_ecb.html"
+    },
+    {
+     "name": "Eunews, Nov 27",
+     "url": "https://www.eunews.it/en/2026/11/27/eu-multiannual-budget-no-deal-costa-cancels-second-day-of-summit/"
+    },
+    {
+     "name": "investingLive citing Reuters, Nov 27",
+     "url": "https://investinglive.com/central-banks/tokyo-core-inflation-hits-16-month-high-of-2-9-firming-the-case-for-a-december-boj-hike/"
+    }
+   ]
+  }
+ ],
+ "calc": {
+  "gas_now": 3.56,
+  "gas_year_ago": 3.04,
+  "gas_note": "US average $3.56 on November 26, 2026 vs $3.04 a year earlier (AAA)."
+ },
+ "social": {
+  "kicker": "Morning: the big story",
+  "headline": "Oil nears $97 after Gulf tanker and refinery hits",
+  "points": [
+   "IRGC says 2 tankers hit mines",
+   "Saudi Jazan refinery partly halted",
+   "Brent highest since November 6"
+  ],
+  "watch": "OPEC+ sets 2027 oil output on Sunday.",
+  "chart": {
+   "title": "Brent crude, $ a barrel",
+   "items": [
+    {
+     "label": "Brent, Nov 25",
+     "value": 90.82,
+     "display": "$90.82"
+    },
+    {
+     "label": "Brent, Nov 27",
+     "value": 97.31,
+     "display": "$97.31"
+    }
+   ],
+   "source": "Globicus, AP, Nov 25 and 27, 2026"
+  },
+  "caption": "Brent crude rose to $97.31 a barrel on Friday after Iran's IRGC said two tankers hit mines in the Strait of Hormuz and Saudi Arabia said a strike suspended some operations at its Jazan refinery on November 26. OPEC+ meets Sunday.\n\nA Nepali worker was killed at Jazan, Arab News reports. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #Oil #Hormuz #OPEC #Energy"
+ },
+ "social_slots": {
+  "midday": {
+   "kicker": "Midday: business and deals",
+   "headline": "Altria weighs a cash bid for Imperial Brands",
+   "points": [
+    "Imperial shares jump 13.3%",
+    "Japan Tobacco up 4.5% on report",
+    "Bid deadline is December 24"
+   ],
+   "watch": "Altria trades for the first time on the news Friday.",
+   "chart": {
+    "title": "Share moves on the bid news, %",
+    "items": [
+     {
+      "label": "Imperial Brands",
+      "value": 13.3,
+      "display": "+13.3%"
+     },
+     {
+      "label": "Japan Tobacco",
+      "value": 4.5,
+      "display": "+4.5%"
+     },
+     {
+      "label": "STOXX 600",
+      "value": 1.8,
+      "display": "+1.8%"
+     },
+     {
+      "label": "TOPIX",
+      "value": 1.7,
+      "display": "+1.7%"
+     }
+    ],
+    "source": "Investing.com, Reuters, JBizNews, Nov 26 to 27, 2026"
+   },
+   "caption": "Altria said on November 26 it is considering a possible all cash offer for Britain's Imperial Brands, which said it has received no approach. Imperial shares rose 13.3% and Japan Tobacco rose 4.5% on a report it may join. Altria must bid or walk away by December 24.\n\nGeneral information, not financial advice. More at fiopoin.com\n\n#FIOPO #MergersAndAcquisitions #Altria #ImperialBrands #Stocks"
+  },
+  "evening": {
+   "kicker": "Evening: the world and the economy",
+   "headline": "EU leaders pick a new ECB president",
+   "points": [
+    "Pablo Hernández de Cos",
+    "Lagarde leaves in February",
+    "Final approval in December"
+   ],
+   "watch": "OPEC+ meets Sunday. The Fed decides December 9 and the Bank of Japan December 17 to 18.",
+   "icon": "bank",
+   "caption": "EU leaders agreed to nominate Pablo Hernández de Cos, former governor of the Bank of Spain, as the next ECB president, succeeding Christine Lagarde, who steps down February 7, 2027. Formal appointment is due at the December European Council.\n\nWatch Asia and Europe opens and OPEC+ on Sunday. General information, not financial advice. More at fiopoin.com\n\n#FIOPO #ECB #Europe #CentralBanks #Rates"
+  }
+ },
+ "yesterday": {
+  "label": "Thursday, November 26",
+  "items": [
+   {
+    "label": "Stocks",
+    "text": "Europe's STOXX 600 rose 1.8% while US markets were shut."
+   },
+   {
+    "label": "Deals",
+    "text": "Altria said it may bid for Imperial Brands; Imperial rose 13.3%."
+   },
+   {
+    "label": "ECB",
+    "text": "EU leaders agreed to nominate Pablo Hernández de Cos as ECB president."
+   },
+   {
+    "label": "Gulf",
+    "text": "Saudi Arabia said a strike hit its Jazan refinery, killing one worker."
+   },
+   {
+    "label": "Hormuz",
+    "text": "Iran's IRGC said two oil tankers hit naval mines and caught fire."
+   },
+   {
+    "label": "Brazil",
+    "text": "The Ibovespa jumped 6.07% after a new finance minister was named."
+   }
+  ],
+  "sources": [
+   {
+    "name": "JBizNews, Nov 26",
+    "url": "https://jbiznews.com/european-stocks-jump-as-tariff-fears-ease-stoxx-600-gains-1-8-dax-rises-2-1/"
+   },
+   {
+    "name": "Investing.com, Nov 26",
+    "url": "https://www.investing.com/news/stock-market-news/imperial-shares-jump-to-highest-since-2017-on-japan-tobacco-deal-report-5052501"
+   },
+   {
+    "name": "The Copenhagen Post citing Reuters and AFP, Nov 27",
+    "url": "https://cphpost.dk/2026-11-27/global/eu-leaders-agree-on-new-european-central-bank-president/"
+   },
+   {
+    "name": "Arab News, Nov 26",
+    "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153"
+   },
+   {
+    "name": "Iran International, Nov 26",
+    "url": "https://www.iranintl.com/en/202611269792"
+   },
+   {
+    "name": "The Rio Times, Brazil markets, Nov 26",
+    "url": "https://www.riotimesonline.com/brazil-markets-ibovespa-real-thursday-november-26-2026/"
+   }
+  ]
+ },
+ "regions": [
+  {
+   "region": "China and East Asia",
+   "covers": "China, Japan, Korea, Taiwan, Southeast Asia",
+   "headline": "Hong Kong tech stocks jump 6.45% after a State Council meeting on stabilizing markets.",
+   "text": "The Hang Seng closed up 2.11% at 22,694.77 on Friday and the Hang Seng Tech index rose 6.45% to 3,637.88, Longbridge reports. A State Council executive meeting discussed a stronger role for state backed funds and encouraging insurance and pension money into stocks. South Korea's KOSPI rose 4.2% in AP's midday count, and Japan Tobacco rose 4.5% on reports it may bid for part of Imperial Brands.",
+   "you": "Hold a China or Hong Kong fund? Policy driven rallies can reverse quickly; rebalance rather than chase a one day jump.",
+   "sources": [
+    {
+     "name": "Longbridge, Hang Seng close, Nov 27",
+     "url": "https://longbridge.com/en/news/306998352"
+    },
+    {
+     "name": "Longbridge, Hang Seng midday, Nov 27",
+     "url": "https://longbridge.com/en/news/306979712"
+    },
+    {
+     "name": "AP via Click2Houston, Asian markets, Nov 27",
+     "url": "https://www.click2houston.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/"
+    },
+    {
+     "name": "Reuters via WBOW, Nov 27",
+     "url": "https://1027wbow.com/2026/11/27/japan-tobacco-shares-surge-on-talk-it-may-acquire-part-of-imperial/"
+    }
+   ]
+  },
+  {
+   "region": "India and South Asia",
+   "covers": "India, Pakistan, Bangladesh, Nepal, Sri Lanka",
+   "headline": "India's Sensex drops nearly 1,000 points as oil climbs.",
+   "text": "The Sensex closed down 989.33 points, or 1.17%, at 83,339.26 on Friday and the Nifty 50 fell 1.07% to 25,607.20, IANS reports. IT, private banks and autos fell most, while mid and small caps edged up. The rupee weakened about 0.5% to about 92.98 per dollar. On Thursday foreign investors were net buyers of about ₹5,843 crore, provisional data cited by The Open Press show.",
+   "you": "Sending money home to India? A weaker rupee means each dollar buys more; compare transfer fees as well as the rate.",
+   "sources": [
+    {
+     "name": "IANS via Punjab Kesari, Nov 27",
+     "url": "https://english.punjabkesari.com/business/sensex-drops-nearly-1000-points-as-rising-oil-prices-hit-sentiment"
+    },
+    {
+     "name": "The Open Press, Nov 27",
+     "url": "https://theopenpress.in/article/sensex-today-nifty-stock-market"
+    }
+   ]
+  },
+  {
+   "region": "Europe",
+   "covers": "EU, UK, Ukraine, Russia",
+   "headline": "EU leaders end a summit without a deal on the 2028 to 2034 budget.",
+   "text": "European Council President António Costa cancelled the second day of the summit on November 27 after talks on the next long term budget ended shortly before 1 a.m., Eunews reports. \"We have not reached an agreement,\" Costa said, adding he still sees a possible resolution in December. Most member states asked that farm and regional funding not be cut. The same summit agreed to nominate Pablo Hernández de Cos as ECB president.",
+   "you": "Farm or business in the EU that relies on regional funds? Follow the December talks; budget lines for 2028 onward are still open.",
+   "sources": [
+    {
+     "name": "Eunews, Nov 27",
+     "url": "https://www.eunews.it/en/2026/11/27/eu-multiannual-budget-no-deal-costa-cancels-second-day-of-summit/"
+    },
+    {
+     "name": "The Copenhagen Post citing Reuters and AFP, Nov 27",
+     "url": "https://cphpost.dk/2026-11-27/global/eu-leaders-agree-on-new-european-central-bank-president/"
+    }
+   ]
+  },
+  {
+   "region": "Middle East",
+   "covers": "Gulf, Levant, Iran, Turkey",
+   "headline": "A strike on Saudi Arabia's Jazan refinery kills a worker and halts some operations.",
+   "text": "Saudi Arabia's Energy Ministry said a hostile aerial projectile hit the Jazan refinery on November 26, starting a fire and suspending some operations; one Nepali worker was killed and others were injured, Arab News reports. The Saudi led coalition said it destroyed a launch platform at Yemen's Hodeidah port. On November 24 Saudi civil defense said 11 people were wounded when a drone hit a tower in Riyadh's financial district, Al Jazeera reports.",
+   "you": "Traveling to Saudi Arabia? Check your government's travel advice and your airline before you go; many Riyadh flights are cancelled.",
+   "sources": [
+    {
+     "name": "Arab News, Nov 26",
+     "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153"
+    },
+    {
+     "name": "Al Jazeera, Riyadh, Nov 24",
+     "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh"
+    }
+   ]
+  },
+  {
+   "region": "Africa",
+   "covers": "Nigeria, Kenya, South Africa, Egypt, Zambia",
+   "headline": "Zambia's central bank holds its rate at 10.75% as inflation stays in its target band.",
+   "text": "The Bank of Zambia kept its policy rate at 10.75% on Friday, November 27, Investing.com reports. Annual inflation rose to 6.4% in November from 6.3% in October, inside the bank's 6% to 8% target band. Governor Denny Kalyalya announced the decision, and the Monetary Policy Committee said the current policy position was appropriate.",
+   "you": "Borrowing or saving in kwacha? With rates on hold, lock in a fixed deposit rate if you find a good one now.",
+   "sources": [
+    {
+     "name": "Investing.com, Zambia, Nov 27",
+     "url": "https://www.investing.com/news/economic-indicators/zambia-holds-interest-rate-at-1075-as-inflation-stays-on-target-93CH-5053183"
+    }
+   ]
+  },
+  {
+   "region": "South America",
+   "covers": "Brazil, Argentina, Chile, Colombia, Peru",
+   "headline": "Brazil's Ibovespa jumps 6.07% after Lula names a bank chairman as finance minister.",
+   "text": "The Ibovespa closed at 176,799.84 on November 26, up 6.07%, after President Lula named Luiz Carlos Trabuco, 75, chairman of Bradesco's board, to lead the Finance Ministry from January 2027, The Rio Times reports. Banco do Brasil rose 12.6% and Bradesco 11.6%. The real strengthened about 1.2% to about 5.74 per dollar, and mid November inflation came in at 0.22%, below the 0.34% expected.",
+   "you": "Planning a trip to Brazil? The real strengthened again this week, so compare exchange rates and card fees before you go.",
+   "sources": [
+    {
+     "name": "The Rio Times, Brazil markets, Nov 26",
+     "url": "https://www.riotimesonline.com/brazil-markets-ibovespa-real-thursday-november-26-2026/"
+    }
+   ]
+  }
+ ],
+ "sports": [
+  {
+   "topic": "Baseball, United States",
+   "headline": "MLB sues the players' union days before its labor deal expires on December 1.",
+   "text": "On November 25 MLB filed a complaint in federal court in New York asking it to declare that a lockout would be lawful under antitrust law, MLB.com reports. The league seeks no damages and called the suit a defensive measure. The players' union called it \"completely frivolous.\" The labor deal expires at 11:59 p.m. ET on Tuesday, December 1.",
+   "you": "Buying 2027 tickets or season plans? Check the refund policy in case games are affected by a lockout.",
+   "sources": [
+    {
+     "name": "MLB.com, Nov 25",
+     "url": "https://www.mlb.com/news/mlb-files-lawsuit-with-goal-of-preserving-collective-bargaining-process"
+    },
+    {
+     "name": "Yahoo Sports, Nov 25",
+     "url": "https://sports.yahoo.com/mlb/breaking-news/article/mlb-sues-mlbpa-days-before-possible-lockout-union-calls-lawsuit-incredibly-disappointing-174451966.html"
+    }
+   ]
+  },
+  {
+   "topic": "Football, global TV rights",
+   "headline": "Netflix is reported to lead bidding for US rights to the 2030 World Cup.",
+   "text": "FIFA moved its US media rights sale for the 2030 men's World Cup into a second round, and Netflix made the largest offer, Inside World Football reports, citing unnamed sources. FIFA is seeking $1.5 billion to $2 billion. For 2026, Fox paid $485 million and Telemundo $600 million. The 2030 tournament is mainly in Spain, Portugal and Morocco, with three matches in Uruguay, Argentina and Paraguay.",
+   "you": "Watch football on streaming? Big rights deals are moving to subscription services, so budget for one more plan by 2030.",
+   "sources": [
+    {
+     "name": "Inside World Football, Nov 25",
+     "url": "https://insideworldfootball.com/2026/11/25/netflix-noses-ahead-in-us-tv-rights-race-for-2030-world-cup-but-fifa-wants-more"
+    }
+   ]
+  },
+  {
+   "topic": "Cricket, India",
+   "headline": "1,220 players register for 66 places in the IPL 2027 auction.",
+   "text": "The IPL 2027 player auction is set for December 16 in Goa, with 1,220 registered players, 939 Indian and 281 from 17 other countries, competing for 66 slots, 25 of them for overseas players, National Herald reports. The ten franchises hold Rs 295.60 crore combined; Lucknow Super Giants have the biggest purse at Rs 47.45 crore. England's Ben Stokes registered at a base price of Rs 2 crore.",
+   "you": "Follow cricket? The auction streams live; team sponsors and broadcasters often run deals around it.",
+   "sources": [
+    {
+     "name": "National Herald, Nov 25",
+     "url": "https://www.nationalheraldindia.com/sports/ipl-2027-auction-lsg-biggest-purse-ben-stokes-registers"
+    }
+   ]
+  }
+ ],
+ "entertainment": [
+  {
+   "topic": "Film, US holiday box office",
+   "headline": "Sunrise on the Reaping leads Thanksgiving Eve with $15 million.",
+   "text": "Lionsgate's The Hunger Games: Sunrise on the Reaping took $15 million on Wednesday, November 25, and is projected to make about $85 million over the five day holiday, Variety reports. Disney's Hexed opened with $7.6 million and Universal's Focker In-Law with $5.3 million, both tracking below forecasts. The industry's five day total is projected at $210 million to $215 million.",
+   "you": "Going to the movies this weekend? Matinee and weekday tickets are usually cheaper than evening shows.",
+   "sources": [
+    {
+     "name": "Variety via Yahoo, Nov 26",
+     "url": "https://www.yahoo.com/entertainment/movies/box-office-results/articles/box-office-hunger-games-sunrise-161118499.html"
+    }
+   ]
+  },
+  {
+   "topic": "Film, Japan",
+   "headline": "Godzilla Minus Zero passes ¥19.2 billion worldwide, beating Godzilla Minus One.",
+   "text": "Toho said Godzilla Minus Zero has grossed more than ¥19.2 billion (about $120.7 million) worldwide through November 24, ahead of Godzilla Minus One's ¥16 billion, FilmBunch reports. In Japan it drew 3.32 million admissions and more than ¥5.3 billion in its first 21 days. In the US, distributor GKIDS has taken $55.7 million, The Numbers shows.",
+   "you": "Want to see it on a big screen? Check local listings; Japanese films are getting longer international runs.",
+   "sources": [
+    {
+     "name": "FilmBunch, Nov 24",
+     "url": "https://www.filmbunch.com/2026/11/godzilla-minus-zero-worldwide-box-office-19-2bn-yen-minus-one/"
+    },
+    {
+     "name": "The Numbers",
+     "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)"
+    }
+   ]
+  }
+ ],
+ "innovation": [
+  {
+   "topic": "Medicine",
+   "headline": "The FDA approves the first new hormone therapy for early breast cancer in more than 20 years.",
+   "text": "Genentech's giredestrant, sold as Wilserdly, was approved on November 23 as an after surgery treatment for stage I to III ER positive, HER2 negative breast cancer at intermediate to high risk of recurrence. In the lidERA trial of 4,170 adults it cut the risk of invasive recurrence by 30% versus standard hormone therapy, with about 92% alive and cancer free after three years versus 89.6%.",
+   "you": "Being treated for early breast cancer? Ask your oncologist whether the new option fits and whether your insurer covers it.",
+   "sources": [
+    {
+     "name": "Yahoo News, Nov 24",
+     "url": "https://www.yahoo.com/news/science/articles/fda-approves-first-hormone-treatment-214455052.html"
+    }
+   ]
+  },
+  {
+   "topic": "Physics",
+   "headline": "Physicists hold a single antimatter particle in its lowest quantum state for months.",
+   "text": "A Northwestern team led by Gerald Gabrielse trapped one positron, the electron's antimatter twin, cooled it to about 300 millikelvin and held it for months, ScienceDaily reported on November 25. The team moved it between energy levels with microwaves. Next it plans to compare the positron's magnetism with the electron's, a test that could reveal physics beyond the Standard Model.",
+   "you": "Basic research like this is decades from products; it is worth following, not investing on.",
+   "sources": [
+    {
+     "name": "ScienceDaily, Northwestern, Nov 25",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm"
+    }
+   ]
+  },
+  {
+   "topic": "Surgery and robotics",
+   "headline": "The largest trial of robotic knee replacement finds no clear benefit over standard surgery.",
+   "text": "The UK RACER-Knee trial, published in The Lancet, compared robotic arm assisted surgery with conventional knee replacement in 339 patients at 10 hospitals and found no meaningful difference in a key one year patient score, ScienceDaily reported on November 25. Robotic surgery added about 10.5 minutes and roughly £950 per operation and was not cost effective in year one.",
+   "you": "Facing a knee replacement? Ask your surgeon about their own results; newer technology is not automatically better.",
+   "sources": [
+    {
+     "name": "ScienceDaily, University of Warwick, Nov 25",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261124055904.htm"
+    }
+   ]
+  }
+ ],
+ "travel": [
+  {
+   "tag": "Hidden treasure",
+   "headline": "Lake Balaton, Hungary: a lake holiday without Como's crowds.",
+   "text": "Lonely Planet named Lake Balaton one of its most underrated places for 2027, for summer festivals, castles and lavender fields, as an alternative to Lake Como.",
+   "you": "Planning summer 2027? Look at lakeside towns now, and pay in forint rather than accepting a card conversion to dollars.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Famous, done smarter",
+   "headline": "St. Augustine, Florida: Spanish streets without a transatlantic flight.",
+   "text": "Lonely Planet's 2027 underrated list includes St. Augustine for centuries of history and Spanish style streets that give a European feel on a domestic trip.",
+   "you": "Want old Europe on a short break? A domestic trip skips passports and long haul fares. Check the official visitor site for events before you book.",
+   "sources": [
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  },
+  {
+   "tag": "Travel money",
+   "headline": "The dollar buys more in Argentina and Brazil than in a year.",
+   "text": "Argentina's peso closed at 1,580 per dollar on November 20, its weakest in at least 12 months, and Brazil's real closed near 5.93, its weakest since January 2025. Lonely Planet's 2027 list also picks Bolivia and Quito.",
+   "you": "Pay in the local currency when a card terminal offers dollars, and use a card with no foreign transaction fee.",
+   "sources": [
+    {
+     "name": "The Rio Times, Argentina",
+     "url": "https://www.riotimesonline.com/argentina-markets-merval-peso-friday-november-20-2026/"
+    },
+    {
+     "name": "The Rio Times, Brazil",
+     "url": "https://www.riotimesonline.com/brazil-central-bank-sells-us-1-billion-real-still-falls/"
+    },
+    {
+     "name": "Lonely Planet",
+     "url": "https://www.lonelyplanet.com/articles/underrated-travel-destinations"
+    }
+   ]
+  }
+ ],
+ "picks": [
+  {
+   "kind": "Read",
+   "title": "The Invisible Hand of Maria Edgeworth",
+   "by": "Jeanna Smialek",
+   "where": "Knopf, published October 6, 2026",
+   "text": "The New York Times journalist and author of Limitless profiles Maria Edgeworth, a Regency era novelist who corresponded with Thomas Malthus and David Ricardo and wove lessons on money and trade into her fiction. Named one of the New York Times Book Review's 100 Notable Books of 2026.",
+   "sources": [
+    {
+     "name": "Penguin Random House",
+     "url": "https://www.penguinrandomhouse.com/books/742170/the-invisible-hand-of-maria-edgeworth-by-jeanna-smialek/9780593801512"
+    },
+    {
+     "name": "Penguin Random House, NYT notable list",
+     "url": "https://www.penguinrandomhouse.com/the-read-down/nytimes-notable-nonfiction-books/"
+    }
+   ]
+  },
+  {
+   "kind": "Watch",
+   "title": "Oobah: Scams for a Better Tomorrow",
+   "by": "Oobah Butler, directed by Daniel Lucchesi",
+   "where": "HBO and HBO Max, weekly from November 22",
+   "text": "A five episode documentary comedy in which journalist Oobah Butler tests industries from wine and wellness to dating apps by gaming online reviews and building invented brands. A practical look at how fake reviews and made up businesses can move real money.",
+   "sources": [
+    {
+     "name": "BroadwayWorld",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Video-OOBAH-SCAMS-FOR-A-BETTER-TOMORROW-Trailer-on-HBO-Max-20261105"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Oobah:_Scams_for_a_Better_Tomorrow"
+    }
+   ]
+  }
+ ],
+ "highlights": {
+  "week": {
+   "label": "Last week",
+   "items": [
+    {
+     "date": "Nov 18",
+     "text": "NASA ran a developmental RS-25 Moon rocket engine for its full 200 seconds at Stennis Space Center.",
+     "source": "ScienceDaily, NASA",
+     "url": "https://sciencedaily.com/releases/2026/11/261120075551.htm"
+    },
+    {
+     "date": "Nov 19",
+     "text": "Scientists found bacteria that removed about 98% of radioactive promethium-147 in 60 hours.",
+     "source": "Everything Science",
+     "url": "https://everythingscience.substack.com/p/10-positive-science-stories-worth"
+    },
+    {
+     "date": "Nov 21",
+     "text": "India declared at 720 for 9 in Wellington, the highest Test innings ever made in New Zealand.",
+     "source": "Dainik Jagran English",
+     "url": "https://english.dainikjagranmpcg.com/special-news/november-22-2026-todays-top-news-headlines/article-45743"
+    }
+   ]
+  },
+  "month": {
+   "label": "November",
+   "items": [
+    {
+     "date": "Nov",
+     "text": "NASA's Voyager 1 reached one light-day from Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Nov 21",
+     "text": "ESA and JAXA's BepiColombo entered orbit around Mercury after nearly eight years in space.",
+     "source": "ESA",
+     "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/latest-updates-bepicolombo-s-arrival-at-mercury"
+    },
+    {
+     "date": "Nov",
+     "text": "ESA's Hera is arriving at the asteroid Didymos to study the crater from NASA's DART impact.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  },
+  "year": {
+   "label": "2026",
+   "items": [
+    {
+     "date": "Apr 10",
+     "text": "Artemis II splashed down off San Diego after a 10 day trip around the Moon, the first crewed lunar voyage in more than 50 years.",
+     "source": "GV Wire",
+     "url": "https://gvwire.com/2026/04/10/splashdown-artemis-ii-astronauts-conclude-10-day-moon-mission/"
+    },
+    {
+     "date": "Oct",
+     "text": "NASA's Perseverance set the record for distance driven on another world, more than 45 km on Mars.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    },
+    {
+     "date": "Sep",
+     "text": "The Hubble Space Telescope completed its 200,000th orbit of Earth.",
+     "source": "The Planetary Society",
+     "url": "https://www.planetary.org/best-of-2026"
+    }
+   ]
+  }
+ },
+ "events": {
+  "global": [
+   {
+    "when": "Nov 27",
+    "what": "US stock markets close early, at 1 p.m. ET",
+    "where": "New York",
+    "url": "https://www.icmarkets.com.au/blog/u-s-futures-rise-as-markets-end-holiday-week-27-november-ic-markets/"
+   },
+   {
+    "when": "Nov 28",
+    "what": "Copa Libertadores final, Palmeiras v Estudiantes",
+    "where": "Estadio Centenario, Montevideo",
+    "url": "https://www.riotimesonline.com/latin-america-sports-daily-thursday-november-26-2026/"
+   },
+   {
+    "when": "Nov 29",
+    "what": "Spain general election",
+    "where": "Spain",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "when": "Nov 29",
+    "what": "OPEC+ meeting on 2027 output",
+    "where": "Format not yet announced",
+    "url": "https://www.opec.org/pr-detail/2033620-1-november-2026.html"
+   },
+   {
+    "when": "Dec 1, 11:59 p.m. ET",
+    "what": "MLB labor deal expires",
+    "where": "United States",
+    "url": "https://www.espn.com/mlb/story/_/id/50370123/lockout-salary-cap-cba-labor-battle-faq"
+   },
+   {
+    "when": "Dec 2 to 4",
+    "what": "Reserve Bank of India rate meeting",
+    "where": "Mumbai, India",
+    "url": "https://www.tribuneindia.com/news/business/retail-inflation-hits-24-month-high-of-6-09-in-october-crosses-rbis-upper-tolerance-limit-ahead-of-december-mpc-meet"
+   },
+   {
+    "when": "Dec 5 to 6",
+    "what": "Asia Artist Awards",
+    "where": "Kaohsiung National Stadium, Taiwan",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "when": "Dec 9",
+    "what": "US Federal Reserve rate decision",
+    "where": "Washington, D.C.",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "when": "Dec 9",
+    "what": "Brazil central bank rate decision",
+    "where": "Brasília",
+    "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-monday-november-16-2026/"
+   },
+   {
+    "when": "Dec 9 to 10",
+    "what": "BepiColombo's two orbiters separate at Mercury",
+    "where": "Mercury orbit, ESA and JAXA",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/latest-updates-bepicolombo-s-arrival-at-mercury"
+   },
+   {
+    "when": "Dec 11",
+    "what": "US government funding deadline",
+    "where": "Washington, D.C.",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "when": "Dec 16",
+    "what": "IPL 2027 player auction",
+    "where": "Goa, India",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "when": "Dec 17",
+    "what": "Bank of England rate decision",
+    "where": "London",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "when": "Dec 17 to 18",
+    "what": "Bank of Japan rate decision",
+    "where": "Tokyo",
+    "url": "https://investinglive.com/central-banks/tokyo-core-inflation-hits-16-month-high-of-2-9-firming-the-case-for-a-december-boj-hike/"
+   },
+   {
+    "when": "Dec 18",
+    "what": "Avengers: Doomsday opens in theaters",
+    "where": "Worldwide",
+    "url": "https://creatordb.app/free-tools/whats-trending-on-youtube-today/united-states/"
+   },
+   {
+    "when": "Dec 24, 5 p.m. UK",
+    "what": "Deadline for Altria to bid for Imperial Brands or walk away",
+    "where": "London, UK Takeover Panel rules",
+    "url": "https://www.imperialbrandsplc.com/news/key-announcements/2026/response-to-possible-offer-for-imperial-brands"
+   },
+   {
+    "when": "Jan 19, 2027",
+    "what": "Comment deadline for Medicare's CRUSH audit rule",
+    "where": "Online, regulations.gov",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "when": "Feb 7, 2027",
+    "what": "Grammy Awards",
+    "where": "Los Angeles",
+    "url": "https://www.complex.com/music/a/alex-ocho/lisa-grammy-nomination-blackpink-asian-pop"
+   },
+   {
+    "when": "Mar 18, 2027",
+    "what": "FIFA presidential election at the FIFA Congress",
+    "where": "Rabat, Morocco",
+    "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election"
+   }
+  ],
+  "industry_title": "Industry: Produced Water Society 2027",
+  "industry": [
+   {
+    "when": "Feb 8 to 11",
+    "what": "37th Annual Conference",
+    "where": "Sugar Land Marriott, Sugar Land, Texas",
+    "url": "https://producedwatersociety.com/sugarland/"
+   },
+   {
+    "when": "April",
+    "what": "4th Annual African Conference",
+    "where": "Venue not yet listed",
+    "url": "https://producedwatersociety.com/4th-annual-african-conference/"
+   },
+   {
+    "when": "April",
+    "what": "Dammam edition",
+    "where": "Dammam, Saudi Arabia",
+    "url": "https://producedwatersociety.com/dammam/"
+   },
+   {
+    "when": "June",
+    "what": "Aberdeen edition",
+    "where": "Aberdeen, United Kingdom",
+    "url": "https://producedwatersociety.com/aberdeen-2027/"
+   },
+   {
+    "when": "August",
+    "what": "Midland edition",
+    "where": "Midland, Texas",
+    "url": "https://producedwatersociety.com/midland-texas-2027/"
+   },
+   {
+    "when": "September",
+    "what": "Argentina Edition",
+    "where": "Argentina, city not yet listed",
+    "url": "https://producedwatersociety.com/argentina-edition-2027/"
+   },
+   {
+    "when": "November",
+    "what": "Asia Edition",
+    "where": "Asia, city not yet listed",
+    "url": "https://producedwatersociety.com/asia-edition/"
+   },
+   {
+    "when": "December",
+    "what": "United Arab Emirates edition",
+    "where": "UAE, city not yet listed",
+    "url": "https://producedwatersociety.com/united-arab-emirates/"
+   }
+  ],
+  "industry_note": "Exact dates after February are not yet published. Each link goes to the official event page.",
+  "sources": [
+   {
+    "name": "Produced Water Society",
+    "url": "https://producedwatersociety.com/annual-events/"
+   },
+   {
+    "name": "Federal Reserve",
+    "url": "https://federalreserve.gov/monetarypolicy/fomccalendars.htm"
+   },
+   {
+    "name": "Business Today",
+    "url": "https://www.businesstoday.in/world/story/trump-xi-putin-set-for-unprecedented-trilateral-talks-at-apec-summit-in-shenzhen-567494-2026-11-14"
+   },
+   {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/cricket/ipl/ipl-2027-retained-and-released-players-list-announcement-time-streaming-126111700251_1.html"
+   },
+   {
+    "name": "IC Markets",
+    "url": "https://www.ic.com/blog/europe-fundamental-forecast-17-november-2026-ic/"
+   },
+   {
+    "name": "FinChannel",
+    "url": "https://finchannel.com/unitedhealth-stock-drops-10-as-medicare-audit-proposal-unsettles-insurers/142214/american-business-trends/2026/11/"
+   },
+   {
+    "name": "The Rio Times",
+    "url": "https://www.riotimesonline.com/europe-intelligence-brief-thursday-november-19-2026"
+   },
+   {
+    "name": "AAA",
+    "url": "https://gasprices.aaa.com/gas-prices-keep-dropping-as-thanksgiving-approaches/"
+   },
+   {
+    "name": "The Nigeria Brief",
+    "url": "https://frontierbriefmedia.substack.com/p/the-nigeria-brief-thursday-19-november"
+   },
+   {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+   },
+   {
+    "name": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-23-2026"
+   },
+   {
+    "name": "Korea Daily",
+    "url": "https://en.koreadaily.com/asia-artist-awards-2026-lineup/"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-saturday-november-21-2026/"
+   },
+   {
+    "name": "Yahoo Finance earnings calendar",
+    "url": "https://finance.yahoo.com/calendar/earnings?day=2026-11-24"
+   },
+   {
+    "name": "The Rio Times, Africa",
+    "url": "https://www.riotimesonline.com/africa-intelligence-brief-wednesday-november-25-2026/"
+   },
+   {
+    "name": "The Rio Times, sports",
+    "url": "https://www.riotimesonline.com/latin-america-sports-daily-thursday-november-26-2026/"
+   },
+   {
+    "name": "ESA",
+    "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/latest-updates-bepicolombo-s-arrival-at-mercury"
+   },
+   {
+    "name": "Imperial Brands statement, Nov 26",
+    "url": "https://www.imperialbrandsplc.com/news/key-announcements/2026/response-to-possible-offer-for-imperial-brands"
+   },
+   {
+    "name": "investingLive citing Reuters, Nov 27",
+    "url": "https://investinglive.com/central-banks/tokyo-core-inflation-hits-16-month-high-of-2-9-firming-the-case-for-a-december-boj-hike/"
+   }
+  ]
+ }
+}

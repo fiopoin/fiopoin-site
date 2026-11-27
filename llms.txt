@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.](https://fiopoin.com/): Thursday, November 26, 2026. The US Trade Representative proposed new Section 301 tariffs on 14 economies on November 25, with top rates of 35% for Vietnam, 25% for India, 20% for China and 15% for the EU and Japan. Comments are due January 5 and hearings start January 25.
-- [Stocks and your savings: Wall Street erases a 1,100 point Dow drop, and Asia rebounds on Thursday.](https://fiopoin.com/#money)
-- [Trade and tariffs: The US proposes tariffs of 15% to 35% on 14 economies, including China, the EU and India.](https://fiopoin.com/#world)
-- [The Fed and your loans: US core inflation hits 3.3% as Korea raises rates and a Fed hike looks near certain.](https://fiopoin.com/#rates)
-- [Oil and the Gulf: Yemen's Houthis say they struck Saudi Arabia's largest refinery at Ras Tanura.](https://fiopoin.com/#energy)
+- [Oil nears $97 after reported mine hits on two tankers and a strike on a Saudi refinery.](https://fiopoin.com/): Friday, November 27, 2026. Brent crude rose to $97.31 a barrel on Friday after Iran's IRGC said two tankers hit mines in the Strait of Hormuz and Saudi Arabia said a strike suspended some operations at its Jazan refinery on November 26. OPEC+ meets Sunday.
+- [Stocks and your savings: Asian stocks rally and US futures rise before Wall Street's Black Friday half day.](https://fiopoin.com/#money)
+- [Oil and the Gulf: Oil climbs as Iran's IRGC says two tankers hit mines in Hormuz and a strike shuts part of a Saudi refinery.](https://fiopoin.com/#world)
+- [Deals and companies: Altria says it may make a cash offer for Imperial Brands, and Imperial's shares jump 13.3%.](https://fiopoin.com/#deals)
+- [Central banks and your loans: EU leaders pick Spain's Pablo Hernández de Cos to lead the ECB as Tokyo inflation hits a 16 month high.](https://fiopoin.com/#rates)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Friday, November 27, 2026: Oil nears $97 after reported mine hits on two tankers and a strike on a Saudi refinery.](https://fiopoin.com/archive/2026-11-27.html)
 - [Thursday, November 26, 2026: The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.](https://fiopoin.com/archive/2026-11-26.html)
 - [Wednesday, November 25, 2026: The AI chip selloff spreads to Asia: Korea's KOSPI falls 6.2% as Samsung drops nearly 10%.](https://fiopoin.com/archive/2026-11-25.html)
 - [Tuesday, November 24, 2026: Stocks have their best day since April 2025, but a December Fed hike looks near certain.](https://fiopoin.com/archive/2026-11-24.html)
