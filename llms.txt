@@ -5,11 +5,11 @@
 Please credit FIOPO Intelligence and link to the edition you cite. Contact: hello@fiopoin.com
 
 ## Today's edition
-- [Oil nears $97 after reported mine hits on two tankers and a strike on a Saudi refinery.](https://fiopoin.com/): Friday, November 27, 2026. Brent crude rose to $97.31 a barrel on Friday after Iran's IRGC said two tankers hit mines in the Strait of Hormuz and Saudi Arabia said a strike suspended some operations at its Jazan refinery on November 26. OPEC+ meets Sunday.
-- [Stocks and your savings: Asian stocks rally and US futures rise before Wall Street's Black Friday half day.](https://fiopoin.com/#money)
-- [Oil and the Gulf: Oil climbs as Iran's IRGC says two tankers hit mines in Hormuz and a strike shuts part of a Saudi refinery.](https://fiopoin.com/#world)
-- [Deals and companies: Altria says it may make a cash offer for Imperial Brands, and Imperial's shares jump 13.3%.](https://fiopoin.com/#deals)
-- [Central banks and your loans: EU leaders pick Spain's Pablo Hernández de Cos to lead the ECB as Tokyo inflation hits a 16 month high.](https://fiopoin.com/#rates)
+- [Wall Street posts its best week since April 2025 as a December Fed rate hike looks near certain.](https://fiopoin.com/): Saturday, November 28, 2026. US stocks posted their best week since April 2025: the S&P 500 rose 5.6%, the Nasdaq 6.7% and the Dow 5.5% in the week to November 27, while the 10 year Treasury yield rose to 4.94% and markets priced a December Fed hike.
+- [Stocks and your savings: US stocks post their best week since April 2025 while bond yields climb.](https://fiopoin.com/#money)
+- [Oil and the Gulf: Iran says it is negotiating with the US through Qatar and Pakistan as OPEC+ meets Sunday.](https://fiopoin.com/#world)
+- [Deals and companies: Dangote's refinery is set to start trading in Lagos on Tuesday after a $2.08 billion share sale.](https://fiopoin.com/#deals)
+- [Spending and prices: Adobe expects $12.9 billion in US online Black Friday spending, up 9.2% from last year.](https://fiopoin.com/#shopping)
 
 ## Archive and feeds
 - [Past editions](https://fiopoin.com/archive/): every edition, kept so readers can check FIOPO calls against what happened
@@ -17,6 +17,7 @@ Please credit FIOPO Intelligence and link to the edition you cite. Contact: hell
 - [Sitemap](https://fiopoin.com/sitemap.xml)
 
 ## Recent editions
+- [Saturday, November 28, 2026: Wall Street posts its best week since April 2025 as a December Fed rate hike looks near certain.](https://fiopoin.com/archive/2026-11-28.html)
 - [Friday, November 27, 2026: Oil nears $97 after reported mine hits on two tankers and a strike on a Saudi refinery.](https://fiopoin.com/archive/2026-11-27.html)
 - [Thursday, November 26, 2026: The US proposes new tariffs of 15% to 35% on China, the EU, India and 11 other economies.](https://fiopoin.com/archive/2026-11-26.html)
 - [Wednesday, November 25, 2026: The AI chip selloff spreads to Asia: Korea's KOSPI falls 6.2% as Samsung drops nearly 10%.](https://fiopoin.com/archive/2026-11-25.html)
